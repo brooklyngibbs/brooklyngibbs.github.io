@@ -1,48 +1,84 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header Navigation */
 header {
-    background: linear-gradient(90deg, #4CAF50, #81C784);
-    color: white;
+    background-color: #f4f4f4;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-header h1 {
+header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.intro h1 {
+    font-size: 4em;
     margin: 0;
-    font-size: 2.5em;
+    color: #333;
 }
 
-header p {
+.intro p {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.tagline {
     font-size: 1.2em;
+    color: #777;
 }
 
-/* Home Section */
-#home {
-    margin: 40px auto;
-    padding: 20px;
+/* Highlight Sections */
+.highlight-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
     max-width: 800px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
 }
 
-#home h2 {
+.highlight-section h2 {
     font-size: 2em;
-    color: #4CAF50;
+    color: #333;
+    margin: 0 0 10px;
 }
 
-#home p {
+.highlight-section p {
     font-size: 1.2em;
-    line-height: 1.8;
     color: #555;
+}
+
+.highlight-section a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight-section a:hover {
+    text-decoration: underline;
 }
