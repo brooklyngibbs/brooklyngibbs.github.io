@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Gibbs - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a href="../index.html" class="logo">Brooklyn Gibbs</a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="me.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="audio_content">
+            <h1>Contact</h1>
+            <p class="tagline">let's connect and create something extraordinary</p>
+
+            <section class="contact-section">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <h2>Alternative Ways to Reach Me</h2>
+                        <div class="contact-links">
+                            <div class="contact-method">
+                                <h3>Email</h3>
+                                <p>brooklyngibbs22@gmail.com</p>
+                            </div>
+                            <div class="contact-method">
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" target="_blank">Connect on LinkedIn</a>
+                            </div>
+                            <div class="contact-method">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/brooklyngibbs" target="_blank">Follow on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            fetch('https://formspree.io/f/mdkovjgr', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Thanks for your message! I\'ll get back to you soon.');
+                    form.reset();
+                } else {
+                    alert('Oops! There was a problem submitting your form');
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form');
+            });
+        });
+    </script>
+</body>
+</html>
