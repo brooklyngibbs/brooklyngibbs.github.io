@@ -179,6 +179,35 @@
                 grid-template-columns: 1fr;
             }
         }
+        #scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--accent-yellow);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 100;
+        }
+
+        #scrollToTop:hover {
+            background-color: var(--accent-blue);
+        }
+
+        /* Make the button visible when needed */
+        #scrollToTop.show {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 <header>
