@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="383c19b2-cd24-4f59-a506-f0918b4bc744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/aurify_demo.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/aurify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/substack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/aurify.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aurify.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/substack.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/substack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/audio_research.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/audio_research.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733948109661</updated>
       <workItem from="1733948110681" duration="303000" />
-      <workItem from="1733948419303" duration="20634000" />
+      <workItem from="1733948419303" duration="21075000" />
     </task>
     <servers />
   </component>
