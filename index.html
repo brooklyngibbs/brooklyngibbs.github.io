@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brooklyn Gibbs - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-        </nav>
+        <div class="nav-wrapper">
+            <a href="#" class="logo">Brooklyn Gibbs</a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
+
+    <main class="container">
         <div class="content">
             <h1>brooklyn gibbs</h1>
             <p class="bio">exploring the intersection of music, tech, and memory</p>
         </div>
-        <!-- Drawings -->
-        <a href="#project1" class="corner top-left" title="Project 1">
-            <img src="images/recordplayer.svg" alt="Project 1">
-        </a>
-        <a href="#project2" class="corner top-right" title="Project 2">
-            <img src="images/record.svg" alt="Project 2">
-        </a>
-        <a href="#project3" class="corner bottom-left" title="Project 3">
-            <img src="images/book.svg" alt="Project 3">
-        </a>
-        <a href="#project4" class="corner bottom-right" title="Project 4">
-            <img src="images/heart.svg" alt="Project 4">
-        </a>
+
+        <div class="project-grid">
+            <a href="#project1" class="project-link" title="Record Player Project">
+                <img src="images/recordplayer.svg" alt="Record Player Project">
+            </a>
+            <a href="#project2" class="project-link" title="Vinyl Record Project">
+                <img src="images/record.svg" alt="Vinyl Record Project">
+            </a>
+            <a href="#project3" class="project-link" title="Book Project">
+                <img src="images/book.svg" alt="Book Project">
+            </a>
+            <a href="#project4" class="project-link" title="Heart Project">
+                <img src="images/heart.svg" alt="Heart Project">
+            </a>
+        </div>
     </main>
 </body>
 </html>
