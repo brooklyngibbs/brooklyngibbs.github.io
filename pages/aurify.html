@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurify - Brooklyn Gibbs</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../styles/aurify.css">
 </head>
 <body>
     <header>
@@ -19,54 +21,132 @@
         </div>
     </header>
 
-    <main class="container">
-        <div class="audio_content">
+    <section class="hero">
+        <div class="floating-icons" id="floatingIcons"></div>
+        <div class="hero-content">
             <h1>Aurify</h1>
-            <p class="tagline">where your photos find their soundtrack</p>
-
-            <section class="project-overview">
-                <div class="project-details">
-                    <div class="project-info">
-                        <h2>About the App</h2>
-                        <p>Aurify is a creative app that transforms your photos into personalized playlists. Using OpenAI's advanced models, the app analyzes the mood, colors, and composition of your photos to determine the emotional and thematic elements. Then, with the Spotify API, Aurify generates a playlist that matches the vibe of your photo and makes it available directly on Spotify for listening and sharing.</p>
-                        <p>Whether it’s a snapshot from a road trip or a candid moment with friends, Aurify brings your memories to life through music that reflects the story behind the image.</p>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://www.aurifyapp.com/" target="_blank" class="app-link">Website</a>
-                        <a href="https://apps.apple.com/us/app/aurify/id6475698055" target="_blank" class="app-link">App Store</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="technology-breakdown">
-                <h2>Technology Behind Aurify</h2>
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <h3>Photo Analysis</h3>
-                        <p>OpenAI's image and language models analyze the uploaded photo, extracting details such as color palette, lighting, mood, and context to understand the image's emotional tone.</p>
-                    </div>
-                    <div class="tech-card">
-                        <h3>Playlist Creation</h3>
-                        <p>The Spotify API fetches songs based on the attributes identified by OpenAI, creating a playlist tailored to the vibe of your photo. This playlist can be listened to, shared, and saved in Spotify.</p>
-                    </div>
-                    <div class="tech-card">
-                        <h3>Seamless Integration</h3>
-                        <p>Aurify bridges advanced AI analysis and Spotify’s music platform, ensuring that every playlist is not only unique but also accessible for streaming on a platform you already love.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="use-cases">
-                <h2>Potential Use Cases</h2>
-                <ul>
-                    <li>Create soundtracks for your favorite memories</li>
-                    <li>Generate mood-based playlists for events or moments</li>
-                    <li>Discover new music inspired by the aesthetic of your photos</li>
-                    <li>Share personalized playlists with friends and social networks</li>
-                </ul>
-            </section>
+            <p>Transform your memories into melodies</p>
         </div>
+    </section>
+
+    <section class="app-preview">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>AI-Powered Analysis</h3>
+                <p>Using OpenAI's advanced models to understand the emotional essence of your photos</p>
+            </div>
+            <div class="feature-card">
+                <h3>Spotify Integration</h3>
+                <p>Seamlessly create and share personalized playlists that capture your moments</p>
+            </div>
+            <div class="feature-card">
+                <h3>Memory Soundtrack</h3>
+                <p>Turn your visual memories into musical journeys that you can revisit anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="demo-container">
+            <div class="phone-mockup">
+                <div class="phone-screen" id="demoScreen">
+                    <img src="../images/aurify_demo.PNG" alt="App Demo" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="demo-steps">
+                <div class="demo-step">
+                    <h3>1. Upload Your Photo</h3>
+                    <p>Choose any photo that captures a special moment or feeling</p>
+                </div>
+                <div class="demo-step">
+                    <h3>2. AI Analysis</h3>
+                    <p>Our AI analyzes the mood, colors, and context of your image</p>
+                </div>
+                <div class="demo-step">
+                    <h3>3. Playlist Creation</h3>
+                    <p>Get a curated playlist that matches the emotional tone of your photo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to give your photos a soundtrack?</h2>
+        <div class="app-buttons">
+            <a href="https://www.aurifyapp.com/" class="app-button">Visit Website</a>
+            <a href="https://apps.apple.com/us/app/aurify/id6475698055" class="app-button">Download on App Store</a>
+        </div>
+    </section>
+
+    <script>
+        // Initialize GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate hero section
+        gsap.to('.hero h1', {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: 0.5
+        });
+
+        gsap.to('.hero p', {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            delay: 0.7
+        });
+
+        // Animate feature cards
+        gsap.utils.toArray('.feature-card').forEach((card, i) => {
+            gsap.to(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top bottom-=100',
+                    toggleActions: 'play none none reverse'
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: i * 0.2
+            });
+        });
+
+        // Animate demo steps
+        gsap.to('.demo-steps', {
+            scrollTrigger: {
+                trigger: '.demo-section',
+                start: 'top center',
+                toggleActions: 'play none none reverse'
+            },
+            opacity: 1,
+            x: 0,
+            duration: 1
+        });
+
+        // Create floating icons
+        const icons = ['🎵', '🎨', '🎧', '📸', '✨'];
+        const iconContainer = document.getElementById('floatingIcons');
+
+        for (let i = 0; i < 15; i++) {
+            const icon = document.createElement('div');
+            icon.className = 'floating-icon';
+            icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+
+            // Random position and animation
+            const randomX = Math.random() * 100;
+            const randomY = Math.random() * 100;
+            const randomDuration = 15 + Math.random() * 10;
+
+            icon.style.left = `${randomX}%`;
+            icon.style.top = `${randomY}%`;
+            icon.style.setProperty('--translateX', `${-50 + Math.random() * 100}px`);
+            icon.style.setProperty('--translateY', `${-50 + Math.random() * 100}px`);
+            icon.style.animationDuration = `${randomDuration}s`;
+
+            iconContainer.appendChild(icon);
+        }
+    </script>
         <button id="scrollToTop" title="Go to top">↑</button>
 
         <script>
@@ -87,6 +167,5 @@
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
         </script>
-    </main>
 </body>
 </html>

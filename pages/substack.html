@@ -3,92 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brooklyn Gibbs - Substack</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <title>Byte-sized Beats - Brooklyn Gibbs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/substack.css">
 </head>
+<header>
+    <div class="nav-wrapper">
+        <a href="../index.html" class="logo">Brooklyn Gibbs</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 <body>
-    <header>
-        <div class="nav-wrapper">
-            <a href="../index.html" class="logo">Brooklyn Gibbs</a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="me.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="audio_content">
+    <div class="container">
+        <section class="hero">
             <h1>Byte-sized Beats</h1>
-            <p class="tagline">newsletter exploring music through the lens of perception and personal experience</p>
+            <p>Newsletter exploring music through perception and personal experience</p>
+        </section>
 
-            <section class="substack-overview">
-                <div class="substack-content">
-                    <h2>About the Publication</h2>
-                    <p>A deep dive into the intricate relationships between music, memory, and sensory perception. My writing explores how we experience music beyond just sound – through colors, emotions, and personal narratives.</p>
+        <section class="highlights">
+            <div class="highlight-card">
+                <h3>
+                    <span class="icon">✨</span>
+                    Synesthetic Exploration
+                </h3>
+                <p>Discover how we experience music through colors, emotions, and personal narratives</p>
+            </div>
+            <div class="highlight-card">
+                <h3>
+                    <span class="icon">📈</span>
+                    Music Recommendation
+                </h3>
+                <p>Understanding musical recommendations through sensory and emotional frameworks</p>
+            </div>
+            <div class="highlight-card">
+                <h3>
+                    <span class="icon">🎵</span>
+                    Audio Research
+                </h3>
+                <p>Deep dives into music analysis and audio feature exploration</p>
+            </div>
+        </section>
 
-                    <div class="writing-focus">
-                        <h3>Key Themes</h3>
-                        <ul>
-                            <li>Synesthetic music experiences</li>
-                            <li>Music recommendation through emotional and sensory landscapes</li>
-                            <li>Audio research and musical analysis</li>
-                            <li>Personal narratives of musical discovery</li>
-                        </ul>
+        <section class="featured-posts">
+            <h2>Featured Writing</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <h3>What Defines a Taylor Swift Era</h3>
+                    <p>An in-depth exploration of musical evolution through audio feature analysis, examining how Taylor Swift's sound has transformed across her discography.</p>
+                    <div class="post-meta">
+                        <span>Part I • 12 min read</span>
+                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read More</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="substack-links">
-                    <a href="https://brooklyngibbs.substack.com/" target="_blank" class="substack-link">Read on Substack</a>
-                    <a href="https://brooklyngibbs.substack.com/subscribe" target="_blank" class="substack-link">Subscribe</a>
-                </div>
-            </section>
-
-            <section class="recent-work">
-                <h2>Featured Writing</h2>
-                <div class="writing-grid">
-                    <div class="writing-card">
-                        <h3>What Defines a Taylor Swift Era</h3>
-                        <p>An in-depth exploration of musical evolution through audio feature analysis.</p>
-                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" target="_blank" class="read-more">Read Part I</a>
-                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era-pt" target="_blank" class="read-more">Read Part II</a>
+                <article class="post-card">
+                    <h3>Taylor Swift Era Analysis</h3>
+                    <p>Continuing our deep dive into the musical characteristics that define each era, with detailed breakdowns of audio features and production techniques.</p>
+                    <div class="post-meta">
+                        <span>Part II • 15 min read</span>
+                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era-pt" class="read-more">Read More</a>
                     </div>
-                    <div class="writing-card">
-                        <h3>Music Recommendation</h3>
-                        <p>Approaches to understanding musical recommendations through sensory and emotional frameworks.</p>
-                    </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <section class="writing-philosophy">
-                <h2>My Approach to Music</h2>
-                <blockquote>
-                    "Music is more than sound – it's a sensory experience that connects us to memories, emotions, and unseen landscapes of perception."
-                </blockquote>
-            </section>
-        </div>
-        <button id="scrollToTop" title="Go to top">↑</button>
+        <section class="subscribe-section">
+            <h2>Join the Journey</h2>
+            <p>Get weekly insights on music, technology, and perception</p>
+            <a href="https://brooklyngibbs.substack.com/subscribe" class="subscribe-btn">Subscribe Now</a>
+        </section>
+    </div>
 
-        <script>
-            // Get the button
-            const scrollToTopBtn = document.getElementById("scrollToTop");
-
-            // Show the button when scrolled down 100px
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 100) {
-                    scrollToTopBtn.classList.add("show");
-                } else {
-                    scrollToTopBtn.classList.remove("show");
+    <script>
+        // Add intersection observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
+        }, {
+            threshold: 0.1
+        });
 
-            // Scroll to top when button is clicked
-            scrollToTopBtn.addEventListener("click", () => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
+        // Observe all cards and sections
+        document.querySelectorAll('.highlight-card, .post-card, .subscribe-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add hover effect to highlight cards
+        document.querySelectorAll('.highlight-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
             });
-        </script>
-    </main>
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+    <button id="scrollToTop" title="Go to top">↑</button>
+
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+
+        // Show the button when scrolled down 100px
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollToTopBtn.classList.add("show");
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
+        });
+
+        // Scroll to top when button is clicked
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
 </html>
