@@ -1,98 +1,208 @@
-/* General Styles */
-body {
+:root {
+    --primary-color: #3c342c;  /* Deep navy 48342c */
+    --secondary-color: #48342c;  /* Slightly lighter navy */
+    --background-color: #f4f4f4;  /* Soft vintage cream */
+    --accent-red: #D34E4E;  /* Muted vintage red */
+    --accent-yellow: #E9B872;  /* Soft mustard yellow */
+    --accent-blue: #4A6D7C;  /* Muted dusty blue */
+    --text-color: #2C3E50;
+}
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #fafdf3;
-    color: #333;
-    height: 100vh; /* Make the body fill the screen */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 /* Header Navigation */
 header {
-    width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: #fafdf3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
 }
 
-header nav a {
-    margin: 0 15px;
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
     text-decoration: none;
-    font-size: 1.2em;
-    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    position: relative;
     transition: color 0.3s ease;
 }
 
-header nav a:hover {
-    color: #2C363F;
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-blue);
+    transition: width 0.3s ease;
 }
 
-/* Content Section */
-.content {
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    position: relative; /* Keeps it centered even with an empty page */
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.content {
+    z-index: 10;
+    max-width: 800px;
+    padding: 2rem;
+    margin-top: 50px;
 }
 
 .content h1 {
-    font-size: 5em;
-    font-weight: bold;
-    margin: 0;
-    color: #2C363F;
-    font-family: 'Playfair Display', serif; /* Fun font for your name */
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
 }
 
 .content .bio {
-    font-size: 1.5em;
-    color: #666;
-    margin-top: 20px;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Positioning the Corners */
-.corner {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    z-index: 10;
-}
-
-.top-left {
-    top: 50px;
-    left: 40px;
-}
-
-.top-right {
-    top: 50px;
-    right: 40px;
-}
-
-.bottom-left {
-    bottom: 20px;
-    left: 40px;
-}
-
-.bottom-right {
-    bottom: 20px;
-    right: 40px;
-}
-
-/* Styling the Drawings */
-.corner img {
+/* Project Corner Links */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1000px;
 }
 
-.corner img:hover {
+.project-link {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    padding: 1rem;
+}
+
+.project-link img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    filter: saturate(80%) brightness(90%);
+}
+
+.project-link:hover {
+    transform: translateY(-10px) rotate(2deg);
+}
+
+.project-link:hover img {
     transform: scale(1.1);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    filter: saturate(100%) brightness(100%);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin-left: 1rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-yellow);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+
+#scrollToTop:hover {
+    background-color: var(--accent-blue);
+}
+
+/* Make the button visible when needed */
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
 }

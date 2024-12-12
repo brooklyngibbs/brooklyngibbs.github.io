@@ -27,19 +27,40 @@
         </div>
 
         <div class="project-grid">
-            <a href="#project1" class="project-link" title="Record Player Project">
+            <a href="pages/aurify.html" class="project-link" title="aurify">
                 <img src="images/recordplayer.svg" alt="Record Player Project">
             </a>
-            <a href="#project2" class="project-link" title="Vinyl Record Project">
+            <a href="pages/audio_research.html" class="project-link" title="audio_research">
                 <img src="images/record.svg" alt="Vinyl Record Project">
             </a>
-            <a href="#project3" class="project-link" title="Book Project">
+            <a href="pages/substack.html" class="project-link" title="substack">
                 <img src="images/book.svg" alt="Book Project">
             </a>
-            <a href="#project4" class="project-link" title="Heart Project">
+            <a href="#music" class="project-link" title="music">
                 <img src="images/heart.svg" alt="Heart Project">
             </a>
         </div>
     </main>
+    <button id="scrollToTop" title="Go to top">↑</button>
+
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+
+        // Show the button when scrolled down 100px
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollToTopBtn.classList.add("show");
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
+        });
+
+        // Scroll to top when button is clicked
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
 </body>
 </html>
