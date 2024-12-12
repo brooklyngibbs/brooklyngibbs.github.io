@@ -67,6 +67,26 @@
                 </ul>
             </section>
         </div>
+        <button id="scrollToTop" title="Go to top">↑</button>
+
+        <script>
+            // Get the button
+            const scrollToTopBtn = document.getElementById("scrollToTop");
+
+            // Show the button when scrolled down 100px
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 100) {
+                    scrollToTopBtn.classList.add("show");
+                } else {
+                    scrollToTopBtn.classList.remove("show");
+                }
+            });
+
+            // Scroll to top when button is clicked
+            scrollToTopBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
     </main>
 </body>
 </html>
