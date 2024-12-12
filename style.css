@@ -1,84 +1,98 @@
 /* General Styles */
 body {
-    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafdf3;
     color: #333;
-    line-height: 1.6;
+    height: 100vh; /* Make the body fill the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header Navigation */
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fafdf3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header nav a {
     margin: 0 15px;
-    color: #333;
     text-decoration: none;
-    font-weight: bold;
     font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #2C363F;
 }
 
-/* Intro Section */
-.intro {
+/* Content Section */
+.content {
     text-align: center;
-    padding: 60px 20px;
-    background-color: #fff;
+    position: relative; /* Keeps it centered even with an empty page */
 }
 
-.intro h1 {
-    font-size: 4em;
-    margin: 0;
-    color: #333;
-}
-
-.intro p {
-    margin: 20px 0;
-    font-size: 1.5em;
-}
-
-.tagline {
-    font-size: 1.2em;
-    color: #777;
-}
-
-/* Highlight Sections */
-.highlight-section {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-    max-width: 800px;
-    margin: 40px auto;
-}
-
-.highlight-section h2 {
-    font-size: 2em;
-    color: #333;
-    margin: 0 0 10px;
-}
-
-.highlight-section p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.highlight-section a {
-    color: #4CAF50;
-    text-decoration: none;
+.content h1 {
+    font-size: 5em;
     font-weight: bold;
+    margin: 0;
+    color: #2C363F;
+    font-family: 'Playfair Display', serif; /* Fun font for your name */
 }
 
-.highlight-section a:hover {
-    text-decoration: underline;
+.content .bio {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Positioning the Corners */
+.corner {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
+.top-left {
+    top: 50px;
+    left: 40px;
+}
+
+.top-right {
+    top: 50px;
+    right: 40px;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 40px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 40px;
+}
+
+/* Styling the Drawings */
+.corner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.corner img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
