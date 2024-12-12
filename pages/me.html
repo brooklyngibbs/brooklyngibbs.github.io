@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brooklyn Gibbs - About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/me.css">
     <link rel="stylesheet" href="../style.css">
-    <!-- Add animate.css for smooth animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
@@ -23,11 +23,38 @@
 
     <main class="container">
         <div class="audio_content">
-            <h1 class="animate__animated animate__fadeIn">About Me</h1>
-            <p class="tagline animate__animated animate__fadeIn animate__delay-1s">crafting stories where sound meets memory</p>
+            <h1 class="">About Me</h1>
+            <p class="tagline">crafting stories where sound meets memory</p>
 
-            <!-- Enhanced Hero Section -->
-            <section class="personal-intro animate__animated animate__fadeIn animate__delay-2s">
+            <section class="quick-facts-section">
+                <h2>Quick Facts</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <span class="fact-icon">🎓</span>
+                        <h3>Education</h3>
+                        <p>BS in Computer Science</p>
+                        <p>Indiana University</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">💼</span>
+                        <h3>Experience</h3>
+                        <p>Software Engineer</p>
+                        <p>Capital One</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">🌟</span>
+                        <h3>Specialties</h3>
+                        <p>Music Tech & ML</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">📍</span>
+                        <h3>Location</h3>
+                        <p>Chicago, IL</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="personal-intro">
                 <div class="profile-section">
                     <div class="profile-wrapper">
                         <img src="../images/me.jpg" alt="Brooklyn Gibbs" class="profile-image">
@@ -39,26 +66,20 @@
                     <div class="personal-details">
                         <h2>Brooklyn Gibbs</h2>
                         <p>Creative Technologist | Music Enthusiast | Nostalgia Curator</p>
-                        <div class="location-info">
-                            <span>📍 Chicago, IL</span>
-                            <span>💼 Software Engineer</span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="bio-narrative">
-                    <h3>My Story</h3>
                     <p>Hi, I'm Brooklyn—a 24-year-old creative spirit who thrives on exploring the intersection of music, technology, and human connection. I'm endlessly curious about how songs shape memories and how we can use technology to bring those stories to life in unique, meaningful ways.</p>
                     <p>With a passion for music recommendations, machine learning, and storytelling, my work often feels like crafting a digital mixtape—combining emotion, data, and a touch of whimsy.</p>
                 </div>
             </section>
 
-            <!-- Skills Section with Progress Bars -->
             <section class="skills-section">
-                <h2>Technical Toolkit</h2>
+                <h2>Technical Expertise</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Programming</h3>
+                        <h3>Core Technologies</h3>
                         <div class="skill-item">
                             <span>Python</span>
                             <div class="progress-bar">
@@ -66,34 +87,55 @@
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>JavaScript</span>
+                            <span>JavaScript/React</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Swift</span>
+                            <span>Swift/SwiftUI</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Technologies</h3>
+                        <h3>Cloud & Data</h3>
                         <div class="skill-item">
-                            <span>AWS</span>
+                            <span>AWS Services</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>React</span>
+                            <span>Snowflake</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Machine Learning</span>
+                            <span>Databricks</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-item">
+                            <span>Data Analysis</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Audio Processing</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Feature Engineering</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 75%"></div>
                             </div>
@@ -102,29 +144,36 @@
                 </div>
             </section>
 
-            <!-- Timeline Section -->
-            <section class="timeline-section">
-                <h2>My Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>2023 - 2024</h3>
-                            <h4>Software Engineer at Capital One</h4>
-                            <p>Working on data conversion and autopay systems</p>
+            <section class="projects-showcase">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Aurify</h3>
+                            <p>iOS app that generates Spotify playlists from photos using AI</p>
+                            <div class="project-tech">
+                                <span>Swift</span>
+                                <span>OpenAI</span>
+                                <span>Spotify API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.aurifyapp.com/" class="project-link">Website</a>
+                                <a href="https://apps.apple.com/us/app/aurify/id6475698055" class="project-link">App Store</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>2023</h3>
-                            <h4>Launched Aurify</h4>
-                            <p>Created an iOS app that transforms photos into personalized playlists</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>2023</h3>
-                            <h4>BS in Computer Science</h4>
-                            <p>Graduated from Indiana University, Bloomington</p>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Music Era Analysis</h3>
+                            <p>Research on musical evolution through audio feature analysis</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Data Analysis</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="project-link">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,247 +184,86 @@
                 <div class="interests-grid">
                     <div class="interest-card">
                         <h3>🎵 Music Production</h3>
-                        <p>Experimenting with sound design and digital audio workstations</p>
+                        <p>Experimenting with sound design in Ableton Live and exploring new ways to shape sounds</p>
                     </div>
                     <div class="interest-card">
                         <h3>📚 Reading</h3>
-                        <p>Exploring technical literature and music theory</p>
+                        <p>Diving into music theory, technology books, and discovering new perspectives in local Chicago bookstores</p>
                     </div>
-                    <div class="interest-card">
+                    <div class="interest-card gaming-interests">
                         <h3>🎮 Gaming</h3>
-                        <p>Enjoying cozy Switch games with great soundtracks</p>
+                        <p>Enjoying cozy Nintendo Switch games that blend storytelling and exploration</p>
+                        <ul>
+                            <li>Animal Crossing</li>
+                            <li>Stardew Valley</li>
+                            <li>Story of Seasons</li>
+                            <li>Cozy Grove</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
             <section class="cta-section">
                 <h2>Let's Connect</h2>
-                <p>Interested in collaborating or just want to chat about music and tech?</p>
+                <p>Interested in discussing music technology, AI, or potential collaborations?</p>
                 <div class="cta-buttons">
                     <a href="contact.html" class="cta-button primary">Get in Touch</a>
                     <a href="../resume.pdf" target="_blank" class="cta-button secondary">View Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/brooklyngibbs" class="social-link">GitHub</a>
+                    <a href="https://brooklyngibbs.substack.com/" class="social-link">Substack</a>
                 </div>
             </section>
         </div>
     </main>
 
-    <style>
-        /* New styles to add to your existing CSS */
-        .profile-wrapper {
-            position: relative;
-            overflow: hidden;
-            border-radius: 50%;
-        }
-
-        .social-overlay {
-            position: absolute;
-            bottom: -100%;
-            left: 0;
-            right: 0;
-            background: rgba(74, 109, 124, 0.9);
-            padding: 1rem;
-            transition: bottom 0.3s ease;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .profile-wrapper:hover .social-overlay {
-            bottom: 0;
-        }
-
-        .social-link {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 1px solid white;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            background: white;
-            color: var(--accent-blue);
-        }
-
-        .location-info {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 0.5rem;
-            color: var(--secondary-color);
-        }
-
-        .skills-section {
-            margin-top: 3rem;
-            padding: 2rem;
-            background-color: rgba(74, 109, 124, 0.05);
-            border-radius: 12px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .skill-item {
-            margin-bottom: 1rem;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background: rgba(74, 109, 124, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-            margin-top: 0.5rem;
-        }
-
-        .progress {
-            height: 100%;
-            background: var(--accent-blue);
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-
-        .timeline-section {
-            margin-top: 3rem;
-            padding: 2rem;
-            background-color: rgba(232, 184, 114, 0.1);
-            border-radius: 12px;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: var(--accent-yellow);
-        }
-
-        .timeline-item {
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .timeline-content {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            width: calc(50% - 2rem);
-            margin-left: auto;
-        }
-
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-left: 0;
-            margin-right: auto;
-        }
-
-        .interests-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .interest-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .interest-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .cta-section {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 3rem;
-            background-color: rgba(74, 109, 124, 0.05);
-            border-radius: 12px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .cta-button {
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button.primary {
-            background: var(--accent-blue);
-            color: white;
-        }
-
-        .cta-button.secondary {
-            background: transparent;
-            border: 2px solid var(--accent-blue);
-            color: var(--accent-blue);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        @media (max-width: 768px) {
-            .skills-grid, .interests-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline::before {
-                left: 0;
-            }
-
-            .timeline-content {
-                width: calc(100% - 2rem);
-                margin-left: 2rem !important;
-            }
-        }
-    </style>
+    <button id="scrollToTop" title="Go to top">↑</button>
 
     <script>
-        // Animate progress bars on scroll
-        function animateProgressBars() {
-            const progressBars = document.querySelectorAll('.progress');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.width = entry.target.style.width;
-                    } else {
-                        entry.target.style.width = '0%';
-                    }
-                });
-            });
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTop");
 
-            progressBars.forEach(bar => observer.observe(bar));
-        }
-
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', () => {
-            animateProgressBars();
+        // Show the button when scrolled down 100px
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                scrollToTopBtn.classList.add("show");
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
         });
+
+        // Scroll to top when button is clicked
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+    function animateProgressBars() {
+        const progressBars = document.querySelectorAll('.progress');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const targetWidth = entry.target.getAttribute('data-width');
+                if (entry.isIntersecting) {
+                    entry.target.style.width = targetWidth;
+                } else {
+                    entry.target.style.width = '0%';
+                }
+            });
+        });
+
+        progressBars.forEach(bar => {
+            const targetWidth = bar.style.width; // Store initial width
+            bar.setAttribute('data-width', targetWidth); // Save as data attribute
+            bar.style.width = '0%'; // Reset to 0 initially
+            observer.observe(bar);
+        });
+    }
+
+    // Initialize animations
+    document.addEventListener('DOMContentLoaded', () => {
+        animateProgressBars();
+    });
     </script>
 </body>
 </html>
