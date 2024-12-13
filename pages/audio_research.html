@@ -2,123 +2,298 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Research - Brooklyn Gibbs</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/audio_research.css">
+    <style>
+        :root {
+            --primary: #ff8c69;
+            --secondary: #98c1a2;
+            --background: #fff9f5;
+            --text: #2c3e50;
+            --card-bg: #ffffff;
+            --accent: #ffd3b6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(152, 193, 162, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .hero-section {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--primary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .research-focus {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .focus-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .focus-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .focus-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .case-study {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 4rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .visualization {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .visualization img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+        }
+
+        .research-progress {
+            margin-top: 4rem;
+        }
+
+        .progress-timeline {
+            margin-top: 2rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -1.6rem;
+            top: 1rem;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary);
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .content-section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="nav-wrapper">
-            <a href="../index.html" class="logo">Brooklyn Gibbs</a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="me.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+    <header class="header">
+        <a href="../index.html" class="logo">Brooklyn Gibbs</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="hero-section">
-            <div class="visualizer">
-                <div class="wave"></div>
-            </div>
-            <h1>Audio Research</h1>
-            <p class="tagline">exploring the evolution of music through data and emotion</p>
-        </section>
+    <section class="hero-section">
+        <h1>Audio Research</h1>
+        <p class="tagline">Exploring the intersection of music analysis, perception, and recommendation systems</p>
+    </section>
 
-        <div class="research-grid">
-            <div class="research-card">
-                <h3>Musical Era Analysis</h3>
-                <p>Using machine learning and audio feature extraction to understand how artists' musical styles evolve over time. By analyzing granular audio characteristics, we can quantify and visualize the unique sonic fingerprint of each era.</p>
-                <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read Analysis</a>
+    <section class="content-section">
+        <div class="research-focus">
+            <div class="focus-card">
+                <div class="focus-icon">🎵</div>
+                <h3>Music Recommendation Systems</h3>
+                <p>Studying how the Music Genome Project revolutionized music discovery through detailed attribute analysis. Exploring ways to combine audio features, emotional context, and listener behavior for more nuanced recommendations.</p>
             </div>
-
-            <div class="research-card">
+            <div class="focus-card">
+                <div class="focus-icon">🔍</div>
                 <h3>Audio Feature Analysis</h3>
-                <p>Developing sophisticated algorithms to extract and analyze musical features like tempo, key, mood, and instrumentation. This technical foundation enables deeper insights into musical patterns and evolution.</p>
-                <a href="#" class="read-more">Learn More</a>
+                <p>Investigating how musical elements like tempo, timbre, and spectral features can be used to understand artistic evolution and genre characteristics. Using machine learning to uncover patterns in musical style.</p>
             </div>
-
-            <div class="research-card">
+            <div class="focus-card">
+                <div class="focus-icon">🧠</div>
                 <h3>Music Perception</h3>
-                <p>Investigating how listeners perceive and emotionally connect with different musical elements. This research combines technical analysis with human experience to create more meaningful music recommendations.</p>
-                <a href="#" class="read-more">Explore</a>
+                <p>Researching how listeners perceive and emotionally connect with different musical elements. Studying the relationship between audio features and emotional response.</p>
             </div>
         </div>
 
-        <section class="methodology">
-            <h2>Research Methodology</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Data Collection</h3>
-                    <p>Gathering comprehensive audio datasets and metadata across different musical eras and genres</p>
-                </div>
+        <div class="case-study">
+            <h2>Case Study: Taylor Swift Era Analysis</h2>
+            <p>A deep dive into how audio features define different periods in an artist's evolution, using Taylor Swift's discography as a test case for audio analysis tools and techniques.</p>
 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Feature Extraction</h3>
-                    <p>Analyzing audio signals to extract meaningful musical characteristics and patterns</p>
-                </div>
+            <div class="visualization">
+                <h3>Feature Importance Analysis</h3>
+                <img src="../images/top_feature.png" alt="Top Feature Importances Visualization">
+                <p>Analysis revealed that energy levels and spectral characteristics are the most distinctive features across albums, demonstrating clear sonic evolution between eras.</p>
+            </div>
 
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Pattern Analysis</h3>
-                    <p>Using machine learning to identify trends and evolution in musical style</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Key Findings</h3>
+                    <ul>
+                        <li>Distinct spectral patterns between country and pop eras</li>
+                        <li>Evolution in production complexity over time</li>
+                        <li>Clear temporal boundaries between musical eras</li>
+                    </ul>
                 </div>
-
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Insight Generation</h3>
-                    <p>Synthesizing technical analysis with musical theory and listener experience</p>
+                <div class="feature-card">
+                    <h3>Tools Used</h3>
+                    <ul>
+                        <li>OpenL3 for audio embeddings</li>
+                        <li>librosa for feature extraction</li>
+                        <li>RandomForest for era classification</li>
+                    </ul>
                 </div>
             </div>
-        </section>
 
-        <section class="publications">
-            <div class="publication-card">
-                <h3>What Defines a Taylor Swift Era?</h3>
-                <p>A deep dive into the musical evolution of Taylor Swift through the lens of audio feature analysis. This two-part series explores how production techniques, songwriting patterns, and sonic characteristics define distinct eras in an artist's discography.</p>
-                <div class="publication-links">
-                    <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read Part I</a>
-                    <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era-pt" class="read-more">Read Part II</a>
+            <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read Full Analysis →</a>
+        </div>
+
+        <div class="research-progress">
+            <h2>Current Research</h2>
+            <div class="progress-timeline">
+                <div class="timeline-item">
+                    <h3>Music Genome Project Study</h3>
+                    <p>Analyzing the effectiveness of different attribute frameworks for music classification and recommendation. Exploring how detailed musical analysis can improve recommendation accuracy.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Feature Extraction Pipeline</h3>
+                    <p>Developing robust tools for extracting and analyzing musical features from audio files. Testing different approaches to capture both technical and perceptual characteristics.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Recommendation Algorithm Development</h3>
+                    <p>Working on new approaches to combine audio features with contextual information for more personalized music recommendations.</p>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <script>
-        document.addEventListener('scroll', () => {
-            const cards = document.querySelectorAll('.research-card');
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                if (cardTop < window.innerHeight * 0.8) {
-                    card.style.transform = 'translateY(0)';
-                    card.style.opacity = '1';
-                }
-            });
-        });
-    </script>
-    <button id="scrollToTop" title="Go to top">↑</button>
-
-    <script>
-        // Get the button
-        const scrollToTopBtn = document.getElementById("scrollToTop");
-
-        // Show the button when scrolled down 100px
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                scrollToTopBtn.classList.add("show");
-            } else {
-                scrollToTopBtn.classList.remove("show");
-            }
-        });
-
-        // Scroll to top when button is clicked
-        scrollToTopBtn.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+        </div>
+    </section>
+    <script src="../js/easter-eggs.js"></script>
 </body>
 </html>

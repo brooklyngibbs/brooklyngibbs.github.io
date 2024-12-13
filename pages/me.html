@@ -5,30 +5,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brooklyn Gibbs - About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/me.css">
+    <style>
+        :root {
+            --primary: #ff8c69;        /* Soft coral */
+            --secondary: #98c1a2;      /* Sage green */
+            --background: #fff9f5;     /* Warm white */
+            --text: #2c3e50;           /* Deep blue-grey */
+            --card-bg: #ffffff;
+            --accent: #ffd3b6;         /* Light coral */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(152, 193, 162, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            padding: 3rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: block;
+            border: 3px solid white;
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.15);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .main-content {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 6rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .tech-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .tech-list {
+            list-style: none;
+        }
+
+        .tech-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .tech-list li::before {
+            content: '→';
+            margin-right: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .interest-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .interest-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .connect {
+            text-align: center;
+            padding: 4rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+            border-radius: 12px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            color: var(--text);
+            background: var(--card-bg);
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(255, 140, 105, 0.1);
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <div class="nav-wrapper">
-            <a href="../index.html" class="logo">Brooklyn Gibbs</a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="me.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+        <a href="../index.html" class="logo">Brooklyn Gibbs</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-        <div class="floating-icons" id="floatingIcons"></div>
-
+    <section class="hero">
         <div class="hero-content">
             <img src="../images/me.jpg" alt="Brooklyn Gibbs" class="profile-img">
             <h1>Hi, I'm Brooklyn</h1>
             <p class="tagline">Crafting digital experiences where music meets code</p>
             <p>Creative technologist passionate about building tools that help people discover and experience music in new ways</p>
         </div>
-
-        <div class="scroll-indicator">↓</div>
-    </header>
+    </section>
 
     <main class="main-content">
         <section class="section" id="about">
@@ -104,36 +355,6 @@
     </main>
 
     <script>
-        // Create floating icons
-        const icons = ['🎵', '🎨', '🎧', '📱', '✨', '💻', '🎮'];
-        const iconContainer = document.getElementById('floatingIcons');
-
-        for (let i = 0; i < 15; i++) {
-            const icon = document.createElement('div');
-            icon.className = 'floating-icon';
-            icon.textContent = icons[Math.floor(Math.random() * icons.length)];
-
-            const randomX = Math.random() * 100;
-            const randomY = Math.random() * 100;
-            const randomDuration = 15 + Math.random() * 10;
-
-            icon.style.left = `${randomX}%`;
-            icon.style.top = `${randomY}%`;
-            icon.style.setProperty('--translateX', `${-50 + Math.random() * 100}px`);
-            icon.style.setProperty('--translateY', `${-50 + Math.random() * 100}px`);
-            icon.style.animationDuration = `${randomDuration}s`;
-
-            iconContainer.appendChild(icon);
-        }
-
-        // Scroll animation
-        document.querySelector('.scroll-indicator').addEventListener('click', () => {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-
         // Reveal sections on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -147,5 +368,6 @@
             observer.observe(section);
         });
     </script>
+    <script src="../js/easter-eggs.js"></script>
 </body>
 </html>

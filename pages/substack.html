@@ -4,130 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byte-sized Beats - Brooklyn Gibbs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/substack.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff8c69;        /* Soft coral */
+            --secondary: #98c1a2;      /* Sage green */
+            --background: #fff9f5;     /* Warm white */
+            --text: #2c3e50;           /* Deep blue-grey */
+            --card-bg: #ffffff;
+            --accent: #ffd3b6;         /* Light coral */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(152, 193, 162, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--primary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .highlights {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .highlight-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .highlight-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .featured-posts {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+        }
+
+        .featured-posts h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--text);
+        }
+
+        .posts-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .post-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .post-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--text);
+        }
+
+        .subscribe-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: var(--card-bg);
+        }
+
+        .subscribe-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .subscribe-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 140, 105, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
-<header>
-    <div class="nav-wrapper">
+<body>
+    <header class="header">
         <a href="../index.html" class="logo">Brooklyn Gibbs</a>
         <nav>
             <a href="../index.html">Home</a>
             <a href="me.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </div>
-</header>
-<body>
-    <div class="container">
-        <section class="hero">
-            <h1>Byte-sized Beats</h1>
-            <p>Newsletter exploring music through perception and personal experience</p>
-        </section>
+    </header>
 
-        <section class="highlights">
-            <div class="highlight-card">
-                <h3>
-                    <span class="icon">✨</span>
-                    Synesthetic Exploration
-                </h3>
-                <p>Discover how we experience music through colors, emotions, and personal narratives</p>
-            </div>
-            <div class="highlight-card">
-                <h3>
-                    <span class="icon">📈</span>
-                    Music Recommendation
-                </h3>
-                <p>Understanding musical recommendations through sensory and emotional frameworks</p>
-            </div>
-            <div class="highlight-card">
-                <h3>
-                    <span class="icon">🎵</span>
-                    Audio Research
-                </h3>
-                <p>Deep dives into music analysis and audio feature exploration</p>
-            </div>
-        </section>
+    <section class="hero">
+        <h1>Byte-sized Beats</h1>
+        <p>Exploring music through perception and personal experience</p>
+    </section>
 
-        <section class="featured-posts">
-            <h2>Featured Writing</h2>
-            <div class="posts-grid">
-                <article class="post-card">
-                    <h3>What Defines a Taylor Swift Era</h3>
-                    <p>An in-depth exploration of musical evolution through audio feature analysis, examining how Taylor Swift's sound has transformed across her discography.</p>
-                    <div class="post-meta">
-                        <span>Part I • 12 min read</span>
-                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read More</a>
-                    </div>
-                </article>
+    <section class="highlights">
+        <div class="highlight-card">
+            <h3><span class="icon">✨</span>Synesthetic Exploration</h3>
+            <p>Discover how we experience music through colors, emotions, and personal narratives</p>
+        </div>
+        <div class="highlight-card">
+            <h3><span class="icon">📈</span>Music Recommendation</h3>
+            <p>Understanding musical recommendations through sensory and emotional frameworks</p>
+        </div>
+        <div class="highlight-card">
+            <h3><span class="icon">🎵</span>Audio Research</h3>
+            <p>Deep dives into music analysis and audio feature exploration</p>
+        </div>
+    </section>
 
-                <article class="post-card">
-                    <h3>Taylor Swift Era Analysis</h3>
-                    <p>Continuing our deep dive into the musical characteristics that define each era, with detailed breakdowns of audio features and production techniques.</p>
-                    <div class="post-meta">
-                        <span>Part II • 15 min read</span>
-                        <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era-pt" class="read-more">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <section class="featured-posts">
+        <h2>Featured Writing</h2>
+        <div class="posts-grid">
+            <article class="post-card">
+                <h3>What Defines a Taylor Swift Era</h3>
+                <p>An in-depth exploration of musical evolution through audio feature analysis, examining how Taylor Swift's sound has transformed across her discography.</p>
+                <div class="post-meta">
+                    <span>Part I • 12 min read</span>
+                    <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="read-more">Read More →</a>
+                </div>
+            </article>
 
-        <section class="subscribe-section">
-            <h2>Join the Journey</h2>
-            <p>Get weekly insights on music, technology, and perception</p>
-            <a href="https://brooklyngibbs.substack.com/subscribe" class="subscribe-btn">Subscribe Now</a>
-        </section>
-    </div>
+            <article class="post-card">
+                <h3>Taylor Swift Era Analysis</h3>
+                <p>Continuing our deep dive into the musical characteristics that define each era, with detailed breakdowns of audio features and production techniques.</p>
+                <div class="post-meta">
+                    <span>Part II • 15 min read</span>
+                    <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era-pt" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
-    <script>
-        // Add intersection observer for scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        // Observe all cards and sections
-        document.querySelectorAll('.highlight-card, .post-card, .subscribe-section').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-
-        // Add hover effect to highlight cards
-        document.querySelectorAll('.highlight-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
-    </script>
-    <button id="scrollToTop" title="Go to top">↑</button>
-
-    <script>
-        // Get the button
-        const scrollToTopBtn = document.getElementById("scrollToTop");
-
-        // Show the button when scrolled down 100px
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                scrollToTopBtn.classList.add("show");
-            } else {
-                scrollToTopBtn.classList.remove("show");
-            }
-        });
-
-        // Scroll to top when button is clicked
-        scrollToTopBtn.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+    <section class="subscribe-section">
+        <h2>Join the Journey</h2>
+        <p>Get weekly insights on music, technology, and perception</p>
+        <a href="https://brooklyngibbs.substack.com/subscribe" class="subscribe-btn">Subscribe Now</a>
+    </section>
+    <script src="../js/easter-eggs.js"></script>
 </body>
 </html>

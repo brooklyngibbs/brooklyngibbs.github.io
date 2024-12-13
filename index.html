@@ -3,115 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brooklyn Gibbs - Portfolio</title>
+    <title>Brooklyn Gibbs - Music & Tech Explorer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #ff8c69;        /* Soft coral */
+            --secondary: #98c1a2;      /* Sage green */
+            --background: #fff9f5;     /* Warm white */
+            --text: #2c3e50;           /* Deep blue-grey */
+            --card-bg: #ffffff;
+            --accent: #ffd3b6;         /* Light coral */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(152, 193, 162, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            z-index: 2;
+            padding: 3rem;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards 0.7s;
+            color: var(--primary);
+        }
+
+        .interests {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+            flex-wrap: wrap;
+        }
+
+        .interest-tag {
+            background: var(--card-bg);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+            color: var(--text);
+        }
+
+        .interest-tag:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(255, 140, 105, 0.1);
+        }
+
+        .projects {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            border: 1px solid rgba(152, 193, 162, 0.3);
+        }
+
+        .project-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .project-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .project-description {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .project-link {
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            gap: 0.75rem;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .interests {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
 </head>
-<header class="header-head">
-    <div class="nav-wrapper-head">
-        <a href="index.html" class="logo-head">Brooklyn Gibbs</a>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Brooklyn Gibbs</a>
         <nav>
             <a href="index.html">Home</a>
             <a href="pages/me.html">About</a>
             <a href="pages/contact.html">Contact</a>
         </nav>
-    </div>
-</header>
-<body>
-    <div class="container">
-        <header>
-            <h1>Brooklyn Gibbs</h1>
-            <p class="tagline">exploring the intersection of music, tech, and memory</p>
-        </header>
+    </header>
 
-        <main class="projects-grid">
-            <a href="pages/aurify.html" class="project-card">
-                <div class="card-content">
-                    <div class="card-icon">🎵</div>
-                    <h2 class="card-title">Aurify</h2>
-                    <p class="card-description">Transform your photos into personalized Spotify playlists using AI</p>
-                    <div class="tags">
-                        <span class="tag">iOS App</span>
-                        <span class="tag">AI</span>
-                        <span class="tag">Music</span>
-                    </div>
-                    <span class="view-project">View Project →</span>
-                </div>
-            </a>
-
-            <a href="pages/audio_research.html" class="project-card">
-                <div class="card-content">
-                    <div class="card-icon">🧠</div>
-                    <h2 class="card-title">Audio Research</h2>
-                    <p class="card-description">Exploring musical evolution through audio feature analysis</p>
-                    <div class="tags">
-                        <span class="tag">Research</span>
-                        <span class="tag">Data Analysis</span>
-                        <span class="tag">Music</span>
-                    </div>
-                    <span class="view-project">View Project →</span>
-                </div>
-            </a>
-
-            <a href="pages/substack.html" class="project-card">
-                <div class="card-content">
-                    <div class="card-icon">✨</div>
-                    <h2 class="card-title">Byte-sized Beats</h2>
-                    <p class="card-description">Newsletter exploring music through perception and experience</p>
-                    <div class="tags">
-                        <span class="tag">Writing</span>
-                        <span class="tag">Music</span>
-                        <span class="tag">Analysis</span>
-                    </div>
-                    <span class="view-project">View Project →</span>
-                </div>
-            </a>
-
-            <a href="pages/me.html" class="project-card">
-                <div class="card-content">
-                    <div class="card-icon">👩‍💻</div>
-                    <h2 class="card-title">About Me</h2>
-                    <p class="card-description">Learn more about my journey and passion for music tech</p>
-                    <div class="tags">
-                        <span class="tag">Personal</span>
-                        <span class="tag">Background</span>
-                        <span class="tag">Skills</span>
-                    </div>
-                    <span class="view-project">View Project →</span>
-                </div>
-            </a>
-        </main>
-
-        <footer>
-            <p>Let's create something extraordinary together</p>
-            <div class="social-links">
-                <a href="pages/contact.html">Get in Touch</a>
-                <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/">LinkedIn</a>
-                <a href="https://github.com/brooklyngibbs">GitHub</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Brooklyn</h1>
+            <p>Weaving code and creativity to build musical experiences</p>
+            <div class="interests">
+                <span class="interest-tag">🎵 Music Tech</span>
+                <span class="interest-tag">💻 Software Engineering</span>
+                <span class="interest-tag">👾 Nostalgia</span>
+                <span class="interest-tag">✍️ Creativity</span>
+                <span class="interest-tag">🔬️ Research</span>
+                <span class="interest-tag">🤝️ Community</span>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-icon">📱</div>
+                    <h3 class="project-title">Aurify</h3>
+                    <p class="project-description">Turn your photos into musical memories with AI-powered playlist generation</p>
+                    <a href="pages/aurify.html" class="project-link">Explore App →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-icon">🔍</div>
+                    <h3 class="project-title">Audio Research</h3>
+                    <p class="project-description">Deep diving into musical patterns and audio feature analysis</p>
+                    <a href="pages/audio_research.html" class="project-link">View Research →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-icon">✍️</div>
+                    <h3 class="project-title">Byte-sized Beats</h3>
+                    <p class="project-description">Newsletter exploring music through the lens of perception</p>
+                    <a href="pages/substack.html" class="project-link">Read Newsletter →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
-        // Animate cards on scroll
-        const cards = document.querySelectorAll('.project-card');
-
-        const observerOptions = {
-            threshold: 0.2
-        };
-
+        // Reveal projects on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
+                    entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        cards.forEach(card => {
-            observer.observe(card);
+        document.querySelectorAll('.project-card').forEach((card, index) => {
+            setTimeout(() => {
+                observer.observe(card);
+            }, index * 200);
         });
     </script>
-
+    <script src="js/easter-eggs.js"></script>
 </body>
 </html>

@@ -3,95 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Brooklyn Gibbs</title>
+    <title>Contact - Brooklyn Gibbs</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/contact.css">
+    <style>
+        :root {
+            --primary: #ff8c69;        /* Soft coral */
+            --secondary: #98c1a2;      /* Sage green */
+            --background: #fff9f5;     /* Warm white */
+            --text: #2c3e50;           /* Deep blue-grey */
+            --card-bg: #ffffff;
+            --accent: #ffd3b6;         /* Light coral */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(255, 249, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(152, 193, 162, 0.2);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, rgba(255, 140, 105, 0.05), rgba(152, 193, 162, 0.05));
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards 0.7s;
+        }
+
+        .contact-form {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-form:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            border-radius: 6px;
+            background: var(--background);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 140, 105, 0.1);
+        }
+
+        .submit-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 140, 105, 0.2);
+        }
+
+        .contact-info {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(152, 193, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(255, 140, 105, 0.1);
+            border-color: var(--primary);
+        }
+
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+
+        .contact-method h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-method a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-method a:hover {
+            color: var(--primary);
+        }
+
+        .success-message {
+            display: none;
+            background: var(--secondary);
+            color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="nav-wrapper">
-            <a href="../index.html" class="logo">Brooklyn Gibbs</a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="me.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+    <header class="header">
+        <a href="../index.html" class="logo">Brooklyn Gibbs</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="me.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <main class="container">
-        <h1>Let's Connect</h1>
-        <p class="tagline">where music meets technology, ideas become reality</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Let's Connect</h1>
+            <p>where music meets technology, ideas become reality</p>
+        </div>
+    </section>
 
-        <section class="contact-section">
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-
-                <div class="success-message" id="successMessage">
-                    <h3>Thanks for reaching out! 🎵</h3>
-                    <p>I'll get back to you soon.</p>
-                </div>
-            </form>
-
-            <div class="contact-info">
-                <div class="contact-methods">
-                    <h2>Other Ways to Connect</h2>
-                    <div class="contact-method">
-                        <h3>Email</h3>
-                        <p>brooklyngibbs22@gmail.com</p>
-                    </div>
-                    <div class="contact-method">
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" target="_blank">Connect on LinkedIn</a>
-                    </div>
-                    <div class="contact-method">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/brooklyngibbs" target="_blank">Follow on GitHub</a>
-                    </div>
-                    <div class="contact-method">
-                        <h3>Newsletter</h3>
-                        <a href="https://brooklyngibbs.substack.com/" target="_blank">Read Byte-sized Beats</a>
-                    </div>
-                </div>
+    <section class="contact-section">
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
-    </main>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+
+            <div class="success-message" id="successMessage">
+                <h3>Thanks for reaching out! 🎵</h3>
+                <p>I'll get back to you soon.</p>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <div class="contact-method">
+                <h3>Email</h3>
+                <p>brooklyngibbs22@gmail.com</p>
+            </div>
+            <div class="contact-method">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" target="_blank">Connect on LinkedIn</a>
+            </div>
+            <div class="contact-method">
+                <h3>GitHub</h3>
+                <a href="https://github.com/brooklyngibbs" target="_blank">Follow on GitHub</a>
+            </div>
+            <div class="contact-method">
+                <h3>Newsletter</h3>
+                <a href="https://brooklyngibbs.substack.com/" target="_blank">Read Byte-sized Beats</a>
+            </div>
+        </div>
+    </section>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-
-            // Create floating musical notes effect
-            const notes = ['♪', '♫', '🎵', '🎶'];
-            for (let i = 0; i < 5; i++) {
-                const note = document.createElement('div');
-                note.className = 'musical-note';
-                note.textContent = notes[Math.floor(Math.random() * notes.length)];
-                note.style.left = `${Math.random() * 100}%`;
-                note.style.top = '50%';
-                document.body.appendChild(note);
-
-                // Remove note after animation
-                setTimeout(() => {
-                    note.remove();
-                }, 2000);
-            }
 
             const form = e.target;
             const formData = new FormData(form);
@@ -117,17 +346,18 @@
             });
         });
 
-        // Add subtle interaction to form inputs
+        // Add subtle animation to form inputs
         const inputs = document.querySelectorAll('input, textarea');
         inputs.forEach(input => {
             input.addEventListener('focus', () => {
-                input.parentElement.style.transform = 'translateX(5px)';
+                input.closest('.form-group').style.transform = 'translateX(5px)';
             });
 
             input.addEventListener('blur', () => {
-                input.parentElement.style.transform = 'translateX(0)';
+                input.closest('.form-group').style.transform = 'translateX(0)';
             });
         });
     </script>
+    <script src="../js/easter-eggs.js"></script>
 </body>
 </html>
