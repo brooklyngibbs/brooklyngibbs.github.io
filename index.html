@@ -5,214 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brooklyn Gibbs - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3c342c;
-            --secondary-color: #48342c;
-            --background-color: #f4f4f4;
-            --accent-red: #D34E4E;
-            --accent-yellow: #E9B872;
-            --accent-blue: #4A6D7C;
-            --text-color: #2C3E50;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--background-color);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            padding: 1rem 0;
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 5%;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            margin-left: 1.5rem;
-            font-weight: 500;
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--accent-blue);
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--accent-blue);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin-top: 50px;
-        }
-
-        .container {
-            max-width: 1200px;
-            width: 90%;
-            padding: 2rem;
-            margin: 0 auto;
-        }
-
-        .content {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .content h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: var(--text-color);
-            position: relative;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 250px;
-            background: #f8f8f8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover .card-image img {
-            transform: scale(1.1);
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tag {
-            background-color: var(--accent-blue);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        @media (max-width: 768px) {
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        #scrollToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--accent-yellow);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5rem;
-            text-align: center;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s;
-            z-index: 100;
-        }
-
-        #scrollToTop:hover {
-            background-color: var(--accent-blue);
-        }
-
-        /* Make the button visible when needed */
-        #scrollToTop.show {
-            opacity: 1;
-            visibility: visible;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <div class="nav-wrapper">
-        <a href="index.html" class="logo">Brooklyn Gibbs</a>
+<header class="header-head">
+    <div class="nav-wrapper-head">
+        <a href="index.html" class="logo-head">Brooklyn Gibbs</a>
         <nav>
             <a href="index.html">Home</a>
             <a href="pages/me.html">About</a>
@@ -221,93 +18,100 @@
     </div>
 </header>
 <body>
-    <main class="container">
-        <div class="content">
+    <div class="container">
+        <header>
             <h1>Brooklyn Gibbs</h1>
-            <p class="bio">exploring the intersection of music, tech, and memory</p>
-        </div>
+            <p class="tagline">exploring the intersection of music, tech, and memory</p>
+        </header>
 
-        <div class="project-grid">
+        <main class="projects-grid">
             <a href="pages/aurify.html" class="project-card">
-                <div class="card-image">
-                    <img src="images/recordplayer.svg" alt="Record Player Project">
-                </div>
                 <div class="card-content">
+                    <div class="card-icon">🎵</div>
                     <h2 class="card-title">Aurify</h2>
-                    <p>Transform your photos into personalized Spotify playlists using AI.</p>
+                    <p class="card-description">Transform your photos into personalized Spotify playlists using AI</p>
                     <div class="tags">
                         <span class="tag">iOS App</span>
                         <span class="tag">AI</span>
                         <span class="tag">Music</span>
                     </div>
+                    <span class="view-project">View Project →</span>
                 </div>
             </a>
 
             <a href="pages/audio_research.html" class="project-card">
-                <div class="card-image">
-                    <img src="images/record.svg" alt="Vinyl Record Project">
-                </div>
                 <div class="card-content">
+                    <div class="card-icon">🧠</div>
                     <h2 class="card-title">Audio Research</h2>
-                    <p>Exploring musical evolution through audio feature analysis.</p>
+                    <p class="card-description">Exploring musical evolution through audio feature analysis</p>
                     <div class="tags">
                         <span class="tag">Research</span>
                         <span class="tag">Data Analysis</span>
                         <span class="tag">Music</span>
                     </div>
+                    <span class="view-project">View Project →</span>
                 </div>
             </a>
 
             <a href="pages/substack.html" class="project-card">
-                <div class="card-image">
-                    <img src="images/book.svg" alt="Book Project">
-                </div>
                 <div class="card-content">
+                    <div class="card-icon">✨</div>
                     <h2 class="card-title">Byte-sized Beats</h2>
-                    <p>Newsletter exploring music through perception and experience.</p>
+                    <p class="card-description">Newsletter exploring music through perception and experience</p>
                     <div class="tags">
                         <span class="tag">Writing</span>
                         <span class="tag">Music</span>
                         <span class="tag">Analysis</span>
                     </div>
+                    <span class="view-project">View Project →</span>
                 </div>
             </a>
 
             <a href="pages/me.html" class="project-card">
-                <div class="card-image">
-                    <img src="images/heart.svg" alt="Heart Project">
-                </div>
                 <div class="card-content">
+                    <div class="card-icon">👩‍💻</div>
                     <h2 class="card-title">About Me</h2>
-                    <p>Learn more about my journey and passion for music tech.</p>
+                    <p class="card-description">Learn more about my journey and passion for music tech</p>
                     <div class="tags">
                         <span class="tag">Personal</span>
                         <span class="tag">Background</span>
                         <span class="tag">Skills</span>
                     </div>
+                    <span class="view-project">View Project →</span>
                 </div>
             </a>
-        </div>
-        <button id="scrollToTop" title="Go to top">↑</button>
+        </main>
 
-        <script>
-            // Get the button
-            const scrollToTopBtn = document.getElementById("scrollToTop");
+        <footer>
+            <p>Let's create something extraordinary together</p>
+            <div class="social-links">
+                <a href="pages/contact.html">Get in Touch</a>
+                <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/">LinkedIn</a>
+                <a href="https://github.com/brooklyngibbs">GitHub</a>
+            </div>
+        </footer>
+    </div>
 
-            // Show the button when scrolled down 100px
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 100) {
-                    scrollToTopBtn.classList.add("show");
-                } else {
-                    scrollToTopBtn.classList.remove("show");
+    <script>
+        // Animate cards on scroll
+        const cards = document.querySelectorAll('.project-card');
+
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
                 }
             });
+        }, observerOptions);
 
-            // Scroll to top when button is clicked
-            scrollToTopBtn.addEventListener("click", () => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-        </script>
-    </main>
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
 </body>
 </html>

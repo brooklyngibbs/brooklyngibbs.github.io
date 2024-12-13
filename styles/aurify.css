@@ -194,6 +194,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 header {
     position: fixed;
     top: 0;

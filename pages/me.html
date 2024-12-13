@@ -6,11 +6,9 @@
     <title>Brooklyn Gibbs - About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/me.css">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="nav-wrapper">
             <a href="../index.html" class="logo">Brooklyn Gibbs</a>
             <nav>
@@ -19,251 +17,135 @@
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
+
+        <div class="floating-icons" id="floatingIcons"></div>
+
+        <div class="hero-content">
+            <img src="../images/me.jpg" alt="Brooklyn Gibbs" class="profile-img">
+            <h1>Hi, I'm Brooklyn</h1>
+            <p class="tagline">Crafting digital experiences where music meets code</p>
+            <p>Creative technologist passionate about building tools that help people discover and experience music in new ways</p>
+        </div>
+
+        <div class="scroll-indicator">↓</div>
     </header>
 
-    <main class="container">
-        <div class="audio_content">
-            <h1 class="">About Me</h1>
-            <p class="tagline">crafting stories where sound meets memory</p>
+    <main class="main-content">
+        <section class="section" id="about">
+            <h2 class="section-title">My Story</h2>
+            <p>I'm a 24-year-old software engineer with a unique perspective on the intersection of technology and music. My journey began with computer science at Indiana University, but my true passion emerged when I started exploring how technology could transform the way we experience and connect with music.</p>
+            <p>Now, I spend my days building innovative tools that bridge the gap between visual memories and musical experiences, analyzing audio patterns, and writing about the fascinating ways technology shapes our relationship with sound.</p>
+        </section>
 
-            <section class="quick-facts-section">
-                <h2>Quick Facts</h2>
-                <div class="facts-grid">
-                    <div class="fact-card">
-                        <span class="fact-icon">🎓</span>
-                        <h3>Education</h3>
-                        <p>BS in Computer Science</p>
-                        <p>Indiana University</p>
-                    </div>
-                    <div class="fact-card">
-                        <span class="fact-icon">💼</span>
-                        <h3>Experience</h3>
-                        <p>Software Engineer</p>
-                        <p>Capital One</p>
-                    </div>
-                    <div class="fact-card">
-                        <span class="fact-icon">🌟</span>
-                        <h3>Specialties</h3>
-                        <p>Music Tech & ML</p>
-                    </div>
-                    <div class="fact-card">
-                        <span class="fact-icon">📍</span>
-                        <h3>Location</h3>
-                        <p>Chicago, IL</p>
-                    </div>
+        <section class="section" id="skills">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-card">
+                    <h3>Core Development</h3>
+                    <ul class="tech-list">
+                        <li>Python & Data Analysis</li>
+                        <li>JavaScript/React</li>
+                        <li>Swift/SwiftUI</li>
+                        <li>AWS Services</li>
+                    </ul>
                 </div>
-            </section>
+                <div class="tech-card">
+                    <h3>Music Tech</h3>
+                    <ul class="tech-list">
+                        <li>Audio Processing</li>
+                        <li>Spotify API Integration</li>
+                        <li>Music Feature Analysis</li>
+                        <li>AI/ML Applications</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Data & Cloud</h3>
+                    <ul class="tech-list">
+                        <li>Snowflake</li>
+                        <li>Databricks</li>
+                        <li>Apache Spark</li>
+                        <li>Google Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <section class="personal-intro">
-                <div class="profile-section">
-                    <div class="profile-wrapper">
-                        <img src="../images/me.jpg" alt="Brooklyn Gibbs" class="profile-image">
-                        <div class="social-overlay">
-                            <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" target="_blank" class="social-link">LinkedIn</a>
-                            <a href="https://github.com/brooklyngibbs" target="_blank" class="social-link">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="personal-details">
-                        <h2>Brooklyn Gibbs</h2>
-                        <p>Creative Technologist | Music Enthusiast | Nostalgia Curator</p>
-                    </div>
+        <section class="section" id="interests">
+            <h2 class="section-title">Beyond Code</h2>
+            <div class="interests">
+                <div class="interest-card">
+                    <div class="interest-icon">🎵</div>
+                    <h3>Music Production</h3>
+                    <p>Exploring sound design in Ableton Live and creating unique sonic landscapes</p>
                 </div>
+                <div class="interest-card">
+                    <div class="interest-icon">📚</div>
+                    <h3>Learning & Writing</h3>
+                    <p>Sharing insights about music tech and perception through my newsletter</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Enjoying cozy Nintendo Switch games that blend storytelling and exploration</p>
+                </div>
+            </div>
+        </section>
 
-                <div class="bio-narrative">
-                    <p>Hi, I'm Brooklyn—a 24-year-old creative spirit who thrives on exploring the intersection of music, technology, and human connection. I'm endlessly curious about how songs shape memories and how we can use technology to bring those stories to life in unique, meaningful ways.</p>
-                    <p>With a passion for music recommendations, machine learning, and storytelling, my work often feels like crafting a digital mixtape—combining emotion, data, and a touch of whimsy.</p>
-                </div>
-            </section>
-
-            <section class="skills-section">
-                <h2>Technical Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Core Technologies</h3>
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript/React</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Swift/SwiftUI</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Cloud & Data</h3>
-                        <div class="skill-item">
-                            <span>AWS Services</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Snowflake</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Databricks</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Machine Learning</h3>
-                        <div class="skill-item">
-                            <span>Data Analysis</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Audio Processing</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Feature Engineering</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-showcase">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Aurify</h3>
-                            <p>iOS app that generates Spotify playlists from photos using AI</p>
-                            <div class="project-tech">
-                                <span>Swift</span>
-                                <span>OpenAI</span>
-                                <span>Spotify API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://www.aurifyapp.com/" class="project-link">Website</a>
-                                <a href="https://apps.apple.com/us/app/aurify/id6475698055" class="project-link">App Store</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Music Era Analysis</h3>
-                            <p>Research on musical evolution through audio feature analysis</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Data Analysis</span>
-                                <span>Machine Learning</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://brooklyngibbs.substack.com/p/what-defines-a-taylor-swift-era" class="project-link">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="interests-section">
-                <h2>Beyond the Code</h2>
-                <div class="interests-grid">
-                    <div class="interest-card">
-                        <h3>🎵 Music Production</h3>
-                        <p>Experimenting with sound design in Ableton Live and exploring new ways to shape sounds</p>
-                    </div>
-                    <div class="interest-card">
-                        <h3>📚 Reading</h3>
-                        <p>Diving into music theory, technology books, and discovering new perspectives in local Chicago bookstores</p>
-                    </div>
-                    <div class="interest-card gaming-interests">
-                        <h3>🎮 Gaming</h3>
-                        <p>Enjoying cozy Nintendo Switch games that blend storytelling and exploration</p>
-                        <ul>
-                            <li>Animal Crossing</li>
-                            <li>Dave the Diver</li>
-                            <li>Overcooked</li>
-                            <li>Stray</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta-section">
-                <h2>Let's Connect</h2>
-                <p>Interested in discussing music technology, AI, or potential collaborations?</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="cta-button primary">Get in Touch</a>
-                    <a href="../resume.pdf" target="_blank" class="cta-button secondary">View Resume</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/brooklyngibbs" class="social-link">GitHub</a>
-                    <a href="https://brooklyngibbs.substack.com/" class="social-link">Substack</a>
-                </div>
-            </section>
-        </div>
+        <section class="section connect">
+            <h2 class="section-title">Let's Create Something Amazing</h2>
+            <p>Whether you're interested in music tech, AI, or just want to chat about creative coding, I'd love to connect!</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/brooklyn-gibbs-6672b0170/" class="social-link">LinkedIn</a>
+                <a href="https://github.com/brooklyngibbs" class="social-link">GitHub</a>
+                <a href="https://brooklyngibbs.substack.com/" class="social-link">Newsletter</a>
+                <a href="contact.html" class="social-link">Get in Touch</a>
+            </div>
+        </section>
     </main>
 
-    <button id="scrollToTop" title="Go to top">↑</button>
-
     <script>
-        // Get the button
-        const scrollToTopBtn = document.getElementById("scrollToTop");
+        // Create floating icons
+        const icons = ['🎵', '🎨', '🎧', '📱', '✨', '💻', '🎮'];
+        const iconContainer = document.getElementById('floatingIcons');
 
-        // Show the button when scrolled down 100px
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                scrollToTopBtn.classList.add("show");
-            } else {
-                scrollToTopBtn.classList.remove("show");
-            }
-        });
+        for (let i = 0; i < 15; i++) {
+            const icon = document.createElement('div');
+            icon.className = 'floating-icon';
+            icon.textContent = icons[Math.floor(Math.random() * icons.length)];
 
-        // Scroll to top when button is clicked
-        scrollToTopBtn.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+            const randomX = Math.random() * 100;
+            const randomY = Math.random() * 100;
+            const randomDuration = 15 + Math.random() * 10;
 
-    function animateProgressBars() {
-        const progressBars = document.querySelectorAll('.progress');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                const targetWidth = entry.target.getAttribute('data-width');
-                if (entry.isIntersecting) {
-                    entry.target.style.width = targetWidth;
-                } else {
-                    entry.target.style.width = '0%';
-                }
+            icon.style.left = `${randomX}%`;
+            icon.style.top = `${randomY}%`;
+            icon.style.setProperty('--translateX', `${-50 + Math.random() * 100}px`);
+            icon.style.setProperty('--translateY', `${-50 + Math.random() * 100}px`);
+            icon.style.animationDuration = `${randomDuration}s`;
+
+            iconContainer.appendChild(icon);
+        }
+
+        // Scroll animation
+        document.querySelector('.scroll-indicator').addEventListener('click', () => {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
             });
         });
 
-        progressBars.forEach(bar => {
-            const targetWidth = bar.style.width; // Store initial width
-            bar.setAttribute('data-width', targetWidth); // Save as data attribute
-            bar.style.width = '0%'; // Reset to 0 initially
-            observer.observe(bar);
-        });
-    }
+        // Reveal sections on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
 
-    // Initialize animations
-    document.addEventListener('DOMContentLoaded', () => {
-        animateProgressBars();
-    });
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
     </script>
 </body>
 </html>
