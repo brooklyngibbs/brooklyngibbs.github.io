@@ -1,0 +1,307 @@
+/* ---------- Tokens ---------- */
+
+:root {
+  /* shell palette — clean white, matches the offline-crush case study */
+  --bg: #ffffff;
+  --fg: #131316;
+  --muted: #6a6c6e;
+  --rule: rgba(19, 19, 22, 0.12);
+
+  /* brand tokens — see CLAUDE.md for canonical reference */
+  --offline-pink: #f92e80;
+  --offline-blue: #1f26ce;
+  --whimbitz-green: #d4ff00;
+  --tiktok-mag: #ff2d55; /* placeholder — TBD when TikTok case study takes shape */
+
+  /* type */
+  --font-pixel: "DotGothic16", "Courier New", monospace;
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* rhythm */
+  --space-section: clamp(5rem, 12vw, 9rem);
+  --content-max: 56rem;
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.5rem, 5vw, 3rem)
+    clamp(3rem, 6vw, 5rem);
+}
+
+section {
+  margin-top: var(--space-section);
+}
+
+section h2 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+
+/* ---------- Hero ---------- */
+
+.hero h1 {
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: clamp(2.75rem, 9.5vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.hero .tagline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.2vw, 1.625rem);
+  line-height: 1.35;
+  margin: 1.5rem 0 0;
+  max-width: 38rem;
+  color: var(--fg);
+}
+
+.hero .tagline em {
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* ---------- Work list ---------- */
+
+.work-list li {
+  border-top: 1px solid var(--rule);
+}
+
+.work-list li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.work-list a {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr auto;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: baseline;
+  padding: 1.6rem 0;
+  transition: padding 320ms ease, color 220ms ease;
+}
+
+.work-list a:hover,
+.work-list a:focus-visible {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.work-list .idx {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.55rem;
+}
+
+.work-list .body {
+  display: block;
+}
+
+.work-list .title {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.65rem, 3.4vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  transition: color 220ms ease, font-family 0ms;
+}
+
+.work-list .desc {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 34rem;
+}
+
+.work-list .meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 0.55rem;
+}
+
+.work-list .arrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: transform 240ms ease;
+}
+
+.work-list a:hover .arrow,
+.work-list a:focus-visible .arrow {
+  transform: translate(3px, -3px);
+}
+
+/* per-project hover hints — a brief glance into each project's world */
+.work-list li[data-project="offline-crush"] a:hover .title,
+.work-list li[data-project="offline-crush"] a:focus-visible .title {
+  color: var(--offline-pink);
+  font-style: italic;
+}
+
+.work-list li[data-project="whimbitz"] a:hover .title,
+.work-list li[data-project="whimbitz"] a:focus-visible .title {
+  color: var(--whimbitz-green);
+}
+
+.work-list li[data-project="tiktok"] a:hover .title,
+.work-list li[data-project="tiktok"] a:focus-visible .title {
+  color: var(--tiktok-mag);
+}
+
+/* responsive: collapse meta below body on narrow screens */
+@media (max-width: 640px) {
+  .work-list a {
+    grid-template-columns: 2rem 1fr;
+    grid-template-areas:
+      "idx body"
+      ".   meta";
+    row-gap: 0.6rem;
+  }
+  .work-list .idx {
+    grid-area: idx;
+  }
+  .work-list .body {
+    grid-area: body;
+  }
+  .work-list .meta {
+    grid-area: meta;
+    padding-top: 0;
+  }
+}
+
+/* ---------- About ---------- */
+
+.about p {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+  line-height: 1.4;
+  max-width: 38rem;
+  margin: 0;
+}
+
+.about a {
+  font-style: italic;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  transition: color 200ms ease;
+}
+
+.about a:hover {
+  color: var(--muted);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: var(--space-section);
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--fg);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+footer a:hover {
+  color: var(--fg);
+  border-bottom-color: var(--fg);
+}
+
+footer .links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+/* ---------- Focus ---------- */
+
+a:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
