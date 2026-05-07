@@ -73,12 +73,6 @@
           mirroring the chart pattern from the Offline Crush page.
           (Will need: monthly download / engagement data.)
 
-        - World — mascot characters and brand palette.
-          Whimbleton (chartreuse), Professor Whim (blue), Lady
-          Whimberly (pink). Mirrors the brand block from the
-          Offline Crush page.
-          (Will need: mascot illustrations + confirmed palette.)
-
         - Reception — App Store / Play Store reviews or user
           testimonials. Mirrors the Readers section from Offline
           Crush.
@@ -153,6 +147,53 @@
         </article>
       </section>
 
+      <section class="world" aria-labelledby="world-heading">
+        <h2 id="world-heading" class="section-title">World</h2>
+
+        <p class="world-intro">
+          Three mascots. Each runs the social account for a corner
+          of the app.
+        </p>
+
+        <div class="mascots">
+          <article class="mascot">
+            <img
+              class="mascot-image"
+              src="../assets/images/whimbitz-mascot-whimbleton.png"
+              alt="Whimbleton — chartreuse line-drawn mascot with wild hair, on a black background."
+            />
+            <h3 class="mascot-name">Whimbleton</h3>
+            <p class="mascot-role">
+              Chartreuse. Runs the arcade games account.
+            </p>
+          </article>
+
+          <article class="mascot">
+            <img
+              class="mascot-image"
+              src="../assets/images/whimbitz-mascot-professor-whim.png"
+              alt="Professor Whim — blue line-drawn mascot with wild hair, glasses, and a bow tie, on a black background."
+            />
+            <h3 class="mascot-name">Professor Whim</h3>
+            <p class="mascot-role">
+              Blue. Runs the educational games account.
+            </p>
+          </article>
+
+          <article class="mascot">
+            <img
+              class="mascot-image"
+              src="../assets/images/whimbitz-mascot-lady-whimberly.png"
+              alt="Lady Whimberly — pink line-drawn mascot with wild hair and a bow on top, on a black background."
+            />
+            <h3 class="mascot-name">Lady Whimberly</h3>
+            <p class="mascot-role">
+              Pink. Runs the go-girl games account.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="promo" aria-labelledby="promo-heading">
         <h2 id="promo-heading" class="section-title">Promo</h2>
 
@@ -223,6 +264,42 @@
           <dt>Distribution</dt>
           <dd>Apple Developer Portal, Android Developer Portal</dd>
         </dl>
+      </section>
+
+      <section class="decisions" aria-labelledby="decisions-heading">
+        <h2 id="decisions-heading" class="section-title">Decisions</h2>
+
+        <article class="decision">
+          <h3 class="decision-q">Why a TikTok-style format?</h3>
+          <p class="decision-a">
+            App Store discovery rewards brands you already know.
+            A TikTok-style feed surfaces variety without that
+            gravity — the format that works for short videos
+            should work for short games.
+          </p>
+        </article>
+
+        <article class="decision">
+          <h3 class="decision-q">Why an agent instead of a single LLM call?</h3>
+          <p class="decision-a">
+            A single LLM call generates a one-shot game. An
+            agentic chain coordinates concept, art direction, and
+            gameplay rules — letting each game feel deliberate
+            instead of random. The variety in the Product section
+            above is what that buys.
+          </p>
+        </article>
+
+        <article class="decision">
+          <h3 class="decision-q">Why three mascots instead of one voice?</h3>
+          <p class="decision-a">
+            Players who want a quick arcade slice aren't the
+            players who want to learn flags. Three mascots —
+            each running their own social account — let each
+            audience find a voice that fits, instead of being
+            flattened by a generic brand.
+          </p>
+        </article>
       </section>
 
       <footer class="closing">
