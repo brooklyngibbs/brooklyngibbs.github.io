@@ -118,7 +118,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(1.5rem, 4vw, 3rem);
-  margin: clamp(2.25rem, 5vw, 3.5rem) 0 0;
+  margin: clamp(2rem, 4vw, 2.75rem) 0 0;
   padding: 0;
   max-width: 38rem;
 }
@@ -193,6 +193,30 @@ section {
   max-width: 36rem;
   margin: 0;
   color: var(--ink);
+}
+
+.frame-list {
+  list-style: disc;
+  margin: 0.85rem 0 0;
+  padding: 0 0 0 1.4rem;
+  max-width: 36rem;
+}
+
+.frame-list li {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.55;
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+}
+
+.frame-list li::marker {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.frame-list li:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Growth ---------- */
@@ -352,6 +376,24 @@ section {
   transition: color 200ms ease;
 }
 
+.essay-excerpt {
+  margin: 0 0 1.15rem;
+  padding: 0;
+}
+
+.essay-excerpt p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  line-height: 1.5;
+  margin: 0 0 0.7rem;
+  color: var(--ink);
+}
+
+.essay-excerpt p:last-child {
+  margin-bottom: 0;
+}
+
 .essay-explainer {
   font-family: var(--font-body);
   font-size: clamp(0.95rem, 1.3vw, 1rem);
@@ -395,11 +437,28 @@ section {
 
 /* ---------- World (section 5) ---------- */
 
-.world-explainer {
+.world-entry {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+
+.world-entry:first-of-type {
+  margin-top: 0;
+}
+
+.entry-num {
+  display: block;
+  font-family: var(--font-pixel);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.entry-text {
+  margin: clamp(1.25rem, 2.5vw, 1.75rem) 0 0;
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.4vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
   line-height: 1.6;
-  margin: 0 0 clamp(2rem, 4vw, 3rem);
   max-width: 38rem;
   color: var(--ink);
 }
@@ -436,6 +495,123 @@ section {
   outline: 2px solid var(--ink);
   outline-offset: 4px;
   border-radius: 2px;
+}
+
+.brand {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+  max-width: 44rem;
+}
+
+.brand-mark {
+  margin: 0;
+}
+
+.brand-mark img {
+  display: block;
+  width: clamp(120px, 18vw, 180px);
+  height: auto;
+}
+
+.palette {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.swatch-color {
+  display: block;
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.swatch-color--paper {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+
+.swatch-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.swatch-name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.swatch-hex {
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+@media (max-width: 540px) {
+  .brand {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .palette {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Readers ---------- */
+
+.reader-quotes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  max-width: 44rem;
+}
+
+.reader-quote {
+  margin: 0;
+}
+
+.reader-quote blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.reader-quote blockquote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  line-height: 1.35;
+  margin: 0;
+  color: var(--ink);
+}
+
+.reader-quote cite {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-style: normal;
 }
 
 /* ---------- Closing (section 6) ---------- */
