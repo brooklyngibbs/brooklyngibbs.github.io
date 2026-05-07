@@ -81,17 +81,16 @@ The audience reading this site is: creative directors, brand leads, music indust
 
 The "90s nostalgia" frame is load-bearing and pulls in a specific direction: faded-paper / early-OS / CRT-grey palette (not warm cream, not pure white), and pixel-bitmap typography as a signature accent. **NOT** maximalist 90s (no Geocities, animated GIFs, neon-on-black). The reference register is closer to early Mac OS desktops, MS-DOS startup screens, NEC PC-98, and contemporary indie-web sites that nod to that era through restraint.
 
-The portfolio *shell* and the *project pages* play different roles:
+**Shell and case study pages share one aesthetic.** Earlier drafts had each case study leaning into its project's brand world (Offline Crush in pink/blue/blackletter, Whimbitz in chartreuse on dark, TikTok TBD). Brooklyn revised this on **2026-05-06**: the portfolio's design language is now **consistent across all pages** — restrained, white background, editorial, Laurel-coded — and the project *assets themselves* (Substack carousels, app screenshots, mascot illustrations, etc.) provide the visual variety. The portfolio is the frame; the work is the art.
 
-- **Shell (home, about, contact, work index):** quiet, monochrome, strong typography, list-not-gallery, no hero animation. Think Bleed: projects as a typographic list with title / role / short description / link, ornamented only by directional symbols (↘ → ↗) or similar restraint moves. Aggressive whitespace. One strong typeface (or two — display + body). The design IS the absence of noise.
-- **Project case study pages:** each leans fully into its own world.
-  - Offline Crush page → neon pink, dark blue, purple, pixel/medieval font. Full whimsy.
-  - Whimbitz page → chartreuse on dark, sleek, modern.
-  - TikTok page → whatever the carousel aesthetic implies.
-- **Bridge moment:** hover states on the work-list can briefly hint at the project's color/font (e.g., hovering "Offline Crush" flashes the row into pixel font + neon pink). Ties the two worlds together without polluting the shell.
-- **Portrait status: paused.** The optimized hero portrait lives at `assets/images/brooklyn-hero.jpg` (lit by an LED screen of pink hearts on blue — same palette as Offline Crush; its literal pixels mirror DotGothic16). It was briefly the magazine-spread hero, then Brooklyn pulled it back to a text-only hero so her pixel-font name could be the unbullied focal point. The image is intentionally kept in the repo — likely to return once we decide the right placement (possibly an About section, possibly a different layout). Don't delete `assets/images/brooklyn-hero.jpg` and don't reintroduce the portrait into the hero without checking.
+What this means in practice:
 
-Why this split: Brooklyn's reference points are designer-portfolio canon, where the shell is the *frame* and the work is the *art*. Loud-on-loud reads "personal blog"; quiet-shell-loud-work reads "creative practice." For a Creative Director audience, the second is the right register.
+- **Shell (home, about, contact, work index):** quiet, monochrome, strong typography, list-not-gallery, no hero animation. Think Bleed/Laurel: projects as a typographic list with title / role / short description / link. Aggressive whitespace.
+- **Case study pages:** *same* white background and typographic system as the shell. Project-specific brand colors (Offline Crush pink/blue, Whimbitz chartreuse, etc.) appear only via project *content* — accent moments, screenshots, palette swatches as displayed artifacts — not as page chrome.
+- **Bridge moment (kept):** hover states on the home page's work-list can briefly hint at the project's color (e.g., hovering "Offline Crush" flashes the row title into pink). That's the only place project colors break into shell chrome — a tiny preview, not a takeover.
+- **Portrait status: paused.** The optimized hero portrait lives at `assets/images/brooklyn-hero.jpg`. It was briefly the magazine-spread hero, then Brooklyn pulled it back to a text-only hero so her pixel-font name could be the unbullied focal point. The image is intentionally kept in the repo — likely to return once we decide the right placement (possibly an About section, possibly a different layout). Don't delete `assets/images/brooklyn-hero.jpg` and don't reintroduce the portrait into the hero without checking.
+
+Why one consistent aesthetic: Brooklyn's reference points are designer-portfolio canon (Laurel Schwulst, Bleed, Tammy Taabassum), where consistency across pages reads as a *house style* — exactly what a Creative Director audience evaluates. Loud-on-loud reads "personal blog"; even page-by-page-shifting registers can read as "skin-deep design choices." A consistent quiet shell that lets project assets pop is the strongest version.
 
 ### Brand tokens (canonical)
 

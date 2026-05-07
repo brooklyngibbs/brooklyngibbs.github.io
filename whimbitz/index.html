@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whimbitz — Brooklyn Gibbs</title>
+    <meta
+      name="description"
+      content="Whimbitz — TikTok-style app for AI-generated mini-games. A case study of running a brand world end-to-end across product, design, and growth."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=Jacquarda+Bastarda+9&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="topnav" aria-label="Section">
+        <a href="../">← Brooklyn Gibbs</a>
+        <span class="case-tag">Case study, 02</span>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-mark">
+          <img
+            class="app-icon"
+            src="../assets/images/whimbitz-icon.png"
+            alt="Whimbitz app icon — chartreuse W shaped like a shooting star on a black square."
+          />
+          <h1 class="masthead">Whimbitz</h1>
+        </div>
+        <dl class="stats">
+          <div class="stat">
+            <dt class="stat-label">iOS Downloads</dt>
+            <dd class="stat-value">60</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat-label">Android Downloads</dt>
+            <dd class="stat-value">2</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat-label">Launched</dt>
+            <dd class="stat-value">April 2026</dd>
+          </div>
+        </dl>
+      </header>
+
+      <section class="frame" aria-labelledby="frame-heading">
+        <h2 id="frame-heading" class="visually-hidden">About</h2>
+        <p>
+          A TikTok-style app for AI-generated mini-games. Built
+          end-to-end through:
+        </p>
+        <ul class="frame-list">
+          <li>conceiving the product and the strategy</li>
+          <li>designing the UX and the brand identity</li>
+          <li>shipping iOS in SwiftUI</li>
+          <li>shipping Android in Kotlin</li>
+          <li>building the agentic system that generates each game</li>
+          <li>building the mascot world (Whimbleton, Professor Whim, Lady Whimberly)</li>
+          <li>running growth and social</li>
+        </ul>
+      </section>
+
+      <!--
+        TODO sections still to add when assets are ready:
+
+        - Growth / Proof — downloads timeline or KPI moments,
+          mirroring the chart pattern from the Offline Crush page.
+          (Will need: monthly download / engagement data.)
+
+        - World — mascot characters and brand palette.
+          Whimbleton (chartreuse), Professor Whim (blue), Lady
+          Whimberly (pink). Mirrors the brand block from the
+          Offline Crush page.
+          (Will need: mascot illustrations + confirmed palette.)
+
+        - Reception — App Store / Play Store reviews or user
+          testimonials. Mirrors the Readers section from Offline
+          Crush.
+          (Will need: review text + attribution.)
+      -->
+
+      <section class="product" aria-labelledby="product-heading">
+        <h2 id="product-heading" class="section-title">Product</h2>
+
+        <p class="product-intro">
+          A sample of games the agent has generated.
+        </p>
+
+        <article class="game">
+          <img
+            class="game-shot"
+            src="../assets/images/whimbitz-game-cashier.jpg"
+            alt="Fruit Slice: a swipe-to-slice arcade game set behind a grocery checkout, with watermelon slices mid-air."
+          />
+          <div class="game-body">
+            <h3 class="game-title">Fruit Slice</h3>
+            <p class="game-desc">
+              A swipe-to-slice arcade game set behind a grocery
+              checkout. Cut the fruit before it lands.
+            </p>
+          </div>
+        </article>
+
+        <article class="game">
+          <img
+            class="game-shot"
+            src="../assets/images/whimbitz-game-flag.jpg"
+            alt="Global Flag Master: 'Which country is this?' shown above the Norwegian flag with four multiple-choice answers."
+          />
+          <div class="game-body">
+            <h3 class="game-title">Global Flag Master</h3>
+            <p class="game-desc">
+              A geography quiz: see the flag, pick the country.
+              Part of an education direction we're testing.
+            </p>
+          </div>
+        </article>
+
+        <article class="game">
+          <img
+            class="game-shot"
+            src="../assets/images/whimbitz-game-fishing.jpg"
+            alt="Deep Sea Angler: a pixel-art fishing game with a fisherman in a boat over a coral reef and a $15 cash counter."
+          />
+          <div class="game-body">
+            <h3 class="game-title">Deep Sea Angler</h3>
+            <p class="game-desc">
+              A pixel-art fishing game with a coral-reef stage.
+              Bait, reel, count the cash.
+            </p>
+          </div>
+        </article>
+
+        <article class="game">
+          <img
+            class="game-shot"
+            src="../assets/images/whimbitz-game-match.jpg"
+            alt="Chroma Dash: a color-match game showing a target color above four tiles on a synthwave neon-city background."
+          />
+          <div class="game-body">
+            <h3 class="game-title">Chroma Dash</h3>
+            <p class="game-desc">
+              A color-match speed game on a synthwave neon-city
+              skyline. Match the target before the clock runs out.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="promo" aria-labelledby="promo-heading">
+        <h2 id="promo-heading" class="section-title">Promo</h2>
+
+        <ul class="promo-grid">
+          <li class="promo-tile">
+            <button type="button" class="promo-trigger" data-target="promo-modal-video" aria-label="Play Whimbitz app promo video">
+              <img src="../assets/images/whimbitz-promo-poster.jpg" alt="" />
+              <span class="promo-play" aria-hidden="true">▶</span>
+            </button>
+          </li>
+          <li class="promo-tile">
+            <button type="button" class="promo-trigger" data-target="promo-modal-1" aria-label="View promo: four-quadrant collage of pink and black retro phones">
+              <img src="../assets/images/whimbitz-promo-grid.jpg" alt="" />
+            </button>
+          </li>
+          <li class="promo-tile">
+            <button type="button" class="promo-trigger" data-target="promo-modal-2" aria-label="View promo: chartreuse PLAY screen">
+              <img src="../assets/images/whimbitz-promo-play.jpg" alt="" />
+            </button>
+          </li>
+          <li class="promo-tile">
+            <button type="button" class="promo-trigger" data-target="promo-modal-3" aria-label="View promo: app shown on a phone">
+              <img src="../assets/images/whimbitz-promo-feature.jpg" alt="" />
+            </button>
+          </li>
+        </ul>
+
+        <dialog class="promo-modal" id="promo-modal-video">
+          <button type="button" class="modal-close" aria-label="Close">×</button>
+          <video controls preload="metadata" playsinline>
+            <source src="../assets/video/whimbitz-promo.mp4" type="video/mp4" />
+            Your browser doesn't support video playback.
+          </video>
+        </dialog>
+        <dialog class="promo-modal" id="promo-modal-1">
+          <button type="button" class="modal-close" aria-label="Close">×</button>
+          <img src="../assets/images/whimbitz-promo-grid.jpg" alt="Whimbitz Instagram promo — four-quadrant collage of pink and black retro phones." />
+        </dialog>
+        <dialog class="promo-modal" id="promo-modal-2">
+          <button type="button" class="modal-close" aria-label="Close">×</button>
+          <img src="../assets/images/whimbitz-promo-play.jpg" alt="Whimbitz Instagram promo featuring the chartreuse PLAY screen." />
+        </dialog>
+        <dialog class="promo-modal" id="promo-modal-3">
+          <button type="button" class="modal-close" aria-label="Close">×</button>
+          <img src="../assets/images/whimbitz-promo-feature.jpg" alt="Whimbitz Instagram promo with the app shown on a phone." />
+        </dialog>
+      </section>
+
+      <section class="tools" aria-labelledby="tools-heading">
+        <h2 id="tools-heading" class="section-title">Toolstack</h2>
+
+        <dl class="toolstack">
+          <dt>Native development</dt>
+          <dd>Swift, Kotlin</dd>
+
+          <dt>Coding assistants</dt>
+          <dd>Claude Code, Codex</dd>
+
+          <dt>AI</dt>
+          <dd>Gemini, OpenAI</dd>
+
+          <dt>Backend &amp; analytics</dt>
+          <dd>Firebase, Branch, Google Analytics</dd>
+
+          <dt>Creative &amp; marketing</dt>
+          <dd>CapCut, Adobe Creative Cloud</dd>
+
+          <dt>Distribution</dt>
+          <dd>Apple Developer Portal, Android Developer Portal</dd>
+        </dl>
+      </section>
+
+      <footer class="closing">
+        <a
+          class="closing-substack"
+          href="https://whimbitz.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Whimbitz <span aria-hidden="true">→</span>
+        </a>
+
+        <div class="closing-badges">
+          <a
+            href="https://apps.apple.com/us/app/whimbitz/id6757406319"
+            target="_blank"
+            rel="noopener"
+            aria-label="Download Whimbitz on the App Store"
+          >
+            <img
+              class="store-badge"
+              src="../assets/images/app-store-badge.png"
+              alt="Download on the App Store"
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.whimbitz.app&hl=en_US"
+            target="_blank"
+            rel="noopener"
+            aria-label="Get Whimbitz on Google Play"
+          >
+            <img
+              class="store-badge"
+              src="../assets/images/google-play-badge.png"
+              alt="Get it on Google Play"
+            />
+          </a>
+        </div>
+
+        <nav class="closing-nav" aria-label="Elsewhere">
+          <a href="mailto:brooklyngibbs22@gmail.com">brooklyngibbs22@gmail.com</a>
+          <a href="../"><span aria-hidden="true">←</span> Brooklyn Gibbs</a>
+        </nav>
+      </footer>
+    </main>
+
+    <script>
+      // Open the matching modal when a promo tile is clicked.
+      document.querySelectorAll(".promo-trigger").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const modal = document.getElementById(btn.dataset.target);
+          if (modal) modal.showModal();
+        });
+      });
+
+      // Close button inside each modal.
+      document.querySelectorAll(".modal-close").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const modal = btn.closest("dialog");
+          // Pause any video in the modal so audio doesn't keep playing.
+          modal.querySelectorAll("video").forEach((v) => v.pause());
+          modal.close();
+        });
+      });
+
+      // Click on the backdrop (outside the content) closes the modal.
+      document.querySelectorAll(".promo-modal").forEach((dialog) => {
+        dialog.addEventListener("click", (e) => {
+          if (e.target === dialog) {
+            dialog.querySelectorAll("video").forEach((v) => v.pause());
+            dialog.close();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
