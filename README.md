@@ -4,7 +4,7 @@ My portfolio. Lives at [brooklyngibbs.github.io](https://brooklyngibbs.github.io
 
 ## What's in it
 
-Three case studies, each making a different argument:
+Three case studies:
 
 - **[Offline Crush](https://brooklyngibbs.github.io/offline-crush/)** — my newsletter on internet culture. 8K+ subscribers, no paid acquisition. *Proves I build deep cultural taste over time.*
 - **[Whimbitz](https://brooklyngibbs.github.io/whimbitz/)** — TikTok-style app for AI-generated mini-games. Shipped on iOS and Android, end-to-end. *Proves I ship products across the stack.*
