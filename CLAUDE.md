@@ -101,7 +101,7 @@ These are Brooklyn's confirmed brand colors. Mirrored as CSS custom properties i
 | Offline Crush pink | `#f92e80` | Offline Crush | neon, vivid magenta-pink |
 | Offline Crush blue | `#1f26ce` | Offline Crush | electric royal blue |
 | Whimbitz green | `#d4ff00` | Whimbitz | electric chartreuse / Whimbleton's color |
-| TikTok accent | TBD | TikTok case study | placeholder `#ff2d55` in CSS until the case study claims a real value |
+| TikTok / internet.siren | reuses Offline Blue `#1f26ce` | TikTok case study | internet.siren extends the Offline Crush brand to TikTok, so the home-page hover for the TikTok row uses Offline Blue instead of a separate accent |
 
 **Hard nos:**
 - No "generic dev portfolio" templates.

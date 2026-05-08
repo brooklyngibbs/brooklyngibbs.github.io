@@ -11,7 +11,8 @@
   --offline-pink: #f92e80;
   --offline-blue: #1f26ce;
   --whimbitz-green: #d4ff00;
-  --tiktok-mag: #ff2d55; /* placeholder — TBD when TikTok case study takes shape */
+  /* internet.siren extends Offline Crush to TikTok, so its hover reuses
+     Offline Blue rather than a separate accent. */
 
   /* type */
   --font-pixel: "DotGothic16", "Courier New", monospace;
@@ -209,7 +210,7 @@ section h2 {
 
 .work-list li[data-project="tiktok"] a:hover .title,
 .work-list li[data-project="tiktok"] a:focus-visible .title {
-  color: var(--tiktok-mag);
+  color: var(--offline-blue);
 }
 
 /* responsive: collapse meta below body on narrow screens */
@@ -253,6 +254,58 @@ section h2 {
 
 .about a:hover {
   color: var(--muted);
+}
+
+/* ---------- Connect ---------- */
+
+.connect-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2.5rem);
+  max-width: 40rem;
+}
+
+.connect-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.connect-label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.connect-list a {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.2;
+  color: var(--fg);
+  border-bottom: 1px solid var(--fg);
+  padding-bottom: 1px;
+  align-self: start;
+  transition: color 200ms ease, border-color 200ms ease;
+  word-break: break-word;
+}
+
+.connect-list a:hover,
+.connect-list a:focus-visible {
+  color: var(--offline-pink);
+  border-bottom-color: var(--offline-pink);
+}
+
+@media (max-width: 540px) {
+  .connect-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- Footer ---------- */
