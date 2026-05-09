@@ -20,7 +20,7 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* rhythm */
-  --space-section: clamp(5rem, 12vw, 9rem);
+  --space-section: clamp(3rem, 7vw, 5.5rem);
   --content-max: 56rem;
 }
 
@@ -127,9 +127,9 @@ section h2 {
 
 .work-list a {
   display: grid;
-  grid-template-columns: 2.25rem 1fr auto;
+  grid-template-columns: 64px 1fr auto;
   gap: clamp(1rem, 3vw, 2rem);
-  align-items: baseline;
+  align-items: center;
   padding: 1.6rem 0;
   transition: padding 320ms ease, color 220ms ease;
 }
@@ -140,13 +140,11 @@ section h2 {
   padding-right: 0.5rem;
 }
 
-.work-list .idx {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  padding-top: 0.55rem;
+.work-list .work-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
 .work-list .body {
@@ -216,14 +214,17 @@ section h2 {
 /* responsive: collapse meta below body on narrow screens */
 @media (max-width: 640px) {
   .work-list a {
-    grid-template-columns: 2rem 1fr;
+    grid-template-columns: 48px 1fr;
     grid-template-areas:
-      "idx body"
-      ".   meta";
+      "icon body"
+      ".    meta";
     row-gap: 0.6rem;
+    align-items: start;
   }
-  .work-list .idx {
-    grid-area: idx;
+  .work-list .work-icon {
+    grid-area: icon;
+    width: 48px;
+    height: 48px;
   }
   .work-list .body {
     grid-area: body;
