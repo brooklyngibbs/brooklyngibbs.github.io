@@ -641,51 +641,68 @@ section {
   color: var(--ink);
 }
 
-.game {
+.game-carousel {
   display: grid;
-  grid-template-columns: clamp(140px, 22vw, 200px) 1fr;
-  gap: clamp(1.5rem, 3vw, 2.25rem);
-  align-items: center;
-  margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  max-width: 44rem;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(170px, 22vw, 220px);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* extend past main's horizontal padding so the carousel breaks out
+     of the editorial column and feels like its own register */
+  margin-left: calc(-1 * clamp(1.5rem, 5vw, 3rem));
+  margin-right: calc(-1 * clamp(1.5rem, 5vw, 3rem));
+  padding: 0 clamp(1.5rem, 5vw, 3rem) 1rem;
+  scroll-padding-left: clamp(1.5rem, 5vw, 3rem);
+  -webkit-overflow-scrolling: touch;
 }
 
-.game:first-of-type {
-  margin-top: 0;
+.game-carousel:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.game {
+  /* vertical card inside the carousel: screenshot on top, body below */
+  display: block;
+  margin: 0;
+  scroll-snap-align: start;
 }
 
 .game-shot {
   display: block;
   width: 100%;
   height: auto;
+  /* light crop on the 9:19.5 source screenshots — clips status bar
+     and home indicator at top/bottom without cutting into gameplay */
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+  /* shifted slightly toward the top of the image so more of the bottom
+     (home indicator + any in-game footer chrome) gets clipped */
+  object-position: center 40%;
   border: 1px solid var(--rule);
+}
+
+.game-body {
+  margin-top: 0.85rem;
 }
 
 .game-title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
   line-height: 1.2;
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.5rem;
   color: var(--ink);
 }
 
 .game-desc {
   font-family: var(--font-body);
-  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
-  line-height: 1.55;
+  font-size: clamp(0.88rem, 1.2vw, 0.98rem);
+  line-height: 1.5;
   margin: 0;
   color: var(--ink);
-}
-
-@media (max-width: 540px) {
-  .game {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .game-shot {
-    max-width: 200px;
-  }
 }
 
 /* ---------- World (mascots) ---------- */
@@ -909,6 +926,142 @@ section {
   }
   .toolstack dd {
     margin-bottom: 0.85rem;
+  }
+}
+
+/* ---------- Tool rail (right-side sticker collage) ----------
+   Mirrors the internet.siren rail — same structure, same reversible
+   transition-based reveal triggered by an IntersectionObserver on the
+   Toolstack + Closing footer. Stickers represent the tools listed in
+   the Toolstack dl, materialized as a hand-arranged collage. */
+
+.tool-rail {
+  position: fixed;
+  top: 50%;
+  right: clamp(3rem, 6vw, 5.5rem);
+  transform: translateY(-50%);
+  width: 170px;
+  height: 360px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tool-rail-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tool-rail-item {
+  position: absolute;
+  /* hidden + flung off-screen by default. Two different transitions:
+     this base rule defines the EXIT transition (smooth ease-out, matches
+     internet.siren's quiet departure); .tool-rail--spilled below overrides
+     it to define the ENTRY transition (back-out bounce, the loud spill).
+     The browser picks whichever rule matches the *new* state, so class
+     ADD uses the spilled bouncy transition and class REMOVE uses this
+     base smooth transition. */
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(420px) translateY(-40px) rotate(110deg);
+  cursor: default;
+  transition: opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              z-index 0s;
+}
+
+.tool-rail-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22%;
+  filter: drop-shadow(0 4px 12px rgba(19, 19, 22, 0.18));
+  transform: rotate(var(--r, 0deg));
+  transition: transform 360ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              filter 280ms ease;
+  will-change: transform;
+}
+
+/* per-icon placement — asymmetric, overlapping, deliberately hand-arranged.
+   Sizes vary 62–76px so the cluster doesn't read as a grid.
+   Order matches the build-flow: creative → coding → backend → distribution. */
+.tool--adobe-cc          { top: 0;    right: 0;    width: 76px; --r: -10deg; z-index: 2; }
+.tool--claude-code       { top: 44px; left: 0;     width: 62px; --r:   8deg; z-index: 1; }
+.tool--codex             { top: 96px; left: 50px;  width: 66px; --r:  -5deg; z-index: 3; }
+.tool--firebase          { top: 154px; left: 0;    width: 72px; --r:  11deg; z-index: 2; }
+.tool--google-analytics  { top: 188px; right: 4px; width: 64px; --r: -12deg; z-index: 4; }
+.tool--branch            { top: 246px; left: 8px;  width: 70px; --r:   7deg; z-index: 3; }
+.tool--app-store-connect { top: 286px; right: 0;   width: 66px; --r:  -9deg; z-index: 5; }
+
+/* hover: lift the sticker off the pile — un-tilt, scale up, deeper shadow */
+.tool-rail-item:hover {
+  z-index: 20;
+}
+
+.tool-rail-item:hover img,
+.tool-rail-item:focus-within img {
+  transform: rotate(0deg) scale(1.15) translateY(-4px);
+  filter: drop-shadow(0 10px 22px rgba(19, 19, 22, 0.26));
+}
+
+/* tooltip — tucks to the left of the collage so it never gets clipped */
+.tool-rail-tip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 0.7rem);
+  transform: translateY(-50%);
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.tool-rail-item:hover .tool-rail-tip,
+.tool-rail-item:focus-within .tool-rail-tip {
+  opacity: 1;
+}
+
+/* spilled state — JS toggles this class as the user enters / leaves the
+   active region. Overrides the base transition with the bouncy back-out
+   curve, so the change FROM hidden → visible (entry) uses the loud spill.
+   The change FROM visible → hidden (exit) is governed by the base rule's
+   smooth transition, since on class removal this rule no longer applies. */
+.tool-rail--spilled .tool-rail-item {
+  pointer-events: auto;
+  opacity: 1;
+  transform: none;
+  transition: opacity 900ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              transform 900ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              z-index 0s;
+}
+
+/* entry stagger — only applied while spilled, so exits are simultaneous */
+.tool-rail--spilled .tool-rail-item:nth-child(1) { transition-delay:   0ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(2) { transition-delay:  90ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(3) { transition-delay: 180ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(4) { transition-delay: 270ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(5) { transition-delay: 360ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(6) { transition-delay: 450ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(7) { transition-delay: 540ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-rail-item {
+    transition: none;
+  }
+}
+
+/* hide the collage on narrower viewports — at smaller widths the cluster
+   crashes into the editorial column instead of brushing its right edge */
+@media (max-width: 1280px) {
+  .tool-rail {
+    display: none;
   }
 }
 

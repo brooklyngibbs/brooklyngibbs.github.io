@@ -279,6 +279,92 @@ section h2 {
   color: var(--muted);
 }
 
+/* ---------- Experiments ---------- */
+
+.experiments-intro {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  max-width: 34rem;
+}
+
+.experiment-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* auto-fill keeps empty tracks empty — so a single tile doesn't stretch
+     to fill the row, leaving room for future entries */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: 56rem;
+}
+
+.experiment {
+  margin: 0;
+}
+
+.experiment a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 180px;
+  padding: 1.5rem;
+  border: 1px solid var(--rule);
+  color: inherit;
+  transition: border-color 220ms ease, background 220ms ease,
+    transform 220ms ease;
+}
+
+.experiment a:hover,
+.experiment a:focus-visible {
+  border-color: var(--fg);
+  background: rgba(19, 19, 22, 0.02);
+  transform: translateY(-2px);
+}
+
+.experiment-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.15;
+  color: var(--fg);
+  transition: color 220ms ease;
+}
+
+.experiment a:hover .experiment-name,
+.experiment a:focus-visible .experiment-name {
+  font-style: italic;
+}
+
+.experiment-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.experiment-arrow {
+  display: inline-block;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  transition: transform 220ms ease;
+}
+
+.experiment a:hover .experiment-arrow,
+.experiment a:focus-visible .experiment-arrow {
+  transform: translate(3px, -3px);
+}
+
 /* ---------- Connect ---------- */
 
 .connect-list {

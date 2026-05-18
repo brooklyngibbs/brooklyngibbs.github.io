@@ -6,7 +6,7 @@
     <title>Whimbitz — Brooklyn Gibbs</title>
     <meta
       name="description"
-      content="Whimbitz — TikTok-style app for AI-generated mini-games. A case study of running a brand world end-to-end across product, design, and growth."
+      content="Whimbitz — TikTok-style app for mini-games. A case study of running a brand world end-to-end across product, design, and growth."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +18,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <aside class="tool-rail" aria-label="Tools used to build Whimbitz">
+      <ul class="tool-rail-list">
+        <li class="tool-rail-item tool--adobe-cc">
+          <img src="../assets/images/tool-adobe-cc.png" alt="" />
+          <span class="tool-rail-tip">Creative Cloud</span>
+        </li>
+        <li class="tool-rail-item tool--claude-code">
+          <img src="../assets/images/tool-claude-code.png" alt="" />
+          <span class="tool-rail-tip">Claude Code</span>
+        </li>
+        <li class="tool-rail-item tool--codex">
+          <img src="../assets/images/tool-codex.png" alt="" />
+          <span class="tool-rail-tip">Codex</span>
+        </li>
+        <li class="tool-rail-item tool--firebase">
+          <img src="../assets/images/tool-firebase.png" alt="" />
+          <span class="tool-rail-tip">Firebase</span>
+        </li>
+        <li class="tool-rail-item tool--google-analytics">
+          <img src="../assets/images/tool-google-analytics.png" alt="" />
+          <span class="tool-rail-tip">Analytics</span>
+        </li>
+        <li class="tool-rail-item tool--branch">
+          <img src="../assets/images/tool-branch.png" alt="" />
+          <span class="tool-rail-tip">Branch</span>
+        </li>
+        <li class="tool-rail-item tool--app-store-connect">
+          <img src="../assets/images/tool-app-store-connect.png" alt="" />
+          <span class="tool-rail-tip">App Store Connect</span>
+        </li>
+      </ul>
+    </aside>
+
     <main>
       <nav class="topnav" aria-label="Section">
         <a href="../">← Brooklyn Gibbs</a>
@@ -36,7 +69,7 @@
         <dl class="stats">
           <div class="stat">
             <dt class="stat-label">iOS Downloads</dt>
-            <dd class="stat-value">60</dd>
+            <dd class="stat-value">87</dd>
           </div>
           <div class="stat">
             <dt class="stat-label">Android Downloads</dt>
@@ -52,8 +85,8 @@
       <section class="frame" aria-labelledby="frame-heading">
         <h2 id="frame-heading" class="visually-hidden">About</h2>
         <p>
-          A TikTok-style app for AI-generated mini-games. Built
-          end-to-end through:
+          A TikTok-style app for mini-games. Built end-to-end
+          through:
         </p>
         <ul class="frame-list">
           <li>conceiving the product and the strategy</li>
@@ -64,6 +97,30 @@
           <li>building the mascot world (Whimbleton, Professor Whim, Lady Whimberly)</li>
           <li>running growth and social</li>
         </ul>
+      </section>
+
+      <section class="tools" aria-labelledby="tools-heading">
+        <h2 id="tools-heading" class="section-title">Toolstack</h2>
+
+        <dl class="toolstack">
+          <dt>Native development</dt>
+          <dd>Swift, Kotlin</dd>
+
+          <dt>Coding assistants</dt>
+          <dd>Claude Code, Codex</dd>
+
+          <dt>AI</dt>
+          <dd>Gemini, OpenAI</dd>
+
+          <dt>Backend &amp; analytics</dt>
+          <dd>Firebase, Branch, Google Analytics</dd>
+
+          <dt>Creative &amp; marketing</dt>
+          <dd>CapCut, Adobe Creative Cloud</dd>
+
+          <dt>Distribution</dt>
+          <dd>Apple Developer Portal, Android Developer Portal</dd>
+        </dl>
       </section>
 
       <!--
@@ -83,68 +140,75 @@
         <h2 id="product-heading" class="section-title">Product</h2>
 
         <p class="product-intro">
-          A sample of games the agent has generated.
+          A sample of games from the platform:
         </p>
 
-        <article class="game">
-          <img
-            class="game-shot"
-            src="../assets/images/whimbitz-game-cashier.jpg"
-            alt="Fruit Slice: a swipe-to-slice arcade game set behind a grocery checkout, with watermelon slices mid-air."
-          />
-          <div class="game-body">
-            <h3 class="game-title">Fruit Slice</h3>
-            <p class="game-desc">
-              A swipe-to-slice arcade game set behind a grocery
-              checkout. Cut the fruit before it lands.
-            </p>
-          </div>
-        </article>
+        <div
+          class="game-carousel"
+          tabindex="0"
+          role="region"
+          aria-label="Sample games — scrollable carousel"
+        >
+          <article class="game">
+            <img
+              class="game-shot"
+              src="../assets/images/whimbitz-game-cashier.jpg"
+              alt="Fruit Slice: a swipe-to-slice arcade game set behind a grocery checkout, with watermelon slices mid-air."
+            />
+            <div class="game-body">
+              <h3 class="game-title">Fruit Slice</h3>
+              <p class="game-desc">
+                A swipe-to-slice arcade game set behind a grocery
+                checkout. Cut the fruit before it lands.
+              </p>
+            </div>
+          </article>
 
-        <article class="game">
-          <img
-            class="game-shot"
-            src="../assets/images/whimbitz-game-flag.jpg"
-            alt="Global Flag Master: 'Which country is this?' shown above the Norwegian flag with four multiple-choice answers."
-          />
-          <div class="game-body">
-            <h3 class="game-title">Global Flag Master</h3>
-            <p class="game-desc">
-              A geography quiz: see the flag, pick the country.
-              Part of an education direction we're testing.
-            </p>
-          </div>
-        </article>
+          <article class="game">
+            <img
+              class="game-shot"
+              src="../assets/images/whimbitz-game-flag.jpg"
+              alt="Global Flag Master: 'Which country is this?' shown above the Norwegian flag with four multiple-choice answers."
+            />
+            <div class="game-body">
+              <h3 class="game-title">Global Flag Master</h3>
+              <p class="game-desc">
+                A geography quiz: see the flag, pick the country.
+                Part of an education direction we're testing.
+              </p>
+            </div>
+          </article>
 
-        <article class="game">
-          <img
-            class="game-shot"
-            src="../assets/images/whimbitz-game-fishing.jpg"
-            alt="Deep Sea Angler: a pixel-art fishing game with a fisherman in a boat over a coral reef and a $15 cash counter."
-          />
-          <div class="game-body">
-            <h3 class="game-title">Deep Sea Angler</h3>
-            <p class="game-desc">
-              A pixel-art fishing game with a coral-reef stage.
-              Bait, reel, count the cash.
-            </p>
-          </div>
-        </article>
+          <article class="game">
+            <img
+              class="game-shot"
+              src="../assets/images/whimbitz-game-fishing.jpg"
+              alt="Deep Sea Angler: a pixel-art fishing game with a fisherman in a boat over a coral reef and a $15 cash counter."
+            />
+            <div class="game-body">
+              <h3 class="game-title">Deep Sea Angler</h3>
+              <p class="game-desc">
+                A pixel-art fishing game with a coral-reef stage.
+                Bait, reel, count the cash.
+              </p>
+            </div>
+          </article>
 
-        <article class="game">
-          <img
-            class="game-shot"
-            src="../assets/images/whimbitz-game-match.jpg"
-            alt="Chroma Dash: a color-match game showing a target color above four tiles on a synthwave neon-city background."
-          />
-          <div class="game-body">
-            <h3 class="game-title">Chroma Dash</h3>
-            <p class="game-desc">
-              A color-match speed game on a synthwave neon-city
-              skyline. Match the target before the clock runs out.
-            </p>
-          </div>
-        </article>
+          <article class="game">
+            <img
+              class="game-shot"
+              src="../assets/images/whimbitz-game-match.jpg"
+              alt="Chroma Dash: a color-match game showing a target color above four tiles on a synthwave neon-city background."
+            />
+            <div class="game-body">
+              <h3 class="game-title">Chroma Dash</h3>
+              <p class="game-desc">
+                A color-match speed game on a synthwave neon-city
+                skyline. Match the target before the clock runs out.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="world" aria-labelledby="world-heading">
@@ -242,66 +306,6 @@
         </dialog>
       </section>
 
-      <section class="tools" aria-labelledby="tools-heading">
-        <h2 id="tools-heading" class="section-title">Toolstack</h2>
-
-        <dl class="toolstack">
-          <dt>Native development</dt>
-          <dd>Swift, Kotlin</dd>
-
-          <dt>Coding assistants</dt>
-          <dd>Claude Code, Codex</dd>
-
-          <dt>AI</dt>
-          <dd>Gemini, OpenAI</dd>
-
-          <dt>Backend &amp; analytics</dt>
-          <dd>Firebase, Branch, Google Analytics</dd>
-
-          <dt>Creative &amp; marketing</dt>
-          <dd>CapCut, Adobe Creative Cloud</dd>
-
-          <dt>Distribution</dt>
-          <dd>Apple Developer Portal, Android Developer Portal</dd>
-        </dl>
-      </section>
-
-      <section class="decisions" aria-labelledby="decisions-heading">
-        <h2 id="decisions-heading" class="section-title">Decisions</h2>
-
-        <article class="decision">
-          <h3 class="decision-q">Why a TikTok-style format?</h3>
-          <p class="decision-a">
-            App Store discovery rewards brands you already know.
-            A TikTok-style feed surfaces variety without that
-            gravity — the format that works for short videos
-            should work for short games.
-          </p>
-        </article>
-
-        <article class="decision">
-          <h3 class="decision-q">Why an agent instead of a single LLM call?</h3>
-          <p class="decision-a">
-            A single LLM call generates a one-shot game. An
-            agentic chain coordinates concept, art direction, and
-            gameplay rules — letting each game feel deliberate
-            instead of random. The variety in the Product section
-            above is what that buys.
-          </p>
-        </article>
-
-        <article class="decision">
-          <h3 class="decision-q">Why three mascots instead of one voice?</h3>
-          <p class="decision-a">
-            Players who want a quick arcade slice aren't the
-            players who want to learn flags. Three mascots —
-            each running their own social account — let each
-            audience find a voice that fits, instead of being
-            flattened by a generic brand.
-          </p>
-        </article>
-      </section>
-
       <footer class="closing">
         <a
           class="closing-substack"
@@ -388,6 +392,47 @@
           }
         });
       });
+
+      // Reveal the tool-rail while the user is reading the Toolstack +
+      // following sections; fade it back out at the footer or when scrolled
+      // back above Toolstack. Reversible annotation pattern, matching the
+      // internet.siren case study.
+      (function () {
+        const rail = document.querySelector(".tool-rail");
+        const tools = document.querySelector(".tools");
+        const footer = document.querySelector(".closing");
+        if (!rail || !tools || !footer) return;
+
+        let pastTools = false;
+        let atFooter = false;
+
+        const update = () => {
+          rail.classList.toggle("tool-rail--spilled", pastTools && !atFooter);
+        };
+
+        const toolsObserver = new IntersectionObserver(
+          (entries) => {
+            const entry = entries[0];
+            const inView = entry.intersectionRatio >= 0.3;
+            const above =
+              !entry.isIntersecting && entry.boundingClientRect.top < 0;
+            pastTools = inView || above;
+            update();
+          },
+          { threshold: [0, 0.3] }
+        );
+
+        const footerObserver = new IntersectionObserver(
+          (entries) => {
+            atFooter = entries[0].isIntersecting;
+            update();
+          },
+          { threshold: 0 }
+        );
+
+        toolsObserver.observe(tools);
+        footerObserver.observe(footer);
+      })();
     </script>
   </body>
 </html>
