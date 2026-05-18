@@ -212,6 +212,10 @@ section {
   color: var(--ink);
 }
 
+.frame p + p {
+  margin-top: 1.1em;
+}
+
 .frame-list {
   list-style: disc;
   margin: 0.85rem 0 0;
@@ -913,6 +917,115 @@ section {
   }
 }
 
+/* ---------- Selected posts (gallery grid) ---------- */
+
+.post-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 1.75rem) clamp(1rem, 2vw, 1.5rem);
+  max-width: 44rem;
+}
+
+.post-tile {
+  margin: 0;
+}
+
+.post-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-cover-wrap {
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: #f1f1f1;
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--rule);
+}
+
+.post-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 360ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.post-link:hover .post-cover,
+.post-link:focus-visible .post-cover {
+  transform: scale(1.04);
+}
+
+.post-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.25;
+  margin: 0 0 0.55rem;
+  color: var(--ink);
+  transition: color 220ms ease;
+}
+
+.post-link:hover .post-title,
+.post-link:focus-visible .post-title {
+  color: var(--pink);
+}
+
+.post-stats {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.post-stat {
+  margin: 0;
+}
+
+.post-stat dt {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.15rem;
+}
+
+.post-stat dd {
+  font-family: var(--font-pixel);
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0;
+}
+
+.post-asof {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  font-style: italic;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .post-grid {
+    grid-template-columns: 1fr;
+    max-width: 18rem;
+  }
+}
+
 /* ---------- Decisions ---------- */
 
 .decision {
@@ -1003,6 +1116,132 @@ section {
 .closing-nav a:focus-visible {
   color: var(--pink);
   border-bottom-color: var(--pink);
+}
+
+/* ---------- Tool rail (right-side sticker collage) ---------- */
+
+.tool-rail {
+  position: fixed;
+  top: 50%;
+  right: clamp(3rem, 6vw, 5.5rem);
+  transform: translateY(-50%);
+  width: 170px;
+  height: 360px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tool-rail-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tool-rail-item {
+  position: absolute;
+  /* hidden + offset by default; reveals when .tool-rail--spilled is on the
+     parent. Transition-based (not keyframe animation) so the rail can fade
+     in and out reversibly as the user enters and leaves the active region. */
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(140px) translateY(-16px) rotate(25deg);
+  cursor: default;
+  transition: opacity 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              z-index 0s;
+}
+
+.tool-rail-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22%;
+  filter: drop-shadow(0 4px 12px rgba(19, 19, 22, 0.18));
+  transform: rotate(var(--r, 0deg));
+  transition: transform 360ms cubic-bezier(0.34, 1.56, 0.64, 1),
+              filter 280ms ease;
+  will-change: transform;
+}
+
+/* per-icon placement — asymmetric, overlapping, deliberately hand-arranged.
+   Sizes vary 62–76px so the cluster doesn't read as a grid. */
+.tool--illustrator { top: 0;    right: 0;    width: 76px; --r: -10deg; z-index: 2; }
+.tool--buffer      { top: 44px; left: 0;     width: 62px; --r:   8deg; z-index: 1; }
+.tool--capcut      { top: 96px; left: 50px;  width: 66px; --r:  -5deg; z-index: 3; }
+.tool--canva       { top: 154px; left: 0;    width: 72px; --r:  11deg; z-index: 2; }
+.tool--photoshop   { top: 188px; right: 4px; width: 64px; --r: -12deg; z-index: 4; }
+.tool--instagram   { top: 246px; left: 8px;  width: 70px; --r:   7deg; z-index: 3; }
+.tool--tiktok      { top: 286px; right: 0;   width: 66px; --r:  -9deg; z-index: 5; }
+
+/* hover: lift the sticker off the pile — un-tilt, scale up, deeper shadow */
+.tool-rail-item:hover {
+  z-index: 20;
+}
+
+.tool-rail-item:hover img,
+.tool-rail-item:focus-within img {
+  transform: rotate(0deg) scale(1.15) translateY(-4px);
+  filter: drop-shadow(0 10px 22px rgba(19, 19, 22, 0.26));
+}
+
+/* tooltip — tucks to the left of the collage so it never gets clipped */
+.tool-rail-tip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 0.7rem);
+  transform: translateY(-50%);
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.tool-rail-item:hover .tool-rail-tip,
+.tool-rail-item:focus-within .tool-rail-tip {
+  opacity: 1;
+}
+
+/* spilled state — JS toggles this class as the user enters / leaves the
+   active region (Toolstack through Selected Posts). Items glide in via the
+   transition declared on .tool-rail-item, and reverse back out when the
+   class is removed. */
+.tool-rail--spilled .tool-rail-item {
+  pointer-events: auto;
+  opacity: 1;
+  transform: none;
+}
+
+/* top-to-bottom stagger — only applied while the class is present, so exits
+   are simultaneous (a reversed stagger reads as choreographed retreat,
+   which we don't want — the rail should leave quietly). */
+.tool-rail--spilled .tool-rail-item:nth-child(1) { transition-delay:   0ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(2) { transition-delay:  90ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(3) { transition-delay: 180ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(4) { transition-delay: 270ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(5) { transition-delay: 360ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(6) { transition-delay: 450ms; }
+.tool-rail--spilled .tool-rail-item:nth-child(7) { transition-delay: 540ms; }
+
+/* reduced motion: skip the choreography, just snap to visible */
+@media (prefers-reduced-motion: reduce) {
+  .tool-rail-item {
+    transition: none;
+  }
+}
+
+/* hide the collage on narrower viewports — at smaller widths the cluster
+   crashes into the editorial column instead of brushing its right edge */
+@media (max-width: 1280px) {
+  .tool-rail {
+    display: none;
+  }
 }
 
 /* ---------- Focus ---------- */

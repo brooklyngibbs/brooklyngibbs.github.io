@@ -14,6 +14,21 @@
   /* internet.siren extends Offline Crush to TikTok, so its hover reuses
      Offline Blue rather than a separate accent. */
 
+  /* category pill palette — work-list tags on the home page.
+     Recipe: foreground = saturated category color; background = the same
+     color at ~10–12% opacity. Swap any pair to retune a category. */
+  --pill-social-fg: var(--offline-pink);
+  --pill-social-bg: rgba(249, 46, 128, 0.10);
+
+  --pill-writing-fg: var(--offline-blue);
+  --pill-writing-bg: rgba(31, 38, 206, 0.10);
+
+  --pill-dev-fg: #4a7c1f;
+  --pill-dev-bg: rgba(74, 124, 31, 0.12);
+
+  --pill-design-fg: #b35a18;
+  --pill-design-bg: rgba(179, 90, 24, 0.10);
+
   /* type */
   --font-pixel: "DotGothic16", "Courier New", monospace;
   --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
@@ -129,7 +144,7 @@ section h2 {
   display: grid;
   grid-template-columns: 64px 1fr auto;
   gap: clamp(1rem, 3vw, 2rem);
-  align-items: center;
+  align-items: start;
   padding: 1.6rem 0;
   transition: padding 320ms ease, color 220ms ease;
 }
@@ -145,6 +160,8 @@ section h2 {
   width: 64px;
   height: 64px;
   object-fit: contain;
+  /* offset to align with the title's optical baseline instead of its top */
+  margin-top: 0.25rem;
 }
 
 .work-list .body {
@@ -170,23 +187,39 @@ section h2 {
   max-width: 34rem;
 }
 
-.work-list .meta {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.9rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-  color: var(--muted);
-  text-transform: uppercase;
-  white-space: nowrap;
-  padding-top: 0.55rem;
+.work-list .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
 }
+
+.work-list .pill {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  padding: 0.42em 0.78em;
+  border-radius: 999px;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.pill--social  { background: var(--pill-social-bg);  color: var(--pill-social-fg); }
+.pill--writing { background: var(--pill-writing-bg); color: var(--pill-writing-fg); }
+.pill--dev     { background: var(--pill-dev-bg);     color: var(--pill-dev-fg); }
+.pill--design  { background: var(--pill-design-bg);  color: var(--pill-design-fg); }
 
 .work-list .arrow {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 1rem;
-  transition: transform 240ms ease;
+  font-size: 1.1rem;
+  color: var(--muted);
+  /* align with the title baseline instead of floating mid-row */
+  padding-top: 0.45rem;
+  transition: transform 240ms ease, color 220ms ease;
 }
 
 .work-list a:hover .arrow,
@@ -211,27 +244,16 @@ section h2 {
   color: var(--offline-blue);
 }
 
-/* responsive: collapse meta below body on narrow screens */
+/* responsive: tighten the grid on narrow screens — arrow stays in the
+   right column, just smaller icon and column gap */
 @media (max-width: 640px) {
   .work-list a {
-    grid-template-columns: 48px 1fr;
-    grid-template-areas:
-      "icon body"
-      ".    meta";
-    row-gap: 0.6rem;
-    align-items: start;
+    grid-template-columns: 48px 1fr auto;
+    column-gap: 1rem;
   }
   .work-list .work-icon {
-    grid-area: icon;
     width: 48px;
     height: 48px;
-  }
-  .work-list .body {
-    grid-area: body;
-  }
-  .work-list .meta {
-    grid-area: meta;
-    padding-top: 0;
   }
 }
 

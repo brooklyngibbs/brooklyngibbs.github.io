@@ -12,7 +12,7 @@ This folder is the home for Brooklyn's personal portfolio website and the projec
 - **Education:** B.S. Computer Science, Indiana University (2023)
 
 ### Background (one-line version)
-Product-minded technologist — Fortune 100 data engineer (Capital One), CEO/co-founder of a consumer mobile gaming startup (Whimbitz), and founder of an 8,000+ subscriber independent media brand (Offline Crush).
+Product-minded technologist — Fortune 100 data engineer (Capital One), CEO/co-founder of a consumer mobile gaming startup (Whimbitz), and founder of a 10,000+ subscriber independent media brand (Offline Crush).
 
 ### Career Goal: Creative Director
 The portfolio exists to land Creative Director work, especially:
@@ -45,7 +45,7 @@ The audience reading this site is: creative directors, brand leads, music indust
 
 ### 1. Offline Crush — Substack (Nov 2024 – Present)
 - **What:** Independent newsletter on internet culture and the indie web.
-- **Stats (as of 2026-05-04):** 8,000+ Substack subscribers, 9,000+ followers, zero paid acquisition. Two distinct growth inflections: Sep 2025 (music discovery essay went viral — 22k likes) and Apr 2026 (started a recurring graphic-carousel series of niche-website lists, also driving the parallel TikTok case study).
+- **Stats (as of 2026-05-09):** 10,000+ Substack subscribers, zero paid acquisition. Two distinct growth inflections: Sep 2025 (music discovery essay went viral — 22k likes) and Apr 2026 (started a recurring graphic-carousel series of niche-website lists, also driving the parallel TikTok case study).
 - **Themes:** intersection of digital culture, personal identity, psychological impact of living "split" between offline and online; the "whimsy movement" — making digital spaces feel magical, cozy, intentional as a counter to doomscrolling and optimization culture.
 - **Voice:** informal, often lowercase, highly aesthetic. Mixes traditional essays with Spotify playlists, screenshots, and "fragment" diaries (e.g., moving back home, work burnout).
 - **Brand colors:** neon pink `#f92e80`, electric blue `#1f26ce`. (No third brand color — earlier drafts mentioned a purple, but Brooklyn confirmed purple isn't part of the brand. Pink + blue + neutrals only.)
