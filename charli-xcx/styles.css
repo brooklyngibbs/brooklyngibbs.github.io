@@ -1,0 +1,575 @@
+/* ---------- Tokens ---------- */
+/* Rock Music (Charli XCX era concept) — shares the portfolio's
+   white-background editorial aesthetic with the other case study pages
+   (per CLAUDE.md, all case study pages share the shell aesthetic; project
+   assets provide the visual variety). */
+
+:root {
+  /* paper / ink — clean white archive register */
+  --paper: #ffffff;
+  --ink: #131316;
+  --muted: #6a6c6e;
+  --rule: rgba(19, 19, 22, 0.12);
+
+  /* brand */
+  --pink: #f92e80;
+  --blue: #1f26ce;
+
+  /* type */
+  --font-pixel: "DotGothic16", "Courier New", monospace;
+  --font-blackletter: "Jacquarda Bastarda 9", "DotGothic16", monospace;
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* rhythm */
+  --content-max: 64rem;
+  --space-section: clamp(3rem, 7vw, 5.5rem);
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1.5rem, 5vw, 3rem)
+    clamp(3rem, 6vw, 5rem);
+}
+
+/* ---------- Top nav ---------- */
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.topnav a {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.topnav a:hover,
+.topnav a:focus-visible {
+  color: var(--pink);
+  border-bottom-color: var(--pink);
+}
+
+.topnav .case-tag {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+}
+
+.hero .masthead {
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: clamp(2.75rem, 9.5vw, 6.5rem);
+  line-height: 0.95;
+  margin: 0;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+/* ---------- Sections (shared) ---------- */
+
+section {
+  margin-top: var(--space-section);
+}
+
+.section-title {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+/* ---------- Instagram grid ----------
+   3x3 profile-style grid (9 cells). Tight gaps to read as an Instagram feed;
+   4:5 portrait cells matching Instagram's current post/grid ratio. Placeholder
+   cells show a slot number until the real images are dropped in (swap
+   .ig-cell contents for <img class="ig-photo">). */
+
+.ig-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  max-width: 40rem;
+}
+
+.ig-cell {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: #f1f1f1;
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ig-cell-num {
+  font-family: var(--font-pixel);
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.ig-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ig-intro {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 40rem;
+  margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+/* ---------- Placeholder cue ----------
+   Marks text/blocks you still need to fill in. Muted + italic + a dashed
+   left rule so the skeleton is obvious in the browser. Delete the
+   `placeholder` class from an element once you've written its real content. */
+
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+  border-left: 2px dashed var(--rule);
+  padding-left: 0.85rem;
+}
+
+/* ---------- 1 · Opening (hero additions) ---------- */
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 clamp(0.85rem, 2vw, 1.25rem);
+}
+
+.hero-thesis {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  line-height: 1.4;
+  color: var(--ink);
+  max-width: 34rem;
+  margin: clamp(1rem, 2vw, 1.5rem) 0 0;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin: clamp(1.75rem, 3.5vw, 2.5rem) 0 0;
+}
+
+.meta-pair {
+  margin: 0;
+}
+
+.meta-pair dt {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.3rem;
+}
+
+.meta-pair dd {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- 2 · Themes & Pillars ---------- */
+
+.theme {
+  max-width: 44rem;
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.theme:first-of-type {
+  margin-top: 0;
+}
+
+.theme-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 0.65rem;
+}
+
+.theme-desc {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
+  max-width: 38rem;
+}
+
+.pillars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.pillar {
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border: 1px solid var(--rule);
+}
+
+.pillar-name {
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+}
+
+.pillar-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- 3 · Platform Split ---------- */
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  max-width: 44rem;
+}
+
+.platform-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.platform-desc {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- 5 · Captioned Posts ---------- */
+
+.caption-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  max-width: 44rem;
+}
+
+.caption-post {
+  display: grid;
+  grid-template-columns: clamp(110px, 20vw, 160px) 1fr;
+  gap: clamp(1.25rem, 3vw, 1.75rem);
+  align-items: start;
+  margin: 0;
+}
+
+.caption-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+
+.caption-pillar {
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.caption-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- 6 · Launch Timeline ---------- */
+
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 44rem;
+}
+
+.phase {
+  margin: 0;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem) 0;
+  border-top: 1px solid var(--rule);
+}
+
+.phase:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.phase-label {
+  font-family: var(--font-pixel);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.phase-goal {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+  max-width: 34rem;
+}
+
+.phase-posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tl-post {
+  display: grid;
+  grid-template-columns: clamp(6rem, 14vw, 9rem) 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.tl-pillar {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tl-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.phase-result {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 1.1rem 0 0;
+  max-width: 38rem;
+}
+
+.phase-result-label {
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-right: 0.5rem;
+}
+
+/* placeholder spans inside the timeline shouldn't get the block left-rule */
+.tl-pillar.placeholder,
+.tl-desc.placeholder,
+.caption-pillar.placeholder {
+  border-left: 0;
+  padding-left: 0;
+}
+
+/* ---------- 7 · Video ---------- */
+
+.video-embed {
+  max-width: 22rem;
+  aspect-ratio: 9 / 16;
+  background: #f1f1f1;
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.video-embed video,
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+}
+
+.video-caption {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 34rem;
+  margin: clamp(1rem, 2vw, 1.4rem) 0 0;
+}
+
+/* ---------- 8 · Closing ---------- */
+
+.closing {
+  margin-top: var(--space-section);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--rule);
+}
+
+.closing-measure {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 38rem;
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+}
+
+.closing-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+  line-height: 1.35;
+  color: var(--ink);
+  max-width: 38rem;
+  margin: 0 0 clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.closing-nav a {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.closing-nav a:hover,
+.closing-nav a:focus-visible {
+  color: var(--pink);
+  border-bottom-color: var(--pink);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .pillars,
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+  .caption-post {
+    grid-template-columns: 1fr;
+  }
+  .caption-thumb {
+    max-width: 200px;
+  }
+  .tl-post {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+}
+
+/* ---------- Focus ---------- */
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
