@@ -18,7 +18,7 @@
   /* type */
   --font-pixel: "DotGothic16", "Courier New", monospace;
   --font-blackletter: "Jacquarda Bastarda 9", "DotGothic16", monospace;
-  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-display: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* rhythm */
@@ -207,7 +207,7 @@ section {
 
 .hero-thesis {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);
   line-height: 1.4;
   color: var(--ink);
@@ -242,6 +242,18 @@ section {
   line-height: 1.1;
   color: var(--ink);
   margin: 0;
+}
+
+.hero-track {
+  margin: clamp(2.75rem, 6vw, 4.5rem) 0 0;
+  max-width: 21rem;
+}
+
+.hero-track iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
 }
 
 /* ---------- 2 · Themes & Pillars ---------- */
@@ -522,7 +534,7 @@ section {
 
 .closing-line {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.3rem, 2.6vw, 1.85rem);
   line-height: 1.35;
   color: var(--ink);

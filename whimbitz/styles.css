@@ -17,7 +17,7 @@
   /* type */
   --font-pixel: "DotGothic16", "Courier New", monospace;
   --font-blackletter: "Jacquarda Bastarda 9", "DotGothic16", monospace;
-  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-display: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* rhythm */
