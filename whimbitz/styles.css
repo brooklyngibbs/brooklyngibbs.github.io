@@ -930,7 +930,7 @@ section {
 }
 
 /* ---------- Tool rail (right-side sticker collage) ----------
-   Mirrors the internet.siren rail — same structure, same reversible
+   Mirrors the offlinecrush.mp4 rail — same structure, same reversible
    transition-based reveal triggered by an IntersectionObserver on the
    Toolstack + Closing footer. Stickers represent the tools listed in
    the Toolstack dl, materialized as a hand-arranged collage. */
@@ -959,7 +959,7 @@ section {
   position: absolute;
   /* hidden + flung off-screen by default. Two different transitions:
      this base rule defines the EXIT transition (smooth ease-out, matches
-     internet.siren's quiet departure); .tool-rail--spilled below overrides
+     offlinecrush.mp4's quiet departure); .tool-rail--spilled below overrides
      it to define the ENTRY transition (back-out bounce, the loud spill).
      The browser picks whichever rule matches the *new* state, so class
      ADD uses the spilled bouncy transition and class REMOVE uses this
