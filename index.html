@@ -28,23 +28,35 @@
 
     <main>
       <header class="hero">
-        <span class="spark spark--1" aria-hidden="true">✦</span>
-        <span class="spark spark--2" aria-hidden="true">✧</span>
-        <span class="spark spark--3" aria-hidden="true">⋆</span>
-        <h1>Brooklyn Gibbs</h1>
+        <div class="sparkles" aria-hidden="true">
+          <span class="spark spark--1">✦</span>
+          <span class="spark spark--2">✧</span>
+          <span class="spark spark--3">⋆</span>
+          <span class="spark spark--4">✦</span>
+          <span class="spark spark--5">✧</span>
+          <span class="spark spark--6">⋆</span>
+        </div>
+        <h1 class="hero-name" aria-label="Brooklyn Gibbs">
+          <span class="word" aria-hidden="true">
+            <span class="char" style="--i: 0">B</span><span class="char" style="--i: 1">r</span><span class="char" style="--i: 2">o</span><span class="char" style="--i: 3">o</span><span class="char" style="--i: 4">k</span><span class="char" style="--i: 5">l</span><span class="char" style="--i: 6">y</span><span class="char" style="--i: 7">n</span>
+          </span>
+          <span class="word" aria-hidden="true">
+            <span class="char" style="--i: 8">G</span><span class="char" style="--i: 9">i</span><span class="char" style="--i: 10">b</span><span class="char" style="--i: 11">b</span><span class="char" style="--i: 12">s</span>
+          </span>
+        </h1>
         <p class="tagline">
           <span class="role-line">creative + social director.</span>
           <span class="build-line">
-            i build
-            <span class="rotator" aria-label="worlds, brands, campaigns, audiences, websites, and apps">
+            i
+            <span class="rotator" aria-label="see it coming, build the world, grow the audience, write the story, direct the campaign, and ship it myself">
               <span class="rotator-track">
-                <span>worlds</span>
-                <span>brands</span>
-                <span>campaigns</span>
-                <span>audiences</span>
-                <span>websites</span>
-                <span>apps</span>
-                <span aria-hidden="true">worlds</span>
+                <span>see it coming</span>
+                <span>build the world</span>
+                <span>grow the audience</span>
+                <span>write the story</span>
+                <span>direct the campaign</span>
+                <span>ship it myself</span>
+                <span aria-hidden="true">see it coming</span>
               </span>
             </span>
           </span>
@@ -252,6 +264,30 @@
             apply(chip.dataset.filter);
           });
         });
+      })();
+
+      // Scroll-reveal — cards rise into view as you scroll. Opt-in via a body
+      // class so no-JS / reduced-motion visitors always see every card.
+      (function () {
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const cards = Array.from(document.querySelectorAll(".project-card"));
+        if (reduce || !("IntersectionObserver" in window) || !cards.length) return;
+
+        document.body.classList.add("reveals");
+        cards.forEach((card, i) => card.style.setProperty("--card-i", i % 3));
+
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+        );
+        cards.forEach((card) => io.observe(card));
       })();
     </script>
   </body>

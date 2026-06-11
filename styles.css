@@ -182,25 +182,32 @@ section h2 {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 18%;
+  top: 12%;
   left: -8%;
-  width: min(46rem, 80%);
+  width: min(50rem, 85%);
   aspect-ratio: 1.6 / 1;
-  background: radial-gradient(
-    ellipse at center,
-    var(--neon-glow) 0%,
-    rgba(47, 85, 255, 0.12) 38%,
-    transparent 70%
-  );
-  filter: blur(14px);
+  /* layered aurora — two blue light sources at different depths */
+  background:
+    radial-gradient(
+      ellipse at 32% 42%,
+      var(--neon-glow) 0%,
+      rgba(47, 85, 255, 0.12) 40%,
+      transparent 72%
+    ),
+    radial-gradient(
+      circle at 72% 62%,
+      rgba(40, 120, 255, 0.18) 0%,
+      transparent 60%
+    );
+  filter: blur(16px);
   opacity: 0.9;
   pointer-events: none;
-  animation: bloom 7s ease-in-out infinite;
+  animation: bloom 9s ease-in-out infinite;
 }
 
 @keyframes bloom {
-  0%, 100% { opacity: 0.7; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.06); }
+  0%, 100% { opacity: 0.62; transform: translate(0, 0) scale(1); }
+  50% { opacity: 1; transform: translate(3%, -2%) scale(1.07); }
 }
 
 .hero h1 {
@@ -219,6 +226,33 @@ section h2 {
 @keyframes nameGlow {
   0%, 100% { text-shadow: 0 0 22px rgba(47, 85, 255, 0.14), 0 0 4px rgba(47, 85, 255, 0.08); }
   50% { text-shadow: 0 0 38px rgba(47, 85, 255, 0.28), 0 0 8px rgba(47, 85, 255, 0.16); }
+}
+
+/* name materializes letter by letter, then a glint sweeps across it */
+.hero-name {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.hero-name .word {
+  display: inline-block;
+}
+
+.hero-name .word + .word {
+  margin-left: 0.34em;
+}
+
+.hero-name .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.4em);
+  animation: charIn 0.72s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: calc(var(--i) * 95ms + 150ms);
+}
+
+@keyframes charIn {
+  to { opacity: 1; transform: none; }
 }
 
 .hero .tagline {
@@ -276,27 +310,50 @@ section h2 {
   100%      { transform: translateY(-8.4em); }
 }
 
-/* wizard sparkles — a few twinkling accents around the hero */
+/* wizard sparkles — floating magic-dust around the hero */
+.sparkles {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .spark {
   position: absolute;
-  z-index: -1;
   color: var(--neon);
   font-size: 1.1rem;
   line-height: 1;
   opacity: 0;
-  animation: twinkle 4.5s ease-in-out infinite;
   filter: drop-shadow(0 0 6px var(--neon-glow));
-  pointer-events: none;
   user-select: none;
 }
 
-.spark--1 { top: 8%; left: 2%; font-size: 1.5rem; animation-delay: 0.2s; }
-.spark--2 { top: 30%; right: 8%; font-size: 1rem; animation-delay: 1.4s; }
-.spark--3 { top: 62%; left: 14%; font-size: 1.25rem; animation-delay: 2.6s; }
+/* twinkle = blink in place; drift = float while twinkling */
+.spark--1 { top: 8%;  left: 2%;   font-size: 1.5rem;  animation: twinkle 4.5s ease-in-out 0.2s infinite; }
+.spark--2 { top: 30%; right: 8%;  font-size: 1rem;    animation: twinkle 5.5s ease-in-out 1.4s infinite; }
+.spark--3 { top: 62%; left: 14%;  font-size: 1.25rem; animation: twinkle 5s ease-in-out 2.6s infinite; }
+.spark--4 { top: 16%; right: 24%; font-size: 0.95rem; animation: drift 9s ease-in-out 0.6s infinite; }
+.spark--5 { bottom: 20%; right: 12%; font-size: 1.15rem; animation: drift 11s ease-in-out 2s infinite; }
+.spark--6 { top: 50%; left: 46%;  font-size: 0.85rem; animation: drift 8s ease-in-out 3.4s infinite; }
 
 @keyframes twinkle {
   0%, 100% { opacity: 0; transform: scale(0.6) rotate(0deg); }
   50% { opacity: 0.9; transform: scale(1) rotate(20deg); }
+}
+
+@keyframes drift {
+  0%, 100% { opacity: 0; transform: translateY(9px) scale(0.6) rotate(0deg); }
+  50% { opacity: 0.85; transform: translateY(-9px) scale(1) rotate(18deg); }
+}
+
+/* tagline drifts up after the name finishes materializing */
+.tagline {
+  animation: fadeUp 0.7s ease 0.95s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
 }
 
 /* ---------- Work: filters ---------- */
@@ -368,6 +425,20 @@ section h2 {
 
 .project-card.is-hidden {
   display: none;
+}
+
+/* scroll-reveal — only active when JS adds .reveals (no-JS shows everything).
+   --card-i staggers cards within a row. */
+body.reveals .project-card {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: calc(var(--card-i, 0) * 70ms);
+}
+
+body.reveals .project-card.in-view {
+  opacity: 1;
+  transform: none;
 }
 
 .project-card a {
@@ -720,6 +791,11 @@ a:focus-visible {
   /* freeze the word rotator on the first word */
   .rotator-track {
     animation: none !important;
+    transform: none !important;
+  }
+  /* show the name fully */
+  .hero-name .char {
+    opacity: 1 !important;
     transform: none !important;
   }
 }
