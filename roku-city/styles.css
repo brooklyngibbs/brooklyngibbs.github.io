@@ -66,6 +66,8 @@ main {
 /* ---------- Top nav ---------- */
 
 .topnav {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,6 +116,7 @@ main {
   background: radial-gradient(ellipse at center, var(--roku-glow), transparent 70%);
   filter: blur(22px);
   opacity: 0.55;
+  pointer-events: none;
 }
 
 .hero-eyebrow {
