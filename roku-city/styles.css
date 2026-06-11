@@ -1,27 +1,27 @@
-/* Roku City — speculative campaign case study.
-   Shares the white-background editorial aesthetic of the other case study
-   pages; the project's neon-blue night-city world comes through via accents
-   and imagery, not page chrome. */
+/* Roku City × Airbnb — "Stay Inside the Screensaver" speculative campaign.
+   Keeps the white editorial base of the other case studies; the campaign's
+   purple-and-gold world comes through accents, an art-deco serif, and the
+   imagery itself — not by inverting the page to dark. */
 
 :root {
   --paper: #ffffff;
-  --ink: #131316;
-  --muted: #6a6c6e;
-  --rule: rgba(19, 19, 22, 0.12);
+  --ink: #17141c;
+  --muted: #6a6770;
+  --rule: rgba(23, 20, 28, 0.12);
 
-  /* Roku's signature is its purple, but Brooklyn's personal-brand throughline
-     is the euphoria neon blue — and Roku City is literally a blue night
-     skyline, so the case study accents in neon blue. */
-  --neon: #2f55ff;
-  --neon-deep: #1f26ce;
-  --neon-glow: rgba(47, 85, 255, 0.42);
-  --roku-purple: #6f1ab1;
+  /* campaign palette — Roku City purple + a warm collectible gold */
+  --roku: #7222b3;
+  --roku-deep: #3d1170;
+  --roku-glow: rgba(114, 34, 179, 0.4);
+  --roku-wash: rgba(114, 34, 179, 0.07);
+  /* accent stays in the purple family — no secondary yellow/gold */
+  --gold: var(--roku);
 
-  --font-pixel: "DotGothic16", "Courier New", monospace;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-display: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --content-max: 52rem;
+  --content-max: 54rem;
 }
 
 *,
@@ -41,7 +41,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.62;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -70,7 +70,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-bottom: clamp(2rem, 6vw, 4rem);
+  padding-bottom: clamp(2rem, 6vw, 3.5rem);
 }
 
 .topnav a {
@@ -81,7 +81,7 @@ main {
 }
 
 .topnav a:hover {
-  color: var(--neon);
+  color: var(--roku);
 }
 
 .case-tag {
@@ -90,8 +90,8 @@ main {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--neon);
-  border: 1px solid var(--neon);
+  color: var(--roku);
+  border: 1px solid var(--roku);
   border-radius: 999px;
   padding: 0.32em 0.8em;
 }
@@ -107,51 +107,44 @@ main {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -10%;
+  top: -12%;
   left: -10%;
   width: 60%;
   aspect-ratio: 1.6 / 1;
-  background: radial-gradient(ellipse at center, var(--neon-glow), transparent 70%);
-  filter: blur(20px);
-  opacity: 0.7;
-  animation: bloom 8s ease-in-out infinite;
-}
-
-@keyframes bloom {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 0.85; transform: scale(1.08); }
+  background: radial-gradient(ellipse at center, var(--roku-glow), transparent 70%);
+  filter: blur(22px);
+  opacity: 0.55;
 }
 
 .hero-eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--roku);
   margin: 0 0 1rem;
 }
 
 .masthead {
-  font-family: var(--font-pixel);
-  font-weight: 400;
-  font-size: clamp(2.5rem, 9vw, 5.5rem);
-  line-height: 0.98;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(2.6rem, 8vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
   margin: 0;
-  text-shadow: 0 0 30px rgba(47, 85, 255, 0.2), 0 0 6px rgba(47, 85, 255, 0.12);
 }
 
 .hero-thesis {
   font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
-  line-height: 1.4;
-  max-width: 38rem;
+  font-size: clamp(1.15rem, 2.3vw, 1.5rem);
+  line-height: 1.45;
+  max-width: 40rem;
   margin: 1.5rem 0 0;
 }
 
 .hero-thesis em {
   font-style: italic;
-  color: var(--neon);
+  color: var(--roku);
 }
 
 .hero-meta {
@@ -179,24 +172,23 @@ main {
   margin: 0;
 }
 
-/* ---------- Hero image ---------- */
+/* ---------- Figures ---------- */
 
-.hero-figure {
+.figure {
   margin: clamp(2.5rem, 6vw, 4rem) 0 0;
 }
 
-.hero-figure .frame {
-  position: relative;
-  border-radius: 8px;
+.figure .frame {
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 24px 70px -30px var(--neon-glow);
+  box-shadow: 0 30px 80px -34px var(--roku-glow);
 }
 
-.hero-figure img {
+.figure img {
   width: 100%;
 }
 
-.hero-figure figcaption {
+.figure figcaption {
   margin-top: 0.85rem;
   font-size: 0.82rem;
   color: var(--muted);
@@ -219,83 +211,76 @@ section {
   margin: 0 0 1.5rem;
 }
 
+.section-title::before {
+  content: "✦ ";
+  color: var(--gold);
+}
+
 .lede {
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  line-height: 1.45;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+  line-height: 1.28;
   max-width: 40rem;
   margin: 0;
 }
 
 .lede em {
   font-style: italic;
-  color: var(--neon);
+  color: var(--roku);
+}
+
+.prose {
+  margin-top: 1.5rem;
 }
 
 .prose p {
   max-width: 40rem;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.15rem;
 }
 
 .prose p:last-child {
   margin-bottom: 0;
 }
 
-/* ---------- Strategy: themes & pillars ---------- */
-
-.theme {
-  border-top: 1px solid var(--rule);
-  padding: 2rem 0;
+.prose strong {
+  font-weight: 600;
 }
 
-.theme:last-of-type {
-  border-bottom: 1px solid var(--rule);
-}
-
-.theme-name {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  line-height: 1.1;
-  margin: 0 0 0.6rem;
-}
-
-.theme-name::before {
-  content: "✦ ";
-  color: var(--neon);
-}
-
-.theme-desc {
-  max-width: 40rem;
-  margin: 0 0 1.5rem;
-  color: var(--ink);
-}
+/* ---------- Product pillars ---------- */
 
 .pillars {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: clamp(1rem, 3vw, 1.75rem);
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .pillar {
   border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: 1.25rem 1.35rem;
+  border-radius: 12px;
+  padding: 1.35rem 1.4rem 1.5rem;
   transition: border-color 220ms ease, box-shadow 260ms ease,
     transform 220ms ease;
 }
 
 .pillar:hover {
-  border-color: var(--neon);
-  box-shadow: 0 14px 36px -18px var(--neon-glow);
+  border-color: var(--roku);
+  box-shadow: 0 16px 40px -20px var(--roku-glow);
   transform: translateY(-3px);
 }
 
-.pillar h4 {
+.pillar .pillar-num {
   font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+.pillar h4 {
+  font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  margin: 0.35rem 0 0.5rem;
 }
 
 .pillar p {
@@ -305,34 +290,188 @@ section {
   line-height: 1.55;
 }
 
-/* ---------- Why it works ---------- */
+/* ---------- Feature: the remote is the key ---------- */
 
-.reasons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: clamp(1.25rem, 4vw, 2.5rem);
+.remote {
+  background: var(--roku-wash);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.reason .reason-num {
-  font-family: var(--font-pixel);
-  font-size: 1.6rem;
-  color: var(--neon);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.reason h4 {
-  font-family: var(--font-display);
+.remote-head {
+  font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.05rem;
-  margin: 0 0 0.4rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
 }
 
-.reason p {
+.remote-intro {
+  max-width: 38rem;
+  margin: 0 0 1.75rem;
+  color: var(--ink);
+}
+
+.remote-steps {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.remote-step {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.remote-step:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.remote-key {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  min-width: 5.5rem;
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--roku);
+  border-radius: 999px;
+  padding: 0.4em 0.8em;
+}
+
+.remote-step p {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
+}
+
+.remote-step strong {
+  font-weight: 600;
+}
+
+/* ---------- Gallery ---------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery .frame {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -28px var(--roku-glow);
+  transition: transform 300ms ease;
+}
+
+.gallery a:hover .frame {
+  transform: translateY(-4px);
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
   color: var(--muted);
-  line-height: 1.55;
+}
+
+/* ---------- Taglines ---------- */
+
+.taglines {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.tagline-line {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 1.2;
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--gold);
+}
+
+.tagline-line:nth-child(odd) {
+  font-style: italic;
+}
+
+/* ---------- The film / CTA ---------- */
+
+.film {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.film-player {
+  flex: none;
+  width: min(280px, 70vw);
+}
+
+.film-player video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  display: block;
+  background: #000;
+  border-radius: 14px;
+  box-shadow: 0 26px 70px -30px var(--roku-glow);
+}
+
+.film-copy {
+  flex: 1 1 18rem;
+  max-width: 32rem;
+}
+
+.film-vo {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+
+.film-copy p:not(.film-vo) {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.film-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.1rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--roku);
+  border-bottom: 1px solid var(--roku);
+  padding-bottom: 1px;
+  transition: opacity 200ms ease;
+}
+
+.film-link:hover {
+  opacity: 0.7;
 }
 
 /* ---------- Closing ---------- */
@@ -343,12 +482,12 @@ section {
 }
 
 .closing-line {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3.2vw, 2.1rem);
-  line-height: 1.3;
-  max-width: 34rem;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3.6vw, 2.4rem);
+  line-height: 1.22;
+  max-width: 36rem;
   margin: 0;
-  text-shadow: 0 0 24px rgba(47, 85, 255, 0.14);
 }
 
 .disclaimer {
@@ -380,12 +519,12 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--neon);
-  border-bottom-color: var(--neon);
+  color: var(--roku);
+  border-bottom-color: var(--roku);
 }
 
 a:focus-visible {
-  outline: 2px solid var(--neon);
+  outline: 2px solid var(--roku);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -395,6 +534,5 @@ a:focus-visible {
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
   }
 }

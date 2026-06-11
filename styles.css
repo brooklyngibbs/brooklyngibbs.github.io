@@ -410,12 +410,20 @@ section h2 {
   outline-offset: 3px;
 }
 
-/* ---------- Work: project grid ---------- */
+/* ---------- Featured tier — big 2-up flagship cards ---------- */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* ---------- Work: project grid (full index) ---------- */
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  gap: clamp(1.25rem, 2.5vw, 2rem);
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .project-card {
@@ -427,16 +435,17 @@ section h2 {
   display: none;
 }
 
-/* scroll-reveal — only active when JS adds .reveals (no-JS shows everything).
+/* scroll-reveal — index grid only (featured tier stays visible). Active when
+   JS adds .reveals; no-JS / reduced-motion shows everything.
    --card-i staggers cards within a row. */
-body.reveals .project-card {
+body.reveals .project-grid .project-card {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
   transition-delay: calc(var(--card-i, 0) * 70ms);
 }
 
-body.reveals .project-card.in-view {
+body.reveals .project-grid .project-card.in-view {
   opacity: 1;
   transform: none;
 }
@@ -446,7 +455,7 @@ body.reveals .project-card.in-view {
   flex-direction: column;
   height: 100%;
   border: 1px solid var(--rule);
-  border-radius: 6px;
+  border-radius: 16px;
   overflow: hidden;
   background: #fff;
   transition: border-color 240ms ease, box-shadow 300ms ease,
