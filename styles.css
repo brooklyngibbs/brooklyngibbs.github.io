@@ -1,7 +1,7 @@
 /* ---------- Tokens ---------- */
 
 :root {
-  /* shell palette — clean white, matches the offline-crush case study */
+  /* shell palette — clean white editorial base */
   --bg: #ffffff;
   --fg: #131316;
   --muted: #6a6c6e;
@@ -11,12 +11,18 @@
   --offline-pink: #f92e80;
   --offline-blue: #1f26ce;
   --whimbitz-green: #d4ff00;
-  /* offlinecrush.mp4 extends Offline Crush to TikTok, so its hover reuses
-     Offline Blue rather than a separate accent. */
 
-  /* category pill palette — work-list tags on the home page.
-     Recipe: foreground = saturated category color; background = the same
-     color at ~10–12% opacity. Swap any pair to retune a category. */
+  /* personal-brand euphoria accent — electric "neon" blue, pushed brighter
+     than the deep Offline royal blue so it reads as glow, not ink. This is
+     the throughline color: hero bloom, sparkles, active filters, campaign
+     pills, card hover. */
+  --neon: #2f55ff;
+  --neon-deep: #1f26ce;
+  --neon-glow: rgba(47, 85, 255, 0.42);
+  --neon-wash: rgba(47, 85, 255, 0.08);
+
+  /* category pill palette — foreground = saturated color, background = the
+     same color at ~10–12% opacity. Swap a pair to retune a category. */
   --pill-social-fg: var(--offline-pink);
   --pill-social-bg: rgba(249, 46, 128, 0.10);
 
@@ -29,6 +35,10 @@
   --pill-design-fg: #b35a18;
   --pill-design-bg: rgba(179, 90, 24, 0.10);
 
+  /* campaigns wear the personal-brand neon — her aspirational category */
+  --pill-campaign-fg: var(--neon);
+  --pill-campaign-bg: rgba(47, 85, 255, 0.10);
+
   /* type */
   --font-pixel: "DotGothic16", "Courier New", monospace;
   --font-display: "IBM Plex Mono", ui-monospace, "Courier New", monospace;
@@ -36,7 +46,7 @@
 
   /* rhythm */
   --space-section: clamp(3rem, 7vw, 5.5rem);
-  --content-max: 56rem;
+  --content-max: 64rem;
 }
 
 /* ---------- Reset ---------- */
@@ -55,6 +65,7 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -79,6 +90,60 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Top bar / nav ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem clamp(1.5rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  color: var(--fg);
+}
+
+.wordmark span {
+  color: var(--neon);
+}
+
+.topnav {
+  display: inline-flex;
+  gap: 1.4rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.topnav a {
+  color: var(--muted);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.topnav a:hover,
+.topnav a[aria-current="page"] {
+  color: var(--fg);
+  border-bottom-color: var(--neon);
 }
 
 /* ---------- Layout ---------- */
@@ -106,6 +171,38 @@ section h2 {
 
 /* ---------- Hero ---------- */
 
+.hero {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(1.5rem, 5vw, 3.5rem) 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+/* euphoria bloom — a soft blue light source behind the name */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 18%;
+  left: -8%;
+  width: min(46rem, 80%);
+  aspect-ratio: 1.6 / 1;
+  background: radial-gradient(
+    ellipse at center,
+    var(--neon-glow) 0%,
+    rgba(47, 85, 255, 0.12) 38%,
+    transparent 70%
+  );
+  filter: blur(14px);
+  opacity: 0.9;
+  pointer-events: none;
+  animation: bloom 7s ease-in-out infinite;
+}
+
+@keyframes bloom {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+
 .hero h1 {
   font-family: var(--font-pixel);
   font-weight: 400;
@@ -113,89 +210,276 @@ section h2 {
   line-height: 0.95;
   letter-spacing: 0;
   margin: 0;
+  /* soft neon halo — euphoria glow without going dark */
+  text-shadow: 0 0 28px rgba(47, 85, 255, 0.18),
+    0 0 4px rgba(47, 85, 255, 0.10);
+  animation: nameGlow 6s ease-in-out infinite;
+}
+
+@keyframes nameGlow {
+  0%, 100% { text-shadow: 0 0 22px rgba(47, 85, 255, 0.14), 0 0 4px rgba(47, 85, 255, 0.08); }
+  50% { text-shadow: 0 0 38px rgba(47, 85, 255, 0.28), 0 0 8px rgba(47, 85, 255, 0.16); }
 }
 
 .hero .tagline {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.25rem, 2.2vw, 1.625rem);
-  line-height: 1.35;
+  font-size: clamp(1.25rem, 2.3vw, 1.65rem);
+  line-height: 1.4;
   margin: 1.5rem 0 0;
-  max-width: 38rem;
+  max-width: 40rem;
   color: var(--fg);
 }
 
-.hero .tagline em {
-  font-style: italic;
+.hero .tagline .role-line {
+  display: block;
+}
+
+.hero .tagline .build-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.5ch;
+  margin-top: 0.35rem;
+}
+
+/* the rotating word — a pure-CSS vertical "slot machine" */
+.rotator {
+  display: inline-flex;
+  overflow: hidden;
+  height: 1.4em;
+  vertical-align: bottom;
+}
+
+.rotator-track {
+  display: flex;
+  flex-direction: column;
+  animation: rotateWords 12s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+}
+
+.rotator-track span {
+  height: 1.4em;
+  line-height: 1.4em;
+  font-weight: 600;
+  color: var(--neon);
+  text-shadow: 0 0 18px rgba(47, 85, 255, 0.35);
+  white-space: nowrap;
+}
+
+@keyframes rotateWords {
+  0%, 11%   { transform: translateY(0); }
+  15%, 28%  { transform: translateY(-1.4em); }
+  32%, 45%  { transform: translateY(-2.8em); }
+  49%, 62%  { transform: translateY(-4.2em); }
+  66%, 78%  { transform: translateY(-5.6em); }
+  82%, 94%  { transform: translateY(-7em); }
+  100%      { transform: translateY(-8.4em); }
+}
+
+/* wizard sparkles — a few twinkling accents around the hero */
+.spark {
+  position: absolute;
+  z-index: -1;
+  color: var(--neon);
+  font-size: 1.1rem;
+  line-height: 1;
+  opacity: 0;
+  animation: twinkle 4.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px var(--neon-glow));
+  pointer-events: none;
+  user-select: none;
+}
+
+.spark--1 { top: 8%; left: 2%; font-size: 1.5rem; animation-delay: 0.2s; }
+.spark--2 { top: 30%; right: 8%; font-size: 1rem; animation-delay: 1.4s; }
+.spark--3 { top: 62%; left: 14%; font-size: 1.25rem; animation-delay: 2.6s; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.6) rotate(0deg); }
+  50% { opacity: 0.9; transform: scale(1) rotate(20deg); }
+}
+
+/* ---------- Work: filters ---------- */
+
+.work-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.work-head h2 {
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-chip {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.46em 0.95em;
+  cursor: pointer;
+  transition: color 200ms ease, border-color 200ms ease,
+    background 200ms ease, box-shadow 240ms ease;
 }
 
-/* ---------- Work list ---------- */
-
-.work-list li {
-  border-top: 1px solid var(--rule);
+.filter-chip:hover {
+  color: var(--fg);
+  border-color: var(--neon);
 }
 
-.work-list li:last-child {
-  border-bottom: 1px solid var(--rule);
+.filter-chip.is-active {
+  color: #fff;
+  background: var(--neon);
+  border-color: var(--neon);
+  box-shadow: 0 4px 18px var(--neon-glow);
 }
 
-.work-list a {
+.filter-chip:focus-visible {
+  outline: 2px solid var(--neon);
+  outline-offset: 3px;
+}
+
+/* ---------- Work: project grid ---------- */
+
+.project-grid {
   display: grid;
-  grid-template-columns: 64px 1fr auto;
-  gap: clamp(1rem, 3vw, 2rem);
-  align-items: start;
-  padding: 1.6rem 0;
-  transition: padding 320ms ease, color 220ms ease;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
 }
 
-.work-list a:hover,
-.work-list a:focus-visible {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.project-card {
+  /* smooth removal when filtered out */
+  transition: opacity 260ms ease, transform 260ms ease;
 }
 
-.work-list .work-icon {
-  display: block;
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  /* offset to align with the title's optical baseline instead of its top */
-  margin-top: 0.25rem;
+.project-card.is-hidden {
+  display: none;
 }
 
-.work-list .body {
-  display: block;
+.project-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  transition: border-color 240ms ease, box-shadow 300ms ease,
+    transform 240ms ease;
 }
 
-.work-list .title {
-  display: block;
+.project-card a:hover,
+.project-card a:focus-visible {
+  border-color: var(--neon);
+  box-shadow: 0 14px 40px -16px var(--neon-glow),
+    0 2px 10px rgba(19, 19, 22, 0.06);
+  transform: translateY(-4px);
+}
+
+.card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--neon-wash);
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card a:hover .card-media img {
+  transform: scale(1.045);
+}
+
+/* gradient fallback tile for projects without a cover image */
+.card-media--gradient {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.5), transparent 45%),
+    linear-gradient(135deg, var(--neon) 0%, var(--neon-deep) 100%);
+}
+
+.card-media--gradient span {
+  font-family: var(--font-pixel);
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.45);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.1rem 1.2rem 1.35rem;
+}
+
+.card-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.65rem, 3.4vw, 2.25rem);
-  line-height: 1.1;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.15;
   letter-spacing: -0.005em;
-  transition: color 220ms ease, font-family 0ms;
+  color: var(--fg);
 }
 
-.work-list .desc {
-  display: block;
-  margin-top: 0.4rem;
+.card-arrow {
+  flex: none;
+  font-family: var(--font-body);
+  font-size: 1rem;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  max-width: 34rem;
+  transition: transform 240ms ease, color 220ms ease;
 }
 
-.work-list .tags {
+.project-card a:hover .card-arrow,
+.project-card a:focus-visible .card-arrow {
+  transform: translate(3px, -3px);
+  color: var(--neon);
+}
+
+.card-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-body .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.85rem;
+  margin-top: 0.2rem;
 }
 
-/* Global pill shape — usable in any context (work list, experiments, etc.).
-   Color variants below select the per-category palette. */
+.work-empty {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---------- Pills ---------- */
+
 .pill {
   display: inline-block;
   font-family: var(--font-body);
@@ -209,179 +493,127 @@ section h2 {
   white-space: nowrap;
 }
 
-.pill--social  { background: var(--pill-social-bg);  color: var(--pill-social-fg); }
-.pill--writing { background: var(--pill-writing-bg); color: var(--pill-writing-fg); }
-.pill--dev     { background: var(--pill-dev-bg);     color: var(--pill-dev-fg); }
-.pill--design  { background: var(--pill-design-bg);  color: var(--pill-design-fg); }
+.pill--social   { background: var(--pill-social-bg);   color: var(--pill-social-fg); }
+.pill--writing  { background: var(--pill-writing-bg);  color: var(--pill-writing-fg); }
+.pill--dev      { background: var(--pill-dev-bg);      color: var(--pill-dev-fg); }
+.pill--design   { background: var(--pill-design-bg);   color: var(--pill-design-fg); }
+.pill--campaign { background: var(--pill-campaign-bg); color: var(--pill-campaign-fg); }
 
-.work-list .arrow {
-  display: inline-block;
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  color: var(--muted);
-  /* align with the title baseline instead of floating mid-row */
-  padding-top: 0.45rem;
-  transition: transform 240ms ease, color 220ms ease;
-}
+/* ---------- About page ---------- */
 
-.work-list a:hover .arrow,
-.work-list a:focus-visible .arrow {
-  transform: translate(3px, -3px);
-}
-
-/* per-project hover hints — a brief glance into each project's world */
-.work-list li[data-project="offline-crush"] a:hover .title,
-.work-list li[data-project="offline-crush"] a:focus-visible .title {
-  color: var(--offline-pink);
-  font-style: italic;
-}
-
-.work-list li[data-project="whimbitz"] a:hover .title,
-.work-list li[data-project="whimbitz"] a:focus-visible .title {
-  color: var(--whimbitz-green);
-}
-
-.work-list li[data-project="tiktok"] a:hover .title,
-.work-list li[data-project="tiktok"] a:focus-visible .title {
-  color: var(--offline-blue);
-}
-
-/* responsive: tighten the grid on narrow screens — arrow stays in the
-   right column, just smaller icon and column gap */
-@media (max-width: 640px) {
-  .work-list a {
-    grid-template-columns: 48px 1fr auto;
-    column-gap: 1rem;
-  }
-  .work-list .work-icon {
-    width: 48px;
-    height: 48px;
-  }
-}
-
-/* ---------- About ---------- */
-
-.about p {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
-  line-height: 1.4;
-  max-width: 38rem;
-  margin: 0;
-}
-
-.about a {
-  font-style: italic;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 1px;
-  transition: color 200ms ease;
-}
-
-.about a:hover {
-  color: var(--muted);
-}
-
-/* ---------- Experiments ---------- */
-
-.experiments-intro {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: var(--muted);
-  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
-  max-width: 34rem;
-}
-
-.experiment-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.about-hero {
   display: grid;
-  /* auto-fill keeps empty tracks empty — so a single tile doesn't stretch
-     to fill the row, leaving room for future entries */
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
-  max-width: 56rem;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  align-items: center;
 }
 
-.experiment {
-  margin: 0;
+.about-hero .about-portrait {
+  position: relative;
+  isolation: isolate;
 }
 
-.experiment a {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 180px;
-  padding: 1.5rem;
-  border: 1px solid var(--rule);
-  color: inherit;
-  transition: border-color 220ms ease, background 220ms ease,
-    transform 220ms ease;
+.about-hero .about-portrait img {
+  width: 100%;
+  border-radius: 6px;
+  filter: saturate(1.02);
 }
 
-.experiment a:hover,
-.experiment a:focus-visible {
-  border-color: var(--fg);
-  background: rgba(19, 19, 22, 0.02);
-  transform: translateY(-2px);
+/* neon frame glow behind the portrait */
+.about-hero .about-portrait::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  z-index: -1;
+  border-radius: 12px;
+  background: radial-gradient(ellipse at 60% 40%, var(--neon-glow), transparent 70%);
+  filter: blur(18px);
+  opacity: 0.8;
 }
 
-.experiment-name {
-  display: block;
-  font-family: var(--font-display);
+.about-name {
+  font-family: var(--font-pixel);
   font-weight: 400;
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  line-height: 1.15;
-  color: var(--fg);
-  transition: color 220ms ease;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 0.98;
+  margin: 0 0 1.25rem;
+  text-shadow: 0 0 26px rgba(47, 85, 255, 0.18);
 }
 
-.experiment a:hover .experiment-name,
-.experiment a:focus-visible .experiment-name {
+.about-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.45;
+  margin: 0 0 1.25rem;
+}
+
+.about-lead em {
   font-style: italic;
+  color: var(--neon);
 }
 
-.experiment .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.85rem;
+.about-body p {
+  max-width: 40rem;
+  margin: 0 0 1.15rem;
+  color: var(--fg);
+  line-height: 1.65;
 }
 
-.experiment-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  /* push the meta row to the bottom of the card so name + pills stay
-     grouped near the top regardless of card height */
-  margin-top: auto;
-  padding-top: 1.5rem;
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
+.about-body a {
+  color: var(--neon);
+  border-bottom: 1px solid var(--neon);
+  padding-bottom: 1px;
+  transition: opacity 200ms ease;
+}
+
+.about-body a:hover {
+  opacity: 0.7;
+}
+
+/* quick-facts row on the about page */
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  border-top: 1px solid var(--rule);
+  padding-top: 2rem;
+}
+
+.about-fact .fact-label {
+  display: block;
   font-family: var(--font-body);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+  margin-bottom: 0.4rem;
 }
 
-.experiment-arrow {
-  display: inline-block;
-  font-size: 0.95rem;
-  letter-spacing: 0;
-  transition: transform 220ms ease;
+.about-fact .fact-value {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  line-height: 1.35;
+  color: var(--fg);
 }
 
-.experiment a:hover .experiment-arrow,
-.experiment a:focus-visible .experiment-arrow {
-  transform: translate(3px, -3px);
+@media (max-width: 720px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+  .about-hero .about-portrait {
+    order: -1;
+    max-width: 22rem;
+  }
 }
 
 /* ---------- Connect ---------- */
 
 .connect-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2.5rem);
@@ -418,8 +650,8 @@ section h2 {
 
 .connect-list a:hover,
 .connect-list a:focus-visible {
-  color: var(--offline-pink);
-  border-bottom-color: var(--offline-pink);
+  color: var(--neon);
+  border-bottom-color: var(--neon);
 }
 
 @media (max-width: 540px) {
@@ -450,8 +682,8 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--fg);
-  border-bottom-color: var(--fg);
+  color: var(--neon);
+  border-bottom-color: var(--neon);
 }
 
 footer .links {
@@ -463,7 +695,7 @@ footer .links {
 /* ---------- Focus ---------- */
 
 a:focus-visible {
-  outline: 2px solid var(--fg);
+  outline: 2px solid var(--neon);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -471,10 +703,23 @@ a:focus-visible {
 /* ---------- Reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   *,
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  /* keep sparkles visible (not mid-fade) when motion is off */
+  .spark {
+    opacity: 0.7;
+  }
+  /* freeze the word rotator on the first word */
+  .rotator-track {
+    animation: none !important;
+    transform: none !important;
   }
 }
