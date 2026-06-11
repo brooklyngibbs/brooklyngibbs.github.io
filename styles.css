@@ -718,14 +718,14 @@ body.reveals .project-grid .project-card.in-view {
 .connect-list a {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
   line-height: 1.2;
   color: var(--fg);
   border-bottom: 1px solid var(--fg);
   padding-bottom: 1px;
   align-self: start;
   transition: color 200ms ease, border-color 200ms ease;
-  word-break: break-word;
+  white-space: nowrap;
 }
 
 .connect-list a:hover,
