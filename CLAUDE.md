@@ -7,7 +7,7 @@ This folder is the home for Brooklyn's personal portfolio website and the projec
 ## About Brooklyn
 
 - **Based:** Redmond, WA
-- **Email:** brooklyn@whimbitz.com
+- **Email:** brooklyngibbs22@gmail.com
 - **LinkedIn:** linkedin.com/in/brooklyn-gibbs-6672b0170
 - **Education:** B.S. Computer Science, Indiana University (2023)
 

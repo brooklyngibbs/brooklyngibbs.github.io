@@ -12,4 +12,4 @@ Three case studies:
 
 ## Reach me
 
-[brooklyn@whimbitz.com](mailto:brooklyn@whimbitz.com)
+[brooklyngibbs22@gmail.com](mailto:brooklyngibbs22@gmail.com)
