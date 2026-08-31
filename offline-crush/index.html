@@ -430,23 +430,6 @@
           </p>
         </article>
 
-        <ul class="world-messages" aria-label="What readers have said">
-          <li class="message message--pink message--left">
-            <div class="message-float">
-              <p class="message-text">"the internet's official tour guide"</p>
-            </div>
-          </li>
-          <li class="message message--blue message--right">
-            <div class="message-float">
-              <p class="message-text">"digital merlin"</p>
-            </div>
-          </li>
-          <li class="message message--pink message--left">
-            <div class="message-float">
-              <p class="message-text">"like reading under the covers on a snowy day"</p>
-            </div>
-          </li>
-        </ul>
       </section>
 
       <footer class="closing">
@@ -465,28 +448,5 @@
       </footer>
     </main>
 
-    <script>
-      // Pop the reader-message bubbles in once the World section reaches
-      // the viewport. One-shot: we don't reverse on scroll-away because the
-      // bubbles act as content (testimonials) rather than annotation.
-      (function () {
-        const messages = document.querySelector(".world-messages");
-        if (!messages) return;
-        const observer = new IntersectionObserver(
-          (entries) => {
-            const entry = entries[0];
-            const inView = entry.intersectionRatio >= 0.2;
-            const above =
-              !entry.isIntersecting && entry.boundingClientRect.top < 0;
-            if (inView || above) {
-              messages.classList.add("world-messages--popped");
-              observer.disconnect();
-            }
-          },
-          { threshold: [0, 0.2] }
-        );
-        observer.observe(messages);
-      })();
-    </script>
   </body>
 </html>
