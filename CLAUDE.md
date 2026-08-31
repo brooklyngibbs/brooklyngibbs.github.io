@@ -44,8 +44,10 @@ The audience reading this site is: creative directors, brand leads, music indust
 ## Projects to feature
 
 ### 1. Offline Crush — Substack (Nov 2024 – Present)
-- **What:** Independent newsletter on internet culture and the indie web.
-- **Stats (as of 2026-05-09):** 10,000+ Substack subscribers, zero paid acquisition. Two distinct growth inflections: Sep 2025 (music discovery essay went viral — 22k likes) and Apr 2026 (started a recurring graphic-carousel series of niche-website lists, also driving the parallel TikTok case study).
+- **What:** Independent publication about pop culture, music, and what it feels like to live on the internet.
+- **Stats (as of 2026-08-31):** 10,000+ Substack subscribers, zero paid acquisition. Two distinct growth inflections: Sep 2025 (music discovery essay went viral — now 23.4k likes and 3.75k restacks) and Apr 2026 (started a recurring graphic-carousel series of niche-website lists, also driving the parallel TikTok case study).
+- **Bumbershoot partnership (Aug–Sep 2026):** Bumbershoot provided complimentary media passes in exchange for pre- and post-festival coverage. The pre-festival deliverable, “A Nervous Girl’s Guide to Going to a Music Festival Alone,” was published Aug 24; post-festival coverage will complete the partnership after the Sep 5–6 festival.
+- **Book of the Month partnership (upcoming, 2026):** Paid commissioned editorial post plus a gifted book box. Brooklyn confirmed the partnership can be named publicly before the post is published.
 - **Themes:** intersection of digital culture, personal identity, psychological impact of living "split" between offline and online; the "whimsy movement" — making digital spaces feel magical, cozy, intentional as a counter to doomscrolling and optimization culture.
 - **Voice:** informal, often lowercase, highly aesthetic. Mixes traditional essays with Spotify playlists, screenshots, and "fragment" diaries (e.g., moving back home, work burnout).
 - **Brand colors:** neon pink `#f92e80`, electric blue `#1f26ce`. (No third brand color — earlier drafts mentioned a purple, but Brooklyn confirmed purple isn't part of the brand. Pink + blue + neutrals only.)
