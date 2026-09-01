@@ -185,6 +185,22 @@ main {
   color: var(--muted);
 }
 
+.presents-card {
+  margin: clamp(2.5rem, 6vw, 4.5rem) 0 0;
+  width: min(100%, 25rem);
+}
+
+.presents-card picture,
+.presents-card img {
+  display: block;
+  width: 100%;
+}
+
+.presents-card img {
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
 @media (max-width: 540px) {
   .stats {
     grid-template-columns: 1fr 1fr;
