@@ -83,6 +83,8 @@ The audience reading this site is: creative directors, brand leads, music indust
 
 This direction supersedes the older quiet-blue / early-OS homepage direction below. The homepage is modeled after Brooklyn's old Tumblr theme: a fixed, quiet identity sidebar on the left and a loose image-post grid on the right. The emotional goal is to reconnect the portfolio to the creativity Brooklyn first felt while coding Tumblr themes.
 
+**Permanent shell rule:** the homepage's left sidebar is invariant across the entire site. Its combined wordmark, short bio, email contact line, Work/About navigation, horizontal social-icon row, spacing, typography, and proportions must not change between the homepage, About, or any project page. Only the content area to the right of the sidebar changes.
+
 - **Palette:** true white, near-black, vivid botanical green, juicy pink/red-pink, with chartreuse/yellow and royal blue used sparingly. No beige, cream, gradients, glows, or muted pastel washes.
 - **Shape:** sharp rectangular frames, hairline rules, hand-shaped SVG edges, and almost no radius. No SaaS pills, glass panels, or rounded card containers.
 - **Type:** DM Sans and IBM Plex Mono keep the shell small, personal, and Tumblr-like. Brooklyn's supplied combined hand-drawn wordmark at `assets/images/brooklyn-gibbs-wordmark.png` lives in the left sidebar; preserve its lettering exactly.
