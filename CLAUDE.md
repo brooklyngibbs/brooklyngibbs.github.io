@@ -79,6 +79,18 @@ The audience reading this site is: creative directors, brand leads, music indust
 
 ## Visual / brand direction for the portfolio site
 
+### Current homepage direction — Living Desktop Garden (2026-09-01)
+
+This direction supersedes the older quiet-blue / early-OS homepage direction below. The homepage is modeled after Brooklyn's old Tumblr theme: a fixed, quiet identity sidebar on the left and a loose image-post grid on the right. The emotional goal is to reconnect the portfolio to the creativity Brooklyn first felt while coding Tumblr themes.
+
+- **Palette:** true white, near-black, vivid botanical green, juicy pink/red-pink, with chartreuse/yellow and royal blue used sparingly. No beige, cream, gradients, glows, or muted pastel washes.
+- **Shape:** sharp rectangular frames, hairline rules, hand-shaped SVG edges, and almost no radius. No SaaS pills, glass panels, or rounded card containers.
+- **Type:** DM Sans and IBM Plex Mono keep the shell small, personal, and Tumblr-like. Brooklyn's supplied combined hand-drawn wordmark at `assets/images/brooklyn-gibbs-wordmark.png` lives in the left sidebar; preserve its lettering exactly.
+- **Behavior:** ordinary interface cues become alive—a selection box contains a flytrap, abstract tracks move through creative roles, project frames shift like animation cels, and an About folder sprouts a leaf. Motion must remain restrained and respect `prefers-reduced-motion`.
+- **Project system:** every project is an image/GIF post in a three-column masonry-style grid—Offline Crush, Whimbitz, internet.siren, Roku City, Charli XCX, Starface, and Pond Booth—with a tiny caption underneath. A compact filter menu sits in the top-right corner. Project pages can eventually express their own worlds while preserving shared navigation and accessibility rules.
+- **Artwork:** project imagery provides nearly all visual color. The supplied hand-drawn wordmark remains a personal signature; avoid adding decorative art that competes with the image grid.
+- **Creative test:** the page should feel like “someone left the internet outside overnight and nature started growing through it,” without becoming an Alice-themed site or retro OS imitation.
+
 **Model: Bleed (bleed.com/work) + Tammy Taabassum (taamannae.dev) — restrained, editorial, text-forward — anchored in *clean minimalist 90s nostalgia*.**
 
 The "90s nostalgia" frame is load-bearing and pulls in a specific direction: faded-paper / early-OS / CRT-grey palette (not warm cream, not pure white), and pixel-bitmap typography as a signature accent. **NOT** maximalist 90s (no Geocities, animated GIFs, neon-on-black). The reference register is closer to early Mac OS desktops, MS-DOS startup screens, NEC PC-98, and contemporary indie-web sites that nod to that era through restraint.
