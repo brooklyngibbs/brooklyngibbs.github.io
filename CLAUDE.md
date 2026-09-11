@@ -89,7 +89,7 @@ This direction supersedes the older quiet-blue / early-OS homepage direction bel
 - **Shape:** sharp rectangular frames, hairline rules, hand-shaped SVG edges, and almost no radius. No SaaS pills, glass panels, or rounded card containers.
 - **Type:** DM Sans and IBM Plex Mono keep the shell small, personal, and Tumblr-like. Brooklyn's supplied combined hand-drawn wordmark at `assets/images/brooklyn-gibbs-wordmark.png` lives in the left sidebar; preserve its lettering exactly.
 - **Behavior:** ordinary interface cues become alive—a selection box contains a flytrap, abstract tracks move through creative roles, project frames shift like animation cels, and an About folder sprouts a leaf. Motion must remain restrained and respect `prefers-reduced-motion`.
-- **Project system:** every project is an image/GIF post in a three-column masonry-style grid—Offline Crush, Whimbitz, internet.siren, Roku City, Charli XCX, Starface, and Pond Booth—with a tiny caption underneath. A compact filter menu sits in the top-right corner. Project pages can eventually express their own worlds while preserving shared navigation and accessibility rules.
+- **Project system:** every primary project is an image/GIF post in a three-column masonry-style grid—Offline Crush, Whimbitz, Roku City, Charli XCX, Starface, and Pond Booth—with a tiny caption underneath. `offlinecrush.mp4` is not a separate homepage project; its TikTok/social work lives inside the Offline Crush case study as a channel of the larger brand. A compact filter menu sits in the top-right corner.
 - **Artwork:** project imagery provides nearly all visual color. The supplied hand-drawn wordmark remains a personal signature; avoid adding decorative art that competes with the image grid.
 - **Creative test:** the page should feel like “someone left the internet outside overnight and nature started growing through it,” without becoming an Alice-themed site or retro OS imitation.
 
@@ -117,7 +117,7 @@ These are Brooklyn's confirmed brand colors. Mirrored as CSS custom properties i
 | Offline Crush pink | `#f92e80` | Offline Crush | neon, vivid magenta-pink |
 | Offline Crush blue | `#1f26ce` | Offline Crush | electric royal blue |
 | Whimbitz green | `#d4ff00` | Whimbitz | electric chartreuse / Whimbleton's color |
-| TikTok / internet.siren | reuses Offline Blue `#1f26ce` | TikTok case study | internet.siren extends the Offline Crush brand to TikTok, so the home-page hover for the TikTok row uses Offline Blue instead of a separate accent |
+| TikTok / offlinecrush.mp4 | reuses Offline Blue `#1f26ce` | TikTok case study | offlinecrush.mp4 extends the Offline Crush brand to TikTok, so the home-page hover for the TikTok row uses Offline Blue instead of a separate accent |
 
 **Hard nos:**
 - No "generic dev portfolio" templates.
