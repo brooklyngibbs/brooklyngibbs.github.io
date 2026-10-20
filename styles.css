@@ -22,3 +22,6 @@
 .sidebar-links a[aria-current="page"]::after{transform:scaleX(1)}
 .sidebar-contact{margin-top:.45rem;color:var(--muted);font-family:var(--mono);font-size:.5rem;line-height:1.5;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:2px}
 .sidebar-contact:hover{color:var(--pink)}
+
+/* Preserve the complete Pond Booth artwork at every viewport size. */
+.post--pondbooth figure{aspect-ratio:3/2}.post--pondbooth img{object-fit:contain}
