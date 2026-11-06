@@ -1,0 +1,1142 @@
+{
+  "schemaVersion": 2,
+  "groups": {
+    "ornament": {
+      "center": [
+        0.265,
+        0.48
+      ],
+      "mobileCenter": [
+        0.31,
+        0.27
+      ],
+      "slots": [
+        [
+          -28,
+          -30
+        ],
+        [
+          48,
+          -9
+        ],
+        [
+          6,
+          65
+        ],
+        [
+          -62,
+          65
+        ],
+        [
+          74,
+          63
+        ],
+        [
+          80,
+          -71
+        ],
+        [
+          -52,
+          -115
+        ],
+        [
+          150,
+          -50
+        ],
+        [
+          144,
+          20
+        ],
+        [
+          4,
+          -118
+        ]
+      ]
+    },
+    "wonderland": {
+      "center": [
+        0.65,
+        0.27
+      ],
+      "mobileCenter": [
+        0.7,
+        0.56
+      ],
+      "slots": [
+        [
+          24,
+          -22
+        ],
+        [
+          -54,
+          30
+        ],
+        [
+          -42,
+          -52
+        ],
+        [
+          29,
+          73
+        ],
+        [
+          -123,
+          82
+        ],
+        [
+          -126,
+          -74
+        ],
+        [
+          -127,
+          2
+        ],
+        [
+          105,
+          15
+        ],
+        [
+          105,
+          98
+        ]
+      ]
+    },
+    "matilda": {
+      "center": [
+        0.76,
+        0.6
+      ],
+      "mobileCenter": [
+        0.82,
+        0.84
+      ],
+      "slots": [
+        [
+          -22,
+          -16
+        ],
+        [
+          48,
+          -14
+        ],
+        [
+          31,
+          51
+        ],
+        [
+          -36,
+          51
+        ]
+      ]
+    },
+    "python": {
+      "center": [
+        0.57,
+        0.82
+      ],
+      "mobileCenter": [
+        0.25,
+        0.89
+      ],
+      "slots": [
+        [
+          0,
+          -6
+        ],
+        [
+          74,
+          7
+        ]
+      ]
+    }
+  },
+  "categories": [
+    {
+      "id": "florals",
+      "name": "Florals",
+      "parents": [],
+      "themes": [
+        "florals"
+      ],
+      "labelRefs": [
+        "vintage-floral",
+        "floral-hat",
+        "floral-teacup"
+      ],
+      "focusGroup": "ornament",
+      "focusZoom": 2.2,
+      "reveal": [
+        0,
+        0
+      ],
+      "side": 1,
+      "labelAnchor": {
+        "ref": "vintage-floral",
+        "offset": [
+          0,
+          82
+        ],
+        "mobileOffset": [
+          0,
+          68
+        ]
+      },
+      "coverRef": "vintage-floral"
+    },
+    {
+      "id": "british-culture",
+      "name": "British culture",
+      "parents": [],
+      "themes": [
+        "british-culture"
+      ],
+      "labelRefs": [
+        "looking-glass-book",
+        "castle-heirlooms"
+      ],
+      "focus": [
+        0.64,
+        0.44
+      ],
+      "mobileFocus": [
+        0.62,
+        0.65
+      ],
+      "focusZoom": 2.2,
+      "reveal": [
+        0,
+        0
+      ],
+      "side": -1,
+      "mobileSide": 1,
+      "labelAnchor": {
+        "ref": "looking-glass-book",
+        "offset": [
+          0,
+          -86
+        ],
+        "mobileRef": "looking-glass-book",
+        "mobileOffset": [
+          0,
+          72
+        ]
+      },
+      "coverRef": "looking-glass-book"
+    },
+    {
+      "id": "british-literature",
+      "name": "British literature",
+      "parents": [
+        "british-culture"
+      ],
+      "themes": [
+        "british-literature"
+      ],
+      "labelRefs": [
+        "looking-glass-book",
+        "castle-heirlooms"
+      ],
+      "focus": [
+        0.64,
+        0.38
+      ],
+      "mobileFocus": [
+        0.64,
+        0.67
+      ],
+      "focusZoom": 3.3,
+      "reveal": [
+        1.85,
+        2.1
+      ],
+      "side": -1,
+      "mobileSide": 1,
+      "labelAnchor": {
+        "ref": "looking-glass-book",
+        "offset": [
+          0,
+          -40
+        ],
+        "mobileRef": "castle-heirlooms",
+        "mobileOffset": [
+          32,
+          126
+        ]
+      }
+    },
+    {
+      "id": "alice",
+      "name": "Alice in Wonderland",
+      "parents": [
+        "british-literature"
+      ],
+      "crossovers": [
+        "florals"
+      ],
+      "refs": [
+        "looking-glass-book",
+        "castle-heirlooms",
+        "wonderland-flowers",
+        "alice-mirrors",
+        "flower-people",
+        "vegetable-people",
+        "chameleon-person",
+        "flower-body",
+        "glass-perception"
+      ],
+      "labelRefs": [
+        "flower-people",
+        "castle-heirlooms",
+        "wonderland-flowers"
+      ],
+      "focusRefs": [
+        "flower-people",
+        "castle-heirlooms",
+        "looking-glass-book"
+      ],
+      "focusZoom": 3.8,
+      "reveal": [
+        2.65,
+        3.15
+      ],
+      "side": -1,
+      "labelAnchor": {
+        "ref": "flower-people",
+        "offset": [
+          10,
+          -72
+        ],
+        "mobileOffset": [
+          64,
+          -78
+        ]
+      }
+    },
+    {
+      "id": "matilda",
+      "name": "Matilda",
+      "parents": [
+        "british-literature"
+      ],
+      "groups": [
+        "matilda"
+      ],
+      "focusGroup": "matilda",
+      "focusZoom": 3.8,
+      "reveal": [
+        2.65,
+        3.15
+      ],
+      "side": 1,
+      "labelAnchor": {
+        "ref": "matilda-176",
+        "offset": [
+          85,
+          60
+        ],
+        "mobileRef": "matilda-170",
+        "mobileOffset": [
+          -20,
+          42
+        ]
+      }
+    },
+    {
+      "id": "monty-python",
+      "name": "Monty Python",
+      "parents": [
+        "british-culture"
+      ],
+      "groups": [
+        "python"
+      ],
+      "focusGroup": "python",
+      "focusZoom": 3.3,
+      "reveal": [
+        2.35,
+        2.85
+      ],
+      "side": 1,
+      "labelAnchor": {
+        "ref": "silly-walks",
+        "offset": [
+          25,
+          -76
+        ],
+        "mobileRef": "python-egghead",
+        "mobileOffset": [
+          0,
+          44
+        ]
+      }
+    },
+    {
+      "id": "hometowns",
+      "name": "Hometowns",
+      "parents": [
+        "british-culture"
+      ],
+      "refs": [],
+      "planned": true,
+      "focusZoom": 3.3,
+      "reveal": [
+        1.55,
+        1.95
+      ],
+      "side": 1
+    },
+    {
+      "id": "background",
+      "name": "Background",
+      "parents": [
+        "british-culture"
+      ],
+      "refs": [],
+      "planned": true,
+      "focusZoom": 3.3,
+      "reveal": [
+        1.55,
+        1.95
+      ],
+      "side": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "vintage-floral",
+      "name": "Vintage floral pattern",
+      "src": "vintage-floral.jpg",
+      "group": "ornament",
+      "slot": 0,
+      "size": 104,
+      "w": 540,
+      "h": 684,
+      "tier": 0,
+      "angle": -2,
+      "themes": [
+        "florals"
+      ],
+      "related": [
+        "floral-hat",
+        "floral-teacup",
+        "mismatched-socks",
+        "flower-body"
+      ],
+      "note": "You placed this reference in “floral.”",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#floral-details",
+      "thumbnail": "thumbnails/vintage-floral.jpg"
+    },
+    {
+      "id": "looking-glass-book",
+      "name": "Through the Looking-Glass",
+      "src": "looking-glass-book.jpg",
+      "group": "wonderland",
+      "slot": 0,
+      "size": 106,
+      "w": 480,
+      "h": 684,
+      "tier": 0,
+      "angle": 2.5,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "alice"
+      ],
+      "related": [
+        "glass-perception",
+        "chameleon-person",
+        "castle-heirlooms",
+        "alice-mirrors",
+        "matilda-176"
+      ],
+      "note": "You particularly like Through the Looking-Glass for Say Now because of the mirrors. This book cover anchors that literary direction.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#looking-glass-book-details",
+      "thumbnail": "thumbnails/looking-glass-book.jpg"
+    },
+    {
+      "id": "silly-walks",
+      "name": "The Ministry of Silly Walks",
+      "src": "silly-walks.jpg",
+      "group": "python",
+      "slot": 0,
+      "size": 84,
+      "w": 400,
+      "h": 457,
+      "tier": 2,
+      "angle": -2,
+      "themes": [
+        "british-culture",
+        "monty-python"
+      ],
+      "related": [
+        "python-egghead",
+        "floral-teacup",
+        "matilda-174",
+        "looking-glass-book"
+      ],
+      "revealCategory": "monty-python",
+      "note": "You thought this was another Monty Python picture and asked for verification.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#silly-walks-details",
+      "thumbnail": "thumbnails/silly-walks.jpg"
+    },
+    {
+      "id": "castle-heirlooms",
+      "name": "Wonderland flower characters",
+      "src": "castle-heirlooms.jpg",
+      "group": "wonderland",
+      "slot": 1,
+      "size": 76,
+      "w": 400,
+      "h": 500,
+      "tier": 1,
+      "angle": 1.5,
+      "themes": [
+        "florals",
+        "british-literature",
+        "british-culture",
+        "alice",
+        "characters",
+        "botanical-people"
+      ],
+      "related": [
+        "flower-people",
+        "wonderland-flowers",
+        "looking-glass-book",
+        "chameleon-person"
+      ],
+      "note": "British literature is a central source of inspiration for this band, drawing on their English background and the characters and stories you both grew up with. Alice in Wonderland is a whole category, with more works and media references to come.\n\nYou connect their current interest in being twelve with girlhood in stories that are surreal and strange: knowing yourself while being told who to be, not being taken seriously, and navigating contradictory expectations of women.\n\nYou want to develop these childhood references into a world that explores those tensions.\n\nConnections should show a clear shared category, like the overlap of a Venn diagram. A giant floral hat would belong to both floral and hats; a loose thematic association is not enough.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#flowers-details",
+      "thumbnail": "thumbnails/castle-heirlooms.jpg"
+    },
+    {
+      "id": "floral-teacup",
+      "name": "Floral tea china",
+      "src": "floral-teacup.jpg",
+      "group": "ornament",
+      "slot": 2,
+      "size": 64,
+      "w": 330,
+      "h": 330,
+      "tier": 1,
+      "angle": 2.5,
+      "themes": [
+        "florals",
+        "british-culture",
+        "tea"
+      ],
+      "related": [
+        "teacup-hat",
+        "vintage-floral",
+        "castle-heirlooms",
+        "silly-walks"
+      ],
+      "note": "A teacup with a flower design and biscuits. You connect it to British culture as well as floral patterns.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#floral-teacup-details",
+      "thumbnail": "thumbnails/floral-teacup.jpg"
+    },
+    {
+      "id": "floral-hat",
+      "name": "Oversized floral hat",
+      "src": "floral-hat.jpg",
+      "group": "ornament",
+      "slot": 1,
+      "size": 72,
+      "w": 230,
+      "h": 267,
+      "tier": 1,
+      "angle": -3,
+      "themes": [
+        "florals",
+        "headwear"
+      ],
+      "related": [
+        "dog-headpiece",
+        "teacup-hat",
+        "chandelier-headpiece",
+        "flower-people"
+      ],
+      "note": "You described this as a big floral hat.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#floral-hat-details",
+      "thumbnail": "thumbnails/floral-hat.jpg"
+    },
+    {
+      "id": "wonderland-flowers",
+      "name": "Wonderland flowers",
+      "src": "wonderland-flowers.jpg",
+      "group": "wonderland",
+      "slot": 2,
+      "size": 58,
+      "w": 230,
+      "h": 307,
+      "tier": 1,
+      "angle": -2.5,
+      "themes": [
+        "florals",
+        "british-literature",
+        "british-culture",
+        "alice",
+        "characters",
+        "botanical-people"
+      ],
+      "related": [
+        "flower-people",
+        "vegetable-people",
+        "castle-heirlooms",
+        "looking-glass-book"
+      ],
+      "note": "You identified these as Wonderland flowers.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#wonderland-flowers-details",
+      "thumbnail": "thumbnails/wonderland-flowers.jpg"
+    },
+    {
+      "id": "mismatched-socks",
+      "name": "Mismatched floral socks",
+      "src": "mismatched-socks.jpg",
+      "group": "ornament",
+      "slot": 3,
+      "size": 54,
+      "w": 180,
+      "h": 275,
+      "tier": 1,
+      "angle": 2,
+      "themes": [
+        "florals"
+      ],
+      "related": [
+        "vintage-floral",
+        "ribbon-dress",
+        "floral-hat",
+        "carousel"
+      ],
+      "note": "You see mismatched socks, one floral and one light pink. They fit the floral direction and the vintage, filtered 2014 British aesthetic you associate with Say Now’s current visuals.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#mismatched-socks-details",
+      "thumbnail": "thumbnails/mismatched-socks.jpg"
+    },
+    {
+      "id": "flower-body",
+      "name": "A person becomes a flower",
+      "src": "flower-body.jpg",
+      "group": "ornament",
+      "slot": 4,
+      "size": 58,
+      "w": 260,
+      "h": 318,
+      "tier": 1,
+      "angle": -2,
+      "themes": [
+        "florals",
+        "surrealism",
+        "characters",
+        "botanical-people"
+      ],
+      "related": [
+        "flower-people",
+        "vegetable-people",
+        "castle-heirlooms",
+        "floral-hat"
+      ],
+      "note": "You especially like this image: the flower over the person makes it feel like a giant flower body. It evokes Alice in Wonderland, surrealism, giant animals and flowers, and the possibilities of that strange world and its characters.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#flower-body-details",
+      "thumbnail": "thumbnails/flower-body.jpg"
+    },
+    {
+      "id": "matilda-176",
+      "name": "Matilda reading",
+      "src": "matilda-176.jpg",
+      "group": "matilda",
+      "slot": 0,
+      "size": 68,
+      "w": 300,
+      "h": 300,
+      "tier": 1,
+      "angle": -2,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "matilda"
+      ],
+      "related": [
+        "looking-glass-book",
+        "matilda-170",
+        "matilda-179",
+        "matilda-174"
+      ],
+      "note": "You want Matilda to have its own category beside Alice in Wonderland, as part of the British books and cultural works informing this direction.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#matilda-176-details",
+      "thumbnail": "thumbnails/matilda-176.jpg"
+    },
+    {
+      "id": "python-egghead",
+      "name": "Cut-out head animation",
+      "src": "python-egghead.jpg",
+      "group": "python",
+      "slot": 1,
+      "size": 66,
+      "w": 270,
+      "h": 186,
+      "tier": 2,
+      "angle": 2,
+      "themes": [
+        "british-culture",
+        "monty-python"
+      ],
+      "related": [
+        "silly-walks",
+        "floral-teacup",
+        "looking-glass-book"
+      ],
+      "revealCategory": "monty-python",
+      "note": "You thought this might be Monty Python. You want to explore British culture, narrowing in on British humor and British absurdism.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#python-egghead-details",
+      "thumbnail": "thumbnails/python-egghead.jpg"
+    },
+    {
+      "id": "alice-mirrors",
+      "name": "Alice and her reflections",
+      "src": "alice-mirrors.jpg",
+      "group": "wonderland",
+      "slot": 3,
+      "size": 58,
+      "w": 210,
+      "h": 301,
+      "tier": 2,
+      "angle": 2.5,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "alice",
+        "mirrors",
+        "reflection",
+        "perception"
+      ],
+      "related": [
+        "glass-perception",
+        "chameleon-person",
+        "looking-glass-book",
+        "castle-heirlooms",
+        "wonderland-flowers"
+      ],
+      "note": "You identify this as Alice looking through multiple mirrors. You connect mirrors and perception to your reading of the band’s music: how they are perceived versus reality, and being underestimated.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#alice-mirrors-details",
+      "thumbnail": "thumbnails/alice-mirrors.jpg"
+    },
+    {
+      "id": "chandelier-headpiece",
+      "name": "Chandelier headpiece",
+      "src": "chandelier-headpiece.jpg",
+      "group": "ornament",
+      "slot": 5,
+      "size": 52,
+      "w": 250,
+      "h": 323,
+      "tier": 2,
+      "angle": 2,
+      "themes": [
+        "headwear",
+        "lighting",
+        "costume"
+      ],
+      "related": [
+        "lampshade-people",
+        "floral-hat",
+        "dog-headpiece",
+        "teacup-hat"
+      ],
+      "note": "A big, surreal, stylish hat. The first of a collection of oversized hats you want to explore.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#details",
+      "thumbnail": "thumbnails/chandelier-headpiece.jpg"
+    },
+    {
+      "id": "matilda-179",
+      "name": "Eye mask and rollers",
+      "src": "matilda-179.jpg",
+      "group": "matilda",
+      "slot": 1,
+      "size": 54,
+      "w": 180,
+      "h": 135,
+      "tier": 2,
+      "angle": 2.5,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "matilda"
+      ],
+      "related": [
+        "matilda-170",
+        "matilda-174",
+        "matilda-176"
+      ],
+      "note": "You want Matilda to have its own category beside Alice in Wonderland, as part of the British books and cultural works informing this direction.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#matilda-179-details",
+      "thumbnail": "thumbnails/matilda-179.jpg"
+    },
+    {
+      "id": "matilda-174",
+      "name": "Miss Trunchbull",
+      "src": "matilda-174.jpg",
+      "group": "matilda",
+      "slot": 2,
+      "size": 54,
+      "w": 165,
+      "h": 229,
+      "tier": 2,
+      "angle": -2.5,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "matilda"
+      ],
+      "related": [
+        "matilda-176",
+        "matilda-179",
+        "matilda-170",
+        "silly-walks"
+      ],
+      "note": "You want Matilda to have its own category beside Alice in Wonderland, as part of the British books and cultural works informing this direction.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#matilda-174-details",
+      "thumbnail": "thumbnails/matilda-174.jpg"
+    },
+    {
+      "id": "matilda-170",
+      "name": "Matilda at the table",
+      "src": "matilda-170.jpg",
+      "group": "matilda",
+      "slot": 3,
+      "size": 58,
+      "w": 200,
+      "h": 150,
+      "tier": 2,
+      "angle": -2,
+      "themes": [
+        "british-literature",
+        "british-culture",
+        "matilda"
+      ],
+      "related": [
+        "matilda-176",
+        "matilda-179",
+        "matilda-174"
+      ],
+      "note": "You want Matilda to have its own category beside Alice in Wonderland, as part of the British books and cultural works informing this direction.",
+      "noteAuthor": "saved-user-summary",
+      "noteSource": "design-previews/say-now/portfolio-original/index.html#matilda-170-details",
+      "thumbnail": "thumbnails/matilda-170.jpg"
+    },
+    {
+      "id": "ribbon-dress",
+      "name": "Oversized ribbon dress",
+      "group": "ornament",
+      "slot": 6,
+      "size": 68,
+      "w": 468,
+      "h": 702,
+      "tier": 1,
+      "angle": -2,
+      "themes": [
+        "ribbon",
+        "bows",
+        "fashion"
+      ],
+      "related": [
+        "lampshade-people",
+        "floral-hat",
+        "carousel",
+        "mismatched-socks"
+      ],
+      "note": "This is a big ribbon dress. I think that bows and ribbon are a motif that they want and that can continue just in a cooler way",
+      "description": "A woman in an oversized multicolored ribbon and bow dress, with pale green legs and shoes against a blue background.",
+      "src": "ribbon-dress.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989354090/",
+        "imageUrl": "https://i.pinimg.com/736x/0b/80/25/0b80251c33417f4a760d26521859117c.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/ribbon-dress.jpg"
+    },
+    {
+      "id": "lampshade-people",
+      "name": "Lampshade people",
+      "group": "ornament",
+      "slot": 9,
+      "size": 68,
+      "w": 736,
+      "h": 981,
+      "tier": 1,
+      "angle": 2,
+      "themes": [
+        "lighting",
+        "headwear",
+        "surrealism",
+        "characters",
+        "costume"
+      ],
+      "related": [
+        "chandelier-headpiece",
+        "chameleon-person",
+        "flower-people",
+        "dog-headpiece"
+      ],
+      "note": "This is three girls dressed with lampshades over their faces. I just love this weird quirky character for them, like lobster people, iguana people, lampshade people. I just think it's interesting for their visual world It brings in lighting as well, which is kind of a common theme for them",
+      "description": "Three people wearing illuminated lampshade headpieces and white tiered costumes on a lawn at night.",
+      "src": "lampshade-people.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353996/",
+        "imageUrl": "https://i.pinimg.com/736x/3f/7b/ec/3f7bec0fdef875a6b6869d039abbd128.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/lampshade-people.jpg"
+    },
+    {
+      "id": "chameleon-person",
+      "name": "Chameleon person",
+      "group": "wonderland",
+      "slot": 4,
+      "size": 66,
+      "w": 736,
+      "h": 1104,
+      "tier": 1,
+      "angle": -1.5,
+      "themes": [
+        "surrealism",
+        "characters",
+        "animal-people",
+        "alice",
+        "belonging"
+      ],
+      "related": [
+        "looking-glass-book",
+        "lampshade-people",
+        "vegetable-people",
+        "alice-mirrors"
+      ],
+      "note": "This is the Iguana People photo, or Chameleon, I think, is what it actually is. To me it's like the same as the Alice in Wonderland world: the surrealism, the characters fitting in, not fitting in, being seen as indifferent in your own world kind of vibe",
+      "description": "A seated person with a large green chameleon head, yellow shirt and brown trousers on a wooden chair.",
+      "src": "chameleon-person.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353735/",
+        "imageUrl": "https://i.pinimg.com/736x/c9/8c/0d/c98c0d1869618710c3a0dc5d49092bf5.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/chameleon-person.jpg"
+    },
+    {
+      "id": "dog-headpiece",
+      "name": "Dog headpiece",
+      "group": "ornament",
+      "slot": 7,
+      "size": 54,
+      "w": 786,
+      "h": 1135,
+      "tier": 2,
+      "angle": 2,
+      "themes": [
+        "headwear",
+        "british-culture",
+        "animals"
+      ],
+      "related": [
+        "teacup-hat",
+        "floral-hat",
+        "lampshade-people",
+        "silly-walks"
+      ],
+      "note": "I love these posh British-looking headpieces as well. This is one with dogs on it but to me it just kind of screams British",
+      "description": "A red sculptural headpiece decorated with miniature dogs and red netting on a black mannequin.",
+      "interpretation": "British culture is the user’s visual association, not a claim about the headpiece’s origin.",
+      "src": "dog-headpiece.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353899/",
+        "imageUrl": "https://i.pinimg.com/736x/c7/f3/2c/c7f32cbf2f71aadb46868e47b057c72a.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/dog-headpiece.jpg"
+    },
+    {
+      "id": "teacup-hat",
+      "name": "Teacup hat",
+      "group": "ornament",
+      "slot": 8,
+      "size": 57,
+      "w": 900,
+      "h": 900,
+      "tier": 1,
+      "angle": -2,
+      "themes": [
+        "headwear",
+        "tea",
+        "british-culture",
+        "surrealism"
+      ],
+      "related": [
+        "floral-teacup",
+        "dog-headpiece",
+        "looking-glass-book",
+        "chandelier-headpiece"
+      ],
+      "note": "This hat is a teacup, which is way more obvious",
+      "description": "A cream teacup and saucer headpiece on a black mannequin in front of a lace curtain.",
+      "src": "teacup-hat.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353891/",
+        "imageUrl": "https://i.pinimg.com/736x/d0/4b/63/d04b6324d187b9319d9fa6dc932a4e8a.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/teacup-hat.jpg"
+    },
+    {
+      "id": "vegetable-people",
+      "name": "Vegetable people",
+      "group": "wonderland",
+      "slot": 5,
+      "size": 53,
+      "w": 1170,
+      "h": 1568,
+      "tier": 2,
+      "angle": -2,
+      "themes": [
+        "surrealism",
+        "characters",
+        "botanical-people",
+        "illustration"
+      ],
+      "related": [
+        "flower-people",
+        "chameleon-person",
+        "wonderland-flowers",
+        "flower-body"
+      ],
+      "note": "Some weird vegetable people I'm inspired by",
+      "description": "An aged illustration of two vegetable characters with human faces, leafy clothing and slender root-like limbs.",
+      "src": "vegetable-people.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353831/",
+        "imageUrl": "https://i.pinimg.com/736x/b2/f4/27/b2f427c8d5649a68759ac7ba6f2dde41.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/vegetable-people.jpg"
+    },
+    {
+      "id": "flower-people",
+      "name": "Flower people",
+      "group": "wonderland",
+      "slot": 6,
+      "size": 68,
+      "w": 674,
+      "h": 927,
+      "tier": 1,
+      "angle": 1.5,
+      "themes": [
+        "florals",
+        "surrealism",
+        "characters",
+        "botanical-people",
+        "illustration"
+      ],
+      "related": [
+        "vegetable-people",
+        "castle-heirlooms",
+        "flower-body",
+        "chameleon-person"
+      ],
+      "note": "Some flower people in the same style",
+      "description": "An aged illustration of two human-faced flowers in pink and purple, with leaf bodies and stem-like limbs.",
+      "src": "flower-people.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353832/",
+        "imageUrl": "https://i.pinimg.com/736x/bc/cf/d2/bccfd27d01c2f7c6fe700ec71fd660f8.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/flower-people.jpg"
+    },
+    {
+      "id": "carousel",
+      "name": "Carousel",
+      "group": "wonderland",
+      "slot": 7,
+      "size": 62,
+      "w": 500,
+      "h": 681,
+      "tier": 1,
+      "angle": 2,
+      "themes": [
+        "carousel",
+        "fashion"
+      ],
+      "related": [
+        "ribbon-dress",
+        "looking-glass-book",
+        "mismatched-socks",
+        "lampshade-people"
+      ],
+      "note": "Carousel",
+      "description": "Red-stockinged legs and red heeled shoes draped across painted carousel horses.",
+      "src": "carousel.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989353718/",
+        "imageUrl": "https://i.pinimg.com/736x/83/87/60/838760b1ff77de4e1ff2eee17ad540d8.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/carousel.jpg"
+    },
+    {
+      "id": "glass-perception",
+      "name": "Face through glass",
+      "src": "glass-perception.jpg",
+      "group": "wonderland",
+      "slot": 8,
+      "size": 68,
+      "w": 601,
+      "h": 808,
+      "tier": 2,
+      "angle": -1.5,
+      "themes": [
+        "alice",
+        "mirrors",
+        "glass",
+        "perception",
+        "surrealism",
+        "fashion"
+      ],
+      "related": [
+        "alice-mirrors",
+        "looking-glass-book",
+        "chameleon-person"
+      ],
+      "note": "this image plays on mirrors glass and perception. i find this really cool and like the idea of taking this from alice in the looking glass.",
+      "noteAuthor": "user",
+      "description": "A face is magnified and distorted through a large stemmed glass containing water and small fish; purple eye makeup, dark lips, pearls and rings are visible.",
+      "interpretation": "The user connects this optical distortion through glass to mirrors, perception and Alice / Through the Looking-Glass. This is an inspiration connection, not a claim that the photograph depicts Alice or uses a literal mirror.",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989354166/",
+        "imageUrl": "https://i.pinimg.com/736x/7a/ff/9f/7aff9fe9a1424a4d42155578e186ebed.jpg",
+        "capturedOn": "2026-11-05",
+        "pageTitle": "Vogue Italia January 2021 : The Animal Issue"
+      },
+      "thumbnail": "thumbnails/glass-perception.jpg"
+    }
+  ]
+}

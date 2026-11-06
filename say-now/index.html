@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Say Now — Brooklyn Gibbs</title>
+  <meta name="description" content="An evolving visual world for Say Now: florals, British culture, literature and surreal characters. Explore references and the notes connecting them.">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&amp;display=swap">
+  <link rel="stylesheet" href="board.css?v=18-snappier-motion">
+  <script type="module" src="board.js?v=20-shared-categories"></script>
+</head>
+<body>
+<main id="say-now-world" aria-label="Say Now floating image world">
+  <div class="fw-page">
+    <header><h1>say now</h1><a class="fw-work" href="../">← work</a></header>
+    <p class="fw-loading" role="status">Loading the mood board…</p>
+    <p class="fw-error" role="alert" hidden>The mood board couldn’t load. <a href="./">Reload the page</a>.</p>
+    <div class="fw-field" hidden role="region" aria-label="Floating image world. Click a photo to see its notes. Click a category title or zoom in to reveal supporting images. Drag to explore. Scroll, pinch, or use the zoom controls to reveal more images and more specific categories. British culture contains British literature; Alice in Wonderland connects literature with florals. Larger category titles stay as smaller titles appear. Zoom out to hide deeper titles. Pictures stay the same size as you explore, with space between them.">
+      <div class="fw-atmosphere" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="fw-pictures"></div>
+      <div class="fw-names"></div>
+      <div class="fw-controls" role="group" aria-label="Explore the image world">
+        <button type="button" class="fw-home cursor-interaction" aria-label="Reset view" title="Reset zoom and position"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 1 1 2.6 8.4M3 4v6h6"/></svg><span>reset</span></button>
+        <div><button type="button" class="cursor-interaction" data-action="out" aria-label="Reveal fewer pictures"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><button type="button" class="cursor-interaction" data-action="in" aria-label="Move deeper and reveal more pictures"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14"/></svg></button></div>
+      </div>
+      <section class="fw-viewer" aria-label="Selected picture, notes and related images" hidden>
+        <div class="fw-viewer-glow" aria-hidden="true"></div>
+        <button type="button" class="fw-back cursor-interaction" aria-label="Return to the image world"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5-7 7 7 7M5 12h14"/></svg></button>
+        <a class="fw-source cursor-interaction" target="_blank" rel="noopener noreferrer" aria-label="View original Pinterest reference" hidden><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6m0-6L10 14M9 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></a>
+        <div class="fw-detail">
+          <img class="fw-hero" alt="">
+          <div class="fw-copy">
+            <h2 class="fw-caption"></h2>
+            <section class="fw-note-block" aria-label="Photo notes" hidden>
+              <p class="fw-note-label"></p>
+              <p class="fw-note"></p>
+            </section>
+          </div>
+        </div>
+        <div class="fw-related" role="group" aria-label="Follow a related picture"></div>
+      </section>
+    </div>
+    <span class="fw-announcement" aria-live="polite"></span>
+  </div>
+</main>
+  <noscript><p class="no-script">Please enable JavaScript to explore the mood board. <a href="../">Return to work</a>.</p></noscript>
+</body>
+</html>
