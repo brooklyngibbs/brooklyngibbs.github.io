@@ -176,8 +176,8 @@ import {createRelationships} from './relationships.mjs?v=20';
     // Only the user's original words belong in the note; never fill gaps with a summary.
     const note=ref.noteAuthor==='user'&&typeof ref.note==='string'?ref.note:'';
     viewer.querySelector('.fw-note-block').hidden=false;
-    const noteLabel=viewer.querySelector('.fw-note-label');noteLabel.textContent='Note';noteLabel.hidden=!note.trim();
-    viewer.querySelector('.fw-note').textContent=note.trim()?note:'No note';
+    const quote=viewer.querySelector('.fw-note');quote.hidden=!note.trim();quote.textContent=note.trim()?'“'+note+'”':'';
+    viewer.querySelector('.fw-no-note').hidden=!!note.trim();
     const sourceLink=viewer.querySelector('.fw-source');sourceLink.hidden=!ref.source?.url;if(ref.source?.url)sourceLink.href=ref.source.url;else sourceLink.removeAttribute('href');
     const related=viewer.querySelector('.fw-related');related.replaceChildren();
     for(const id of relatedFor(ref)){const r=byId[id],b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-label','Read notes for '+r.name);const img=document.createElement('img');img.src=images[id];img.alt='';b.append(img);b.addEventListener('click',()=>openImage(r,returnFocus));related.append(b);}
