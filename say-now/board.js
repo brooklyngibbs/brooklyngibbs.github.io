@@ -173,14 +173,15 @@ import {createRelationships} from './relationships.mjs?v=20';
   function openImage(ref,button){
     stopMotion();selected=ref;returnFocus=button;const hero=viewer.querySelector('.fw-hero');hero.src=ref.src||images[ref.id];hero.alt=ref.description||ref.name;
     viewer.querySelector('.fw-caption').textContent=ref.name;
-    const note=typeof ref.note==='string'?ref.note:'';
-    const noteBlock=viewer.querySelector('.fw-note-block');noteBlock.hidden=!note.trim();
-    viewer.querySelector('.fw-note-label').textContent=ref.noteAuthor==='saved-user-summary'?'Saved notes':'Your note';
-    viewer.querySelector('.fw-note').textContent=note;
+    // Only the user's original words belong in the note; never fill gaps with a summary.
+    const note=ref.noteAuthor==='user'&&typeof ref.note==='string'?ref.note:'';
+    viewer.querySelector('.fw-note-block').hidden=false;
+    const noteLabel=viewer.querySelector('.fw-note-label');noteLabel.textContent='Note';noteLabel.hidden=!note.trim();
+    viewer.querySelector('.fw-note').textContent=note.trim()?note:'No note';
     const sourceLink=viewer.querySelector('.fw-source');sourceLink.hidden=!ref.source?.url;if(ref.source?.url)sourceLink.href=ref.source.url;else sourceLink.removeAttribute('href');
     const related=viewer.querySelector('.fw-related');related.replaceChildren();
     for(const id of relatedFor(ref)){const r=byId[id],b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-label','Read notes for '+r.name);const img=document.createElement('img');img.src=images[id];img.alt='';b.append(img);b.addEventListener('click',()=>openImage(r,returnFocus));related.append(b);}
-    setViewer(true);viewer.querySelector('.fw-back').focus();announcement.textContent=ref.name+(note.trim()?'. Notes shown with the photo.':'. Related pictures below.');persist();
+    setViewer(true);viewer.querySelector('.fw-back').focus();announcement.textContent=ref.name+(note.trim()?'. Note shown with the photo.':'. No note.');persist();
   }
   root.querySelector('.fw-back').addEventListener('click',closeViewer);
   root.querySelector('.fw-home').addEventListener('click',()=>{overview=true;selected=null;setViewer(false);moveTo({x:.5,y:.5,z:1});announcement.textContent='The whole world';});
