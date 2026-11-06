@@ -50,6 +50,10 @@
         [
           4,
           -118
+        ],
+        [
+          -115,
+          -130
         ]
       ]
     },
@@ -173,15 +177,16 @@
       "labelAnchor": {
         "ref": "vintage-floral",
         "offset": [
-          0,
+          0.0,
           82
         ],
         "mobileOffset": [
-          0,
+          0.0,
           68
         ]
       },
-      "coverRef": "vintage-floral"
+      "coverRef": "vintage-floral",
+      "kind": "main"
     },
     {
       "id": "british-culture",
@@ -212,16 +217,47 @@
       "labelAnchor": {
         "ref": "looking-glass-book",
         "offset": [
-          0,
+          0.0,
           -86
         ],
         "mobileRef": "looking-glass-book",
         "mobileOffset": [
-          0,
+          0.0,
           72
         ]
       },
-      "coverRef": "looking-glass-book"
+      "coverRef": "looking-glass-book",
+      "kind": "main"
+    },
+    {
+      "id": "surreal-styling",
+      "name": "Surreal styling",
+      "kind": "main",
+      "parents": [],
+      "refs": [
+        "carousel"
+      ],
+      "crossovers": [
+        "florals",
+        "british-culture"
+      ],
+      "coverRef": "lampshade-people",
+      "focusZoom": 2.2,
+      "reveal": [
+        0,
+        0
+      ],
+      "labelAnchor": {
+        "ref": "lampshade-people",
+        "offset": [
+          0.0,
+          -86
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
     },
     {
       "id": "british-literature",
@@ -244,22 +280,22 @@
         0.64,
         0.67
       ],
-      "focusZoom": 3.3,
+      "focusZoom": 3.8,
       "reveal": [
-        1.85,
-        2.1
+        2.7,
+        3.2
       ],
       "side": -1,
       "mobileSide": 1,
       "labelAnchor": {
         "ref": "looking-glass-book",
         "offset": [
-          0,
+          0.0,
           -40
         ],
         "mobileRef": "castle-heirlooms",
         "mobileOffset": [
-          32,
+          16.0,
           126
         ]
       }
@@ -294,20 +330,20 @@
         "castle-heirlooms",
         "looking-glass-book"
       ],
-      "focusZoom": 3.8,
+      "focusZoom": 5.1,
       "reveal": [
-        2.65,
-        3.15
+        3.7,
+        4.3
       ],
       "side": -1,
       "labelAnchor": {
         "ref": "flower-people",
         "offset": [
-          10,
+          5.0,
           -72
         ],
         "mobileOffset": [
-          64,
+          32.0,
           -78
         ]
       }
@@ -322,21 +358,21 @@
         "matilda"
       ],
       "focusGroup": "matilda",
-      "focusZoom": 3.8,
+      "focusZoom": 5.1,
       "reveal": [
-        2.65,
-        3.15
+        3.7,
+        4.3
       ],
       "side": 1,
       "labelAnchor": {
         "ref": "matilda-176",
         "offset": [
-          85,
+          42.5,
           60
         ],
         "mobileRef": "matilda-170",
         "mobileOffset": [
-          -20,
+          -10.0,
           42
         ]
       }
@@ -351,21 +387,21 @@
         "python"
       ],
       "focusGroup": "python",
-      "focusZoom": 3.3,
+      "focusZoom": 4.5,
       "reveal": [
-        2.35,
-        2.85
+        3.2,
+        3.8
       ],
       "side": 1,
       "labelAnchor": {
         "ref": "silly-walks",
         "offset": [
-          25,
+          12.5,
           -76
         ],
         "mobileRef": "python-egghead",
         "mobileOffset": [
-          0,
+          0.0,
           44
         ]
       }
@@ -378,10 +414,10 @@
       ],
       "refs": [],
       "planned": true,
-      "focusZoom": 3.3,
+      "focusZoom": 4.2,
       "reveal": [
-        1.55,
-        1.95
+        3.2,
+        3.8
       ],
       "side": 1
     },
@@ -393,12 +429,239 @@
       ],
       "refs": [],
       "planned": true,
-      "focusZoom": 3.3,
+      "focusZoom": 4.2,
       "reveal": [
-        1.55,
-        1.95
+        3.2,
+        3.8
       ],
       "side": 1
+    },
+    {
+      "id": "surreal-hats",
+      "name": "Surreal hats",
+      "kind": "motif",
+      "parents": [
+        "surreal-styling"
+      ],
+      "themes": [
+        "headwear"
+      ],
+      "crossovers": [
+        "florals",
+        "british-culture",
+        "bows-ribbon"
+      ],
+      "labelDepth": 2,
+      "focusZoom": 5.7,
+      "reveal": [
+        4.4,
+        5
+      ],
+      "labelAnchor": {
+        "ref": "floral-hat",
+        "offset": [
+          0.0,
+          -72
+        ],
+        "mobileOffset": [
+          0.0,
+          -72
+        ]
+      }
+    },
+    {
+      "id": "mirrors-glass",
+      "name": "Mirrors & glass",
+      "kind": "motif",
+      "parents": [
+        "alice"
+      ],
+      "themes": [
+        "mirrors",
+        "glass",
+        "reflection",
+        "perception"
+      ],
+      "crossovers": [],
+      "labelDepth": 3,
+      "focusZoom": 6.6,
+      "reveal": [
+        5.2,
+        5.9
+      ],
+      "labelAnchor": {
+        "ref": "glass-perception",
+        "offset": [
+          0.0,
+          72
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
+    },
+    {
+      "id": "botanical-people",
+      "name": "Botanical people",
+      "kind": "motif",
+      "parents": [
+        "alice"
+      ],
+      "themes": [
+        "botanical-people"
+      ],
+      "crossovers": [
+        "florals",
+        "bows-ribbon"
+      ],
+      "labelDepth": 3,
+      "focusZoom": 6.6,
+      "reveal": [
+        5.2,
+        5.9
+      ],
+      "labelAnchor": {
+        "ref": "vegetable-people",
+        "offset": [
+          0.0,
+          72
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
+    },
+    {
+      "id": "bows-ribbon",
+      "name": "Bows & ribbon",
+      "kind": "motif",
+      "parents": [
+        "surreal-styling"
+      ],
+      "themes": [
+        "bows",
+        "ribbon"
+      ],
+      "crossovers": [
+        "florals",
+        "alice",
+        "surreal-hats"
+      ],
+      "labelDepth": 2,
+      "focusZoom": 5.7,
+      "reveal": [
+        4.5,
+        5.1
+      ],
+      "labelAnchor": {
+        "ref": "ribbon-dress",
+        "offset": [
+          0.0,
+          72
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
+    },
+    {
+      "id": "wearable-lighting",
+      "name": "Wearable lighting",
+      "kind": "motif",
+      "parents": [
+        "surreal-hats"
+      ],
+      "themes": [
+        "lighting"
+      ],
+      "crossovers": [
+        "bows-ribbon"
+      ],
+      "labelDepth": 3,
+      "focusZoom": 7.6,
+      "reveal": [
+        6.2,
+        6.9
+      ],
+      "labelAnchor": {
+        "ref": "chandelier-headpiece",
+        "offset": [
+          0.0,
+          72
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
+    },
+    {
+      "id": "tea",
+      "name": "Tea",
+      "kind": "motif",
+      "parents": [
+        "british-culture"
+      ],
+      "themes": [
+        "tea"
+      ],
+      "crossovers": [
+        "florals",
+        "surreal-hats",
+        "floral-patterns"
+      ],
+      "labelDepth": 3,
+      "focusZoom": 7.6,
+      "reveal": [
+        6.2,
+        6.9
+      ],
+      "labelAnchor": {
+        "ref": "floral-teacup",
+        "offset": [
+          0.0,
+          72
+        ],
+        "mobileOffset": [
+          0.0,
+          72
+        ]
+      }
+    },
+    {
+      "id": "floral-patterns",
+      "name": "Floral patterns",
+      "kind": "motif",
+      "parents": [
+        "florals"
+      ],
+      "themes": [
+        "floral-patterns"
+      ],
+      "crossovers": [
+        "british-culture",
+        "tea"
+      ],
+      "labelDepth": 2,
+      "focusZoom": 5.7,
+      "reveal": [
+        4.4,
+        5
+      ],
+      "labelAnchor": {
+        "ref": "mismatched-socks",
+        "offset": [
+          0.0,
+          65
+        ],
+        "mobileOffset": [
+          0.0,
+          65
+        ]
+      }
     }
   ],
   "items": [
@@ -414,7 +677,8 @@
       "tier": 0,
       "angle": -2,
       "themes": [
-        "florals"
+        "florals",
+        "floral-patterns"
       ],
       "related": [
         "floral-hat",
@@ -493,7 +757,8 @@
         "british-culture",
         "alice",
         "characters",
-        "botanical-people"
+        "botanical-people",
+        "bows"
       ],
       "related": [
         "flower-people",
@@ -518,7 +783,8 @@
       "themes": [
         "florals",
         "british-culture",
-        "tea"
+        "tea",
+        "floral-patterns"
       ],
       "related": [
         "teacup-hat",
@@ -593,7 +859,8 @@
       "tier": 1,
       "angle": 2,
       "themes": [
-        "florals"
+        "florals",
+        "floral-patterns"
       ],
       "related": [
         "vintage-floral",
@@ -619,7 +886,8 @@
         "florals",
         "surrealism",
         "characters",
-        "botanical-people"
+        "botanical-people",
+        "bows"
       ],
       "related": [
         "flower-people",
@@ -822,10 +1090,10 @@
         "fashion"
       ],
       "related": [
+        "bow-hair",
         "lampshade-people",
         "floral-hat",
-        "carousel",
-        "mismatched-socks"
+        "carousel"
       ],
       "note": "This is a big ribbon dress. I think that bows and ribbon are a motif that they want and that can continue just in a cooler way",
       "description": "A woman in an oversized multicolored ribbon and bow dress, with pale green legs and shoes against a blue background.",
@@ -853,7 +1121,8 @@
         "headwear",
         "surrealism",
         "characters",
-        "costume"
+        "costume",
+        "bows"
       ],
       "related": [
         "chandelier-headpiece",
@@ -1105,6 +1374,37 @@
         "pageTitle": "Vogue Italia January 2021 : The Animal Issue"
       },
       "thumbnail": "thumbnails/glass-perception.jpg"
+    },
+    {
+      "id": "bow-hair",
+      "name": "Hair shaped into bows",
+      "group": "ornament",
+      "slot": 10,
+      "size": 68,
+      "w": 1080,
+      "h": 1056,
+      "tier": 2,
+      "angle": -1.5,
+      "themes": [
+        "bows",
+        "hair",
+        "fashion"
+      ],
+      "related": [
+        "ribbon-dress",
+        "lampshade-people",
+        "flower-body"
+      ],
+      "note": "this is some hair where the hair makes the shape of tiny bows. they have a lot of bows in their marketing and i wanna keep that shape and play with the the idea, but make it larger.",
+      "description": "A tall blonde hairstyle with blonde and bright pink hair sculpted into repeated bow shapes.",
+      "src": "bow-hair.jpg",
+      "source": {
+        "url": "https://www.pinterest.com/pin/442337994666500380/",
+        "imageUrl": "https://i.pinimg.com/originals/5f/78/c6/5f78c6c7507d79b61dbc99b580e71b0c.jpg",
+        "capturedOn": "2026-11-05"
+      },
+      "noteAuthor": "user",
+      "thumbnail": "thumbnails/bow-hair.jpg"
     }
   ]
 }

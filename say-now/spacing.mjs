@@ -82,6 +82,29 @@ export function createWorldLayout(photos,labels,spacing){
       node.y=fit(node.y,top+node.bounds.h/2,bottom-node.bounds.h/2);
     }
   }
+  // Reserve a visible overview for all main areas before their neighborhoods
+  // grow around them. These anchors remain fixed when deeper layers appear.
+  const covers=nodes.filter(node=>node.isCover);
+  if(spacing.viewport&&covers.length>1){
+    const {left,right,top,bottom}=spacing.viewport;
+    const coverGap=Math.max(spacing.groupGap??44,...covers.flatMap((a,i)=>covers.slice(i+1).map(b=>spacing.relationship?spacing.relationship(a.ref,b.ref).gap:spacing.groupGap??44)));
+    for(let columns=covers.length;columns>=1;columns--){
+      const rows=[];
+      for(let i=0;i<covers.length;i+=columns){
+        const row=covers.slice(i,i+columns);
+        rows.push({nodes:row,w:row.reduce((sum,node)=>sum+node.bounds.w,0)+coverGap*(row.length-1),h:Math.max(...row.map(node=>node.bounds.h))});
+      }
+      const totalHeight=rows.reduce((sum,row)=>sum+row.h,0)+coverGap*(rows.length-1);
+      if(rows.some(row=>row.w>right-left)||totalHeight>bottom-top)continue;
+      let y=(top+bottom-totalHeight)/2;
+      for(const row of rows){
+        let x=(left+right-row.w)/2;
+        for(const node of row.nodes){node.x=x+node.bounds.w/2;node.y=y+row.h/2;x+=node.bounds.w+coverGap;}
+        y+=row.h+coverGap;
+      }
+      break;
+    }
+  }
   keepPhotosApart(nodes,[],spacing);
   for(const node of nodes){node.x-=node.bounds.offsetX;node.y-=node.bounds.offsetY;}
   return {photos:nodes,labels:anchors};

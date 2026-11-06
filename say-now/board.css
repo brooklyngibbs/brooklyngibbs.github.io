@@ -20,18 +20,21 @@ body { margin:0; background:#fff; }
   #say-now-world .fw-halo { position:absolute; inset:-45% -75%; z-index:-1; pointer-events:none; opacity:var(--fw-glow); filter:blur(18px); border-radius:45% 55% 28% 72% / 58% 32% 68% 42%; background:radial-gradient(ellipse at 32% 37%,var(--halo-a) 0%,transparent 62%),radial-gradient(ellipse at 72% 61%,var(--halo-b) 0%,transparent 65%); transform:rotate(-14deg); }
   #say-now-world .fw-photo { display:block; width:100%; height:100%; object-fit:contain; border-radius:3px; pointer-events:none; user-select:none; filter:drop-shadow(0 7px 12px #34324c0d); }
   #say-now-world .fw-picture:hover .fw-float,#say-now-world .fw-picture:focus-visible .fw-float { transform:translateY(-4px); }
-  #say-now-world .fw-name { position:absolute; left:0; top:0; padding:8px 3px; border:0; background:transparent; color:#38343f; font:400 19px/1.1 'Space Grotesk',Arial,sans-serif; text-align:center; width:max-content; max-width:190px; pointer-events:auto; }
-  #say-now-world .fw-name[data-depth="0"] { font-size:22px; }
-  #say-now-world .fw-name[data-depth="1"] { font-size:18px; }
-  #say-now-world .fw-name[data-depth="2"] { font-size:16px; }
+  #say-now-world .fw-name { position:absolute; left:0; top:0; padding:6px 3px; border:0; background:transparent; color:#38343f; font:400 12px/1.1 'Space Grotesk',Arial,sans-serif; text-align:center; width:max-content; max-width:130px; pointer-events:auto; }
+  #say-now-world .fw-name[data-depth="0"] { font-size:16px; }
+  #say-now-world .fw-name[data-depth="1"] { font-size:12px; }
+  #say-now-world .fw-name[data-depth="2"] { font-size:11px; }
+  #say-now-world .fw-name[data-depth="3"] { font-size:10.5px; }
   #say-now-world .fw-controls { position:absolute; bottom:max(12px,env(safe-area-inset-bottom)); left:max(20px,env(safe-area-inset-left)); right:max(20px,env(safe-area-inset-right)); display:flex; justify-content:space-between; pointer-events:none; z-index:3; }
   #say-now-world .fw-controls>div { display:flex; gap:3px; }
   #say-now-world .fw-controls button,#say-now-world .fw-back { display:flex; align-items:center; justify-content:center; width:44px; height:44px; padding:0; border:0; border-radius:50%; background:#ffffffe6; color:#5f596c; pointer-events:auto; }
   #say-now-world .fw-controls .fw-home { width:auto; gap:8px; padding:0 14px; border-radius:24px; font:400 13px/1 'Space Grotesk',Arial,sans-serif; }
+  #say-now-world .fw-editor button { width:auto; padding:0 12px; border-radius:24px; font:400 13px/1 'Space Grotesk',Arial,sans-serif; }
+  #say-now-world .fw-editor-status { position:absolute; z-index:3; left:50%; bottom:max(65px,calc(env(safe-area-inset-bottom) + 53px)); transform:translateX(-50%); width:max-content; max-width:calc(100% - 40px); margin:0; padding:9px 14px; border-radius:20px; background:#fffffff2; color:#6e6877; text-align:center; font:400 12px/1.4 'Space Grotesk',Arial,sans-serif; pointer-events:none; }
   #say-now-world .fw-controls button:disabled { opacity:.3; }
   #say-now-world .fw-controls svg,#say-now-world .fw-back svg { width:17px; height:17px; }
   #say-now-world .fw-field.fw-detail-open { overflow:auto; overscroll-behavior:contain; touch-action:auto; }
-  #say-now-world .fw-detail-open>.fw-pictures,#say-now-world .fw-detail-open>.fw-names,#say-now-world .fw-detail-open>.fw-controls { visibility:hidden; }
+  #say-now-world .fw-detail-open>.fw-pictures,#say-now-world .fw-detail-open>.fw-names,#say-now-world .fw-detail-open>.fw-controls,#say-now-world .fw-detail-open>.fw-editor-status { visibility:hidden; }
   #say-now-world .fw-viewer { position:relative; z-index:5; min-height:100%; background:#fff; cursor:auto; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:36px; padding:64px 36px 36px; }
   #say-now-world .fw-viewer-glow { position:absolute; width:75%; height:75%; top:10%; left:12.5%; border-radius:50%; filter:blur(40px); opacity:var(--fw-glow); background:radial-gradient(ellipse at 30% 35%,var(--halo-a),transparent 65%),radial-gradient(ellipse at 65% 64%,var(--halo-b),transparent 65%); pointer-events:none; }
   #say-now-world .fw-back { position:absolute; top:12px; left:12px; z-index:2; }
@@ -49,7 +52,7 @@ body { margin:0; background:#fff; }
   #say-now-world .fw-related button:hover { transform:translateY(-6px); }
   #say-now-world .fw-related img { display:block; width:100%; height:100%; object-fit:contain; border-radius:2px; }
   #say-now-world .fw-announcement { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
-  @media(max-width:450px) { #say-now-world header { padding-left:18px; padding-right:18px; } #say-now-world .fw-name { font-size:15px; max-width:115px; } #say-now-world .fw-name[data-depth="0"] { font-size:18px; max-width:135px; } #say-now-world .fw-name[data-depth="1"] { font-size:15px; } #say-now-world .fw-name[data-depth="2"] { font-size:14px; } #say-now-world .fw-controls { left:max(10px,env(safe-area-inset-left)); right:max(10px,env(safe-area-inset-right)); } #say-now-world .fw-viewer { gap:28px; padding:62px 20px 28px; } #say-now-world .fw-hero { height:220px; } #say-now-world .fw-related { gap:16px; } #say-now-world .fw-related button { width:48px; height:60px; } }
+  @media(max-width:450px) { #say-now-world header { padding-left:18px; padding-right:18px; } #say-now-world .fw-name { font-size:11px; max-width:100px; } #say-now-world .fw-name[data-depth="0"] { font-size:14px; max-width:110px; } #say-now-world .fw-name[data-depth="1"] { font-size:11px; } #say-now-world .fw-name[data-depth="2"] { font-size:10.5px; } #say-now-world .fw-controls { left:max(10px,env(safe-area-inset-left)); right:max(10px,env(safe-area-inset-right)); } #say-now-world .fw-viewer { gap:28px; padding:62px 20px 28px; } #say-now-world .fw-hero { height:220px; } #say-now-world .fw-related { gap:16px; } #say-now-world .fw-related button { width:48px; height:60px; } }
   @media(pointer:coarse) { #say-now-world .fw-name,#say-now-world .fw-controls button,#say-now-world .fw-back { min-height:44px; min-width:44px; } }
   @media(prefers-reduced-motion:reduce) { #say-now-world .fw-float,#say-now-world .fw-related button { transition:none; } #say-now-world .fw-picture:hover .fw-float,#say-now-world .fw-picture:focus-visible .fw-float { transform:none; } }
 #say-now-world header { display:flex; align-items:center; justify-content:space-between; gap:24px; }
