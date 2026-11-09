@@ -87,6 +87,31 @@ test('color crossovers do not pull a subject out of its primary neighborhood',()
   assert.equal(options.relationship(byId.get('dragon-tales-pattern').ref,byId.get('pink-star-pattern').ref).cohesion,0);
 });
 
+test('the four Wonderland covers form a compact cluster',()=>{
+  const aliceEdge=createLayers(source).images.get('alice-cheshire').edge;
+  for(const mobile of [false,true]){
+    const {photos,labels,options}=layoutInput(source,mobile);
+    const layout=createWorldLayout(photos,labels,options);
+    const point=id=>layout.photos.find(p=>p.ref.id===id);
+    const alice=point('alice-cheshire');
+    for(const id of ['make-believe-castles','alice-outgrows-house','bread-and-butterflies']){
+      const neighbor=point(id);
+      assert.ok(Math.hypot(alice.x-neighbor.x,alice.y-neighbor.y)<aliceEdge*1.25,`${id} stays next to Alice's cover`);
+    }
+  }
+});
+
+test('Make-believe and Medieval fantasy meet at their covers',()=>{
+  for(const mobile of [false,true]){
+    const {photos,labels,options}=layoutInput(source,mobile);
+    const layout=createWorldLayout(photos,labels,options);
+    const [left,right]=['make-believe-castles','knight-helmets'].map(id=>layout.photos.find(p=>p.ref.id===id));
+    const coverGap=right.x+right.bounds.offsetX-right.bounds.w/2-(left.x+left.bounds.offsetX+left.bounds.w/2);
+    assert.ok(Math.abs(left.y-right.y)<.01);
+    assert.ok(Math.abs(coverGap-options.groupGap)<.01,'Supporting photos leave the space between covers clear');
+  }
+});
+
 test('1,000 images pack quickly, stay grouped, and remain clear at every viewing scale',()=>{
   for(const singleCluster of [false,true]){
     const collection=expandedCollection(1000,singleCluster),start=performance.now();

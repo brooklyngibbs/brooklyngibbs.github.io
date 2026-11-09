@@ -101,7 +101,13 @@ function packNeighborhoods(nodes,spacing){
     for(const row of rows){for(const node of row.nodes){node.x-=row.w/2;node.y=y+node.bounds.h/2;}y+=row.h+gap;}
     return {nodes:group,w,h,signature:sig};
   }
-  function combine(blocks){
+  function finish(placed){
+    const b=bounds(placed),all=placed.flatMap(block=>block.nodes);
+    const cx=(b.left+b.right)/2,cy=(b.top+b.bottom)/2;
+    for(const node of all){node.x-=cx;node.y-=cy;}
+    return {nodes:all,w:b.right-b.left,h:b.bottom-b.top,signature:signature(all)};
+  }
+  function combine(blocks,facing=0){
     const placed=[];
     for(const block of blocks){
       let best={x:0,y:0},cost=Infinity;
@@ -110,21 +116,31 @@ function packNeighborhoods(nodes,spacing){
         const dx=(block.w+other.w)/2+gapBetween(block,other),dy=(block.h+other.h)/2+gapBetween(block,other);
         for(const x of [other.x-dx,other.x,other.x+dx])for(const y of [other.y-dy,other.y,other.y+dy])candidates.push([x,y]);
       }
+      const anchor=block.anchor,parent=placed.find(other=>other.id===block.parent)?.anchor;
+      const xToParent=anchor&&parent?parent.x-parent.bounds.offsetX-anchor.x+anchor.bounds.offsetX:0;
+      const yToParent=anchor&&parent?parent.y-parent.bounds.offsetY-anchor.y+anchor.bounds.offsetY:0;
+      if(anchor&&parent){
+        for(const other of placed){
+          const gap=gapBetween(block,other),dx=(block.w+other.w)/2+gap,dy=(block.h+other.h)/2+gap;
+          candidates.push([other.x-dx,yToParent],[other.x+dx,yToParent],[xToParent,other.y-dy],[xToParent,other.y+dy]);
+        }
+      }
       if(placed.length){
         const b=bounds(placed),gap=Math.max(...placed.map(other=>gapBetween(block,other)));
         candidates.push([b.left-gap-block.w/2,0],[b.right+gap+block.w/2,0],[0,b.top-gap-block.h/2],[0,b.bottom+gap+block.h/2]);
       }
       for(const [x,y] of candidates){
+        // Keep a paired cover on its neighborhood's facing edge.
+        if(facing&&placed.length&&x*facing+block.w/2>placed[0].w/2+.001)continue;
         if(placed.some(other=>Math.abs(x-other.x)<(block.w+other.w)/2+gapBetween(block,other)-.001&&Math.abs(y-other.y)<(block.h+other.h)/2+gapBetween(block,other)-.001))continue;
         const b=bounds([...placed,{...block,x,y}]),w=b.right-b.left,h=b.bottom-b.top;
-        const next=w*h+.65*(w-h)**2+.04*(x*x+y*y);
+        const separation=anchor&&parent?(x-xToParent)**2+(y-yToParent)**2:0;
+        const next=w*h+.65*(w-h)**2+.04*(x*x+y*y)+2*separation;
         if(next<cost){cost=next;best={x,y};}
       }
       translate(block,best.x,best.y);placed.push({...block,...best});
     }
-    const b=bounds(placed),all=blocks.flatMap(block=>block.nodes),cx=(b.left+b.right)/2,cy=(b.top+b.bottom)/2;
-    for(const node of all){node.x-=cx;node.y-=cy;}
-    return {nodes:all,w:b.right-b.left,h:b.bottom-b.top,signature:signature(all)};
+    return finish(placed);
   }
   const forest=new Map();
   for(const node of nodes){
@@ -135,38 +151,101 @@ function packNeighborhoods(nodes,spacing){
     }
     branch.nodes.push(node);
   }
-  function build(branch){
+  function build(branch,facing=0){
+    // Pack featured branches with their parent first. The less prominent
+    // branches wrap around that core instead of getting between the covers.
+    const core=[],outer=[];
+    function collect(branch,parent){
+      if(branch.nodes.length){
+        const anchor=branch.nodes.find(n=>n.ref.id===relationship.representative?.(branch.id));
+        core.push({...photoBlock(branch.nodes),id:branch.id,parent,anchor});
+      }
+      for(const child of branch.children.values()){
+        if(relationship.nearParent?.(child.id))collect(child,branch.id);
+        else outer.push(child);
+      }
+    }
+    collect(branch);
     const blocks=[];
-    // A cover and its same-subject pictures form one small cluster, including
-    // independent seeds such as the two clover references.
-    if(branch.nodes.length)blocks.push(photoBlock(branch.nodes));
-    const children=[...branch.children.values()].map(build);
+    if(core.length)blocks.push(core.length===1?core[0]:combine(core,facing));
+    const children=outer.map(child=>build(child));
     // Pack the smaller neighborhoods together beside a large opening cover.
     // Placing each child against the cover would spread them around its perimeter.
     if(children.length>1&&branch.nodes.some(node=>node.isCover))blocks.push(combine(children));
     else blocks.push(...children);
-    return blocks.length===1?blocks[0]:combine(blocks);
+    return blocks.length===1?blocks[0]:combine(blocks,facing);
   }
-  const regions=[...forest.values()].map(build).sort((a,b)=>{
+  const pairs=new Map(),paired=new Set();
+  for(const branch of forest.values()){
+    const neighbor=forest.get(relationship.neighbor?.(branch.id));
+    if(!neighbor||neighbor===branch||paired.has(branch.id)||paired.has(neighbor.id))continue;
+    if(!branch.nodes.some(n=>n.isCover)||!neighbor.nodes.some(n=>n.isCover))continue;
+    pairs.set(branch.id,neighbor);
+    paired.add(branch.id);
+    paired.add(neighbor.id);
+  }
+  const regions=[];
+  for(const branch of forest.values()){
+    const neighbor=pairs.get(branch.id);
+    if(!neighbor){
+      if(!paired.has(branch.id))regions.push(build(branch));
+      continue;
+    }
+    // Keep the two separate regions in the same row and align the covers,
+    // regardless of the height of their supporting branches.
+    const left=build(branch,1),right=build(neighbor,-1);
+    const coverY=block=>{const cover=block.nodes.find(n=>n.isCover);return cover.y-cover.bounds.offsetY;};
+    const x=(left.w+right.w)/2+Math.max(spacing.groupGap||0,gapBetween(left,right));
+    const y=coverY(left)-coverY(right);
+    translate(right,x,y);
+    regions.push(finish([{...left,x:0,y:0},{...right,x,y}]));
+  }
+  regions.sort((a,b)=>{
     const order=block=>Math.min(...block.nodes.filter(n=>n.isCover).map(n=>n.coverOrder??n.index));
     return order(a)-order(b);
   });
   const gap=Math.max(spacing.groupGap||0,...regions.flatMap((a,i)=>regions.slice(i+1).map(b=>gapBetween(a,b))));
   const v=spacing.viewport||{left:0,top:0,right:1100,bottom:760};
+  const visibleBounds=new Map(regions.map(block=>{
+    const covers=block.nodes.filter(node=>node.isCover);
+    const tiles=spacing.overviewCoversOnly&&covers.length?covers.map(node=>({x:node.x,y:node.y,...node.bounds})):[{x:0,y:0,w:block.w,h:block.h}];
+    return [block,bounds(tiles)];
+  }));
   let chosen,bestFit=-1,bestArea=Infinity;
   for(let columns=1;columns<=regions.length;columns++){
     const rows=[];
-    for(let i=0;i<regions.length;i+=columns){const blocks=regions.slice(i,i+columns);rows.push({blocks,w:blocks.reduce((s,b)=>s+b.w,0)+gap*(blocks.length-1),h:Math.max(...blocks.map(b=>b.h))});}
-    const w=Math.max(...rows.map(r=>r.w)),h=rows.reduce((s,r)=>s+r.h,0)+gap*(rows.length-1);
-    const fit=Math.min((v.right-v.left)/w,(v.bottom-v.top)/h),area=w*h;
-    if(fit>bestFit+.00001||(Math.abs(fit-bestFit)<.00001&&area<bestArea)){chosen={rows,w,h};bestFit=fit;bestArea=area;}
+    let y=0;
+    for(let i=0;i<regions.length;i+=columns){
+      const blocks=regions.slice(i,i+columns);
+      const height=Math.max(...blocks.map(block=>block.h));
+      let x=0;
+      const tiles=blocks.map(block=>{
+        const tile={block,x:x+block.w/2,y:y+height/2};
+        x+=block.w+gap;
+        return tile;
+      });
+      const visible=bounds(tiles.map(({block,x,y})=>{
+        const box=visibleBounds.get(block);
+        return {x:x+(box.left+box.right)/2,y:y+(box.top+box.bottom)/2,w:box.right-box.left,h:box.bottom-box.top};
+      }));
+      rows.push({tiles,visible,width:x-gap});
+      y+=height+gap;
+    }
+    // Center each row on the covers people can see. Hidden branches still
+    // reserve space and stay in their own regions when the camera zooms in.
+    const visibleWidth=Math.max(...rows.map(row=>row.visible.right-row.visible.left));
+    const visibleHeight=Math.max(...rows.map(row=>row.visible.bottom))-Math.min(...rows.map(row=>row.visible.top));
+    const fullWidth=Math.max(...rows.map(row=>row.width)),fullHeight=y-gap;
+    const fit=Math.min((v.right-v.left)/visibleWidth,(v.bottom-v.top)/visibleHeight);
+    const fullFit=Math.min((v.right-v.left)/fullWidth,(v.bottom-v.top)/fullHeight);
+    const score=.85*fit+.15*fullFit,area=fullWidth*fullHeight;
+    if(score>bestFit+.00001||(Math.abs(score-bestFit)<.00001&&area<bestArea)){chosen={rows,fullHeight};bestFit=score;bestArea=area;}
   }
   if(!chosen)return;
-  let y=(v.top+v.bottom-chosen.h)/2;
+  const offsetY=(v.top+v.bottom-chosen.fullHeight)/2;
   for(const row of chosen.rows){
-    let x=(v.left+v.right-row.w)/2;
-    for(const block of row.blocks){translate(block,x+block.w/2,y+row.h/2);x+=block.w+gap;}
-    y+=row.h+gap;
+    const offsetX=(v.left+v.right-row.visible.left-row.visible.right)/2;
+    for(const {block,x,y} of row.tiles)translate(block,x+offsetX,y+offsetY);
   }
 }
 

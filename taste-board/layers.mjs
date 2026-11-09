@@ -26,6 +26,7 @@ export function createLayers(collection){
     let edge=Math.max(108,150-12*(level-1));
     if(level===0)edge=220+Math.min(24,count*2);
     else if(emphasis==='signature')edge=170+Math.min(20,count*2);
+    edge=Math.round(edge*(c.presentation?.coverScale??1));
     const path=[...(c.parents?.length?profile(c.parents[0]).path:[]),id];
     const value={id,level,count,entry,edge,path,reveal:revealAt(level)};
     categoryProfiles.set(id,value);return value;

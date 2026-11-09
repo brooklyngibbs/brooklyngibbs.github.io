@@ -1,6 +1,6 @@
 {
   "reviewedOn": "2026-11-09",
-  "revision": "2026-11-09-discovery-route-audit",
+  "revision": "2026-11-09-taste-atlas",
   "reviewedIds": [
     "pink-elephant",
     "pinto-pink",
@@ -1511,5 +1511,26 @@
       "Use a starfield for Night skies, a pink-and-blue graphic for the palette pair and armor for Knights. Preserve meaningful side connections to color, typography, girl knights and other visual interests.",
       "Fold duplicate Clowns and Christmas kitsch entrances into Odd romance and Christmas. Keep the related pictures and the specific crossover links."
     ]
+  },
+  "atlasReview": {
+    "reviewedCount": 127,
+    "opening": "Keep a layered map with covers, then reveal specific photos and routes. Use larger landmarks for repeated or emphatically named interests and smaller independent covers for references without a convincing parent.",
+    "neighborhoods": [
+      "Make-believe and Medieval fantasy share a facing edge. Keep the Wonderland cluster intact, with Fantasia given early emphasis as a parallel favorite.",
+      "Give Starlit screens its own opening cover using the deep blue ending. Place it beside Space age. Late-night TV opens directly from it, while science fiction, Disney and Pooh references stay in their own branches.",
+      "Place Odd romance beside Holidays so the Valentine and Halloween crossovers have nearby entrances. Peanuts enters from Holidays through the family tradition of watching the specials.",
+      "Move illuminated lettering into Medieval fantasy because the note specifically praises medieval gold calligraphy. Retain the overlap with Titles & lettering.",
+      "Keep color motifs without a spatial group as named overlaps rather than stacking a second title on the same cover."
+    ],
+    "bridges": [
+      "Giant Alice and Giant women",
+      "Wonderland frogs and lily pads",
+      "Frog knight and lily pads",
+      "Sorcerer Mickey and the star-robed wizard",
+      "Nervous knight and the love meter",
+      "Muppets laboratory and the love potion",
+      "Starlit ending and the Star Trek title screen"
+    ],
+    "openQuestions": "Keep the eclectic single-reference interests separate. Revisit the late-night subgroups once the seven pending media references can be inspected."
   }
 }

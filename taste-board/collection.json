@@ -2200,7 +2200,10 @@
       ],
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated childhood worlds and the explicit statement that the whole board is the land of make-believe."
+        "coverScale": 1.35,
+        "neighbor": "medieval-fantasy",
+        "reason": "Repeated childhood worlds and the explicit statement that the whole board is the land of make-believe.",
+        "entrance": "landmark"
       }
     },
     {
@@ -2212,7 +2215,8 @@
       ],
       "themes": [],
       "crossovers": [
-        "illuminated-lettering"
+        "illuminated-lettering",
+        "frogs-ponds"
       ],
       "labelAnchor": {
         "ref": "knight-helmets",
@@ -2235,7 +2239,201 @@
       "labelDepth": 0,
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated knights, girl knights, nervous knights, wizards and medieval pixels; explicitly a big inspiration and important combination."
+        "reason": "Repeated knights, girl knights, nervous knights, wizards and medieval pixels; explicitly a big inspiration and important combination.",
+        "entrance": "landmark",
+        "coverScale": 1.13
+      }
+    },
+    {
+      "id": "frogs-ponds",
+      "name": "Frogs & ponds",
+      "parents": [],
+      "refs": [
+        "lily-pads",
+        "frog-knight",
+        "kermit-banjo",
+        "wonderland-musical-frogs"
+      ],
+      "themes": [],
+      "crossovers": [
+        "wonderland-flowers",
+        "knights",
+        "muppets",
+        "background-characters",
+        "medieval-fantasy"
+      ],
+      "labelAnchor": {
+        "ref": "lily-pads",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "kind": "main",
+      "coverRef": "lily-pads",
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "labelDepth": 0,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Explicit strong personal significance of frogs, lily pads and ponds, reinforced by frog knights and Kermit.",
+        "coverScale": 1.17,
+        "overlapCaption": "Frogs recur as little characters in different worlds.",
+        "entrance": "landmark"
+      }
+    },
+    {
+      "id": "giant-women",
+      "name": "Giant women",
+      "presentation": {
+        "overlapCaption": "A figure too big for her surroundings."
+      },
+      "kind": "main",
+      "parents": [],
+      "coverRef": "giant-woman-miniature-city",
+      "refs": [
+        "giant-woman-miniature-city",
+        "giant-woman-skyline",
+        "alice-outgrows-house",
+        "giant-alice-book"
+      ],
+      "themes": [],
+      "crossovers": [
+        "alice",
+        "vintage-monsters",
+        "giant-alice"
+      ],
+      "labelAnchor": {
+        "ref": "giant-woman-miniature-city",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6
+    },
+    {
+      "id": "night-skies",
+      "name": "Starlit screens",
+      "parents": [],
+      "refs": [
+        "starry-end-card",
+        "final-frontier",
+        "made-of-stardust",
+        "blue-muppets",
+        "starry-dancers",
+        "wonderland-sun-moon",
+        "tomorrowland-rocket",
+        "night-time-show",
+        "nervous-breakdown-stars",
+        "moon-face",
+        "fantasia-starry-poster",
+        "tigger-starry-sky",
+        "pink-blue-end"
+      ],
+      "themes": [],
+      "focusZoom": 3.6,
+      "reveal": [
+        0,
+        0
+      ],
+      "labelDepth": 0,
+      "labelAnchor": {
+        "ref": "starry-end-card",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "crossovers": [
+        "title-cards",
+        "space-age",
+        "glitter",
+        "background-characters",
+        "late-night-tv",
+        "fantasia",
+        "pooh",
+        "hot-pink",
+        "stars",
+        "vivid-blue"
+      ],
+      "kind": "main",
+      "coverRef": "starry-end-card",
+      "presentation": {
+        "emphasis": "signature",
+        "coverScale": 1.22,
+        "neighbor": "space-age",
+        "overlapCaption": "Tiny stars and lettering against a dark sky.",
+        "reason": "The starlit ending is an explicit favorite, with a repeated attraction to star fields and title treatments across animation, science fiction and late-night TV.",
+        "entrance": "landmark"
+      }
+    },
+    {
+      "id": "space-age",
+      "name": "Space age",
+      "parents": [],
+      "refs": [
+        "made-of-stardust",
+        "star-tours-droids",
+        "leia-r2-mist",
+        "star-trek-blue",
+        "star-trek-planets",
+        "ispy-celestial-pattern",
+        "final-frontier",
+        "tomorrowland-rocket",
+        "dancing-robots",
+        "meet-the-robinsons",
+        "moon-face"
+      ],
+      "themes": [],
+      "focusZoom": 3.6,
+      "reveal": [
+        0,
+        0
+      ],
+      "labelDepth": 0,
+      "labelAnchor": {
+        "ref": "tomorrowland-rocket",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "crossovers": [
+        "night-skies",
+        "storybook-worlds",
+        "wizards"
+      ],
+      "kind": "main",
+      "coverRef": "tomorrowland-rocket",
+      "presentation": {
+        "emphasis": "signature",
+        "reason": "Repeated retro space design and imagined futures, with explicit affection for Tomorrowland, Star Trek and space-age graphics.",
+        "entrance": "landmark"
       }
     },
     {
@@ -2278,13 +2476,15 @@
         "retro-futures",
         "disneyland-ephemera",
         "caterpillar-smoke",
-        "blue-pink"
+        "blue-pink",
+        "illuminated-lettering"
       ],
       "kind": "main",
       "coverRef": "pink-elephant",
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated Pink Panther, romantic endings, theater curtains, old cinema lettering and decorated fairytale text."
+        "reason": "Repeated Pink Panther, romantic endings, theater curtains, old cinema lettering and decorated fairytale text.",
+        "entrance": "landmark"
       }
     },
     {
@@ -2323,19 +2523,18 @@
       "crossovers": [],
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated specific blue, hot pink, green, stars and shimmer preferences across otherwise different subjects."
+        "reason": "Repeated specific blue, hot pink, green, stars and shimmer preferences across otherwise different subjects.",
+        "entrance": "landmark"
       }
     },
     {
-      "id": "holidays",
-      "name": "Holidays",
+      "id": "digital-nostalgia",
+      "name": "Retro tech",
       "parents": [],
       "refs": [
-        "white-christmas-tree",
-        "christmas-cats",
-        "disney-christmas",
-        "merry-bright-tree",
-        "halloween-new-yorker"
+        "iridescent-cds",
+        "medieval-pixels",
+        "imac-color-table"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2345,7 +2544,7 @@
       ],
       "labelDepth": 0,
       "labelAnchor": {
-        "ref": "white-christmas-tree",
+        "ref": "iridescent-cds",
         "offset": [
           0,
           -80
@@ -2356,19 +2555,46 @@
         ]
       },
       "crossovers": [
-        "hand-painted-disney",
-        "storybook-fairytales",
-        "romantic-theater",
-        "red-green",
         "glitter",
-        "retro-cats"
+        "medieval-pixels",
+        "retro-futures",
+        "atomic-graphics"
       ],
       "kind": "main",
-      "coverRef": "white-christmas-tree",
-      "presentation": {
-        "emphasis": "signature",
-        "reason": "Repeated Christmas and Halloween references, personal family traditions and distinctive illustrated palettes."
-      }
+      "coverRef": "iridescent-cds"
+    },
+    {
+      "id": "venus-flytraps",
+      "name": "Venus flytraps",
+      "kind": "main",
+      "parents": [],
+      "coverRef": "venus-flytrap-photo",
+      "refs": [
+        "venus-flytrap-photo",
+        "venus-flytrap-graphic"
+      ],
+      "themes": [],
+      "crossovers": [
+        "acid-green",
+        "hot-pink"
+      ],
+      "labelAnchor": {
+        "ref": "venus-flytrap-photo",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6
     },
     {
       "id": "pink-romance",
@@ -2411,27 +2637,29 @@
         "retro-futures",
         "vintage-monsters",
         "mary-blair",
-        "girl-knights"
+        "girl-knights",
+        "holidays"
       ],
       "kind": "main",
-      "coverRef": "romantic-clown"
+      "coverRef": "romantic-clown",
+      "presentation": {
+        "emphasis": "signature",
+        "coverScale": 1.12,
+        "neighbor": "holidays",
+        "reason": "Hearts, sad clowns, love meters, robots and spooky romance repeat across otherwise distinct worlds.",
+        "entrance": "landmark"
+      }
     },
     {
-      "id": "space-age",
-      "name": "Space age",
+      "id": "holidays",
+      "name": "Holidays",
       "parents": [],
       "refs": [
-        "made-of-stardust",
-        "star-tours-droids",
-        "leia-r2-mist",
-        "star-trek-blue",
-        "star-trek-planets",
-        "ispy-celestial-pattern",
-        "final-frontier",
-        "tomorrowland-rocket",
-        "dancing-robots",
-        "meet-the-robinsons",
-        "moon-face"
+        "white-christmas-tree",
+        "christmas-cats",
+        "disney-christmas",
+        "merry-bright-tree",
+        "halloween-new-yorker"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2441,7 +2669,7 @@
       ],
       "labelDepth": 0,
       "labelAnchor": {
-        "ref": "made-of-stardust",
+        "ref": "white-christmas-tree",
         "offset": [
           0,
           -80
@@ -2452,15 +2680,20 @@
         ]
       },
       "crossovers": [
-        "night-skies",
-        "storybook-worlds",
-        "wizards"
+        "hand-painted-disney",
+        "storybook-fairytales",
+        "romantic-theater",
+        "red-green",
+        "glitter",
+        "retro-cats",
+        "pink-romance"
       ],
       "kind": "main",
-      "coverRef": "made-of-stardust",
+      "coverRef": "white-christmas-tree",
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated romantic space, Star Wars, Star Trek, Tomorrowland and imagined-future references."
+        "reason": "Repeated Christmas and Halloween references, personal family traditions and distinctive illustrated palettes.",
+        "entrance": "landmark"
       }
     },
     {
@@ -2506,76 +2739,9 @@
       "coverRef": "blue-muppets",
       "presentation": {
         "emphasis": "signature",
-        "reason": "Repeated Muppet characters, worlds and costumes across batches, plus explicit strong affection."
+        "reason": "Repeated Muppet characters, worlds and costumes across batches, plus explicit strong affection.",
+        "entrance": "landmark"
       }
-    },
-    {
-      "id": "digital-nostalgia",
-      "name": "Retro tech",
-      "parents": [],
-      "refs": [
-        "iridescent-cds",
-        "medieval-pixels",
-        "imac-color-table"
-      ],
-      "themes": [],
-      "focusZoom": 3.6,
-      "reveal": [
-        0,
-        0
-      ],
-      "labelDepth": 0,
-      "labelAnchor": {
-        "ref": "iridescent-cds",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "crossovers": [
-        "glitter",
-        "medieval-pixels",
-        "retro-futures",
-        "atomic-graphics"
-      ],
-      "kind": "main",
-      "coverRef": "iridescent-cds"
-    },
-    {
-      "id": "jem",
-      "name": "Jem",
-      "parents": [],
-      "refs": [
-        "jem"
-      ],
-      "themes": [],
-      "focusZoom": 3.6,
-      "reveal": [
-        0,
-        0
-      ],
-      "labelDepth": 0,
-      "labelAnchor": {
-        "ref": "jem",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "crossovers": [
-        "muppets",
-        "hot-pink"
-      ],
-      "kind": "main",
-      "coverRef": "jem"
     },
     {
       "id": "retro-cats",
@@ -2612,24 +2778,23 @@
       "coverRef": "mermaid-cocktail-cat"
     },
     {
-      "id": "frogs-ponds",
-      "name": "Frogs & ponds",
+      "id": "sirens",
+      "name": "Sirens",
+      "kind": "main",
       "parents": [],
+      "coverRef": "daughter-of-the-sea",
       "refs": [
-        "lily-pads",
-        "frog-knight",
-        "kermit-banjo",
-        "wonderland-musical-frogs"
+        "daughter-of-the-sea",
+        "wonderland-oyster-calendar",
+        "mermaid-cocktail-cat"
       ],
       "themes": [],
       "crossovers": [
-        "wonderland-flowers",
-        "knights",
-        "muppets",
-        "background-characters"
+        "background-characters",
+        "retro-cats"
       ],
       "labelAnchor": {
-        "ref": "lily-pads",
+        "ref": "daughter-of-the-sea",
         "offset": [
           0,
           -80
@@ -2639,18 +2804,12 @@
           -70
         ]
       },
-      "kind": "main",
-      "coverRef": "lily-pads",
+      "labelDepth": 0,
       "reveal": [
         0,
         0
       ],
-      "focusZoom": 3.6,
-      "labelDepth": 0,
-      "presentation": {
-        "emphasis": "recurring",
-        "reason": "Explicit strong personal significance of frogs, lily pads and ponds, reinforced by frog knights and Kermit."
-      }
+      "focusZoom": 3.6
     },
     {
       "id": "luck-clovers",
@@ -2683,6 +2842,38 @@
       "coverRef": "lucky-clovers"
     },
     {
+      "id": "jem",
+      "name": "Jem",
+      "parents": [],
+      "refs": [
+        "jem"
+      ],
+      "themes": [],
+      "focusZoom": 3.6,
+      "reveal": [
+        0,
+        0
+      ],
+      "labelDepth": 0,
+      "labelAnchor": {
+        "ref": "jem",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "crossovers": [
+        "muppets",
+        "hot-pink"
+      ],
+      "kind": "main",
+      "coverRef": "jem"
+    },
+    {
       "id": "loose-illustration",
       "name": "Loose illustration",
       "parents": [],
@@ -2709,7 +2900,47 @@
         0
       ],
       "focusZoom": 3.6,
-      "labelDepth": 0
+      "labelDepth": 0,
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
+    },
+    {
+      "id": "lit-windows",
+      "name": "Lit windows",
+      "kind": "main",
+      "parents": [],
+      "coverRef": "lit-window-silhouettes",
+      "refs": [
+        "lit-window-silhouettes",
+        "muppets-stage-arches"
+      ],
+      "themes": [],
+      "crossovers": [
+        "muppets"
+      ],
+      "labelAnchor": {
+        "ref": "lit-window-silhouettes",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
     },
     {
       "id": "bathroom-graffiti",
@@ -2738,7 +2969,110 @@
       },
       "crossovers": [],
       "kind": "main",
-      "coverRef": "daft-punk-graffiti"
+      "coverRef": "daft-punk-graffiti",
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
+    },
+    {
+      "id": "tumblr-electropop",
+      "name": "Tumblr electropop",
+      "kind": "main",
+      "parents": [],
+      "coverRef": "marina-feelings",
+      "refs": [
+        "marina-feelings"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "marina-feelings",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
+    },
+    {
+      "id": "the-end-album",
+      "name": "The E.N.D.",
+      "kind": "main",
+      "parents": [],
+      "coverRef": "black-eyed-peas-end",
+      "refs": [
+        "black-eyed-peas-end"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "black-eyed-peas-end",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
+    },
+    {
+      "id": "comfort-food",
+      "name": "Comfort food",
+      "kind": "main",
+      "parents": [],
+      "coverRef": "tomato-soup-grilled-cheese",
+      "refs": [
+        "tomato-soup-grilled-cheese"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "tomato-soup-grilled-cheese",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "seed",
+        "coverScale": 0.78
+      }
     },
     {
       "id": "knights",
@@ -2759,7 +3093,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -2801,7 +3135,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -2890,7 +3224,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -2916,6 +3250,8 @@
       ],
       "presentation": {
         "emphasis": "signature",
+        "coverScale": 1.32,
+        "nearParent": true,
         "reason": "Repeated Wonderland favorites across batches, especially small scenes, creatures, visual wordplay, and scale changes."
       }
     },
@@ -2998,7 +3334,11 @@
         "sirens",
         "frogs-ponds",
         "mixed-media-worlds"
-      ]
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Repeated specific affection for small Wonderland characters and scenes, especially the musical frogs, Mome Raths and oysters."
+      }
     },
     {
       "id": "medieval-pixels",
@@ -3013,7 +3353,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3056,7 +3396,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3097,7 +3437,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3118,8 +3458,12 @@
       "crossovers": [
         "medieval-pixels",
         "star-trek",
-        "muppets"
-      ]
+        "muppets",
+        "night-skies"
+      ],
+      "presentation": {
+        "overlapOnly": true
+      }
     },
     {
       "id": "acid-green",
@@ -3138,7 +3482,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3188,7 +3532,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3208,7 +3552,8 @@
       ],
       "crossovers": [
         "land-of-make-believe",
-        "wizards"
+        "wizards",
+        "night-skies"
       ]
     },
     {
@@ -3247,8 +3592,14 @@
       ],
       "crossovers": [
         "muppet-costumes",
-        "atomic-graphics"
-      ]
+        "atomic-graphics",
+        "halloween"
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Bubbling potions and the mad-scientist lab.",
+        "reason": "Love potions, atomic laboratory drawings and the Muppets’ Halloween laboratory repeat the motif."
+      }
     },
     {
       "id": "girl-knights",
@@ -3301,7 +3652,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3338,7 +3689,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3371,7 +3722,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3445,7 +3796,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3507,59 +3858,6 @@
       ]
     },
     {
-      "id": "night-skies",
-      "name": "Night skies",
-      "parents": [
-        "stars"
-      ],
-      "refs": [
-        "starry-end-card",
-        "final-frontier",
-        "made-of-stardust",
-        "blue-muppets",
-        "starry-dancers",
-        "wonderland-sun-moon",
-        "tomorrowland-rocket",
-        "night-time-show",
-        "nervous-breakdown-stars",
-        "moon-face",
-        "fantasia-starry-poster",
-        "tigger-starry-sky"
-      ],
-      "themes": [],
-      "focusZoom": 6.35,
-      "reveal": [
-        4.85,
-        5.65
-      ],
-      "labelDepth": 2,
-      "labelAnchor": {
-        "ref": "nervous-breakdown-stars",
-        "offset": [
-          0,
-          66
-        ],
-        "mobileOffset": [
-          0,
-          62
-        ]
-      },
-      "layoutOffset": [
-        -60,
-        -90
-      ],
-      "crossovers": [
-        "title-cards",
-        "space-age",
-        "glitter",
-        "background-characters",
-        "late-night-tv",
-        "fantasia",
-        "pooh",
-        "hot-pink"
-      ]
-    },
-    {
       "id": "hot-pink",
       "name": "Hot pink",
       "parents": [
@@ -3579,7 +3877,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3604,7 +3902,10 @@
         "flower-power",
         "venus-flytraps",
         "night-skies"
-      ]
+      ],
+      "presentation": {
+        "overlapOnly": true
+      }
     },
     {
       "id": "romantic-theater",
@@ -3619,7 +3920,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3658,7 +3959,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3742,7 +4043,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3763,7 +4064,12 @@
       "crossovers": [
         "nervous-knights",
         "vintage-monsters"
-      ]
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Valentine hearts turn up on unexpected characters.",
+        "reason": "A repeated pink-and-red Valentine look, from the love meter to the nervous knight."
+      }
     },
     {
       "id": "dragon-tales",
@@ -3778,7 +4084,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3815,7 +4121,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3852,7 +4158,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3931,7 +4237,7 @@
       "focusZoom": 4.7,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "labelDepth": 1,
       "labelAnchor": {
@@ -3951,7 +4257,10 @@
       ],
       "crossovers": [
         "holidays"
-      ]
+      ],
+      "presentation": {
+        "overlapOnly": true
+      }
     },
     {
       "id": "wizards",
@@ -3990,9 +4299,14 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
-      "focusZoom": 4.7
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Pointed hats patterned with stars.",
+        "reason": "Repeated wizards and a specific fondness for their celestial clothing, echoed by Sorcerer Mickey."
+      }
     },
     {
       "id": "picture-books",
@@ -4028,7 +4342,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7,
       "presentation": {
@@ -4071,7 +4385,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4109,7 +4423,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4148,7 +4462,11 @@
         4.85,
         5.65
       ],
-      "focusZoom": 6.35
+      "focusZoom": 6.35,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The singing flowers are explicitly among Brooklyn’s favorite Wonderland characters."
+      }
     },
     {
       "id": "cinema-lettering",
@@ -4186,7 +4504,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4194,7 +4512,7 @@
       "id": "illuminated-lettering",
       "name": "Illuminated lettering",
       "parents": [
-        "title-cards"
+        "medieval-fantasy"
       ],
       "refs": [
         "medieval-spell-lettering",
@@ -4204,7 +4522,8 @@
       "crossovers": [
         "medieval-fantasy",
         "storybook-fairytales",
-        "knights"
+        "knights",
+        "title-cards"
       ],
       "labelAnchor": {
         "ref": "medieval-spell-lettering",
@@ -4224,9 +4543,13 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
-      "focusZoom": 4.7
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The explicitly loved gold calligraphy connects medieval stories and lettering."
+      }
     },
     {
       "id": "holiday-rituals",
@@ -4263,7 +4586,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7,
       "presentation": {
@@ -4343,7 +4666,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4361,7 +4684,8 @@
       "themes": [],
       "crossovers": [
         "muppet-costumes",
-        "holiday-rituals"
+        "holiday-rituals",
+        "mad-science"
       ],
       "labelAnchor": {
         "ref": "halloween-new-yorker",
@@ -4381,7 +4705,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4407,7 +4731,7 @@
         "pink-romance"
       ],
       "labelAnchor": {
-        "ref": "tomorrowland-rocket",
+        "ref": "dancing-robots",
         "offset": [
           0,
           66
@@ -4424,7 +4748,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4462,7 +4786,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
@@ -4502,119 +4826,16 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7
     },
     {
-      "id": "giant-women",
-      "name": "Giant women",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "giant-woman-miniature-city",
-      "refs": [
-        "giant-woman-miniature-city",
-        "giant-woman-skyline",
-        "alice-outgrows-house",
-        "giant-alice-book"
-      ],
-      "themes": [],
-      "crossovers": [
-        "alice",
-        "vintage-monsters",
-        "giant-alice"
-      ],
-      "labelAnchor": {
-        "ref": "giant-woman-miniature-city",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
-      "id": "sirens",
-      "name": "Sirens",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "daughter-of-the-sea",
-      "refs": [
-        "daughter-of-the-sea",
-        "wonderland-oyster-calendar",
-        "mermaid-cocktail-cat"
-      ],
-      "themes": [],
-      "crossovers": [
-        "background-characters",
-        "retro-cats"
-      ],
-      "labelAnchor": {
-        "ref": "daughter-of-the-sea",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
-      "id": "venus-flytraps",
-      "name": "Venus flytraps",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "venus-flytrap-photo",
-      "refs": [
-        "venus-flytrap-photo",
-        "venus-flytrap-graphic"
-      ],
-      "themes": [],
-      "crossovers": [
-        "acid-green",
-        "hot-pink"
-      ],
-      "labelAnchor": {
-        "ref": "venus-flytrap-photo",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
       "id": "late-night-tv",
       "name": "Late-night TV",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "night-time-show",
+      "parents": [
+        "night-skies"
+      ],
       "refs": [
         "night-time-show"
       ],
@@ -4626,19 +4847,23 @@
         "ref": "night-time-show",
         "offset": [
           0,
-          -80
+          66
         ],
         "mobileOffset": [
           0,
-          -70
+          62
         ]
       },
-      "labelDepth": 0,
+      "labelDepth": 1,
       "reveal": [
-        0,
-        0
+        3.2,
+        4
       ],
-      "focusZoom": 3.6
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The available nighttime television pin and the repeated nighttime show references in the pending notes."
+      }
     },
     {
       "id": "disneyland-ephemera",
@@ -4759,130 +4984,11 @@
       }
     },
     {
-      "id": "tumblr-electropop",
-      "name": "Tumblr electropop",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "marina-feelings",
-      "refs": [
-        "marina-feelings"
-      ],
-      "themes": [],
-      "crossovers": [],
-      "labelAnchor": {
-        "ref": "marina-feelings",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
-      "id": "lit-windows",
-      "name": "Lit windows",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "lit-window-silhouettes",
-      "refs": [
-        "lit-window-silhouettes",
-        "muppets-stage-arches"
-      ],
-      "themes": [],
-      "crossovers": [
-        "muppets"
-      ],
-      "labelAnchor": {
-        "ref": "lit-window-silhouettes",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
-      "id": "the-end-album",
-      "name": "The E.N.D.",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "black-eyed-peas-end",
-      "refs": [
-        "black-eyed-peas-end"
-      ],
-      "themes": [],
-      "crossovers": [],
-      "labelAnchor": {
-        "ref": "black-eyed-peas-end",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
-      "id": "comfort-food",
-      "name": "Comfort food",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "tomato-soup-grilled-cheese",
-      "refs": [
-        "tomato-soup-grilled-cheese"
-      ],
-      "themes": [],
-      "crossovers": [],
-      "labelAnchor": {
-        "ref": "tomato-soup-grilled-cheese",
-        "offset": [
-          0,
-          -80
-        ],
-        "mobileOffset": [
-          0,
-          -70
-        ]
-      },
-      "labelDepth": 0,
-      "reveal": [
-        0,
-        0
-      ],
-      "focusZoom": 3.6
-    },
-    {
       "id": "peanuts",
       "name": "Peanuts",
-      "kind": "main",
-      "parents": [],
-      "coverRef": "peanuts-car",
+      "parents": [
+        "holidays"
+      ],
       "refs": [
         "peanuts-christmas",
         "peanuts-car"
@@ -4892,22 +4998,26 @@
         "holiday-rituals"
       ],
       "labelAnchor": {
-        "ref": "peanuts-car",
+        "ref": "peanuts-christmas",
         "offset": [
           0,
-          -80
+          66
         ],
         "mobileOffset": [
           0,
-          -70
+          62
         ]
       },
-      "labelDepth": 0,
+      "labelDepth": 1,
       "reveal": [
-        0,
-        0
+        3.2,
+        4
       ],
-      "focusZoom": 3.6
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "An annual family tradition and a second reference to the Peanuts ensemble outside the specials."
+      }
     },
     {
       "id": "fantasia",
@@ -4939,12 +5049,13 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7,
       "presentation": {
         "emphasis": "signature",
-        "reason": "Brooklyn calls Fantasia one of her biggest inspirations and singled out the character, poster and glowing hat."
+        "reason": "An explicit major inspiration, repeated in three images. Sorcerer Mickey, the glowing hat and the starry poster connect magic, animation and night skies.",
+        "nearParent": true
       }
     },
     {
@@ -4977,7 +5088,7 @@
       "labelDepth": 1,
       "reveal": [
         3.2,
-        4.0
+        4
       ],
       "focusZoom": 4.7,
       "presentation": {
@@ -5018,6 +5129,8 @@
       "focusZoom": 6.35,
       "presentation": {
         "emphasis": "recurring",
+        "coverScale": 1.34,
+        "nearParent": true,
         "reason": "Two treatments of the same house scene repeat Alice’s scale change."
       }
     },
@@ -5091,6 +5204,8 @@
       "focusZoom": 6.35,
       "presentation": {
         "emphasis": "recurring",
+        "coverScale": 1.34,
+        "nearParent": true,
         "reason": "Brooklyn singled these out as favorite Wonderland creatures and supplied two views."
       }
     }
@@ -5416,7 +5531,8 @@
       },
       "revealCategory": "space-age",
       "discovery": {
-        "parent": null
+        "parent": "tomorrowland-rocket",
+        "via": "The romantic side of space-age lettering"
       }
     },
     {
@@ -5546,8 +5662,8 @@
       "tier": 1,
       "themes": [],
       "related": [
-        "robot-swoon",
         "muppet-monster-lab",
+        "robot-swoon",
         "lagoon-valentine",
         "romantic-clown",
         "romantic-end-card",
@@ -5705,7 +5821,7 @@
       },
       "revealCategory": "star-wars",
       "discovery": {
-        "parent": "made-of-stardust",
+        "parent": "tomorrowland-rocket",
         "via": "Star Wars"
       }
     },
@@ -5834,6 +5950,7 @@
       "tier": 1,
       "themes": [],
       "related": [
+        "sorcerer-mickey",
         "mickey-glowing-hat",
         "knight-helmets",
         "made-of-stardust",
@@ -5905,8 +6022,8 @@
       "tier": 1,
       "themes": [],
       "related": [
-        "kermit-banjo",
         "lily-pads",
+        "kermit-banjo",
         "modern-knight",
         "feminine-armor",
         "knight-helmets",
@@ -5995,7 +6112,7 @@
       },
       "revealCategory": "meet-the-robinsons",
       "discovery": {
-        "parent": "made-of-stardust",
+        "parent": "tomorrowland-rocket",
         "via": "Imagined futures"
       }
     },
@@ -6375,7 +6492,7 @@
       },
       "revealCategory": "star-trek",
       "discovery": {
-        "parent": "made-of-stardust",
+        "parent": "tomorrowland-rocket",
         "via": "Star Trek"
       }
     },
@@ -6385,8 +6502,8 @@
       "description": "Red LOVE METER lettering crosses a black semicircular dial with two red hearts on a pale pink background.",
       "group": "pink-romance",
       "related": [
-        "lagoon-valentine",
         "nervous-knight",
+        "lagoon-valentine",
         "romantic-clown",
         "romantic-end-card",
         "sound-recorder"
@@ -6457,6 +6574,8 @@
       "description": "Sparkling white script spelling The End glows across a deep blue background scattered with tiny stars.",
       "group": "color-texture",
       "related": [
+        "final-frontier",
+        "night-time-show",
         "pink-blue-end",
         "fantasia-starry-poster",
         "cinderella-carriage",
@@ -6466,9 +6585,7 @@
         "romantic-end-card",
         "blue-muppets",
         "made-of-stardust",
-        "final-frontier",
         "alice-end-card",
-        "night-time-show",
         "universal-starburst"
       ],
       "note": "This is one of my favorite images in the world. I love this blue color with tiny tiny stars in it, with the end script as well, like it's usually with Disney and \"The End.\" I just love that night sky with that deep blue.",
@@ -6488,10 +6605,9 @@
         "imageUrl": "https://i.pinimg.com/736x/91/d2/c6/91d2c674cdc0a8ba60305b365458fc7e.jpg",
         "capturedOn": "2026-11-08"
       },
-      "revealCategory": "vivid-blue",
+      "revealCategory": "night-skies",
       "discovery": {
-        "parent": "hot-pink-desire",
-        "via": "Color-led references"
+        "parent": null
       }
     },
     {
@@ -6840,9 +6956,9 @@
       "description": "A hand-drawn knight holds a long sword close to its body, with drooping heart-tipped stems on the helmet against a vivid red background.",
       "group": "medieval-fantasy",
       "related": [
+        "love-meter",
         "queen-of-hearts-study",
         "romantic-clown",
-        "love-meter",
         "lagoon-valentine",
         "tattoo-knight"
       ],
@@ -7309,9 +7425,9 @@
       "description": "A close photograph of overlapping round, notched green lily pads on dark rippling pond water, centered on one small white water-lily blossom.",
       "group": "frogs-ponds",
       "related": [
-        "kermit-banjo",
+        "wonderland-musical-frogs",
         "frog-knight",
-        "wonderland-musical-frogs"
+        "kermit-banjo"
       ],
       "note": "Lily pads. I'm really inspired by frogs. I love frogs so, so much and with that I love lily pads and ponds. But lily pads specifically are just so gorgeous and peaceful to me, and my favorite color ever",
       "src": "images/117938083987100003.jpg",
@@ -7457,8 +7573,8 @@
       },
       "revealCategory": "peanuts",
       "discovery": {
-        "parent": "peanuts-car",
-        "via": "The Peanuts ensemble in a holiday memory"
+        "parent": "white-christmas-tree",
+        "via": "Watching Peanuts is a family holiday tradition"
       }
     },
     {
@@ -7655,8 +7771,8 @@
       },
       "revealCategory": "illuminated-lettering",
       "discovery": {
-        "parent": "pink-elephant",
-        "via": "Illuminated lettering"
+        "parent": "knight-helmets",
+        "via": "Gold lettering and the medieval storybook look"
       }
     },
     {
@@ -7720,10 +7836,9 @@
         "imageUrl": "https://i.pinimg.com/originals/6e/5f/ba/6e5fba83ddda6bb7ce94cdcc7cdf327a.jpg",
         "capturedOn": "2026-11-08"
       },
-      "revealCategory": "retro-futures",
+      "revealCategory": "space-age",
       "discovery": {
-        "parent": "made-of-stardust",
-        "via": "Imagined futures"
+        "parent": null
       }
     },
     {
@@ -7799,9 +7914,9 @@
       "description": "Miss Piggy wears a white gown and cape with a huge Bride-of-Frankenstein-style hairdo; Kermit appears in dark monster costume behind her amid wires, glass laboratory apparatus and a dim blue-lit stone set.",
       "group": "muppets",
       "related": [
+        "love-potion",
         "haunted-tunnel-of-love",
         "gonzo-tin-man",
-        "love-potion",
         "lagoon-valentine",
         "halloween-new-yorker",
         "atomic-lab-bottles"
@@ -7968,8 +8083,8 @@
       "description": "A woman in pink looms over miniature cars and buildings.",
       "group": "giant-women",
       "related": [
-        "giant-alice-book",
         "alice-outgrows-house",
+        "giant-alice-book",
         "giant-woman-skyline",
         "lagoon-valentine"
       ],
@@ -8024,7 +8139,7 @@
       },
       "revealCategory": "atomic-graphics",
       "discovery": {
-        "parent": "tomorrowland-rocket",
+        "parent": "dancing-robots",
         "via": "Space Age lettering and starbursts"
       }
     },
@@ -8057,7 +8172,8 @@
       },
       "revealCategory": "late-night-tv",
       "discovery": {
-        "parent": null
+        "parent": "starry-end-card",
+        "via": "Night-sky graphics in television"
       }
     },
     {
@@ -8455,8 +8571,8 @@
       "description": "Two instrument-shaped frogs sit on lily pads in a dark animated pond.",
       "group": "storybook-worlds",
       "related": [
-        "mome-raths",
         "lily-pads",
+        "mome-raths",
         "kermit-banjo",
         "wonderland-oyster-calendar"
       ],
@@ -8512,7 +8628,7 @@
       },
       "revealCategory": "retro-futures",
       "discovery": {
-        "parent": "tomorrowland-rocket",
+        "parent": "dancing-robots",
         "via": "Imagined cities of the future"
       }
     },
@@ -8522,6 +8638,7 @@
       "description": "Mickey in a red robe and blue hat decorated with stars and a crescent.",
       "group": "storybook-worlds",
       "related": [
+        "star-wizard",
         "celestial-cloak-wizard",
         "mickey-glowing-hat",
         "fantasia-starry-poster"
@@ -8929,8 +9046,8 @@
       },
       "revealCategory": "night-skies",
       "discovery": {
-        "parent": "pink-star-pattern",
-        "via": "Night skies"
+        "parent": "starry-end-card",
+        "via": "Tiny stars against a dark screen"
       }
     },
     {
@@ -9025,8 +9142,8 @@
       },
       "revealCategory": "night-skies",
       "discovery": {
-        "parent": "nervous-breakdown-stars",
-        "via": "Night skies"
+        "parent": "starry-end-card",
+        "via": "The night sky as a setting for a story"
       }
     },
     {
@@ -9148,7 +9265,8 @@
       },
       "revealCategory": "peanuts",
       "discovery": {
-        "parent": null
+        "parent": "peanuts-christmas",
+        "via": "The same Peanuts gang beyond the holidays"
       }
     },
     {
@@ -9385,11 +9503,11 @@
     }
   ],
   "organization": {
-    "revision": "2026-11-09-discovery-route-audit",
+    "revision": "2026-11-09-taste-atlas",
     "reviewedCount": 127,
-    "model": "evolving-paths",
-    "depthPolicy": "Independent themes open with a cover. Subtheme size and reveal depth reflect recurring evidence and personal significance.",
-    "rootOrder": "Primary paths retain their semantic ancestry. Presentation emphasis may promote a recurring subtheme without severing its parents or crossovers.",
+    "model": "layered-atlas",
+    "depthPolicy": "Strong recurring interests lead the opening. Independent seeds stay visible at a quieter scale. More specific pictures appear with zoom.",
+    "rootOrder": "Landmarks lead into adjacent visual families. Primary paths and shared motifs remain separate navigation tools.",
     "reviewedPendingNoteCount": 7
   }
 }

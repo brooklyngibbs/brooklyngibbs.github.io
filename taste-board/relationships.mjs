@@ -47,6 +47,9 @@ export function createRelationships(collection){
     return {all:common(membership),specific:common(specific),primary:refs.every(ref=>ref.revealCategory===refs[0]?.revealCategory)?refs[0]?.revealCategory:null};
   };
   relationship.clusterGap=(a,b)=>a.primary&&a.primary===b.primary?categorySpacing.same:[...a.specific].some(id=>b.specific.has(id))?categorySpacing.linked:[...a.all].some(id=>b.all.has(id))?categorySpacing.related:categorySpacing.separate;
+  relationship.nearParent=id=>categories.get(id)?.presentation?.nearParent===true;
+  relationship.neighbor=id=>categories.get(id)?.presentation?.neighbor;
+  relationship.representative=id=>categories.get(id)?.coverRef||categories.get(id)?.labelAnchor?.ref;
   // Give each small category a stable neighborhood within its parent area.
   // Each reference starts in its curated primary neighborhood. Additional
   // motifs remain crossovers; the spacing pass reserves every photo and title.

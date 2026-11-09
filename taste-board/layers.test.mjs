@@ -16,7 +16,12 @@ test('opening gives every independent theme a cover',()=>{
   const alice=layers.images.get('alice-cheshire');
   assert.equal(layerOpacity(alice,1),0);
   assert.equal(layerOpacity(alice,alice.reveal[1]),1);
-  assert.ok(opening.every(([,p])=>p.edge>alice.edge));
+  const makeBelieve=layers.images.get('make-believe-castles');
+  assert.ok(makeBelieve.edge>alice.edge);
+  for(const id of ['alice-outgrows-house','bread-and-butterflies']){
+    assert.ok(alice.edge>layers.images.get(id).edge);
+    assert.ok(layers.images.get(id).edge>layers.images.get('smoke-dragon').edge);
+  }
   assert.equal(layerOpacity(layers.images.get('smoke-dragon'),1),0);
   assert.equal(layerOpacity(layers.images.get('pressed-clovers'),1),0);
   assert.equal(layerOpacity(layers.images.get('lucky-clovers'),1),1);

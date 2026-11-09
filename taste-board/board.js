@@ -1,10 +1,10 @@
 import {applyDraft,emptyDraft,readDraft} from './drafts.mjs?v=4';
 import {mountEditor} from './editor.js?v=3';
-import {photoBounds,createWorldLayout} from './spacing.mjs?v=11';
-import {createRelationships,categorySpacing} from './relationships.mjs?v=9';
+import {photoBounds,createWorldLayout} from './spacing.mjs?v=14';
+import {createRelationships,categorySpacing} from './relationships.mjs?v=11';
 import {isLocalPreview,readCollection} from './collection.mjs?v=5';
 import {worldScale,zoomFromScale,photoScale,photoDimensions,photoHitSize} from './camera.mjs?v=6';
-import {createLayers,layerOpacity} from './layers.mjs?v=7';
+import {createLayers,layerOpacity} from './layers.mjs?v=8';
 import {createDiscovery} from './discovery.mjs?v=2';
 import {createConnections,projectConnections,connectionCurve} from './connections.mjs?v=2';
 
@@ -17,7 +17,7 @@ import {createConnections,projectConnections,connectionCurve} from './connection
   const local=isLocalPreview(location.hostname);
   if(local)try{draft=await readDraft();}catch{draftError=true;}
   let collection=local?applyDraft(sourceCollection,draft):sourceCollection;
-  const layoutRevision=()=>collection.organization?.revision+':anchored-captions-v1';
+  const layoutRevision=()=>collection.organization?.revision+':cover-framing-v1';
   let images,refs,relationship,groups,byId,groupMembers,items,itemsById,topics,labels,discovery,layers;
   const field=root.querySelector('.fw-field'),pictures=root.querySelector('.fw-pictures'),names=root.querySelector('.fw-names'),viewer=root.querySelector('.fw-viewer'),controls=root.querySelector('.fw-controls'),announcement=root.querySelector('.fw-announcement');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)'),coarsePointer=matchMedia('(pointer:coarse)');
@@ -57,8 +57,9 @@ import {createConnections,projectConnections,connectionCurve} from './connection
   });
   itemsById=new Map(items.map(item=>[item.ref.id,item]));
   topics=Object.fromEntries(collection.categories.map(category=>[category.id,category]));
-  labels=collection.categories.filter(category=>layers.members.get(category.id).size).map(category=>{
+  labels=collection.categories.filter(category=>!category.presentation?.overlapOnly&&layers.members.get(category.id).size).map(category=>{
     const button=document.createElement('button');button.type='button';button.className='fw-name cursor-interaction';button.textContent=category.name;button.dataset.category=category.id;button.dataset.depth=Math.min(3,categoryDepth(category));
+    if(category.presentation?.entrance)button.dataset.entrance=category.presentation.entrance;
     const parentNames=(category.parents||[]).map(id=>topics[id].name),crossovers=(category.crossovers||[]).map(id=>topics[id].name);
     button.setAttribute('aria-label','Explore '+category.name+(parentNames.length?' via '+parentNames.join(' and '):'')+(crossovers.length?'; also connected to '+crossovers.join(' and '):''));names.append(button);
     bindConnectionFocus(button,{type:'category',id:category.id});
@@ -100,6 +101,17 @@ import {createConnections,projectConnections,connectionCurve} from './connection
   function seedPoint(ref){const center=groupCenter(ref.group),offset=slotFor(ref),e=extent(),scale=width<450?.76:1,compact=.8;return {x:.5+(center[0]-.5+offset[0]*scale/e.x)*compact,y:.5+(center[1]-.5+offset[1]*scale/e.y)*compact};}
   function point(ref){return worldPoints.get(ref.id)||seedPoint(ref);}
   function relatedFor(ref){const immediate=new Set([ref.id,discovery.parent(ref.id)?.id,...discovery.children(ref.id).map(child=>child.id)]);return (ref.related||[]).filter(id=>byId[id]&&!immediate.has(id)).slice(0,4);}
+  function featuredOverlap(ref,related){
+    for(const id of related){
+      const edge=connectionGraph.edges.find(edge=>edge.kind==='overlap'&&((edge.a===ref.id&&edge.b===id)||(edge.b===ref.id&&edge.a===id)));
+      if(!edge)continue;
+      for(const category of edge.categories){
+        const caption=topics[category]?.presentation?.overlapCaption;
+        if(caption)return {ref:byId[id],caption};
+      }
+    }
+    return null;
+  }
   function spread(z){return worldScale(z);}
   function extent(){return {x:Math.max(200,width-(width<450?34:90)),y:Math.max(180,height-125)};}
   function buildLayout(){
@@ -323,8 +335,19 @@ import {createConnections,projectConnections,connectionCurve} from './connection
     const quote=viewer.querySelector('.fw-note');quote.hidden=!note.trim();quote.textContent=note.trim()?'“'+note+'”':'';
     viewer.querySelector('.fw-no-note').hidden=!!note.trim();
     const sourceLink=viewer.querySelector('.fw-source');sourceLink.hidden=!ref.source?.url;if(ref.source?.url)sourceLink.href=ref.source.url;else sourceLink.removeAttribute('href');
+    const relatedIds=relatedFor(ref),overlap=featuredOverlap(ref,relatedIds);
+    const featured=viewer.querySelector('.fw-featured-overlap');
+    featured.hidden=!overlap;
+    featured.onclick=null;
+    if(overlap){
+      const linked=overlap.ref;
+      featured.querySelector('img').src=images[linked.id];
+      featured.querySelector('.fw-overlap-name').textContent='Overlap: '+(topics[linked.revealCategory]?.name||linked.name)+' →';
+      featured.querySelector('.fw-overlap-caption').textContent=overlap.caption;
+      featured.onclick=()=>openImage(linked,returnFocus);
+    }
     const related=viewer.querySelector('.fw-related');related.replaceChildren();
-    for(const id of relatedFor(ref)){const r=byId[id],b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-label','Read notes for '+r.name);const img=document.createElement('img');img.src=images[id];img.alt='';b.append(img);b.addEventListener('click',()=>openImage(r,returnFocus));related.append(b);}
+    for(const id of relatedIds){if(id===overlap?.ref.id)continue;const r=byId[id],b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-label','Read notes for '+r.name);const img=document.createElement('img');img.src=images[id];img.alt='';b.append(img);b.addEventListener('click',()=>openImage(r,returnFocus));related.append(b);}
     viewer.querySelector('.fw-crossovers').hidden=!related.children.length;
     setViewer(true);viewer.querySelector('.fw-back').focus();announcement.textContent=ref.name+(note.trim()?'. Note shown with the photo.':'. No note.');persist();
   }
