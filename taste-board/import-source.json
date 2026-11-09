@@ -1,8 +1,8 @@
 {
   "capturedOn": "2026-11-09",
-  "status": "user-supplied-pins",
-  "requestedCount": 134,
-  "importedCount": 127,
+  "status": "partial",
+  "requestedCount": 166,
+  "importedCount": 159,
   "complete": false,
   "images": [
     {
@@ -893,6 +893,230 @@
       "imageUrl": "https://i.pinimg.com/originals/d4/e8/83/d4e8837f49689d27daf6b8d53d2fd135.gif",
       "capturedOn": "2026-11-09",
       "id": "mickey-glowing-hat"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989360113/",
+      "pinId": "117938083989360113",
+      "imageUrl": "https://i.pinimg.com/736x/8b/f9/54/8bf95499c69afcb32938f73e83eff532.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "pearl-draped-hair"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989273585/",
+      "pinId": "117938083989273585",
+      "imageUrl": "https://i.pinimg.com/736x/96/88/fe/9688fead234b677cec6e37c4f1411c87.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "lost-in-space-logo"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989221173/",
+      "pinId": "117938083989221173",
+      "imageUrl": "https://i.pinimg.com/736x/2f/de/0b/2fde0be9ddfa9898622202e977958abc.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "spiderweb-the-end"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989215639/",
+      "pinId": "117938083989215639",
+      "imageUrl": "https://i.pinimg.com/736x/73/df/df/73dfdf09cf31b4a055ecb90170452868.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "jetsons-candy"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989215073/",
+      "pinId": "117938083989215073",
+      "imageUrl": "https://i.pinimg.com/736x/11/e2/27/11e227fe51ffbaa97dd5480ee684f2ef.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "boo-berry-cereal"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989212260/",
+      "pinId": "117938083989212260",
+      "imageUrl": "https://i.pinimg.com/736x/5d/59/ea/5d59eaaee06bd4c2fc13c9e8531cc24a.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "monster-cereal-trio"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989195162/",
+      "pinId": "117938083989195162",
+      "imageUrl": "https://i.pinimg.com/736x/04/49/53/044953ddffd5f6da2575f36bd6e82937.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "candle-fairies"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989139915/",
+      "pinId": "117938083989139915",
+      "imageUrl": "https://i.pinimg.com/736x/13/16/dd/1316dded92ce7611089e5ecee57aafcb.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "cinderella-opening-card"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989139390/",
+      "pinId": "117938083989139390",
+      "imageUrl": "https://i.pinimg.com/736x/5e/99/5b/5e995bc954a7d558300c7980a64efb9b.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "digital-cross"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989117916/",
+      "pinId": "117938083989117916",
+      "imageUrl": "https://i.pinimg.com/736x/8b/8d/66/8b8d666bdbe39b00ba09b5e5c0271efb.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "fairy-tales-ribbon"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989115078/",
+      "pinId": "117938083989115078",
+      "imageUrl": "https://i.pinimg.com/736x/51/dc/89/51dc894a9a6870091f6656314de62f5e.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "eyelash-beetle"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989115067/",
+      "pinId": "117938083989115067",
+      "imageUrl": "https://i.pinimg.com/736x/ea/e4/e8/eae4e89b576454ea2ea50f18f5c3a2aa.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "gingham-beetle"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989115075/",
+      "pinId": "117938083989115075",
+      "imageUrl": "https://i.pinimg.com/736x/62/d1/1e/62d11e187a10b7fe95142bfd7a68eb48.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "space-age-cat"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989060138/",
+      "pinId": "117938083989060138",
+      "imageUrl": "https://i.pinimg.com/736x/b5/54/f5/b554f5d1ff2ea398644d3e59b6310110.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "piggy-kermit-kiss"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988977275/",
+      "pinId": "117938083988977275",
+      "imageUrl": "https://i.pinimg.com/736x/5d/80/96/5d80964a24850cb4e0c6570670430cb0.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "vintage-mummy"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988976536/",
+      "pinId": "117938083988976536",
+      "imageUrl": "https://i.pinimg.com/736x/b2/e3/bd/b2e3bdd16d4cb6ff8513e1d90e4cb7ec.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "nyc-pattern-skyline"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988976534/",
+      "pinId": "117938083988976534",
+      "imageUrl": "https://i.pinimg.com/736x/ab/3a/e4/ab3ae437a686bee7165a23679e1ec925.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "nyc-subway-doors"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988974490/",
+      "pinId": "117938083988974490",
+      "imageUrl": "https://i.pinimg.com/736x/5f/61/7b/5f617b786b54dd07b8fceeb5241a89d5.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "vintage-mannequin-head"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988974491/",
+      "pinId": "117938083988974491",
+      "imageUrl": "https://i.pinimg.com/736x/85/a4/c5/85a4c57c404f08d6e44c0dc53c03b1a2.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "french-style-mannequins"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988974493/",
+      "pinId": "117938083988974493",
+      "imageUrl": "https://i.pinimg.com/736x/8e/8e/54/8e8e542ae6296ece7bf4e2de8a32e702.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "lace-and-glasses-mannequins"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988974492/",
+      "pinId": "117938083988974492",
+      "imageUrl": "https://i.pinimg.com/736x/b6/ff/e9/b6ffe9a43f6655c0320e35a9ae185059.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "lampshade-mannequins"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988921361/",
+      "pinId": "117938083988921361",
+      "imageUrl": "https://i.pinimg.com/736x/39/e1/40/39e140eaea5f631b29f6828863caeea3.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "y2k-christina"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988919591/",
+      "pinId": "117938083988919591",
+      "imageUrl": "https://i.pinimg.com/736x/b2/69/65/b26965313f7305e994ef7e0ad843e794.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "pulp-fembot"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988919590/",
+      "pinId": "117938083988919590",
+      "imageUrl": "https://i.pinimg.com/736x/68/b6/1d/68b61d679998afdcc554e84d483a70d0.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "strange-unusual-comic"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988919561/",
+      "pinId": "117938083988919561",
+      "imageUrl": "https://i.pinimg.com/736x/e5/a5/d4/e5a5d4870d8c643d3acfed4d70dd2561.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "pretty-girls-rock"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988900856/",
+      "pinId": "117938083988900856",
+      "imageUrl": "https://i.pinimg.com/736x/4a/0c/74/4a0c74b5946b97a78999520d4f918c4d.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "discarded-pc-stack"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988900842/",
+      "pinId": "117938083988900842",
+      "imageUrl": "https://i.pinimg.com/736x/dc/c6/7e/dcc67e6bdda5ca8227ee60ff378b5a13.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "wire-crucifixion"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988834706/",
+      "pinId": "117938083988834706",
+      "imageUrl": "https://i.pinimg.com/736x/e5/70/44/e5704434cc9e347e90375a3269cd89a4.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "four-leaf-clover-print"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988599222/",
+      "pinId": "117938083988599222",
+      "imageUrl": "https://i.pinimg.com/736x/62/df/06/62df06bea1c3f6f24008b77646a48573.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "circuit-butterfly"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083988496683/",
+      "pinId": "117938083988496683",
+      "imageUrl": "https://i.pinimg.com/736x/c5/30/9c/c5309cf57b7cde11bf725b6e0289667b.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "tech-nun"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083987832715/",
+      "pinId": "117938083987832715",
+      "imageUrl": "https://i.pinimg.com/736x/60/f4/d8/60f4d8161950164bce4ab8c3fdbc56ee.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "star-trek-crt"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083987828666/",
+      "pinId": "117938083987828666",
+      "imageUrl": "https://i.pinimg.com/736x/29/5c/18/295c1823097ff779acddd5aa822b50cf.jpg",
+      "capturedOn": "2026-11-09",
+      "id": "viewmaster-disc"
     }
   ],
   "pendingCount": 7,

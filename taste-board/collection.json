@@ -2160,6 +2160,106 @@
           36
         ]
       ]
+    },
+    "whimsical-beetles": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
+    },
+    "new-york": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
+    },
+    "digital-devotion": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
+    },
+    "vintage-mannequins": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
+    },
+    "y2k-pop-style": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
     }
   },
   "categories": [
@@ -2345,7 +2445,9 @@
         "moon-face",
         "fantasia-starry-poster",
         "tigger-starry-sky",
-        "pink-blue-end"
+        "pink-blue-end",
+        "lost-in-space-logo",
+        "star-trek-crt"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2375,7 +2477,8 @@
         "pooh",
         "hot-pink",
         "stars",
-        "vivid-blue"
+        "vivid-blue",
+        "star-trek"
       ],
       "kind": "main",
       "coverRef": "starry-end-card",
@@ -2403,7 +2506,8 @@
         "tomorrowland-rocket",
         "dancing-robots",
         "meet-the-robinsons",
-        "moon-face"
+        "moon-face",
+        "lost-in-space-logo"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2449,7 +2553,9 @@
         "romantic-theater-card",
         "frontierland-lettering",
         "alice-smoke-vowels",
-        "pink-blue-end"
+        "pink-blue-end",
+        "lost-in-space-logo",
+        "fairy-tales-ribbon"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2528,13 +2634,53 @@
       }
     },
     {
+      "id": "digital-devotion",
+      "name": "Digital devotion",
+      "parents": [],
+      "refs": [
+        "digital-cross",
+        "wire-crucifixion",
+        "tech-nun"
+      ],
+      "themes": [],
+      "crossovers": [
+        "tech-in-pieces"
+      ],
+      "labelAnchor": {
+        "ref": "digital-cross",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "landmark",
+        "coverScale": 1.08,
+        "reason": "The panel cross, wire crucifixion and praying nun repeat an explicit interest in sacred imagery made with technology.",
+        "emphasis": "recurring"
+      },
+      "kind": "main",
+      "coverRef": "digital-cross"
+    },
+    {
       "id": "digital-nostalgia",
       "name": "Retro tech",
       "parents": [],
       "refs": [
         "iridescent-cds",
         "medieval-pixels",
-        "imac-color-table"
+        "imac-color-table",
+        "viewmaster-disc"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2610,7 +2756,9 @@
         "robot-swoon",
         "haunted-tunnel-of-love",
         "blair-pink-curtains",
-        "tattoo-knight"
+        "tattoo-knight",
+        "piggy-kermit-kiss",
+        "pulp-fembot"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2638,7 +2786,9 @@
         "vintage-monsters",
         "mary-blair",
         "girl-knights",
-        "holidays"
+        "holidays",
+        "muppets",
+        "fembots"
       ],
       "kind": "main",
       "coverRef": "romantic-clown",
@@ -2707,7 +2857,8 @@
         "kermit-banjo",
         "gonzo-tin-man",
         "muppets-manhattan-comic",
-        "muppets-stage-arches"
+        "muppets-stage-arches",
+        "piggy-kermit-kiss"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2733,7 +2884,8 @@
         "wizard-of-oz",
         "worlds-made-real",
         "frogs-ponds",
-        "lit-windows"
+        "lit-windows",
+        "pink-romance"
       ],
       "kind": "main",
       "coverRef": "blue-muppets",
@@ -2749,7 +2901,8 @@
       "parents": [],
       "refs": [
         "christmas-cats",
-        "mermaid-cocktail-cat"
+        "mermaid-cocktail-cat",
+        "space-age-cat"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2772,10 +2925,54 @@
       "crossovers": [
         "holidays",
         "christmas",
-        "sirens"
+        "sirens",
+        "retro-futures"
       ],
       "kind": "main",
-      "coverRef": "mermaid-cocktail-cat"
+      "coverRef": "mermaid-cocktail-cat",
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The cats recur as a recognizable retro character type across Christmas, mermaid cocktails and a sci-fi room."
+      }
+    },
+    {
+      "id": "vintage-mannequins",
+      "name": "Femininity & artifice",
+      "parents": [],
+      "refs": [
+        "vintage-mannequin-head",
+        "french-style-mannequins",
+        "lace-and-glasses-mannequins",
+        "lampshade-mannequins",
+        "pulp-fembot"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "lace-and-glasses-mannequins",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "entrance": "landmark",
+        "coverScale": 1.12,
+        "reason": "Brooklyn explicitly names mannequins, styling and lampshade characters as symbols for femininity, girlhood and gender.",
+        "emphasis": "signature"
+      },
+      "kind": "main",
+      "coverRef": "lace-and-glasses-mannequins"
     },
     {
       "id": "sirens",
@@ -2809,7 +3006,11 @@
         0,
         0
       ],
-      "focusZoom": 3.6
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The personal siren archetype now has a tangible styling reference in pearl-draped hair, alongside the shell and mermaid-cat crossovers."
+      }
     },
     {
       "id": "luck-clovers",
@@ -2817,7 +3018,8 @@
       "parents": [],
       "refs": [
         "lucky-clovers",
-        "pressed-clovers"
+        "pressed-clovers",
+        "four-leaf-clover-print"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2874,6 +3076,40 @@
       "coverRef": "jem"
     },
     {
+      "id": "whimsical-beetles",
+      "name": "Whimsical Beetles",
+      "parents": [],
+      "refs": [
+        "eyelash-beetle",
+        "gingham-beetle"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "eyelash-beetle",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Two decorated Beetles and the explicit childhood dream of driving one."
+      },
+      "kind": "main",
+      "coverRef": "eyelash-beetle"
+    },
+    {
       "id": "loose-illustration",
       "name": "Loose illustration",
       "parents": [],
@@ -2907,6 +3143,45 @@
       }
     },
     {
+      "id": "new-york",
+      "name": "New York",
+      "parents": [],
+      "refs": [
+        "nyc-pattern-skyline",
+        "nyc-subway-doors",
+        "lit-window-silhouettes"
+      ],
+      "themes": [],
+      "crossovers": [
+        "lit-windows"
+      ],
+      "labelAnchor": {
+        "ref": "nyc-pattern-skyline",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "recurring",
+        "neighbor": "lit-windows",
+        "overlapCaption": "The city seen through its patterned facades and windows.",
+        "reason": "The patterned skyline and red subway doors are two takes on New York nostalgia."
+      },
+      "kind": "main",
+      "coverRef": "nyc-pattern-skyline"
+    },
+    {
       "id": "lit-windows",
       "name": "Lit windows",
       "kind": "main",
@@ -2918,7 +3193,8 @@
       ],
       "themes": [],
       "crossovers": [
-        "muppets"
+        "muppets",
+        "new-york"
       ],
       "labelAnchor": {
         "ref": "lit-window-silhouettes",
@@ -2976,6 +3252,44 @@
       }
     },
     {
+      "id": "y2k-pop-style",
+      "name": "Y2K pop style",
+      "parents": [],
+      "refs": [
+        "y2k-christina",
+        "pretty-girls-rock"
+      ],
+      "themes": [],
+      "crossovers": [
+        "glitter",
+        "tumblr-electropop"
+      ],
+      "labelAnchor": {
+        "ref": "y2k-christina",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "recurring",
+        "neighbor": "tumblr-electropop",
+        "reason": "The Christina Aguilera photo and rhinestone tee repeat early Y2K pop styling and girlhood slogans."
+      },
+      "kind": "main",
+      "coverRef": "y2k-christina"
+    },
+    {
       "id": "tumblr-electropop",
       "name": "Tumblr electropop",
       "kind": "main",
@@ -2985,7 +3299,9 @@
         "marina-feelings"
       ],
       "themes": [],
-      "crossovers": [],
+      "crossovers": [
+        "y2k-pop-style"
+      ],
       "labelAnchor": {
         "ref": "marina-feelings",
         "offset": [
@@ -3167,7 +3483,8 @@
         "painted-disney",
         "disney-christmas",
         "queen-of-hearts-study",
-        "cinderella-carriage"
+        "cinderella-carriage",
+        "cinderella-opening-card"
       ],
       "themes": [],
       "focusZoom": 6.35,
@@ -3194,7 +3511,8 @@
       "crossovers": [
         "holidays",
         "picture-books",
-        "holiday-rituals"
+        "holiday-rituals",
+        "cinema-lettering"
       ],
       "presentation": {
         "emphasis": "recurring",
@@ -3646,7 +3964,9 @@
       ],
       "refs": [
         "storybook-ending",
-        "starry-dancers"
+        "starry-dancers",
+        "candle-fairies",
+        "fairy-tales-ribbon"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -3673,8 +3993,13 @@
       "crossovers": [
         "holidays",
         "illuminated-lettering",
-        "blue-pink"
-      ]
+        "blue-pink",
+        "pearl-drapery"
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Hand-painted storybooks, contemporary ribbon lettering and tiny fairies keep renewing the storybook look."
+      }
     },
     {
       "id": "old-interfaces",
@@ -3790,7 +4115,8 @@
       "refs": [
         "star-trek-blue",
         "star-trek-planets",
-        "final-frontier"
+        "final-frontier",
+        "star-trek-crt"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -3815,8 +4141,13 @@
         70
       ],
       "crossovers": [
-        "vivid-blue"
-      ]
+        "vivid-blue",
+        "night-skies"
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Repeated Star Trek visuals, especially title lettering and star fields, now include a CRT television."
+      }
     },
     {
       "id": "vintage-monsters",
@@ -3827,7 +4158,11 @@
       "refs": [
         "lagoon-valentine",
         "muppet-monster-lab",
-        "haunted-tunnel-of-love"
+        "haunted-tunnel-of-love",
+        "vintage-mummy",
+        "spiderweb-the-end",
+        "boo-berry-cereal",
+        "monster-cereal-trio"
       ],
       "themes": [],
       "focusZoom": 6.35,
@@ -3854,8 +4189,15 @@
       "crossovers": [
         "valentines",
         "giant-women",
-        "pink-romance"
-      ]
+        "pink-romance",
+        "cinema-lettering",
+        "monster-cereals"
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Old horror imagery moves between films, illustrations and everyday objects.",
+        "reason": "The recurring monster and Halloween references now span vintage illustration, films, romance and packaging."
+      }
     },
     {
       "id": "hot-pink",
@@ -3871,7 +4213,8 @@
         "starry-dancers",
         "flower-power-christmas",
         "venus-flytrap-photo",
-        "nervous-breakdown-stars"
+        "nervous-breakdown-stars",
+        "pulp-fembot"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -4115,7 +4458,8 @@
       ],
       "refs": [
         "glitter-makeup",
-        "starry-end-card"
+        "starry-end-card",
+        "pretty-girls-rock"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -4142,7 +4486,8 @@
       "crossovers": [
         "digital-nostalgia",
         "holidays",
-        "night-skies"
+        "night-skies",
+        "y2k-pop-style"
       ]
     },
     {
@@ -4478,13 +4823,17 @@
         "big-screen-title",
         "romantic-theater-card",
         "universal-starburst",
-        "pink-blue-end"
+        "pink-blue-end",
+        "spiderweb-the-end",
+        "cinderella-opening-card"
       ],
       "themes": [],
       "crossovers": [
         "romantic-theater",
         "atomic-graphics",
-        "blue-pink"
+        "blue-pink",
+        "vintage-monsters",
+        "hand-painted-disney"
       ],
       "labelAnchor": {
         "ref": "big-screen-title",
@@ -4506,7 +4855,11 @@
         3.2,
         4
       ],
-      "focusZoom": 4.7
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Disney openings, studio cards and classic end scripts are a repeated interest across genres."
+      }
     },
     {
       "id": "illuminated-lettering",
@@ -4559,14 +4912,16 @@
       ],
       "refs": [
         "disney-christmas",
-        "peanuts-christmas"
+        "peanuts-christmas",
+        "lampshade-mannequins"
       ],
       "themes": [],
       "crossovers": [
         "picture-books",
         "hand-painted-disney",
         "halloween",
-        "peanuts"
+        "peanuts",
+        "lampshade-figures"
       ],
       "labelAnchor": {
         "ref": "disney-christmas",
@@ -4679,7 +5034,8 @@
       "refs": [
         "halloween-new-yorker",
         "muppet-monster-lab",
-        "lagoon-valentine"
+        "lagoon-valentine",
+        "strange-unusual-comic"
       ],
       "themes": [],
       "crossovers": [
@@ -4719,8 +5075,8 @@
         "tomorrowland-rocket",
         "dancing-robots",
         "meet-the-robinsons",
-        "jetsons-skyline",
-        "robot-swoon"
+        "robot-swoon",
+        "space-age-cat"
       ],
       "themes": [],
       "crossovers": [
@@ -4728,7 +5084,8 @@
         "digital-nostalgia",
         "title-cards",
         "disneyland-ephemera",
-        "pink-romance"
+        "pink-romance",
+        "retro-cats"
       ],
       "labelAnchor": {
         "ref": "dancing-robots",
@@ -4750,7 +5107,11 @@
         3.2,
         4
       ],
-      "focusZoom": 4.7
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Space-age graphics, playful robots and the growing Jetsons pairing share a recognizable imagined future."
+      }
     },
     {
       "id": "muppet-costumes",
@@ -5208,6 +5569,223 @@
         "nearParent": true,
         "reason": "Brooklyn singled these out as favorite Wonderland creatures and supplied two views."
       }
+    },
+    {
+      "id": "pearl-drapery",
+      "name": "Pearl drapery",
+      "parents": [
+        "sirens"
+      ],
+      "refs": [
+        "pearl-draped-hair",
+        "candle-fairies"
+      ],
+      "themes": [],
+      "crossovers": [
+        "storybook-fairytales"
+      ],
+      "labelAnchor": {
+        "ref": "pearl-draped-hair",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Long, shimmering strands drape from hair and candlelight.",
+        "reason": "The siren hairstyle and the candle chandelier repeat hanging strands in distinct subjects."
+      }
+    },
+    {
+      "id": "jetsons",
+      "name": "The Jetsons",
+      "parents": [
+        "retro-futures"
+      ],
+      "refs": [
+        "jetsons-candy",
+        "jetsons-skyline"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "jetsons-candy",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The Jetsons skyline and the candy packaging share the same animated future."
+      }
+    },
+    {
+      "id": "monster-cereals",
+      "name": "Monster cereals",
+      "parents": [
+        "halloween"
+      ],
+      "refs": [
+        "boo-berry-cereal",
+        "monster-cereal-trio"
+      ],
+      "themes": [],
+      "crossovers": [
+        "vintage-monsters"
+      ],
+      "labelAnchor": {
+        "ref": "boo-berry-cereal",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Two references repeat Halloween monsters as colorful cereal mascots."
+      }
+    },
+    {
+      "id": "lampshade-figures",
+      "name": "Lampshade figures",
+      "parents": [
+        "vintage-mannequins"
+      ],
+      "refs": [
+        "lampshade-mannequins"
+      ],
+      "themes": [],
+      "crossovers": [
+        "holiday-rituals"
+      ],
+      "labelAnchor": {
+        "ref": "lampshade-mannequins",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "nearParent": true,
+        "reason": "Lampshade characters and the Christmas story association turn a fixture into a feminine figure."
+      }
+    },
+    {
+      "id": "fembots",
+      "name": "Fembots",
+      "parents": [
+        "vintage-mannequins"
+      ],
+      "refs": [
+        "pulp-fembot"
+      ],
+      "themes": [],
+      "crossovers": [
+        "pink-romance"
+      ],
+      "labelAnchor": {
+        "ref": "pulp-fembot",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The fembot gives the performance of femininity a pulp science-fiction counterpart."
+      }
+    },
+    {
+      "id": "tech-in-pieces",
+      "name": "Tech in pieces",
+      "parents": [
+        "digital-nostalgia"
+      ],
+      "refs": [
+        "discarded-pc-stack",
+        "circuit-butterfly",
+        "wire-crucifixion",
+        "tech-nun"
+      ],
+      "themes": [],
+      "crossovers": [
+        "digital-devotion"
+      ],
+      "labelAnchor": {
+        "ref": "circuit-butterfly",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Wires and discarded electronics take on new forms.",
+        "reason": "Discarded PCs and a butterfly assembled from electronic parts give familiar technology a second form."
+      }
     }
   ],
   "items": [
@@ -5438,6 +6016,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "viewmaster-disc",
         "dancing-robots",
         "medieval-pixels",
         "glitter-makeup",
@@ -5622,6 +6201,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "pulp-fembot",
         "haunted-tunnel-of-love",
         "blair-pink-curtains",
         "flower-power-christmas",
@@ -5879,6 +6459,7 @@
       "tier": 1,
       "themes": [],
       "related": [
+        "cinderella-opening-card",
         "starry-end-card",
         "wonderland-cards",
         "alice-cheshire",
@@ -5915,6 +6496,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "piggy-kermit-kiss",
         "gonzo-tin-man",
         "starry-end-card",
         "janice",
@@ -6228,6 +6810,7 @@
       "tier": 1,
       "themes": [],
       "related": [
+        "fairy-tales-ribbon",
         "candyland-cards",
         "disney-christmas",
         "make-believe-oz",
@@ -6537,6 +7120,8 @@
       "description": "A green lagoon creature reaches forward inside a blue heart, above the words WE’D MAKE A SPLASH TOGETHER! on a cream Valentine card.",
       "group": "holidays",
       "related": [
+        "boo-berry-cereal",
+        "spiderweb-the-end",
         "love-meter",
         "muppet-monster-lab",
         "nervous-knight",
@@ -6574,6 +7159,9 @@
       "description": "Sparkling white script spelling The End glows across a deep blue background scattered with tiny stars.",
       "group": "color-texture",
       "related": [
+        "star-trek-crt",
+        "spiderweb-the-end",
+        "lost-in-space-logo",
         "final-frontier",
         "night-time-show",
         "pink-blue-end",
@@ -6716,6 +7304,7 @@
       "description": "Tiny white stars fill a black sky above a yellow caption reading SPACE, THE FINAL FRONTIER.",
       "group": "space-age",
       "related": [
+        "lost-in-space-logo",
         "starry-end-card",
         "star-trek-planets",
         "made-of-stardust",
@@ -7057,6 +7646,7 @@
       "description": "Mickey decorates a Christmas tree beside Donald, while Peter Pan and flying children appear within pink curtains against a blue night sky.",
       "group": "holidays",
       "related": [
+        "lampshade-mannequins",
         "pooh-bridge",
         "painted-disney",
         "christmas-cats",
@@ -7130,6 +7720,7 @@
       "description": "A close-up of eyes, eyebrows and cheeks covered in reflective silver, lavender and gold glitter.",
       "group": "color-texture",
       "related": [
+        "pretty-girls-rock",
         "iridescent-cds",
         "white-christmas-tree",
         "jem"
@@ -7299,6 +7890,7 @@
       "description": "A long, angular black cat with a turquoise mermaid tail drapes over an oversized martini glass, holding a tiny pink cocktail. Pale chartreuse background, delicate black linework, a coral fish and olive below.",
       "group": "retro-cats",
       "related": [
+        "space-age-cat",
         "daughter-of-the-sea"
       ],
       "note": "Another look: French kitty-looking image. I like how this one has the little martini. It's kind of weird it's got the fish tail, the mermaid tail but I like the cats like this with their little cocktail.",
@@ -7985,6 +8577,7 @@
       "description": "A stylized pink pumpkin carriage with white curled wheels stands amid turquoise plants, silhouetted black trees and starbursts. Pale pink and blue figures surround it, with swirls of white and pink magic above.",
       "group": "storybook-worlds",
       "related": [
+        "cinderella-opening-card",
         "starry-end-card",
         "wonderland-flower-garden",
         "starry-dancers"
@@ -8149,6 +8742,7 @@
       "description": "A late-night show title with a crescent and stars appears on an old television screen.",
       "group": "late-night-tv",
       "related": [
+        "star-trek-crt",
         "starry-end-card",
         "final-frontier",
         "atomic-retro-wallpaper"
@@ -8626,10 +9220,10 @@
         "imageUrl": "https://i.pinimg.com/736x/6f/0e/11/6f0e111b08ae3be99049090aa3f423bc.jpg",
         "capturedOn": "2026-11-09"
       },
-      "revealCategory": "retro-futures",
+      "revealCategory": "jetsons",
       "discovery": {
-        "parent": "dancing-robots",
-        "via": "Imagined cities of the future"
+        "parent": "jetsons-candy",
+        "via": "The same animated future in a city skyline"
       }
     },
     {
@@ -8834,6 +9428,7 @@
       "description": "An illustrated room with a red wall, large pink curtains and small seated figures.",
       "group": "storybook-worlds",
       "related": [
+        "fairy-tales-ribbon",
         "romantic-clown",
         "hot-pink-desire",
         "pink-blue-end"
@@ -8867,6 +9462,7 @@
       "description": "Rows of colored windows with silhouettes of people inside.",
       "group": "lit-windows",
       "related": [
+        "nyc-pattern-skyline",
         "muppets-stage-arches"
       ],
       "note": "This is a photo of a bunch of windows, all colored, with some shadows behind them. I really love just pictures of skyscrapers or buildings with windows and colored windows and all that because it reminds me that everyone's living different lives at all times. I just think it's a really gorgeous image to me",
@@ -9500,11 +10096,979 @@
         "via": "The hat as a moment of transformation"
       },
       "poster": "images/733594226846405514.jpg"
+    },
+    {
+      "id": "pearl-draped-hair",
+      "name": "Pearl-draped hair",
+      "description": "Long, wavy hair is covered with draping strands of small, pale beads against a dark background.",
+      "group": "sirens",
+      "related": [
+        "candle-fairies"
+      ],
+      "note": "Hair dripping in pearls, it kind of gives the siren ocean vibe, mermaid to me",
+      "src": "images/117938083989360113.jpg",
+      "thumbnail": "thumbnails/117938083989360113.jpg",
+      "w": 736,
+      "h": 894,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989360113/",
+        "pinId": "117938083989360113",
+        "imageUrl": "https://i.pinimg.com/736x/8b/f9/54/8bf95499c69afcb32938f73e83eff532.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "pearl-drapery",
+      "discovery": {
+        "parent": "daughter-of-the-sea",
+        "via": "Pearl strands with a siren silhouette"
+      }
+    },
+    {
+      "id": "lost-in-space-logo",
+      "name": "Lost in Space graphic",
+      "description": "Big yellow-orange lettering reading Lost in Space floats in a bright blue star field.",
+      "group": "space-age",
+      "related": [
+        "final-frontier",
+        "starry-end-card"
+      ],
+      "note": "This Lost in Space graphic: I just love the old space aesthetic",
+      "src": "images/117938083989273585.jpg",
+      "thumbnail": "thumbnails/117938083989273585.jpg",
+      "w": 550,
+      "h": 490,
+      "slot": 14,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989273585/",
+        "pinId": "117938083989273585",
+        "imageUrl": "https://i.pinimg.com/736x/96/88/fe/9688fead234b677cec6e37c4f1411c87.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "space-age",
+      "discovery": {
+        "parent": "tomorrowland-rocket",
+        "via": "Retro space television lettering"
+      }
+    },
+    {
+      "id": "spiderweb-the-end",
+      "name": "Spiderweb “The End”",
+      "description": "Ornate white script reading The End lies over a web in a smoky black-and-white frame.",
+      "group": "title-cards",
+      "related": [
+        "starry-end-card",
+        "lagoon-valentine"
+      ],
+      "note": "This is the end title or ending title scene but it has the classic \"The End\" script. It has this creepy spiderweb in the background like an old horror movie. It's black and white",
+      "src": "images/117938083989221173.jpg",
+      "thumbnail": "thumbnails/117938083989221173.jpg",
+      "w": 736,
+      "h": 512,
+      "slot": 9,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989221173/",
+        "pinId": "117938083989221173",
+        "imageUrl": "https://i.pinimg.com/736x/2f/de/0b/2fde0be9ddfa9898622202e977958abc.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "cinema-lettering",
+      "discovery": {
+        "parent": "big-screen-title",
+        "via": "Classic end-title script in a spooky setting"
+      }
+    },
+    {
+      "id": "jetsons-candy",
+      "name": "The Jetsons candy",
+      "description": "Four colorful candy packages each show a different Jetsons character.",
+      "group": "space-age",
+      "related": [],
+      "note": "This looks like some packaging for some candy but it's The Jetsons and I just really love The Jetsons aesthetic",
+      "src": "images/117938083989215639.jpg",
+      "thumbnail": "thumbnails/117938083989215639.jpg",
+      "w": 736,
+      "h": 1085,
+      "slot": 15,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989215639/",
+        "pinId": "117938083989215639",
+        "imageUrl": "https://i.pinimg.com/736x/73/df/df/73dfdf09cf31b4a055ecb90170452868.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "jetsons",
+      "discovery": {
+        "parent": "dancing-robots",
+        "via": "The Jetsons on illustrated candy packaging"
+      }
+    },
+    {
+      "id": "boo-berry-cereal",
+      "name": "Boo Berry cereal",
+      "description": "A vintage cereal box features a blue cartoon ghost, a bowl of cereal and a bright yellow promotion.",
+      "group": "holidays",
+      "related": [
+        "lagoon-valentine"
+      ],
+      "note": "Boo Berry cereal. This old Halloween cereal is so aesthetic",
+      "src": "images/117938083989215073.jpg",
+      "thumbnail": "thumbnails/117938083989215073.jpg",
+      "w": 600,
+      "h": 876,
+      "slot": 8,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989215073/",
+        "pinId": "117938083989215073",
+        "imageUrl": "https://i.pinimg.com/736x/11/e2/27/11e227fe51ffbaa97dd5480ee684f2ef.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "monster-cereals",
+      "discovery": {
+        "parent": "halloween-new-yorker",
+        "via": "Halloween characters on playful packaging"
+      }
+    },
+    {
+      "id": "monster-cereal-trio",
+      "name": "Monster cereal trio",
+      "description": "Count Chocula, Franken Berry and Boo Berry cereal boxes appear in an angled close-up.",
+      "group": "holidays",
+      "related": [],
+      "note": "Count Chocula, Boo Berry, and the Franken Berry, I think",
+      "src": "images/117938083989212260.jpg",
+      "thumbnail": "thumbnails/117938083989212260.jpg",
+      "w": 735,
+      "h": 955,
+      "slot": 9,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989212260/",
+        "pinId": "117938083989212260",
+        "imageUrl": "https://i.pinimg.com/736x/5d/59/ea/5d59eaaee06bd4c2fc13c9e8531cc24a.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "monster-cereals",
+      "discovery": {
+        "parent": "boo-berry-cereal",
+        "via": "Three takes on the monster cereal mascot"
+      }
+    },
+    {
+      "id": "candle-fairies",
+      "name": "Fairies on a chandelier",
+      "description": "Small luminous figures dance on the candle flames of a dark green chandelier draped with pale strands and hanging ornaments.",
+      "group": "storybook-worlds",
+      "related": [
+        "pearl-draped-hair"
+      ],
+      "note": "I don't know where this art is from but it's this chandelier with candles on it, dripping with pearls, maybe or gems, and probably glass because of the chandelier. These little fairies are dancing on top of the flames and they're gorgeous",
+      "src": "images/117938083989195162.jpg",
+      "thumbnail": "thumbnails/117938083989195162.jpg",
+      "w": 658,
+      "h": 877,
+      "slot": 45,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989195162/",
+        "pinId": "117938083989195162",
+        "imageUrl": "https://i.pinimg.com/736x/04/49/53/044953ddffd5f6da2575f36bd6e82937.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "storybook-fairytales",
+      "discovery": {
+        "parent": "storybook-ending",
+        "via": "Fairy figures turning an ordinary chandelier into a tiny stage"
+      }
+    },
+    {
+      "id": "cinderella-opening-card",
+      "name": "Cinderella opening card",
+      "description": "Pink scrollwork surrounds Walt Disney Presents lettering and a blue carriage on a dark ground.",
+      "group": "title-cards",
+      "related": [
+        "alice-end-card",
+        "cinderella-carriage"
+      ],
+      "note": "The Walt Disney Presents scene from Cinderella. I love these title cards from old animated Disney movies",
+      "src": "images/117938083989139915.jpg",
+      "thumbnail": "thumbnails/117938083989139915.jpg",
+      "w": 500,
+      "h": 346,
+      "slot": 10,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989139915/",
+        "pinId": "117938083989139915",
+        "imageUrl": "https://i.pinimg.com/736x/13/16/dd/1316dded92ce7611089e5ecee57aafcb.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "cinema-lettering",
+      "discovery": {
+        "parent": "big-screen-title",
+        "via": "Hand-lettered openings in animated Disney films"
+      }
+    },
+    {
+      "id": "digital-cross",
+      "name": "Digital cross",
+      "description": "Two people are pictured beneath a large cross made of illuminated panels.",
+      "group": "digital-devotion",
+      "related": [],
+      "note": "This is a guy praying to a cross but the cross is made from these digital panels. I love this religious imagery when it comes to the digital world. I find it very interesting",
+      "src": "images/117938083989139390.jpg",
+      "thumbnail": "thumbnails/117938083989139390.jpg",
+      "w": 600,
+      "h": 714,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989139390/",
+        "pinId": "117938083989139390",
+        "imageUrl": "https://i.pinimg.com/736x/5e/99/5b/5e995bc954a7d558300c7980a64efb9b.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "digital-devotion",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "fairy-tales-ribbon",
+      "name": "Fairy Tales in ribbon",
+      "description": "Pink ribbon spells Fairy Tales on grass, framed by blue tights, red heels and small flowers.",
+      "group": "storybook-worlds",
+      "related": [
+        "blair-pink-curtains",
+        "storybook-ending"
+      ],
+      "note": "This is some art I found on Pinterest. It has fairy tales written in pink ribbon with this girl in blue tights and red heels. I just love the aesthetic of it: the pink ribbon, the blue, the red. It's just classic storybook to me but in a modern way",
+      "src": "images/117938083989117916.jpg",
+      "thumbnail": "thumbnails/117938083989117916.jpg",
+      "w": 736,
+      "h": 985,
+      "slot": 46,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989117916/",
+        "pinId": "117938083989117916",
+        "imageUrl": "https://i.pinimg.com/736x/8b/8d/66/8b8d666bdbe39b00ba09b5e5c0271efb.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "storybook-fairytales",
+      "discovery": {
+        "parent": "storybook-ending",
+        "via": "A modern storybook look built from ribbon lettering"
+      }
+    },
+    {
+      "id": "eyelash-beetle",
+      "name": "Beetle with eyelashes",
+      "description": "A pale yellow Beetle with colorful dots has eyelashes over its headlights.",
+      "group": "whimsical-beetles",
+      "related": [],
+      "note": "When I was young I thought adulthood was having a bug as a car. I still want one. They're so whimsical and cute. This is one with little eyelashes",
+      "src": "images/117938083989115078.jpg",
+      "thumbnail": "thumbnails/117938083989115078.jpg",
+      "w": 736,
+      "h": 894,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989115078/",
+        "pinId": "117938083989115078",
+        "imageUrl": "https://i.pinimg.com/736x/51/dc/89/51dc894a9a6870091f6656314de62f5e.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "whimsical-beetles",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "gingham-beetle",
+      "name": "Gingham Beetle",
+      "description": "A parked Beetle is wrapped in a navy and white gingham pattern.",
+      "group": "whimsical-beetles",
+      "related": [],
+      "note": "Here's a bug in a navy gingham pattern that's just freaking adorable",
+      "src": "images/117938083989115067.jpg",
+      "thumbnail": "thumbnails/117938083989115067.jpg",
+      "w": 736,
+      "h": 440,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989115067/",
+        "pinId": "117938083989115067",
+        "imageUrl": "https://i.pinimg.com/736x/ea/e4/e8/eae4e89b576454ea2ea50f18f5c3a2aa.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "whimsical-beetles",
+      "discovery": {
+        "parent": "eyelash-beetle",
+        "via": "Another decorated Beetle"
+      }
+    },
+    {
+      "id": "space-age-cat",
+      "name": "Cat and purple chair",
+      "description": "A black cat with a collar sits beside a woman in a sharply angled purple chair, drawn in a spare retro style.",
+      "group": "retro-cats",
+      "related": [
+        "mermaid-cocktail-cat"
+      ],
+      "note": "This is one of those sci-fi-looking graphics with the cat. Love it, love the little cat",
+      "src": "images/117938083989115075.jpg",
+      "thumbnail": "thumbnails/117938083989115075.jpg",
+      "w": 736,
+      "h": 496,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989115075/",
+        "pinId": "117938083989115075",
+        "imageUrl": "https://i.pinimg.com/736x/62/d1/1e/62d11e187a10b7fe95142bfd7a68eb48.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "retro-cats",
+      "discovery": {
+        "parent": "mermaid-cocktail-cat",
+        "via": "A retro cat in a space-age setting"
+      }
+    },
+    {
+      "id": "piggy-kermit-kiss",
+      "name": "Miss Piggy kisses Kermit",
+      "description": "Miss Piggy leans over to kiss Kermit on the cheek.",
+      "group": "muppets",
+      "related": [
+        "blue-muppets"
+      ],
+      "note": "Miss Piggy, give Kermit a little kiss on the cheek",
+      "src": "images/117938083989060138.jpg",
+      "thumbnail": "thumbnails/117938083989060138.jpg",
+      "w": 735,
+      "h": 888,
+      "slot": 6,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083989060138/",
+        "pinId": "117938083989060138",
+        "imageUrl": "https://i.pinimg.com/736x/b5/54/f5/b554f5d1ff2ea398644d3e59b6310110.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "muppets",
+      "discovery": {
+        "parent": "blue-muppets",
+        "via": "A small romantic moment between the Muppets"
+      }
+    },
+    {
+      "id": "vintage-mummy",
+      "name": "Vintage-style mummy",
+      "description": "An illustrated mummy in yellowed bandages steps forward with both arms extended.",
+      "group": "holidays",
+      "related": [],
+      "note": "This cool-looking old vintage mummy",
+      "src": "images/117938083988977275.jpg",
+      "thumbnail": "thumbnails/117938083988977275.jpg",
+      "w": 384,
+      "h": 726,
+      "slot": 10,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988977275/",
+        "pinId": "117938083988977275",
+        "imageUrl": "https://i.pinimg.com/736x/5d/80/96/5d80964a24850cb4e0c6570670430cb0.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "vintage-monsters",
+      "discovery": {
+        "parent": "lagoon-valentine",
+        "via": "Another classic monster in a vintage illustration style"
+      }
+    },
+    {
+      "id": "nyc-pattern-skyline",
+      "name": "New York pattern skyline",
+      "description": "A New York skyline collage fills building silhouettes with zebra stripes, dots, and blocks of color.",
+      "group": "new-york",
+      "related": [
+        "lit-window-silhouettes"
+      ],
+      "note": "This is the NYC skyline but it looks like the silhouettes of the buildings are replaced with old duct tape patterns, like zebra print and all that. Very 2011-coded but like Sex and the City too. I love it",
+      "src": "images/117938083988976536.jpg",
+      "thumbnail": "thumbnails/117938083988976536.jpg",
+      "w": 736,
+      "h": 828,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988976536/",
+        "pinId": "117938083988976536",
+        "imageUrl": "https://i.pinimg.com/736x/b2/e3/bd/b2e3bdd16d4cb6ff8513e1d90e4cb7ec.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "new-york",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "nyc-subway-doors",
+      "name": "Red subway doors",
+      "description": "A red subway exterior frames a lit open doorway and square windows.",
+      "group": "new-york",
+      "related": [],
+      "note": "Subway doors. I love this New York, old New York vibe",
+      "src": "images/117938083988976534.jpg",
+      "thumbnail": "thumbnails/117938083988976534.jpg",
+      "w": 500,
+      "h": 373,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988976534/",
+        "pinId": "117938083988976534",
+        "imageUrl": "https://i.pinimg.com/736x/ab/3a/e4/ab3ae437a686bee7165a23679e1ec925.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "new-york",
+      "discovery": {
+        "parent": "nyc-pattern-skyline",
+        "via": "A second piece of old New York atmosphere"
+      }
+    },
+    {
+      "id": "vintage-mannequin-head",
+      "name": "Vintage mannequin head",
+      "description": "A painted mannequin head has a sleek auburn wave, arched brows and layered necklaces.",
+      "group": "vintage-mannequins",
+      "related": [],
+      "note": "This looks like a little French old mannequin from the 20s",
+      "src": "images/117938083988974490.jpg",
+      "thumbnail": "thumbnails/117938083988974490.jpg",
+      "w": 480,
+      "h": 640,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988974490/",
+        "pinId": "117938083988974490",
+        "imageUrl": "https://i.pinimg.com/736x/5f/61/7b/5f617b786b54dd07b8fceeb5241a89d5.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "vintage-mannequins",
+      "discovery": {
+        "parent": "lace-and-glasses-mannequins",
+        "via": "A vintage mannequin as a styled feminine figure"
+      }
+    },
+    {
+      "id": "french-style-mannequins",
+      "name": "Painted mannequin busts",
+      "description": "A group of mannequin busts has painted lipstick, sculpted hairstyles and period-style clothing.",
+      "group": "vintage-mannequins",
+      "related": [],
+      "note": "More French-looking mannequin heads with the cool lipstick and hairstyle, and the busts",
+      "src": "images/117938083988974491.jpg",
+      "thumbnail": "thumbnails/117938083988974491.jpg",
+      "w": 393,
+      "h": 500,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988974491/",
+        "pinId": "117938083988974491",
+        "imageUrl": "https://i.pinimg.com/736x/85/a4/c5/85a4c57c404f08d6e44c0dc53c03b1a2.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "vintage-mannequins",
+      "discovery": {
+        "parent": "lace-and-glasses-mannequins",
+        "via": "Painted faces and sculpted hairstyles"
+      }
+    },
+    {
+      "id": "lace-and-glasses-mannequins",
+      "name": "Mannequins in lace and glasses",
+      "description": "Decorated mannequin heads wear bright headpieces, glasses and veils in a densely patterned display.",
+      "group": "vintage-mannequins",
+      "related": [],
+      "note": "Even cooler mannequins but I love the headpieces here with the lace in front of them and the glasses on them too. I just love mannequins as a symbol for femininity and I think it's a good symbol for gender in general",
+      "src": "images/117938083988974493.jpg",
+      "thumbnail": "thumbnails/117938083988974493.jpg",
+      "w": 736,
+      "h": 981,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988974493/",
+        "pinId": "117938083988974493",
+        "imageUrl": "https://i.pinimg.com/736x/8e/8e/54/8e8e542ae6296ece7bf4e2de8a32e702.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "vintage-mannequins",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "lampshade-mannequins",
+      "name": "Lampshade characters",
+      "description": "Seated and standing figures wear elaborate outfits with lampshades where their heads would be.",
+      "group": "vintage-mannequins",
+      "related": [
+        "disney-christmas"
+      ],
+      "note": "I love these characters with lampshades on their heads. I also think this is a good symbol for femininity and girlhood and being a girl or woman in general because of the Christmas story",
+      "src": "images/117938083988974492.jpg",
+      "thumbnail": "thumbnails/117938083988974492.jpg",
+      "w": 389,
+      "h": 584,
+      "slot": 3,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988974492/",
+        "pinId": "117938083988974492",
+        "imageUrl": "https://i.pinimg.com/736x/b6/ff/e9/b6ffe9a43f6655c0320e35a9ae185059.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "lampshade-figures",
+      "discovery": {
+        "parent": "lace-and-glasses-mannequins",
+        "via": "Lampshade figures as symbols of girlhood and femininity"
+      }
+    },
+    {
+      "id": "y2k-christina",
+      "name": "Christina Aguilera in pink and black",
+      "description": "Christina Aguilera wears her blonde hair long and straight with a dark shirt featuring pink lettering.",
+      "group": "y2k-pop-style",
+      "related": [],
+      "note": "Old Y2K Christina Aguilera. I love this alt girl vibe with the pink and the blonde",
+      "src": "images/117938083988921361.jpg",
+      "thumbnail": "thumbnails/117938083988921361.jpg",
+      "w": 736,
+      "h": 885,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988921361/",
+        "pinId": "117938083988921361",
+        "imageUrl": "https://i.pinimg.com/736x/39/e1/40/39e140eaea5f631b29f6828863caeea3.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "y2k-pop-style",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "pulp-fembot",
+      "name": "Pulp comic fembot",
+      "description": "A hot pink-haired figure in a comic panel says “Be mine or be annihilated!” over a caption reading Fembots Go Fatal.",
+      "group": "vintage-mannequins",
+      "related": [
+        "romantic-clown",
+        "strange-unusual-comic"
+      ],
+      "note": "Old comic book fanbot",
+      "src": "images/117938083988919591.jpg",
+      "thumbnail": "thumbnails/117938083988919591.jpg",
+      "w": 564,
+      "h": 564,
+      "slot": 4,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988919591/",
+        "pinId": "117938083988919591",
+        "imageUrl": "https://i.pinimg.com/736x/b2/69/65/b26965313f7305e994ef7e0ad843e794.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "fembots",
+      "discovery": {
+        "parent": "lace-and-glasses-mannequins",
+        "via": "A feminine figure built as a robot in pulp comics"
+      }
+    },
+    {
+      "id": "strange-unusual-comic",
+      "name": "Strange and Unusual",
+      "description": "A close-up of red lips and pointed black nails frames a green cocktail in a retro comic panel.",
+      "group": "holidays",
+      "related": [
+        "pulp-fembot"
+      ],
+      "note": "Old comic book vibe with the Halloween",
+      "src": "images/117938083988919590.jpg",
+      "thumbnail": "thumbnails/117938083988919590.jpg",
+      "w": 735,
+      "h": 727,
+      "slot": 11,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988919590/",
+        "pinId": "117938083988919590",
+        "imageUrl": "https://i.pinimg.com/736x/68/b6/1d/68b61d679998afdcc554e84d483a70d0.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "halloween",
+      "discovery": {
+        "parent": "halloween-new-yorker",
+        "via": "Spooky Halloween imagery in the style of a pulp comic"
+      }
+    },
+    {
+      "id": "pretty-girls-rock",
+      "name": "Pretty Girls Rock tee",
+      "description": "Rhinestones spell Pretty Girls Rock on a dark T-shirt.",
+      "group": "y2k-pop-style",
+      "related": [
+        "glitter-makeup"
+      ],
+      "note": "This is like an old T-shirt that's been bedazzled to say \"Pretty Girls Rock.\" It is so aesthetic to me. I love this Y2K early vibe",
+      "src": "images/117938083988919561.jpg",
+      "thumbnail": "thumbnails/117938083988919561.jpg",
+      "w": 320,
+      "h": 281,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988919561/",
+        "pinId": "117938083988919561",
+        "imageUrl": "https://i.pinimg.com/736x/e5/a5/d4/e5a5d4870d8c643d3acfed4d70dd2561.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "y2k-pop-style",
+      "discovery": {
+        "parent": "y2k-christina",
+        "via": "Bedazzled lettering and early Y2K pop style"
+      }
+    },
+    {
+      "id": "discarded-pc-stack",
+      "name": "Stack of discarded PCs",
+      "description": "Old monitors and other computer equipment are piled together.",
+      "group": "digital-nostalgia",
+      "related": [],
+      "note": "A bunch of old PCs stacked together like the destruction of tech",
+      "src": "images/117938083988900856.jpg",
+      "thumbnail": "thumbnails/117938083988900856.jpg",
+      "w": 604,
+      "h": 453,
+      "slot": 3,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988900856/",
+        "pinId": "117938083988900856",
+        "imageUrl": "https://i.pinimg.com/736x/4a/0c/74/4a0c74b5946b97a78999520d4f918c4d.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "tech-in-pieces",
+      "discovery": {
+        "parent": "circuit-butterfly",
+        "via": "Discarded hardware as a visual reference"
+      }
+    },
+    {
+      "id": "wire-crucifixion",
+      "name": "Crucifixion in wires",
+      "description": "A human-shaped figure is built from exposed strands of wire and electronics.",
+      "group": "digital-devotion",
+      "related": [
+        "circuit-butterfly"
+      ],
+      "note": "This looks like the crucifixion made out of wires",
+      "src": "images/117938083988900842.jpg",
+      "thumbnail": "thumbnails/117938083988900842.jpg",
+      "w": 736,
+      "h": 1106,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988900842/",
+        "pinId": "117938083988900842",
+        "imageUrl": "https://i.pinimg.com/736x/dc/c6/7e/dcc67e6bdda5ca8227ee60ff378b5a13.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "digital-devotion",
+      "discovery": {
+        "parent": "digital-cross",
+        "via": "Religious imagery rendered in wires"
+      }
+    },
+    {
+      "id": "four-leaf-clover-print",
+      "name": "Four-leaf clover print",
+      "description": "A single dark green four-leaf clover sits against a pale textured ground.",
+      "group": "luck-clovers",
+      "related": [],
+      "note": "Four-leaf clover",
+      "src": "images/117938083988834706.jpg",
+      "thumbnail": "thumbnails/117938083988834706.jpg",
+      "w": 735,
+      "h": 860,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988834706/",
+        "pinId": "117938083988834706",
+        "imageUrl": "https://i.pinimg.com/736x/e5/70/44/e5704434cc9e347e90375a3269cd89a4.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "luck-clovers",
+      "discovery": {
+        "parent": "lucky-clovers",
+        "via": "A third take on the four-leaf clover"
+      }
+    },
+    {
+      "id": "circuit-butterfly",
+      "name": "Butterfly made of tech parts",
+      "description": "Electronic components form a butterfly with curved green and pink wings against black.",
+      "group": "digital-nostalgia",
+      "related": [
+        "tech-nun",
+        "wire-crucifixion"
+      ],
+      "note": "A butterfly made out of old tech parts",
+      "src": "images/117938083988599222.jpg",
+      "thumbnail": "thumbnails/117938083988599222.jpg",
+      "w": 736,
+      "h": 977,
+      "slot": 4,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988599222/",
+        "pinId": "117938083988599222",
+        "imageUrl": "https://i.pinimg.com/736x/62/df/06/62df06bea1c3f6f24008b77646a48573.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "tech-in-pieces",
+      "discovery": {
+        "parent": "iridescent-cds",
+        "via": "Old electronic parts assembled into a butterfly"
+      }
+    },
+    {
+      "id": "tech-nun",
+      "name": "Praying nun made of tech parts",
+      "description": "A veiled figure bows in prayer, with a surface made of small metallic and electronic-looking pieces.",
+      "group": "digital-devotion",
+      "related": [
+        "circuit-butterfly"
+      ],
+      "note": "A nun praying but they're made out of old tech parts",
+      "src": "images/117938083988496683.jpg",
+      "thumbnail": "thumbnails/117938083988496683.jpg",
+      "w": 540,
+      "h": 540,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083988496683/",
+        "pinId": "117938083988496683",
+        "imageUrl": "https://i.pinimg.com/736x/c5/30/9c/c5309cf57b7cde11bf725b6e0289667b.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "digital-devotion",
+      "discovery": {
+        "parent": "digital-cross",
+        "via": "A devotional figure made from electronics"
+      }
+    },
+    {
+      "id": "star-trek-crt",
+      "name": "Star Trek on a CRT",
+      "description": "A curved television screen displays the Star Trek title in white over a deep blue star field.",
+      "group": "space-age",
+      "related": [
+        "night-time-show",
+        "starry-end-card"
+      ],
+      "note": "Star Trek title scene on an old TV",
+      "src": "images/117938083987832715.jpg",
+      "thumbnail": "thumbnails/117938083987832715.jpg",
+      "w": 736,
+      "h": 736,
+      "slot": 16,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987832715/",
+        "pinId": "117938083987832715",
+        "imageUrl": "https://i.pinimg.com/736x/60/f4/d8/60f4d8161950164bce4ab8c3fdbc56ee.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "star-trek",
+      "discovery": {
+        "parent": "star-trek-planets",
+        "via": "The Star Trek opening seen on an old television"
+      }
+    },
+    {
+      "id": "viewmaster-disc",
+      "name": "View-Master reel",
+      "description": "A round viewing reel holds tiny pictures around its outer edge.",
+      "group": "digital-nostalgia",
+      "related": [
+        "iridescent-cds"
+      ],
+      "note": "One of those ViewMaster discs. I love these",
+      "src": "images/117938083987828666.jpg",
+      "thumbnail": "thumbnails/117938083987828666.jpg",
+      "w": 736,
+      "h": 736,
+      "slot": 5,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987828666/",
+        "pinId": "117938083987828666",
+        "imageUrl": "https://i.pinimg.com/736x/29/5c/18/295c1823097ff779acddd5aa822b50cf.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "digital-nostalgia",
+      "discovery": {
+        "parent": "iridescent-cds",
+        "via": "An old disc for viewing images"
+      }
     }
   ],
   "organization": {
-    "revision": "2026-11-09-taste-atlas",
-    "reviewedCount": 127,
+    "revision": "2026-11-09-artifice-and-circuitry",
+    "reviewedCount": 159,
     "model": "layered-atlas",
     "depthPolicy": "Strong recurring interests lead the opening. Independent seeds stay visible at a quieter scale. More specific pictures appear with zoom.",
     "rootOrder": "Landmarks lead into adjacent visual families. Primary paths and shared motifs remain separate navigation tools.",

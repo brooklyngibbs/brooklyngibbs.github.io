@@ -1,6 +1,6 @@
 {
   "reviewedOn": "2026-11-09",
-  "revision": "2026-11-09-taste-atlas",
+  "revision": "2026-11-09-artifice-and-circuitry",
   "reviewedIds": [
     "pink-elephant",
     "pinto-pink",
@@ -128,114 +128,143 @@
     "haunted-tunnel-of-love",
     "bread-butterfly-tulips",
     "wonderland-dog-caterpillar",
-    "mickey-glowing-hat"
+    "mickey-glowing-hat",
+    "pearl-draped-hair",
+    "lost-in-space-logo",
+    "spiderweb-the-end",
+    "jetsons-candy",
+    "boo-berry-cereal",
+    "monster-cereal-trio",
+    "candle-fairies",
+    "cinderella-opening-card",
+    "digital-cross",
+    "fairy-tales-ribbon",
+    "eyelash-beetle",
+    "gingham-beetle",
+    "space-age-cat",
+    "piggy-kermit-kiss",
+    "vintage-mummy",
+    "nyc-pattern-skyline",
+    "nyc-subway-doors",
+    "vintage-mannequin-head",
+    "french-style-mannequins",
+    "lace-and-glasses-mannequins",
+    "lampshade-mannequins",
+    "y2k-christina",
+    "pulp-fembot",
+    "strange-unusual-comic",
+    "pretty-girls-rock",
+    "discarded-pc-stack",
+    "wire-crucifixion",
+    "four-leaf-clover-print",
+    "circuit-butterfly",
+    "tech-nun",
+    "star-trek-crt",
+    "viewmaster-disc"
   ],
   "newIds": [
-    "sorcerer-mickey",
-    "fantasia-starry-poster",
-    "marina-feelings",
-    "poppins-butterflies",
-    "giant-alice-book",
-    "robot-swoon",
-    "blair-pink-curtains",
-    "lit-window-silhouettes",
-    "mome-raths",
-    "sword-in-stone",
-    "black-eyed-peas-end",
-    "muppets-manhattan-comic",
-    "nervous-breakdown-stars",
-    "pooh-rain",
-    "tinkerbell-sign",
-    "moon-face",
-    "tomato-soup-grilled-cheese",
-    "muppets-stage-arches",
-    "pink-panther-portrait",
-    "peanuts-car",
-    "tigger-starry-sky",
-    "r2d2-electric-guitar",
-    "pink-blue-end",
-    "haunted-tunnel-of-love",
-    "bread-butterfly-tulips",
-    "wonderland-dog-caterpillar",
-    "mickey-glowing-hat"
+    "french-style-mannequins",
+    "lace-and-glasses-mannequins",
+    "lampshade-mannequins",
+    "y2k-christina",
+    "pulp-fembot",
+    "strange-unusual-comic",
+    "pretty-girls-rock",
+    "discarded-pc-stack",
+    "wire-crucifixion",
+    "four-leaf-clover-print",
+    "circuit-butterfly",
+    "tech-nun",
+    "star-trek-crt",
+    "viewmaster-disc"
   ],
   "instruction": "Maintain a second brain for Brooklyn’s taste. Every batch and requested semantic reorganization revisits the entire web and may change any image’s placement as new evidence arrives.",
-  "method": "Review the active images and exact notes across eight batches, inspect all 27 supplied images, and keep seven older inaccessible pins pending. Distinguish explicit preferences, visual echoes and unverified attribution. Record the strongest supported connections while leaving weaker ones open.",
+  "method": "Review the active atlas and all notes with 14 newly inspected pins. Preserve exact quotes and favor explicit personal associations when changing the hierarchy.",
   "primaryCategoryCounts": {
-    "title-cards": 2,
-    "pink-panther": 3,
+    "storybook-worlds": 1,
     "medieval-fantasy": 1,
-    "labyrinths": 1,
-    "knights": 3,
-    "hand-painted-disney": 1,
-    "digital-nostalgia": 2,
-    "space-age": 1,
-    "medieval-pixels": 1,
-    "acid-green": 1,
+    "frogs-ponds": 1,
+    "giant-women": 2,
+    "night-skies": 3,
+    "space-age": 3,
+    "title-cards": 2,
+    "color-texture": 1,
+    "digital-devotion": 3,
+    "digital-nostalgia": 3,
+    "venus-flytraps": 2,
     "pink-romance": 2,
-    "mad-science": 1,
-    "caterpillar-smoke": 3,
-    "muppets": 5,
-    "star-wars": 3,
-    "alice": 2,
-    "wizards": 3,
+    "holidays": 1,
+    "muppets": 6,
+    "retro-cats": 3,
+    "vintage-mannequins": 3,
+    "sirens": 1,
+    "luck-clovers": 3,
     "jem": 1,
+    "whimsical-beetles": 2,
+    "loose-illustration": 1,
+    "new-york": 2,
+    "lit-windows": 1,
+    "bathroom-graffiti": 1,
+    "y2k-pop-style": 2,
+    "tumblr-electropop": 1,
+    "the-end-album": 1,
+    "comfort-food": 1,
+    "knights": 3,
+    "pink-panther": 3,
+    "hand-painted-disney": 1,
+    "alice": 2,
+    "labyrinths": 1,
+    "background-characters": 7,
+    "medieval-pixels": 1,
+    "star-wars": 3,
+    "acid-green": 1,
+    "stars": 1,
+    "mad-science": 1,
+    "girl-knights": 2,
+    "storybook-fairytales": 4,
     "old-interfaces": 1,
     "meet-the-robinsons": 1,
-    "stars": 1,
-    "luck-clovers": 2,
-    "storybook-fairytales": 2,
-    "girl-knights": 2,
-    "background-characters": 7,
     "celestial-patterns": 1,
-    "star-trek": 3,
-    "valentines": 1,
-    "vintage-monsters": 2,
-    "vivid-blue": 1,
-    "color-texture": 1,
-    "bathroom-graffiti": 1,
+    "star-trek": 4,
+    "vintage-monsters": 3,
     "romantic-theater": 1,
     "land-of-make-believe": 3,
-    "bread-and-butterflies": 2,
-    "storybook-worlds": 1,
     "nervous-knights": 1,
-    "holidays": 1,
-    "retro-cats": 2,
-    "holiday-rituals": 1,
+    "valentines": 1,
     "dragon-tales": 1,
     "glitter": 1,
     "childhood-games": 1,
     "mary-blair": 3,
-    "christmas": 1,
+    "wizards": 3,
     "picture-books": 1,
     "wizard-of-oz": 2,
-    "cinema-lettering": 2,
-    "frogs-ponds": 1,
-    "pooh": 3,
     "worlds-made-real": 1,
-    "loose-illustration": 1,
-    "peanuts": 2,
-    "flower-power": 1,
     "wonderland-flowers": 1,
+    "cinema-lettering": 4,
     "illuminated-lettering": 1,
-    "retro-futures": 3,
-    "halloween": 1,
+    "holiday-rituals": 1,
+    "flower-power": 1,
+    "christmas": 1,
+    "halloween": 2,
+    "retro-futures": 1,
     "muppet-costumes": 1,
-    "disneyland-ephemera": 3,
-    "giant-women": 2,
-    "atomic-graphics": 3,
+    "blue-pink": 1,
     "late-night-tv": 1,
-    "sirens": 1,
-    "venus-flytraps": 2,
-    "giant-alice": 2,
+    "disneyland-ephemera": 3,
+    "caterpillar-smoke": 3,
+    "atomic-graphics": 3,
+    "peanuts": 2,
     "fantasia": 3,
-    "tumblr-electropop": 1,
+    "pooh": 3,
+    "giant-alice": 2,
     "mixed-media-worlds": 1,
-    "lit-windows": 1,
-    "the-end-album": 1,
-    "night-skies": 2,
-    "comfort-food": 1,
-    "blue-pink": 1
+    "bread-and-butterflies": 2,
+    "pearl-drapery": 1,
+    "jetsons": 2,
+    "monster-cereals": 2,
+    "lampshade-figures": 1,
+    "fembots": 1,
+    "tech-in-pieces": 2
   },
   "patterns": [
     {
@@ -1045,9 +1074,9 @@
     "117938083989257023",
     "117938083989257024"
   ],
-  "reviewedNoteCount": 134,
-  "inspectedNewImageCount": 27,
-  "requestedNewImageCount": 27,
+  "reviewedNoteCount": 159,
+  "inspectedNewImageCount": 14,
+  "requestedNewImageCount": 14,
   "presentationUpdates": [
     {
       "date": "2026-11-08",
@@ -1532,5 +1561,136 @@
       "Starlit ending and the Star Trek title screen"
     ],
     "openQuestions": "Keep the eclectic single-reference interests separate. Revisit the late-night subgroups once the seven pending media references can be inspected."
+  },
+  "latestBatchReview": {
+    "revision": "2026-11-09-artifice-and-circuitry",
+    "reviewedCount": 159,
+    "openingPaths": 28,
+    "newRoots": [
+      "y2k-pop-style"
+    ],
+    "decisions": [
+      {
+        "refs": [
+          "vintage-mannequin-head",
+          "french-style-mannequins",
+          "lace-and-glasses-mannequins",
+          "lampshade-mannequins",
+          "pulp-fembot"
+        ],
+        "decision": "Promote the former mannequin seed to Femininity & artifice. Keep the mannequin busts together and the lampshade figures and fembot in distinct branches. Connect the lampshades to holiday memory and the fembot to odd romance."
+      },
+      {
+        "refs": [
+          "digital-cross",
+          "wire-crucifixion",
+          "tech-nun",
+          "circuit-butterfly",
+          "discarded-pc-stack",
+          "viewmaster-disc"
+        ],
+        "decision": "Promote Digital devotion as the explicit religious-tech direction. Keep the butterfly and discarded computers under Retro tech with a crossover to the wired devotional figures. Give the View-Master a direct Retro tech path as a physical image format."
+      },
+      {
+        "refs": [
+          "y2k-christina",
+          "pretty-girls-rock",
+          "marina-feelings",
+          "glitter-makeup"
+        ],
+        "decision": "Open Y2K pop style as its own period-specific route and place it beside the Tumblr-era music seed. Preserve the material connection from the rhinestones to glitter."
+      },
+      {
+        "refs": [
+          "strange-unusual-comic",
+          "pulp-fembot",
+          "spiderweb-the-end"
+        ],
+        "decision": "Keep the spooky pulp panel with Halloween. Its comic styling rhymes with the fembot, but its primary subject is spooky camp."
+      },
+      {
+        "refs": [
+          "star-trek-crt",
+          "starry-end-card",
+          "night-time-show",
+          "four-leaf-clover-print"
+        ],
+        "decision": "Keep the CRT with the other Star Trek images and link the starlit lettering to Starlit screens. Keep the new clover in the existing tight Luck & clovers group."
+      }
+    ],
+    "retained": "The atlas still distinguishes personal subjects from shared motifs. Seven older inaccessible pins remain pending."
+  },
+  "previousBatchReview": {
+    "revision": "2026-11-09-pearls-monsters-and-city",
+    "reviewedCount": 145,
+    "openingPaths": 27,
+    "newRoots": [
+      "new-york",
+      "whimsical-beetles",
+      "digital-devotion",
+      "vintage-mannequins"
+    ],
+    "decisions": [
+      {
+        "refs": [
+          "pearl-draped-hair",
+          "candle-fairies",
+          "daughter-of-the-sea"
+        ],
+        "decision": "Keep the hair under Sirens and the chandelier in Storybook fairytales. Link the draped strands as a visual echo without identifying the chandelier material."
+      },
+      {
+        "refs": [
+          "lost-in-space-logo",
+          "jetsons-candy",
+          "jetsons-skyline",
+          "tomorrowland-rocket"
+        ],
+        "decision": "The vintage future now includes domestic animation and TV graphics. Pack the two Jetsons pictures together while keeping Lost in Space with the Space age cover and linked to Starlit screens."
+      },
+      {
+        "refs": [
+          "spiderweb-the-end",
+          "cinderella-opening-card",
+          "starry-end-card",
+          "fairy-tales-ribbon"
+        ],
+        "decision": "Treat expressive lettering as a signature that spans subjects. Keep the two actual film cards under Cinema lettering, link the spiderweb card to Vintage monsters, and keep the modern ribbon artwork with fairytales."
+      },
+      {
+        "refs": [
+          "boo-berry-cereal",
+          "monster-cereal-trio",
+          "vintage-mummy",
+          "muppet-monster-lab"
+        ],
+        "decision": "Grow Halloween into a branch that includes monster packaging. Keep the cereals together and the mummy in Vintage monsters."
+      },
+      {
+        "refs": [
+          "eyelash-beetle",
+          "gingham-beetle",
+          "nyc-pattern-skyline",
+          "nyc-subway-doors",
+          "lit-window-silhouettes"
+        ],
+        "decision": "Give childhood car nostalgia and New York their own entrances. Place New York beside Lit windows because of the city silhouettes while keeping the latter open to other places."
+      },
+      {
+        "refs": [
+          "digital-cross",
+          "vintage-mannequin-head"
+        ],
+        "decision": "Keep two independent seeds. A digital material alone does not make the cross a retro-tech reference, and the mannequin attribution remains tentative."
+      },
+      {
+        "refs": [
+          "space-age-cat",
+          "piggy-kermit-kiss"
+        ],
+        "decision": "Keep the characters in their existing families and connect the set design to Retro futures and the kiss to Odd romance."
+      }
+    ],
+    "retained": "Keep the established Wonderland cluster and the neighboring Medieval fantasy, Space age and holiday areas. Leave the seven older inaccessible pins pending."
   }
 }
