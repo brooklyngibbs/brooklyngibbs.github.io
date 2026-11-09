@@ -1,6 +1,6 @@
 {
   "reviewedOn": "2026-11-09",
-  "revision": "2026-11-09-artifice-and-circuitry",
+  "revision": "2026-11-09-neon-chess-and-pearls",
   "reviewedIds": [
     "pink-elephant",
     "pinto-pink",
@@ -160,35 +160,75 @@
     "circuit-butterfly",
     "tech-nun",
     "star-trek-crt",
-    "viewmaster-disc"
+    "viewmaster-disc",
+    "ipod-hair-clips",
+    "pearlescent-oyster-shells",
+    "stardust-neon-sign",
+    "tokyo-chess-poster",
+    "pearlescent-fabric",
+    "neon-cocktail",
+    "starlit-cocktail-girl",
+    "alien-girl-pinup",
+    "dive-bar-pool",
+    "cat-at-chessboard",
+    "kitchen-object-chess",
+    "valentine-clown-makeup",
+    "knight-metalwork-corset",
+    "miss-piggy-armored",
+    "pearl-diver-illustration",
+    "embroidered-fish",
+    "pearlescent-fragments",
+    "underwater-starfish",
+    "land-of-love-sign",
+    "colored-taper-candles",
+    "soarin-sign",
+    "pink-elephant-car-wash",
+    "space-mountain-mice",
+    "medieval-gold-lettering",
+    "pearl-couture",
+    "checkered-tights"
   ],
   "newIds": [
-    "french-style-mannequins",
-    "lace-and-glasses-mannequins",
-    "lampshade-mannequins",
-    "y2k-christina",
-    "pulp-fembot",
-    "strange-unusual-comic",
-    "pretty-girls-rock",
-    "discarded-pc-stack",
-    "wire-crucifixion",
-    "four-leaf-clover-print",
-    "circuit-butterfly",
-    "tech-nun",
-    "star-trek-crt",
-    "viewmaster-disc"
+    "ipod-hair-clips",
+    "pearlescent-oyster-shells",
+    "stardust-neon-sign",
+    "tokyo-chess-poster",
+    "pearlescent-fabric",
+    "neon-cocktail",
+    "starlit-cocktail-girl",
+    "alien-girl-pinup",
+    "dive-bar-pool",
+    "cat-at-chessboard",
+    "kitchen-object-chess",
+    "valentine-clown-makeup",
+    "knight-metalwork-corset",
+    "miss-piggy-armored",
+    "pearl-diver-illustration",
+    "embroidered-fish",
+    "pearlescent-fragments",
+    "underwater-starfish",
+    "land-of-love-sign",
+    "colored-taper-candles",
+    "soarin-sign",
+    "pink-elephant-car-wash",
+    "space-mountain-mice",
+    "medieval-gold-lettering",
+    "pearl-couture",
+    "checkered-tights"
   ],
   "instruction": "Maintain a second brain for Brooklyn’s taste. Every batch and requested semantic reorganization revisits the entire web and may change any image’s placement as new evidence arrives.",
-  "method": "Review the active atlas and all notes with 14 newly inspected pins. Preserve exact quotes and favor explicit personal associations when changing the hierarchy.",
+  "method": "Review the full atlas with all 26 newly inspected pins. Give extra weight to explicit signature references and keep tentative personal associations separate from historical claims.",
   "primaryCategoryCounts": {
     "storybook-worlds": 1,
     "medieval-fantasy": 1,
+    "chess": 3,
     "frogs-ponds": 1,
     "giant-women": 2,
+    "neon-nights": 2,
     "night-skies": 3,
     "space-age": 3,
     "title-cards": 2,
-    "color-texture": 1,
+    "color-texture": 2,
     "digital-devotion": 3,
     "digital-nostalgia": 3,
     "venus-flytraps": 2,
@@ -205,7 +245,7 @@
     "new-york": 2,
     "lit-windows": 1,
     "bathroom-graffiti": 1,
-    "y2k-pop-style": 2,
+    "y2k-pop-style": 3,
     "tumblr-electropop": 1,
     "the-end-album": 1,
     "comfort-food": 1,
@@ -220,7 +260,7 @@
     "acid-green": 1,
     "stars": 1,
     "mad-science": 1,
-    "girl-knights": 2,
+    "girl-knights": 3,
     "storybook-fairytales": 4,
     "old-interfaces": 1,
     "meet-the-robinsons": 1,
@@ -230,7 +270,7 @@
     "romantic-theater": 1,
     "land-of-make-believe": 3,
     "nervous-knights": 1,
-    "valentines": 1,
+    "valentines": 2,
     "dragon-tales": 1,
     "glitter": 1,
     "childhood-games": 1,
@@ -241,16 +281,16 @@
     "worlds-made-real": 1,
     "wonderland-flowers": 1,
     "cinema-lettering": 4,
-    "illuminated-lettering": 1,
+    "illuminated-lettering": 2,
     "holiday-rituals": 1,
     "flower-power": 1,
     "christmas": 1,
     "halloween": 2,
-    "retro-futures": 1,
-    "muppet-costumes": 1,
+    "retro-futures": 2,
+    "muppet-costumes": 2,
     "blue-pink": 1,
     "late-night-tv": 1,
-    "disneyland-ephemera": 3,
+    "disneyland-ephemera": 5,
     "caterpillar-smoke": 3,
     "atomic-graphics": 3,
     "peanuts": 2,
@@ -259,12 +299,18 @@
     "giant-alice": 2,
     "mixed-media-worlds": 1,
     "bread-and-butterflies": 2,
-    "pearl-drapery": 1,
+    "pearl-drapery": 2,
     "jetsons": 2,
     "monster-cereals": 2,
     "lampshade-figures": 1,
     "fembots": 1,
-    "tech-in-pieces": 2
+    "tech-in-pieces": 2,
+    "lounges-and-dive-bars": 3,
+    "wonderland-checkers": 1,
+    "pearlescence": 2,
+    "oysters-and-pearls": 2,
+    "ocean-textures": 2,
+    "tunnel-of-love": 1
   },
   "patterns": [
     {
@@ -1074,9 +1120,9 @@
     "117938083989257023",
     "117938083989257024"
   ],
-  "reviewedNoteCount": 159,
-  "inspectedNewImageCount": 14,
-  "requestedNewImageCount": 14,
+  "reviewedNoteCount": 185,
+  "inspectedNewImageCount": 26,
+  "requestedNewImageCount": 26,
   "presentationUpdates": [
     {
       "date": "2026-11-08",
@@ -1563,6 +1609,76 @@
     "openQuestions": "Keep the eclectic single-reference interests separate. Revisit the late-night subgroups once the seven pending media references can be inspected."
   },
   "latestBatchReview": {
+    "revision": "2026-11-09-neon-chess-and-pearls",
+    "reviewedCount": 185,
+    "openingPaths": 30,
+    "newRoots": [
+      "neon-nights",
+      "chess"
+    ],
+    "decisions": [
+      {
+        "refs": [
+          "stardust-neon-sign",
+          "neon-cocktail",
+          "pink-elephant-car-wash",
+          "dive-bar-pool",
+          "starlit-cocktail-girl"
+        ],
+        "decision": "Promote the Stardust sign as a signature landmark. Keep the nearby neon-lounge and dive-bar references together and use Starlit screens for the shared night-sky motifs."
+      },
+      {
+        "refs": [
+          "tokyo-chess-poster",
+          "cat-at-chessboard",
+          "kitchen-object-chess",
+          "checkered-tights"
+        ],
+        "decision": "Give Chess its own entrance. Keep the tights with Wonderland and provide a two-way checkerboard link to Chess. The origin of Brooklyn’s interest is a possibility in her note."
+      },
+      {
+        "refs": [
+          "pearlescent-oyster-shells",
+          "pearl-diver-illustration",
+          "pearlescent-fabric",
+          "pearlescent-fragments",
+          "pearl-couture",
+          "embroidered-fish",
+          "underwater-starfish"
+        ],
+        "decision": "Expand Sirens into Sirens & sea. Separate ocean textures, shell and pearl objects, and pearl styling. Use Pearlescence in Color & shimmer for the material that travels between subjects."
+      },
+      {
+        "refs": [
+          "valentine-clown-makeup",
+          "romantic-clown",
+          "land-of-love-sign",
+          "haunted-tunnel-of-love"
+        ],
+        "decision": "Extend the established Odd romance path with clown makeup and a Tunnel of Love branch that connects to the spooky ride. Keep the location of the Land of Love sign open."
+      },
+      {
+        "refs": [
+          "knight-metalwork-corset",
+          "miss-piggy-armored",
+          "medieval-gold-lettering"
+        ],
+        "decision": "Strengthen Girl knights while keeping Miss Piggy primarily with Muppet costumes. The new illuminated lettering belongs beside the existing gold-lettering reference."
+      },
+      {
+        "refs": [
+          "ipod-hair-clips",
+          "alien-girl-pinup",
+          "soarin-sign",
+          "space-mountain-mice",
+          "colored-taper-candles"
+        ],
+        "decision": "Use Y2K pop style with a Retro tech link for the iPod accessories, Retro futures for the alien character, Disney park graphics for the attraction images, and Color & shimmer for the candle palette."
+      }
+    ],
+    "retained": "No pin URLs duplicated the existing collection. Seven older inaccessible pins remain pending. Preserve all source links and original notes."
+  },
+  "previousBatchReview": {
     "revision": "2026-11-09-artifice-and-circuitry",
     "reviewedCount": 159,
     "openingPaths": 28,
@@ -1620,77 +1736,79 @@
     ],
     "retained": "The atlas still distinguishes personal subjects from shared motifs. Seven older inaccessible pins remain pending."
   },
-  "previousBatchReview": {
-    "revision": "2026-11-09-pearls-monsters-and-city",
-    "reviewedCount": 145,
-    "openingPaths": 27,
-    "newRoots": [
-      "new-york",
-      "whimsical-beetles",
-      "digital-devotion",
-      "vintage-mannequins"
-    ],
-    "decisions": [
-      {
-        "refs": [
-          "pearl-draped-hair",
-          "candle-fairies",
-          "daughter-of-the-sea"
-        ],
-        "decision": "Keep the hair under Sirens and the chandelier in Storybook fairytales. Link the draped strands as a visual echo without identifying the chandelier material."
-      },
-      {
-        "refs": [
-          "lost-in-space-logo",
-          "jetsons-candy",
-          "jetsons-skyline",
-          "tomorrowland-rocket"
-        ],
-        "decision": "The vintage future now includes domestic animation and TV graphics. Pack the two Jetsons pictures together while keeping Lost in Space with the Space age cover and linked to Starlit screens."
-      },
-      {
-        "refs": [
-          "spiderweb-the-end",
-          "cinderella-opening-card",
-          "starry-end-card",
-          "fairy-tales-ribbon"
-        ],
-        "decision": "Treat expressive lettering as a signature that spans subjects. Keep the two actual film cards under Cinema lettering, link the spiderweb card to Vintage monsters, and keep the modern ribbon artwork with fairytales."
-      },
-      {
-        "refs": [
-          "boo-berry-cereal",
-          "monster-cereal-trio",
-          "vintage-mummy",
-          "muppet-monster-lab"
-        ],
-        "decision": "Grow Halloween into a branch that includes monster packaging. Keep the cereals together and the mummy in Vintage monsters."
-      },
-      {
-        "refs": [
-          "eyelash-beetle",
-          "gingham-beetle",
-          "nyc-pattern-skyline",
-          "nyc-subway-doors",
-          "lit-window-silhouettes"
-        ],
-        "decision": "Give childhood car nostalgia and New York their own entrances. Place New York beside Lit windows because of the city silhouettes while keeping the latter open to other places."
-      },
-      {
-        "refs": [
-          "digital-cross",
-          "vintage-mannequin-head"
-        ],
-        "decision": "Keep two independent seeds. A digital material alone does not make the cross a retro-tech reference, and the mannequin attribution remains tentative."
-      },
-      {
-        "refs": [
-          "space-age-cat",
-          "piggy-kermit-kiss"
-        ],
-        "decision": "Keep the characters in their existing families and connect the set design to Retro futures and the kiss to Odd romance."
-      }
-    ],
-    "retained": "Keep the established Wonderland cluster and the neighboring Medieval fantasy, Space age and holiday areas. Leave the seven older inaccessible pins pending."
-  }
+  "batchHistory": [
+    {
+      "revision": "2026-11-09-pearls-monsters-and-city",
+      "reviewedCount": 145,
+      "openingPaths": 27,
+      "newRoots": [
+        "new-york",
+        "whimsical-beetles",
+        "digital-devotion",
+        "vintage-mannequins"
+      ],
+      "decisions": [
+        {
+          "refs": [
+            "pearl-draped-hair",
+            "candle-fairies",
+            "daughter-of-the-sea"
+          ],
+          "decision": "Keep the hair under Sirens and the chandelier in Storybook fairytales. Link the draped strands as a visual echo without identifying the chandelier material."
+        },
+        {
+          "refs": [
+            "lost-in-space-logo",
+            "jetsons-candy",
+            "jetsons-skyline",
+            "tomorrowland-rocket"
+          ],
+          "decision": "The vintage future now includes domestic animation and TV graphics. Pack the two Jetsons pictures together while keeping Lost in Space with the Space age cover and linked to Starlit screens."
+        },
+        {
+          "refs": [
+            "spiderweb-the-end",
+            "cinderella-opening-card",
+            "starry-end-card",
+            "fairy-tales-ribbon"
+          ],
+          "decision": "Treat expressive lettering as a signature that spans subjects. Keep the two actual film cards under Cinema lettering, link the spiderweb card to Vintage monsters, and keep the modern ribbon artwork with fairytales."
+        },
+        {
+          "refs": [
+            "boo-berry-cereal",
+            "monster-cereal-trio",
+            "vintage-mummy",
+            "muppet-monster-lab"
+          ],
+          "decision": "Grow Halloween into a branch that includes monster packaging. Keep the cereals together and the mummy in Vintage monsters."
+        },
+        {
+          "refs": [
+            "eyelash-beetle",
+            "gingham-beetle",
+            "nyc-pattern-skyline",
+            "nyc-subway-doors",
+            "lit-window-silhouettes"
+          ],
+          "decision": "Give childhood car nostalgia and New York their own entrances. Place New York beside Lit windows because of the city silhouettes while keeping the latter open to other places."
+        },
+        {
+          "refs": [
+            "digital-cross",
+            "vintage-mannequin-head"
+          ],
+          "decision": "Keep two independent seeds. A digital material alone does not make the cross a retro-tech reference, and the mannequin attribution remains tentative."
+        },
+        {
+          "refs": [
+            "space-age-cat",
+            "piggy-kermit-kiss"
+          ],
+          "decision": "Keep the characters in their existing families and connect the set design to Retro futures and the kiss to Odd romance."
+        }
+      ],
+      "retained": "Keep the established Wonderland cluster and the neighboring Medieval fantasy, Space age and holiday areas. Leave the seven older inaccessible pins pending."
+    }
+  ]
 }

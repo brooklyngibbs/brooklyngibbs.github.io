@@ -2260,6 +2260,46 @@
           36
         ]
       ]
+    },
+    "neon-nights": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
+    },
+    "chess": {
+      "center": [
+        0.72,
+        0.83
+      ],
+      "mobileCenter": [
+        0.72,
+        0.83
+      ],
+      "slots": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          36
+        ]
+      ]
     }
   },
   "categories": [
@@ -2343,6 +2383,48 @@
         "entrance": "landmark",
         "coverScale": 1.13
       }
+    },
+    {
+      "id": "chess",
+      "name": "Chess",
+      "parents": [],
+      "refs": [
+        "tokyo-chess-poster",
+        "cat-at-chessboard",
+        "kitchen-object-chess",
+        "checkered-tights"
+      ],
+      "themes": [],
+      "crossovers": [
+        "wonderland-checkers",
+        "alice"
+      ],
+      "labelAnchor": {
+        "ref": "tokyo-chess-poster",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "signature",
+        "entrance": "landmark",
+        "coverScale": 1.14,
+        "overlapCaption": "Black-and-white checks link chessboards and Wonderland styling.",
+        "reason": "Three references make chess a recurring symbol across posters, photographs and improvised games. Brooklyn explicitly wonders about its connection to Alice."
+      },
+      "kind": "main",
+      "coverRef": "tokyo-chess-poster"
     },
     {
       "id": "frogs-ponds",
@@ -2429,6 +2511,47 @@
       "focusZoom": 3.6
     },
     {
+      "id": "neon-nights",
+      "name": "Neon nights",
+      "parents": [],
+      "refs": [
+        "stardust-neon-sign",
+        "pink-elephant-car-wash",
+        "land-of-love-sign"
+      ],
+      "themes": [],
+      "crossovers": [
+        "night-skies",
+        "tunnel-of-love"
+      ],
+      "labelAnchor": {
+        "ref": "stardust-neon-sign",
+        "offset": [
+          0,
+          -80
+        ],
+        "mobileOffset": [
+          0,
+          -70
+        ]
+      },
+      "labelDepth": 0,
+      "reveal": [
+        0,
+        0
+      ],
+      "focusZoom": 3.6,
+      "presentation": {
+        "emphasis": "signature",
+        "entrance": "landmark",
+        "coverScale": 1.38,
+        "overlapCaption": "The glow of a sign after dark.",
+        "reason": "Brooklyn calls the Stardust sign the pinnacle of her aesthetic and describes neon roads and old cocktail lounges as distinctly hers."
+      },
+      "kind": "main",
+      "coverRef": "stardust-neon-sign"
+    },
+    {
       "id": "night-skies",
       "name": "Starlit screens",
       "parents": [],
@@ -2447,7 +2570,9 @@
         "tigger-starry-sky",
         "pink-blue-end",
         "lost-in-space-logo",
-        "star-trek-crt"
+        "star-trek-crt",
+        "stardust-neon-sign",
+        "starlit-cocktail-girl"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2478,7 +2603,9 @@
         "hot-pink",
         "stars",
         "vivid-blue",
-        "star-trek"
+        "star-trek",
+        "neon-nights",
+        "lounges-and-dive-bars"
       ],
       "kind": "main",
       "coverRef": "starry-end-card",
@@ -2507,7 +2634,8 @@
         "dancing-robots",
         "meet-the-robinsons",
         "moon-face",
-        "lost-in-space-logo"
+        "lost-in-space-logo",
+        "space-mountain-mice"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2530,7 +2658,8 @@
       "crossovers": [
         "night-skies",
         "storybook-worlds",
-        "wizards"
+        "wizards",
+        "disneyland-ephemera"
       ],
       "kind": "main",
       "coverRef": "tomorrowland-rocket",
@@ -2602,7 +2731,8 @@
         "glitter-makeup",
         "pink-star-pattern",
         "ispy-celestial-pattern",
-        "merry-bright-tree"
+        "merry-bright-tree",
+        "colored-taper-candles"
       ],
       "name": "Color & shimmer",
       "kind": "main",
@@ -2680,7 +2810,8 @@
         "iridescent-cds",
         "medieval-pixels",
         "imac-color-table",
-        "viewmaster-disc"
+        "viewmaster-disc",
+        "ipod-hair-clips"
       ],
       "themes": [],
       "focusZoom": 3.6,
@@ -2704,7 +2835,8 @@
         "glitter",
         "medieval-pixels",
         "retro-futures",
-        "atomic-graphics"
+        "atomic-graphics",
+        "y2k-pop-style"
       ],
       "kind": "main",
       "coverRef": "iridescent-cds"
@@ -2976,7 +3108,7 @@
     },
     {
       "id": "sirens",
-      "name": "Sirens",
+      "name": "Sirens & sea",
       "kind": "main",
       "parents": [],
       "coverRef": "daughter-of-the-sea",
@@ -3008,8 +3140,10 @@
       ],
       "focusZoom": 3.6,
       "presentation": {
-        "emphasis": "recurring",
-        "reason": "The personal siren archetype now has a tangible styling reference in pearl-draped hair, alongside the shell and mermaid-cat crossovers."
+        "emphasis": "signature",
+        "reason": "The personal siren archetype now repeats in pearl styling, oysters and the colors and textures of sea life.",
+        "entrance": "landmark",
+        "coverScale": 1.14
       }
     },
     {
@@ -3257,12 +3391,14 @@
       "parents": [],
       "refs": [
         "y2k-christina",
-        "pretty-girls-rock"
+        "pretty-girls-rock",
+        "ipod-hair-clips"
       ],
       "themes": [],
       "crossovers": [
         "glitter",
-        "tumblr-electropop"
+        "tumblr-electropop",
+        "digital-nostalgia"
       ],
       "labelAnchor": {
         "ref": "y2k-christina",
@@ -3564,7 +3700,8 @@
         "title-cards",
         "acid-green",
         "mary-blair",
-        "giant-women"
+        "giant-women",
+        "chess"
       ],
       "presentation": {
         "emphasis": "signature",
@@ -3651,7 +3788,8 @@
         "night-skies",
         "sirens",
         "frogs-ponds",
-        "mixed-media-worlds"
+        "mixed-media-worlds",
+        "oysters-and-pearls"
       ],
       "presentation": {
         "emphasis": "recurring",
@@ -3928,7 +4066,9 @@
       "refs": [
         "feminine-armor",
         "tattoo-knight",
-        "modern-knight"
+        "modern-knight",
+        "knight-metalwork-corset",
+        "miss-piggy-armored"
       ],
       "themes": [],
       "focusZoom": 6.35,
@@ -3953,8 +4093,14 @@
         -65
       ],
       "crossovers": [
-        "pink-romance"
-      ]
+        "pink-romance",
+        "muppet-costumes"
+      ],
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Armor and knight imagery become feminine styling.",
+        "reason": "Feminine knights recur in fashion, illustration and character costumes, including metalwork corsetry and Miss Piggy in armor."
+      }
     },
     {
       "id": "storybook-fairytales",
@@ -4191,7 +4337,8 @@
         "giant-women",
         "pink-romance",
         "cinema-lettering",
-        "monster-cereals"
+        "monster-cereals",
+        "tunnel-of-love"
       ],
       "presentation": {
         "emphasis": "recurring",
@@ -4380,7 +4527,8 @@
         "love-potion",
         "love-meter",
         "lagoon-valentine",
-        "nervous-knight"
+        "nervous-knight",
+        "valentine-clown-makeup"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -4459,7 +4607,8 @@
       "refs": [
         "glitter-makeup",
         "starry-end-card",
-        "pretty-girls-rock"
+        "pretty-girls-rock",
+        "valentine-clown-makeup"
       ],
       "themes": [],
       "focusZoom": 4.7,
@@ -4869,7 +5018,8 @@
       ],
       "refs": [
         "medieval-spell-lettering",
-        "sword-in-stone"
+        "sword-in-stone",
+        "medieval-gold-lettering"
       ],
       "themes": [],
       "crossovers": [
@@ -5076,7 +5226,8 @@
         "dancing-robots",
         "meet-the-robinsons",
         "robot-swoon",
-        "space-age-cat"
+        "space-age-cat",
+        "alien-girl-pinup"
       ],
       "themes": [],
       "crossovers": [
@@ -5121,13 +5272,15 @@
       ],
       "refs": [
         "muppet-monster-lab",
-        "gonzo-tin-man"
+        "gonzo-tin-man",
+        "miss-piggy-armored"
       ],
       "themes": [],
       "crossovers": [
         "halloween",
         "wizard-of-oz",
-        "mad-science"
+        "mad-science",
+        "girl-knights"
       ],
       "labelAnchor": {
         "ref": "muppet-monster-lab",
@@ -5228,7 +5381,7 @@
     },
     {
       "id": "disneyland-ephemera",
-      "name": "Disneyland ephemera",
+      "name": "Disney park graphics",
       "parents": [
         "worlds-made-real"
       ],
@@ -5236,12 +5389,15 @@
         "frontierland-lettering",
         "pink-disneyland-booklet",
         "tomorrowland-rocket",
-        "tinkerbell-sign"
+        "tinkerbell-sign",
+        "soarin-sign",
+        "space-mountain-mice"
       ],
       "themes": [],
       "crossovers": [
         "retro-futures",
-        "title-cards"
+        "title-cards",
+        "space-age"
       ],
       "labelAnchor": {
         "ref": "frontierland-lettering",
@@ -5578,11 +5734,13 @@
       ],
       "refs": [
         "pearl-draped-hair",
-        "candle-fairies"
+        "candle-fairies",
+        "pearl-couture"
       ],
       "themes": [],
       "crossovers": [
-        "storybook-fairytales"
+        "storybook-fairytales",
+        "pearlescence"
       ],
       "labelAnchor": {
         "ref": "pearl-draped-hair",
@@ -5786,6 +5944,229 @@
         "overlapCaption": "Wires and discarded electronics take on new forms.",
         "reason": "Discarded PCs and a butterfly assembled from electronic parts give familiar technology a second form."
       }
+    },
+    {
+      "id": "lounges-and-dive-bars",
+      "name": "Lounges & dive bars",
+      "parents": [
+        "neon-nights"
+      ],
+      "refs": [
+        "neon-cocktail",
+        "starlit-cocktail-girl",
+        "dive-bar-pool"
+      ],
+      "themes": [],
+      "crossovers": [
+        "night-skies"
+      ],
+      "labelAnchor": {
+        "ref": "neon-cocktail",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "nearParent": true,
+        "reason": "An explicit affection for neon cocktail lounges and dive bars with pool tables."
+      }
+    },
+    {
+      "id": "wonderland-checkers",
+      "name": "Wonderland checkers",
+      "parents": [
+        "alice"
+      ],
+      "refs": [
+        "checkered-tights"
+      ],
+      "themes": [],
+      "crossovers": [
+        "chess"
+      ],
+      "labelAnchor": {
+        "ref": "checkered-tights",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Brooklyn explicitly connects the tights to both Wonderland and chess, with the origin of that association still open."
+      }
+    },
+    {
+      "id": "pearlescence",
+      "name": "Pearlescence",
+      "parents": [
+        "color-texture"
+      ],
+      "refs": [
+        "pearlescent-fabric",
+        "pearlescent-fragments",
+        "pearlescent-oyster-shells",
+        "pearl-couture"
+      ],
+      "themes": [],
+      "crossovers": [
+        "oysters-and-pearls",
+        "pearl-drapery"
+      ],
+      "labelAnchor": {
+        "ref": "pearlescent-fabric",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "A pearly surface shifts between pink, green and silver.",
+        "reason": "The same shifting sheen appears on fabric, shells and iridescent material."
+      }
+    },
+    {
+      "id": "oysters-and-pearls",
+      "name": "Oysters & pearls",
+      "parents": [
+        "sirens"
+      ],
+      "refs": [
+        "pearlescent-oyster-shells",
+        "pearl-diver-illustration",
+        "wonderland-oyster-calendar"
+      ],
+      "themes": [],
+      "crossovers": [
+        "pearlescence",
+        "background-characters"
+      ],
+      "labelAnchor": {
+        "ref": "pearlescent-oyster-shells",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "The shells and illustrated oyster return to the pearl as an object, alongside siren styling and the Wonderland oysters."
+      }
+    },
+    {
+      "id": "ocean-textures",
+      "name": "Ocean textures",
+      "parents": [
+        "sirens"
+      ],
+      "refs": [
+        "embroidered-fish",
+        "underwater-starfish"
+      ],
+      "themes": [],
+      "crossovers": [],
+      "labelAnchor": {
+        "ref": "underwater-starfish",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "reason": "Orange sea stars and colorful stitched fish show two different ways to bring out color and texture underwater."
+      }
+    },
+    {
+      "id": "tunnel-of-love",
+      "name": "Tunnel of Love",
+      "parents": [
+        "pink-romance"
+      ],
+      "refs": [
+        "land-of-love-sign",
+        "haunted-tunnel-of-love"
+      ],
+      "themes": [],
+      "crossovers": [
+        "neon-nights",
+        "vintage-monsters"
+      ],
+      "labelAnchor": {
+        "ref": "land-of-love-sign",
+        "offset": [
+          0,
+          66
+        ],
+        "mobileOffset": [
+          0,
+          62
+        ]
+      },
+      "labelDepth": 1,
+      "reveal": [
+        3.2,
+        4
+      ],
+      "focusZoom": 4.7,
+      "presentation": {
+        "emphasis": "recurring",
+        "overlapCaption": "Love imagined as a place you can enter.",
+        "reason": "The sign and the previously saved spooky ride repeat the romantic attraction motif."
+      }
     }
   ],
   "items": [
@@ -5804,6 +6185,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "pink-elephant-car-wash",
         "big-screen-title",
         "pinto-pink",
         "pink-panther-reading",
@@ -6016,6 +6398,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "ipod-hair-clips",
         "viewmaster-disc",
         "dancing-robots",
         "medieval-pixels",
@@ -6089,6 +6472,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "stardust-neon-sign",
         "moon-face",
         "celestial-cloak-wizard",
         "starry-dancers",
@@ -6201,6 +6585,7 @@
       "tier": 0,
       "themes": [],
       "related": [
+        "valentine-clown-makeup",
         "pulp-fembot",
         "haunted-tunnel-of-love",
         "blair-pink-curtains",
@@ -6850,6 +7235,7 @@
       "tier": 1,
       "themes": [],
       "related": [
+        "miss-piggy-armored",
         "nervous-knight",
         "modern-knight",
         "feminine-armor",
@@ -6922,6 +7308,7 @@
       "tier": 1,
       "themes": [],
       "related": [
+        "checkered-tights",
         "candyland-cards",
         "bread-and-butterflies",
         "alice-end-card",
@@ -7159,6 +7546,8 @@
       "description": "Sparkling white script spelling The End glows across a deep blue background scattered with tiny stars.",
       "group": "color-texture",
       "related": [
+        "starlit-cocktail-girl",
+        "stardust-neon-sign",
         "star-trek-crt",
         "spiderweb-the-end",
         "lost-in-space-logo",
@@ -8340,6 +8729,7 @@
       "description": "A parchment-like illuminated page with deep-blue blackletter text, a large decorated initial, gold outlines and curling gold flourishes, reading a spell about waking from slumber through true love's kiss.",
       "group": "storybook-worlds",
       "related": [
+        "medieval-gold-lettering",
         "sword-in-stone",
         "medieval-pixels",
         "frontierland-lettering"
@@ -8405,6 +8795,7 @@
       "description": "Tall retro-style attraction poster with an upright white rocket, red stripes, a domed building and tiny visitors beneath a dark starry blue sky. Narrow white lettering reads Rocket to the Moon, with Tomorrowland below.",
       "group": "space-age",
       "related": [
+        "space-mountain-mice",
         "tinkerbell-sign",
         "starry-end-card",
         "meet-the-robinsons",
@@ -9100,6 +9491,7 @@
       "description": "A March calendar hangs beneath a shell against an underwater backdrop.",
       "group": "storybook-worlds",
       "related": [
+        "pearlescent-oyster-shells",
         "daughter-of-the-sea",
         "wonderland-musical-frogs"
       ],
@@ -9969,6 +10361,7 @@
       "description": "A bride and skeleton sit together on a green ride seat beneath a stone arch.",
       "group": "holidays",
       "related": [
+        "land-of-love-sign",
         "romantic-clown",
         "robot-swoon",
         "muppet-monster-lab"
@@ -10103,6 +10496,7 @@
       "description": "Long, wavy hair is covered with draping strands of small, pale beads against a dark background.",
       "group": "sirens",
       "related": [
+        "pearl-couture",
         "candle-fairies"
       ],
       "note": "Hair dripping in pearls, it kind of gives the siren ocean vibe, mermaid to me",
@@ -10287,6 +10681,7 @@
       "description": "Small luminous figures dance on the candle flames of a dark green chandelier draped with pale strands and hanging ornaments.",
       "group": "storybook-worlds",
       "related": [
+        "colored-taper-candles",
         "pearl-draped-hair"
       ],
       "note": "I don't know where this art is from but it's this chandelier with candles on it, dripping with pearls, maybe or gems, and probably glass because of the chandelier. These little fairies are dancing on top of the flames and they're gorgeous",
@@ -11064,11 +11459,803 @@
         "parent": "iridescent-cds",
         "via": "An old disc for viewing images"
       }
+    },
+    {
+      "id": "ipod-hair-clips",
+      "name": "iPods as hair clips",
+      "description": "Two small square music players clip into pale blonde hair.",
+      "group": "y2k-pop-style",
+      "related": [
+        "iridescent-cds"
+      ],
+      "note": "This person is using iPods as hair clips. I love the Y2K weirdness of using it as a hair accessory",
+      "src": "images/117938083987645388.jpg",
+      "thumbnail": "thumbnails/117938083987645388.jpg",
+      "w": 540,
+      "h": 570,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987645388/",
+        "pinId": "117938083987645388",
+        "imageUrl": "https://i.pinimg.com/736x/da/90/a7/da90a7a2f3fa8e9b991e2da5ed0f5a49.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "y2k-pop-style",
+      "discovery": {
+        "parent": "y2k-christina",
+        "via": "Portable music players repurposed as Y2K accessories"
+      }
+    },
+    {
+      "id": "pearlescent-oyster-shells",
+      "name": "Pearlescent shells",
+      "description": "Overlapping rounded shells reflect pink, silver and green.",
+      "group": "sirens",
+      "related": [
+        "wonderland-oyster-calendar",
+        "pearlescent-fabric"
+      ],
+      "note": "Some pearlescent oyster shells, I think. Gorgeous. I love the pearlescent vibe",
+      "src": "images/117938083987645291.jpg",
+      "thumbnail": "thumbnails/117938083987645291.jpg",
+      "w": 400,
+      "h": 300,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987645291/",
+        "pinId": "117938083987645291",
+        "imageUrl": "https://i.pinimg.com/736x/b7/0a/eb/b70aebf9115e3cbc0299a858f68f6d99.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "oysters-and-pearls",
+      "discovery": {
+        "parent": "daughter-of-the-sea",
+        "via": "Pearly shells and the colors they reflect"
+      }
+    },
+    {
+      "id": "stardust-neon-sign",
+      "name": "Stardust sign at night",
+      "description": "An illuminated STARDUST sign sits inside a burst of colorful star-shaped lights against a black sky.",
+      "group": "neon-nights",
+      "related": [
+        "land-of-love-sign",
+        "made-of-stardust",
+        "starry-end-card"
+      ],
+      "note": "This stardust sign is like the pinnacle of my aesthetic I'd say",
+      "src": "images/117938083987645224.jpg",
+      "thumbnail": "thumbnails/117938083987645224.jpg",
+      "w": 500,
+      "h": 375,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987645224/",
+        "pinId": "117938083987645224",
+        "imageUrl": "https://i.pinimg.com/736x/7d/8b/57/7d8b579dc4ac0f9cb1da52f975748bba.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "neon-nights",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "tokyo-chess-poster",
+      "name": "Tokyo Chess Museum poster",
+      "description": "A black-and-white poster layers oversized chess pieces over a checkerboard.",
+      "group": "chess",
+      "related": [
+        "checkered-tights"
+      ],
+      "note": "This Tokyo Chess Museum poster. I love chess as a symbol and a repeating sign",
+      "src": "images/117938083987617940.jpg",
+      "thumbnail": "thumbnails/117938083987617940.jpg",
+      "w": 736,
+      "h": 1104,
+      "slot": 0,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987617940/",
+        "pinId": "117938083987617940",
+        "imageUrl": "https://i.pinimg.com/736x/69/19/cf/6919cf752390f981cd56f8b9ce450e04.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "chess",
+      "discovery": {
+        "parent": null
+      }
+    },
+    {
+      "id": "pearlescent-fabric",
+      "name": "Glittery pearlescent fabric",
+      "description": "A folded, shimmering fabric catches pale pink, green and silver light.",
+      "group": "color-texture",
+      "related": [
+        "pearl-couture",
+        "pearlescent-oyster-shells"
+      ],
+      "note": "Glittery pearlescent color And fabric",
+      "src": "images/117938083987645225.jpg",
+      "thumbnail": "thumbnails/117938083987645225.jpg",
+      "w": 500,
+      "h": 500,
+      "slot": 8,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987645225/",
+        "pinId": "117938083987645225",
+        "imageUrl": "https://i.pinimg.com/736x/74/96/e2/7496e2f83a3f65f3397b5ed58de3fbd4.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "pearlescence",
+      "discovery": {
+        "parent": "hot-pink-desire",
+        "via": "Shimmer with shifting colors and a soft fabric surface"
+      }
+    },
+    {
+      "id": "neon-cocktail",
+      "name": "Neon cocktail",
+      "description": "A hand holds a shallow cocktail glass that glows pink against a warm, dark background.",
+      "group": "neon-nights",
+      "related": [],
+      "note": "This neon-glowing cocktail. Neon is something that is so me. I love neon: the feeling of driving down roads and seeing traffic lights that color, or old cocktail lounges with this neon colorful aesthetic that I've never seen yet but, oh, I love it",
+      "src": "images/117938083987519540.jpg",
+      "thumbnail": "thumbnails/117938083987519540.jpg",
+      "w": 736,
+      "h": 736,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987519540/",
+        "pinId": "117938083987519540",
+        "imageUrl": "https://i.pinimg.com/736x/f2/4a/28/f24a280f8cf99339b6f4b2892e68611f.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "lounges-and-dive-bars",
+      "discovery": {
+        "parent": "stardust-neon-sign",
+        "via": "The colored glow of an imagined old cocktail lounge"
+      }
+    },
+    {
+      "id": "starlit-cocktail-girl",
+      "name": "Girl in a starlit cocktail",
+      "description": "A woman reclines in an oversized cocktail glass as small stars and sparks scatter around her.",
+      "group": "neon-nights",
+      "related": [
+        "starry-end-card"
+      ],
+      "note": "This girl lying in a cocktail glass with stars shooting out of her",
+      "src": "images/117938083987518110.jpg",
+      "thumbnail": "thumbnails/117938083987518110.jpg",
+      "w": 735,
+      "h": 919,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987518110/",
+        "pinId": "117938083987518110",
+        "imageUrl": "https://i.pinimg.com/736x/79/4c/34/794c34a501f130bb629bcb9ca303c8fb.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "lounges-and-dive-bars",
+      "discovery": {
+        "parent": "neon-cocktail",
+        "via": "A cocktail-lounge image rendered as a starry fantasy"
+      }
+    },
+    {
+      "id": "alien-girl-pinup",
+      "name": "Alien girl with a bubble helmet",
+      "description": "A figure in a red outfit and a bubble helmet stands against a vivid green sky.",
+      "group": "space-age",
+      "related": [],
+      "note": "This little alien girl",
+      "src": "images/117938083987516349.jpg",
+      "thumbnail": "thumbnails/117938083987516349.jpg",
+      "w": 735,
+      "h": 917,
+      "slot": 17,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987516349/",
+        "pinId": "117938083987516349",
+        "imageUrl": "https://i.pinimg.com/736x/e4/09/b7/e409b768759f2813d72260475d6249d4.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "retro-futures",
+      "discovery": {
+        "parent": "dancing-robots",
+        "via": "A playful figure in an imagined space-age world"
+      }
+    },
+    {
+      "id": "dive-bar-pool",
+      "name": "Pool table",
+      "description": "A hand lines up a cue among brightly colored billiard balls on green felt.",
+      "group": "neon-nights",
+      "related": [],
+      "note": "I love pool as a game and as an aesthetic. I love an old dive bar with a pool table",
+      "src": "images/117938083987516337.jpg",
+      "thumbnail": "thumbnails/117938083987516337.jpg",
+      "w": 736,
+      "h": 920,
+      "slot": 3,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987516337/",
+        "pinId": "117938083987516337",
+        "imageUrl": "https://i.pinimg.com/736x/75/be/5a/75be5a720c3cb5d17e63a56f0bb5d759.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "lounges-and-dive-bars",
+      "discovery": {
+        "parent": "neon-cocktail",
+        "via": "A pool table as a detail of old dive-bar atmosphere"
+      }
+    },
+    {
+      "id": "cat-at-chessboard",
+      "name": "Cat at a chessboard",
+      "description": "A dark cat leans over chess pieces in a blue-toned photograph.",
+      "group": "chess",
+      "related": [],
+      "note": "A cat messing up a chess game in this digital photography format",
+      "src": "images/117938083987393873.jpg",
+      "thumbnail": "thumbnails/117938083987393873.jpg",
+      "w": 563,
+      "h": 614,
+      "slot": 1,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987393873/",
+        "pinId": "117938083987393873",
+        "imageUrl": "https://i.pinimg.com/736x/ce/79/a7/ce79a774b780ce3ee14e43506d15c791.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "chess",
+      "discovery": {
+        "parent": "tokyo-chess-poster",
+        "via": "Chess interrupted by a cat"
+      }
+    },
+    {
+      "id": "kitchen-object-chess",
+      "name": "Chess with kitchen objects",
+      "description": "In a black-and-white photograph, two people crouch over objects arranged on a large checkered floor.",
+      "group": "chess",
+      "related": [],
+      "note": "This black-and-white photo of a chess game Played with kitchen objects",
+      "src": "images/117938083987393854.jpg",
+      "thumbnail": "thumbnails/117938083987393854.jpg",
+      "w": 640,
+      "h": 429,
+      "slot": 2,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987393854/",
+        "pinId": "117938083987393854",
+        "imageUrl": "https://i.pinimg.com/736x/8c/09/ef/8c09ef39234bad1e42dd869e2d575099.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "chess",
+      "discovery": {
+        "parent": "tokyo-chess-poster",
+        "via": "An improvised chessboard and pieces"
+      }
+    },
+    {
+      "id": "valentine-clown-makeup",
+      "name": "Valentine clown makeup",
+      "description": "A face is painted pink with red glitter, hearts and theatrical eye and lip makeup.",
+      "group": "pink-romance",
+      "related": [
+        "romantic-clown"
+      ],
+      "note": "This is some clown makeup but it's very artsy and Valentine'sy. I'm not sure if I've added this yet but I love it",
+      "src": "images/117938083987364837.jpg",
+      "thumbnail": "thumbnails/117938083987364837.jpg",
+      "w": 736,
+      "h": 1087,
+      "slot": 4,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987364837/",
+        "pinId": "117938083987364837",
+        "imageUrl": "https://i.pinimg.com/736x/ee/e4/e7/eee4e7ecc965d2e8ec1e1eb8220eebae.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "valentines",
+      "discovery": {
+        "parent": "love-meter",
+        "via": "The Valentine heart palette in theatrical clown makeup"
+      }
+    },
+    {
+      "id": "knight-metalwork-corset",
+      "name": "Metalwork corset",
+      "description": "Curving silver-colored lines form a corset over a dark top.",
+      "group": "medieval-fantasy",
+      "related": [
+        "miss-piggy-armored"
+      ],
+      "note": "This is a corset made out of knight fencing. It's so gorgeous and feminine and sexy but knightish",
+      "src": "images/117938083987364772.jpg",
+      "thumbnail": "thumbnails/117938083987364772.jpg",
+      "w": 264,
+      "h": 500,
+      "slot": 11,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987364772/",
+        "pinId": "117938083987364772",
+        "imageUrl": "https://i.pinimg.com/736x/aa/5d/88/aa5d88bc49ebafd0ea3698a79d585d41.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "girl-knights",
+      "discovery": {
+        "parent": "tattoo-knight",
+        "via": "Armor-like metalwork reshaped as a corset"
+      }
+    },
+    {
+      "id": "miss-piggy-armored",
+      "name": "Miss Piggy in armor",
+      "description": "Miss Piggy appears as an armored figure with a sword in a dramatic fantasy illustration.",
+      "group": "muppets",
+      "related": [
+        "knight-metalwork-corset",
+        "tattoo-knight"
+      ],
+      "note": "This photo of Miss Piggy as this Joan of Arc character, I love it",
+      "src": "images/117938083987339554.jpg",
+      "thumbnail": "thumbnails/117938083987339554.jpg",
+      "w": 736,
+      "h": 1129,
+      "slot": 7,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987339554/",
+        "pinId": "117938083987339554",
+        "imageUrl": "https://i.pinimg.com/736x/9e/6a/f5/9e6af5c93388fe4a5a259bf6417f4aa9.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "muppet-costumes",
+      "discovery": {
+        "parent": "muppet-monster-lab",
+        "via": "Miss Piggy cast as a knight in a costume illustration"
+      }
+    },
+    {
+      "id": "pearl-diver-illustration",
+      "name": "Oyster and pearl illustration",
+      "description": "A black-and-white illustration shows a pearl inside an open shell beneath the words Pearl Diver.",
+      "group": "sirens",
+      "related": [],
+      "note": "This illustration of an oyster and a pearl",
+      "src": "images/117938083987335353.jpg",
+      "thumbnail": "thumbnails/117938083987335353.jpg",
+      "w": 620,
+      "h": 810,
+      "slot": 3,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987335353/",
+        "pinId": "117938083987335353",
+        "imageUrl": "https://i.pinimg.com/736x/98/b6/cb/98b6cb7cffee6ce9c10b5b81dfa7bc60.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "oysters-and-pearls",
+      "discovery": {
+        "parent": "pearlescent-oyster-shells",
+        "via": "An oyster and its pearl rendered in ink"
+      }
+    },
+    {
+      "id": "embroidered-fish",
+      "name": "Colorfully stitched fish",
+      "description": "Rows of fish are stitched in many colors across a textured surface.",
+      "group": "sirens",
+      "related": [],
+      "note": "This colorful stitching of fish, gorgeous. I love the colors and the textures",
+      "src": "images/117938083987335254.jpg",
+      "thumbnail": "thumbnails/117938083987335254.jpg",
+      "w": 736,
+      "h": 875,
+      "slot": 4,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987335254/",
+        "pinId": "117938083987335254",
+        "imageUrl": "https://i.pinimg.com/736x/90/0c/56/900c56f9e4bba344f58e1e6a91facc8c.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "ocean-textures",
+      "discovery": {
+        "parent": "underwater-starfish",
+        "via": "Sea life translated into colorful thread"
+      }
+    },
+    {
+      "id": "pearlescent-fragments",
+      "name": "Iridescent fragments",
+      "description": "Layered fragments catch light in green, pink, turquoise and gold.",
+      "group": "color-texture",
+      "related": [],
+      "note": "Some pearlescent and colorful rocks. I don't even know what this is. It's gorgeous though",
+      "src": "images/117938083987331683.jpg",
+      "thumbnail": "thumbnails/117938083987331683.jpg",
+      "w": 736,
+      "h": 1040,
+      "slot": 9,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987331683/",
+        "pinId": "117938083987331683",
+        "imageUrl": "https://i.pinimg.com/736x/7e/ac/d6/7eacd63291c9dd4989f7a7f185f328ec.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "pearlescence",
+      "discovery": {
+        "parent": "pearlescent-fabric",
+        "via": "The same shifting sheen on a different material"
+      }
+    },
+    {
+      "id": "underwater-starfish",
+      "name": "Orange sea stars underwater",
+      "description": "Orange and red sea stars cluster against cool turquoise water and sand.",
+      "group": "sirens",
+      "related": [],
+      "note": "Some starfish under the sea. The color of the ocean is gorgeous, mixed with the orange. The contrast of this is, ugh, amazing and to die for",
+      "src": "images/117938083987316695.jpg",
+      "thumbnail": "thumbnails/117938083987316695.jpg",
+      "w": 512,
+      "h": 640,
+      "slot": 5,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987316695/",
+        "pinId": "117938083987316695",
+        "imageUrl": "https://i.pinimg.com/736x/b4/79/97/b4799700dd3838eb7ff6c0a845b82f8f.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "ocean-textures",
+      "discovery": {
+        "parent": "daughter-of-the-sea",
+        "via": "Orange sea stars against cool blue-green water"
+      }
+    },
+    {
+      "id": "land-of-love-sign",
+      "name": "Land of Love sign",
+      "description": "A red heart-shaped sign in green foliage reads You Are Entering the Land of Love.",
+      "group": "pink-romance",
+      "related": [
+        "haunted-tunnel-of-love",
+        "stardust-neon-sign"
+      ],
+      "note": "I love this aesthetic of love and the tunnel of love. What is this? I don't know what this is. I love it",
+      "src": "images/117938083987316690.jpg",
+      "thumbnail": "thumbnails/117938083987316690.jpg",
+      "w": 736,
+      "h": 643,
+      "slot": 5,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987316690/",
+        "pinId": "117938083987316690",
+        "imageUrl": "https://i.pinimg.com/736x/1e/98/de/1e98de57f8d3b25716e792f127eaac95.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "tunnel-of-love",
+      "discovery": {
+        "parent": "romantic-clown",
+        "via": "A sign that makes love feel like a place"
+      }
+    },
+    {
+      "id": "colored-taper-candles",
+      "name": "Colored taper candles",
+      "description": "Slim candles in several colors stand in a group of metal holders.",
+      "group": "color-texture",
+      "related": [
+        "candle-fairies"
+      ],
+      "note": "A picture of some candles. I just love the different colors of candles together",
+      "src": "images/117938083987315368.jpg",
+      "thumbnail": "thumbnails/117938083987315368.jpg",
+      "w": 720,
+      "h": 960,
+      "slot": 10,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/117938083987315368/",
+        "pinId": "117938083987315368",
+        "imageUrl": "https://i.pinimg.com/736x/1a/23/df/1a23df60254575ad416e506919cad527.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "color-texture",
+      "discovery": {
+        "parent": "hot-pink-desire",
+        "via": "A palette made from differently colored candles"
+      }
+    },
+    {
+      "id": "soarin-sign",
+      "name": "Soarin’ sign",
+      "description": "Blue Soarin’ lettering sits beneath a colorful illustration of a theme-park landscape.",
+      "group": "storybook-worlds",
+      "related": [],
+      "note": "This old Soren sign",
+      "src": "images/41517627785086032.jpg",
+      "thumbnail": "thumbnails/41517627785086032.jpg",
+      "w": 512,
+      "h": 345,
+      "slot": 47,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/41517627785086032/",
+        "pinId": "41517627785086032",
+        "imageUrl": "https://i.pinimg.com/736x/a3/32/ee/a332ee675114bc4caab2264cbc7acd0f.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "disneyland-ephemera",
+      "discovery": {
+        "parent": "frontierland-lettering",
+        "via": "Illustrated graphics for a Disney attraction"
+      }
+    },
+    {
+      "id": "pink-elephant-car-wash",
+      "name": "Pink Elephant Car Wash sign",
+      "description": "A large pink elephant-shaped sign carries the words Car Wash.",
+      "group": "neon-nights",
+      "related": [
+        "pink-elephant"
+      ],
+      "note": "I love the pink elephant car wash signs. They're so nostalgic for some reason",
+      "src": "images/40743571604166555.jpg",
+      "thumbnail": "thumbnails/40743571604166555.jpg",
+      "w": 736,
+      "h": 981,
+      "slot": 4,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/40743571604166555/",
+        "pinId": "40743571604166555",
+        "imageUrl": "https://i.pinimg.com/736x/55/31/21/553121a3e4ed1fe736c7275e3dec44fe.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "neon-nights",
+      "discovery": {
+        "parent": "stardust-neon-sign",
+        "via": "Roadside signage with a nostalgic character"
+      }
+    },
+    {
+      "id": "space-mountain-mice",
+      "name": "Mickey and Minnie on Space Mountain",
+      "description": "A cartoon shows Mickey and Minnie riding together in an orange-and-gray vehicle.",
+      "group": "storybook-worlds",
+      "related": [
+        "tomorrowland-rocket"
+      ],
+      "note": "Mickey and Minnie on Space Mountain",
+      "src": "images/474566879477572334.jpg",
+      "thumbnail": "thumbnails/474566879477572334.jpg",
+      "w": 236,
+      "h": 222,
+      "slot": 48,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/474566879477572334/",
+        "pinId": "474566879477572334",
+        "imageUrl": "https://i.pinimg.com/736x/43/1f/89/431f899607c5a0d92f30a6733454a816.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "disneyland-ephemera",
+      "discovery": {
+        "parent": "frontierland-lettering",
+        "via": "A Disney ride depicted as a character illustration"
+      }
+    },
+    {
+      "id": "medieval-gold-lettering",
+      "name": "Do not perceive me lettering",
+      "description": "Black calligraphy reads Do not perceive me beside an illuminated initial and colored ornament.",
+      "group": "title-cards",
+      "related": [
+        "medieval-spell-lettering"
+      ],
+      "note": "I love medieval calligraphy with the gold foil and all that",
+      "src": "images/791296597065171561.jpg",
+      "thumbnail": "thumbnails/791296597065171561.jpg",
+      "w": 736,
+      "h": 920,
+      "slot": 11,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/791296597065171561/",
+        "pinId": "791296597065171561",
+        "imageUrl": "https://i.pinimg.com/736x/ca/14/89/ca1489d64b889df108920fb7073e0698.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "illuminated-lettering",
+      "discovery": {
+        "parent": "medieval-spell-lettering",
+        "via": "Medieval illuminated lettering in a modern phrase"
+      }
+    },
+    {
+      "id": "pearl-couture",
+      "name": "Pearl and shell couture",
+      "description": "A fashion portrait uses a shell-shaped headpiece and long strands of pale beads.",
+      "group": "sirens",
+      "related": [
+        "pearl-draped-hair",
+        "pearlescent-fabric"
+      ],
+      "note": "Some high-fashion woman in pearl",
+      "src": "images/940056122227825126.jpg",
+      "thumbnail": "thumbnails/940056122227825126.jpg",
+      "w": 736,
+      "h": 920,
+      "slot": 6,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/940056122227825126/",
+        "pinId": "940056122227825126",
+        "imageUrl": "https://i.pinimg.com/736x/96/2a/da/962ada8c5353f9e3dc933f64f958889b.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "pearl-drapery",
+      "discovery": {
+        "parent": "pearl-draped-hair",
+        "via": "Pearly strands and a shell shape used as fashion"
+      }
+    },
+    {
+      "id": "checkered-tights",
+      "name": "Black-and-white checkered tights",
+      "description": "Legs in black-and-white checkered tights and platform shoes are raised against a green background.",
+      "group": "storybook-worlds",
+      "related": [
+        "wonderland-cards",
+        "tokyo-chess-poster"
+      ],
+      "note": "These black-and-white checkered tights remind me of Alice in Wonderland and chess. Maybe that's why I love chess because of Alice in Wonderland. Maybe that's a connection",
+      "src": "images/625718942009343062.jpg",
+      "thumbnail": "thumbnails/625718942009343062.jpg",
+      "w": 736,
+      "h": 736,
+      "slot": 49,
+      "size": 66,
+      "angle": 0,
+      "tier": 1,
+      "themes": [],
+      "noteAuthor": "user",
+      "source": {
+        "url": "https://www.pinterest.com/pin/625718942009343062/",
+        "pinId": "625718942009343062",
+        "imageUrl": "https://i.pinimg.com/736x/79/2a/63/792a63c8554db1722390fd51e7bc1fe0.jpg",
+        "capturedOn": "2026-11-09"
+      },
+      "revealCategory": "wonderland-checkers",
+      "discovery": {
+        "parent": "alice-cheshire",
+        "via": "Checkerboard styling that recalls Wonderland"
+      }
     }
   ],
   "organization": {
-    "revision": "2026-11-09-artifice-and-circuitry",
-    "reviewedCount": 159,
+    "revision": "2026-11-09-neon-chess-and-pearls",
+    "reviewedCount": 185,
     "model": "layered-atlas",
     "depthPolicy": "Strong recurring interests lead the opening. Independent seeds stay visible at a quieter scale. More specific pictures appear with zoom.",
     "rootOrder": "Landmarks lead into adjacent visual families. Primary paths and shared motifs remain separate navigation tools.",

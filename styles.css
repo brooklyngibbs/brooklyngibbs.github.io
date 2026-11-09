@@ -26,11 +26,38 @@
 /* Preserve the complete Pond Booth artwork at every viewport size. */
 .post--pondbooth figure{aspect-ratio:3/2}.post--pondbooth img{object-fit:contain}
 
-/* The personal taste board replaces the archived Say Now experiment card. */
-.post .taste-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:16%;padding:12% 18%;background:#fff;background-image:radial-gradient(circle,#dcdde4 .65px,transparent .85px);background-size:12px 12px}
-.post .taste-preview img{width:100%;height:100%;min-height:0;object-fit:contain}
-.post .taste-preview img:nth-child(2){transform:rotate(3deg) translateY(10%)}
-.post .taste-preview img:nth-child(3){transform:rotate(-3deg)}
+/* A small preview of the board's changing scale. */
+.post .taste-preview {
+  background: #fff radial-gradient(circle, #dcdde4 .65px, transparent .85px) center / 12px 12px;
+}
+.post .taste-preview img {
+  position: absolute;
+  width: var(--photo-width);
+  height: auto;
+  left: var(--photo-x);
+  top: var(--photo-y);
+  translate: -50% -50%;
+  transform: none;
+  filter: none;
+  border-radius: 3px;
+}
+.taste-preview-credits { --photo-x: 18%; --photo-y: 25%; --photo-width: 15%; --near: 1.2; --far: .85; --hover-scale: 1.09; }
+.taste-preview-stardust { --photo-x: 78%; --photo-y: 25%; --photo-width: 22%; --near: .87; --far: 1.24; --hover-scale: .9; }
+.taste-preview-alice { --photo-x: 49%; --photo-y: 51%; --photo-width: 29%; --near: 1.23; --far: .82; --hover-scale: 1.12; }
+.taste-preview-pond { --photo-x: 18%; --photo-y: 73%; --photo-width: 16%; --near: .84; --far: 1.23; --hover-scale: .9; }
+.taste-preview-pearls { --photo-x: 80%; --photo-y: 73%; --photo-width: 16%; --near: 1.18; --far: .86; --hover-scale: 1.09; }
+@media (prefers-reduced-motion: no-preference) {
+  .post .taste-preview img {
+    animation: taste-preview-zoom 4.6s ease-in-out;
+    transition: scale 650ms cubic-bezier(.2, .7, .3, 1);
+  }
+  .post--taste-board a:is(:hover, :focus-visible) .taste-preview img { scale: var(--hover-scale); }
+  @keyframes taste-preview-zoom {
+    0%, 100% { transform: scale(1); }
+    28% { transform: scale(var(--near)); }
+    68% { transform: scale(var(--far)); }
+  }
+}
 
 .taste-intro {
   width: min(25rem, calc(100% - 2rem));
