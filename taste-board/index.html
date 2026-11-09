@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Taste board — Brooklyn Gibbs</title>
+  <meta name="description" content="Brooklyn Gibbs’ evolving taste board. An explorable collection of images, recurring motifs and personal branding references.">
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&amp;display=swap">
+  <link rel="stylesheet" href="board.css?v=8-connections">
+  <script type="module" src="board.js?v=25-discovery-routes"></script>
+</head>
+<body>
+<main id="taste-board-world" aria-label="Brooklyn Gibbs personal taste board">
+  <div class="fw-page">
+    <header><h1>taste board</h1><div class="fw-header-actions"><label class="fw-connections-toggle"><input type="checkbox" aria-label="Show connections" aria-describedby="connections-help"><span>connections</span></label><a class="fw-work" href="../">← work</a></div></header>
+    <p class="fw-loading" role="status">Loading the mood board…</p>
+    <p class="fw-error" role="alert" hidden>The mood board couldn’t load. <a href="./">Reload the page</a>.</p>
+    <div class="fw-field" hidden role="region" aria-label="Taste board infinite canvas. Each top-level theme starts with a large cover. Its subthemes and supporting images appear at deeper zoom. Scroll, pinch, or use the zoom controls to uncover groups of images and increasingly specific category titles. Click a photo to read its notes or a category title to explore that branch. Drag freely in any direction. Zoom out past the opening view to see the top-level themes shrink together. Reset returns to the opening view. Enable connections to trace shared themes between groups.">
+      <div class="fw-atmosphere" aria-hidden="true"><span></span><span></span><span></span></div>
+      <canvas class="fw-connections" aria-hidden="true" hidden></canvas>
+      <div class="fw-pictures"></div>
+      <div class="fw-names"></div>
+      <nav class="fw-trail" aria-label="Current discovery path" hidden></nav>
+      <p class="fw-empty" hidden>Your board is empty. Restore a removed image, or send a new Pinterest link in chat.</p>
+      <aside class="fw-connections-key" hidden><div class="fw-line-legend" aria-label="Solid lines connect different branches. Dotted lines show shared themes. Pictures in the same group have no lines between them."><span>branch</span><span>overlap</span></div><p id="connections-help">Hover or focus a picture or title to trace its connections.</p><p class="fw-connections-context" role="status"></p></aside>
+      <div class="fw-controls" role="group" aria-label="Explore the image world">
+        <button type="button" class="fw-home cursor-interaction" aria-label="Reset view" title="Reset zoom and position"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10a9 9 0 1 1 2.6 8.4M3 4v6h6"/></svg><span>reset</span></button>
+        <div><button type="button" class="cursor-interaction" data-action="out" aria-label="Zoom out"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><button type="button" class="cursor-interaction" data-action="in" aria-label="Zoom in"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14"/></svg></button></div>
+      </div>
+      <section class="fw-viewer" aria-label="Selected picture, notes and related images" hidden>
+        <div class="fw-viewer-glow" aria-hidden="true"></div>
+        <button type="button" class="fw-back cursor-interaction" aria-label="Return to the image world"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 5-7 7 7 7M5 12h14"/></svg></button>
+        <a class="fw-source cursor-interaction" target="_blank" rel="noopener noreferrer" aria-label="View reference source" hidden><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6m0-6L10 14M9 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></a>
+        <nav class="fw-route" aria-label="Image discovery path"></nav>
+        <div class="fw-detail">
+          <img class="fw-hero" alt="">
+          <div class="fw-copy">
+            <h2 class="fw-caption"></h2>
+            <p class="fw-connection" aria-label="Shared visual thread" hidden></p>
+            <section class="fw-note-block" aria-label="Photo notes" hidden>
+              <blockquote class="fw-note" hidden></blockquote>
+              <p class="fw-no-note">No note</p>
+            </section>
+            <button type="button" class="fw-explore cursor-interaction">explore this branch →</button>
+            <div class="fw-curate" hidden><button type="button" data-edit-note>edit note</button><button type="button" data-remove>remove image</button></div>
+          </div>
+        </div>
+        <section class="fw-branches" aria-label="Branches from this image" hidden><h3>from here</h3><div class="fw-branch-list"></div></section>
+        <section class="fw-crossovers" hidden><h3>also connects to</h3><div class="fw-related" role="group" aria-label="Follow a related picture"></div></section>
+      </section>
+    </div>
+    <dialog class="fw-removed-dialog fw-dialog" aria-labelledby="removed-title">
+      <h2 id="removed-title">Removed images</h2>
+      <p class="fw-local-hint">Removed from this browser’s local taste board. Restore any image below.</p>
+      <div class="fw-removed-list"></div><p role="alert" hidden></p>
+      <div class="fw-form-actions"><button type="button" data-cancel>close</button></div>
+    </dialog>
+    <dialog class="fw-note-dialog fw-dialog" aria-labelledby="note-title">
+      <form><h2 id="note-title">Your note</h2><label>What draws you to this image?<textarea name="note" rows="6" placeholder="Your own words, or leave empty"></textarea></label><p role="alert" hidden></p><div class="fw-form-actions"><button type="button" data-cancel>cancel</button><button type="submit">save note</button></div></form>
+    </dialog>
+    <span class="fw-announcement" aria-live="polite"></span>
+  </div>
+</main>
+  <noscript><p class="no-script">Please enable JavaScript to explore the mood board. <a href="../">Return to work</a>.</p></noscript>
+</body>
+</html>

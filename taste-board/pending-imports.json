@@ -1,0 +1,75 @@
+{
+  "requestedOn": "2026-11-08",
+  "items": [
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257011/",
+      "pinId": "117938083989257011",
+      "note": "I like this old nighttime show aesthetic.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "image"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257012/",
+      "pinId": "117938083989257012",
+      "note": "This is another old TV aesthetic I love. I love the dark blue color, the font, the city skyline, and the moon. This aesthetic is amazing.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "image"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257019/",
+      "pinId": "117938083989257019",
+      "note": "This is another TV vibe with the dark blue and the light color. It's a GIF.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "gif"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257021/",
+      "pinId": "117938083989257021",
+      "note": "Another TV has the cords and the wire. I like the little internet digital symbols.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "image"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257022/",
+      "pinId": "117938083989257022",
+      "note": "A late-night scene with the dark blue and the city skyline",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "image"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257023/",
+      "pinId": "117938083989257023",
+      "note": "This is a \"sorry for the interruption\" screen. It's a glitching GIF with the dark blue and the white text.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "gif"
+    },
+    {
+      "url": "https://www.pinterest.com/pin/117938083989257024/",
+      "pinId": "117938083989257024",
+      "note": "I love this blue and pink color together. It's one of my favorites.",
+      "noteAuthor": "user",
+      "status": "awaiting-accessible-source",
+      "reason": "Pinterest returns PinNotFound for unauthenticated public requests.",
+      "requestedOn": "2026-11-08",
+      "mediaTypeRequested": "image"
+    }
+  ]
+}

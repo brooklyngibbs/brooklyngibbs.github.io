@@ -1,0 +1,1515 @@
+{
+  "reviewedOn": "2026-11-09",
+  "revision": "2026-11-09-discovery-route-audit",
+  "reviewedIds": [
+    "pink-elephant",
+    "pinto-pink",
+    "knight-helmets",
+    "alice-labyrinth",
+    "feminine-armor",
+    "painted-disney",
+    "iridescent-cds",
+    "romantic-end-card",
+    "made-of-stardust",
+    "medieval-pixels",
+    "acid-green-star",
+    "romantic-clown",
+    "love-potion",
+    "smoke-dragon",
+    "janice",
+    "star-tours-droids",
+    "leia-r2-mist",
+    "alice-cheshire",
+    "alice-end-card",
+    "blue-muppets",
+    "star-wizard",
+    "jem",
+    "frog-knight",
+    "sound-recorder",
+    "meet-the-robinsons",
+    "pink-star-pattern",
+    "lucky-clovers",
+    "pressed-clovers",
+    "storybook-ending",
+    "tattoo-knight",
+    "smoke-crocodile",
+    "wonderland-cards",
+    "pink-panther-reading",
+    "ispy-celestial-pattern",
+    "star-trek-blue",
+    "star-trek-planets",
+    "love-meter",
+    "lagoon-valentine",
+    "starry-end-card",
+    "hot-pink-desire",
+    "daft-punk-graffiti",
+    "romantic-theater-card",
+    "final-frontier",
+    "modern-knight",
+    "make-believe-moon",
+    "bread-and-butterflies",
+    "make-believe-humpty",
+    "make-believe-oz",
+    "make-believe-castles",
+    "nervous-knight",
+    "white-christmas-tree",
+    "christmas-cats",
+    "disney-christmas",
+    "dragon-tales-pattern",
+    "glitter-makeup",
+    "candyland-cards",
+    "queen-of-hearts-study",
+    "merry-bright-tree",
+    "lilly-bicycle",
+    "mermaid-cocktail-cat",
+    "gonzo-tin-man",
+    "ruby-slippers",
+    "big-screen-title",
+    "lily-pads",
+    "pooh-bridge",
+    "narnia-lamppost",
+    "disco-laundry",
+    "peanuts-christmas",
+    "flower-power-christmas",
+    "starry-dancers",
+    "wonderland-flower-garden",
+    "celestial-cloak-wizard",
+    "telescope-wizard",
+    "medieval-spell-lettering",
+    "wonderland-sun-moon",
+    "tomorrowland-rocket",
+    "halloween-new-yorker",
+    "dancing-robots",
+    "muppet-monster-lab",
+    "kermit-banjo",
+    "cinderella-carriage",
+    "frontierland-lettering",
+    "alice-smoke-vowels",
+    "giant-woman-miniature-city",
+    "future-frontier-logo",
+    "night-time-show",
+    "atomic-lab-bottles",
+    "daughter-of-the-sea",
+    "venus-flytrap-photo",
+    "imac-color-table",
+    "atomic-retro-wallpaper",
+    "venus-flytrap-graphic",
+    "universal-starburst",
+    "pink-disneyland-booklet",
+    "alice-outgrows-house",
+    "giant-woman-skyline",
+    "wonderland-oyster-calendar",
+    "alice-doorknob",
+    "wonderland-musical-frogs",
+    "jetsons-skyline",
+    "sorcerer-mickey",
+    "fantasia-starry-poster",
+    "marina-feelings",
+    "poppins-butterflies",
+    "giant-alice-book",
+    "robot-swoon",
+    "blair-pink-curtains",
+    "lit-window-silhouettes",
+    "mome-raths",
+    "sword-in-stone",
+    "black-eyed-peas-end",
+    "muppets-manhattan-comic",
+    "nervous-breakdown-stars",
+    "pooh-rain",
+    "tinkerbell-sign",
+    "moon-face",
+    "tomato-soup-grilled-cheese",
+    "muppets-stage-arches",
+    "pink-panther-portrait",
+    "peanuts-car",
+    "tigger-starry-sky",
+    "r2d2-electric-guitar",
+    "pink-blue-end",
+    "haunted-tunnel-of-love",
+    "bread-butterfly-tulips",
+    "wonderland-dog-caterpillar",
+    "mickey-glowing-hat"
+  ],
+  "newIds": [
+    "sorcerer-mickey",
+    "fantasia-starry-poster",
+    "marina-feelings",
+    "poppins-butterflies",
+    "giant-alice-book",
+    "robot-swoon",
+    "blair-pink-curtains",
+    "lit-window-silhouettes",
+    "mome-raths",
+    "sword-in-stone",
+    "black-eyed-peas-end",
+    "muppets-manhattan-comic",
+    "nervous-breakdown-stars",
+    "pooh-rain",
+    "tinkerbell-sign",
+    "moon-face",
+    "tomato-soup-grilled-cheese",
+    "muppets-stage-arches",
+    "pink-panther-portrait",
+    "peanuts-car",
+    "tigger-starry-sky",
+    "r2d2-electric-guitar",
+    "pink-blue-end",
+    "haunted-tunnel-of-love",
+    "bread-butterfly-tulips",
+    "wonderland-dog-caterpillar",
+    "mickey-glowing-hat"
+  ],
+  "instruction": "Maintain a second brain for Brooklyn’s taste. Every batch and requested semantic reorganization revisits the entire web and may change any image’s placement as new evidence arrives.",
+  "method": "Review the active images and exact notes across eight batches, inspect all 27 supplied images, and keep seven older inaccessible pins pending. Distinguish explicit preferences, visual echoes and unverified attribution. Record the strongest supported connections while leaving weaker ones open.",
+  "primaryCategoryCounts": {
+    "title-cards": 2,
+    "pink-panther": 3,
+    "medieval-fantasy": 1,
+    "labyrinths": 1,
+    "knights": 3,
+    "hand-painted-disney": 1,
+    "digital-nostalgia": 2,
+    "space-age": 1,
+    "medieval-pixels": 1,
+    "acid-green": 1,
+    "pink-romance": 2,
+    "mad-science": 1,
+    "caterpillar-smoke": 3,
+    "muppets": 5,
+    "star-wars": 3,
+    "alice": 2,
+    "wizards": 3,
+    "jem": 1,
+    "old-interfaces": 1,
+    "meet-the-robinsons": 1,
+    "stars": 1,
+    "luck-clovers": 2,
+    "storybook-fairytales": 2,
+    "girl-knights": 2,
+    "background-characters": 7,
+    "celestial-patterns": 1,
+    "star-trek": 3,
+    "valentines": 1,
+    "vintage-monsters": 2,
+    "vivid-blue": 1,
+    "color-texture": 1,
+    "bathroom-graffiti": 1,
+    "romantic-theater": 1,
+    "land-of-make-believe": 3,
+    "bread-and-butterflies": 2,
+    "storybook-worlds": 1,
+    "nervous-knights": 1,
+    "holidays": 1,
+    "retro-cats": 2,
+    "holiday-rituals": 1,
+    "dragon-tales": 1,
+    "glitter": 1,
+    "childhood-games": 1,
+    "mary-blair": 3,
+    "christmas": 1,
+    "picture-books": 1,
+    "wizard-of-oz": 2,
+    "cinema-lettering": 2,
+    "frogs-ponds": 1,
+    "pooh": 3,
+    "worlds-made-real": 1,
+    "loose-illustration": 1,
+    "peanuts": 2,
+    "flower-power": 1,
+    "wonderland-flowers": 1,
+    "illuminated-lettering": 1,
+    "retro-futures": 3,
+    "halloween": 1,
+    "muppet-costumes": 1,
+    "disneyland-ephemera": 3,
+    "giant-women": 2,
+    "atomic-graphics": 3,
+    "late-night-tv": 1,
+    "sirens": 1,
+    "venus-flytraps": 2,
+    "giant-alice": 2,
+    "fantasia": 3,
+    "tumblr-electropop": 1,
+    "mixed-media-worlds": 1,
+    "lit-windows": 1,
+    "the-end-album": 1,
+    "night-skies": 2,
+    "comfort-food": 1,
+    "blue-pink": 1
+  },
+  "patterns": [
+    {
+      "name": "Illustrated make-believe and its particular characters",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "alice-labyrinth",
+        "painted-disney",
+        "smoke-dragon",
+        "alice-cheshire",
+        "alice-end-card",
+        "storybook-ending",
+        "smoke-crocodile",
+        "wonderland-cards",
+        "make-believe-moon",
+        "bread-and-butterflies",
+        "make-believe-humpty",
+        "make-believe-oz",
+        "make-believe-castles",
+        "dragon-tales-pattern",
+        "candyland-cards",
+        "queen-of-hearts-study",
+        "lilly-bicycle",
+        "pooh-bridge",
+        "gonzo-tin-man",
+        "ruby-slippers",
+        "narnia-lamppost",
+        "starry-dancers",
+        "wonderland-flower-garden",
+        "wonderland-sun-moon",
+        "cinderella-carriage"
+      ],
+      "observation": "Across six batches, the notes keep returning to specific story worlds, painted fairytales and expressive minor characters. The new sun/moon pair extends the Alice side-character collection; the carriage adds explicit magic and nostalgia to the earlier Mary Blair and starry-dance notes.",
+      "interpretation": "A distinctive imagined world with memorable details is a stronger organizing signal than a blanket animation or nostalgia category.",
+      "decision": "Keep Make-believe first, Alice as a direct branch with deeper Side characters, and Mary Blair under Storybook fairytales. Place the new carriage there and retain the existing book, Oz and tangible-world paths.",
+      "uniqueReferenceCount": 25,
+      "batchesRepresented": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Color as atmosphere",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "acid-green-star",
+        "hot-pink-desire",
+        "blue-muppets",
+        "starry-end-card",
+        "romantic-clown",
+        "pink-star-pattern",
+        "alice-end-card",
+        "iridescent-cds",
+        "leia-r2-mist",
+        "jem",
+        "white-christmas-tree",
+        "merry-bright-tree",
+        "flower-power-christmas",
+        "starry-dancers",
+        "lily-pads",
+        "cinderella-carriage"
+      ],
+      "observation": "Exact blues, greens, hot pink, pink/red and red/green recur across media. Both starry-dancers and the new carriage explicitly praise blue with pink; six pending TV notes and one pending palette note also emphasize blue atmosphere and contrasting light.",
+      "interpretation": "Atmosphere created by color is one of the clearest cross-subject patterns. A personal favorite such as the blue The End card matters even without more copies.",
+      "decision": "Add a Blue & pink crossover anchored to the available fairytale pictures. Keep the source subjects in place. Preserve Night skies and Vivid blue; pending TV notes strengthen the direction without pretending their pictures were inspected.",
+      "uniqueReferenceCount": 16,
+      "batchesRepresented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Playful medieval characters and celestial magic",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "knight-helmets",
+        "feminine-armor",
+        "frog-knight",
+        "tattoo-knight",
+        "modern-knight",
+        "nervous-knight",
+        "medieval-pixels",
+        "star-wizard",
+        "celestial-cloak-wizard",
+        "telescope-wizard",
+        "medieval-spell-lettering"
+      ],
+      "observation": "Across five earlier batches, knights are emphatically important; wizards, star-covered costumes, nervousness, modern girl knights and illuminated gold lettering distinguish several connected motifs. This batch does not supply evidence to merge those with robots or generic animation.",
+      "interpretation": "Armor, vulnerable or unconventional heroes, celestial costumes and manuscript lettering form several connected medieval-fantasy routes.",
+      "decision": "Retain Medieval fantasy with separate Knights, Wizards and Medieval pixels. Keep it spatially distinct from Make-believe and preserve its specific lettering and stars crossovers.",
+      "uniqueReferenceCount": 11,
+      "batchesRepresented": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Lettering as an image",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "pink-elephant",
+        "pinto-pink",
+        "romantic-end-card",
+        "alice-end-card",
+        "starry-end-card",
+        "romantic-theater-card",
+        "big-screen-title",
+        "medieval-spell-lettering",
+        "tomorrowland-rocket"
+      ],
+      "observation": "Title cards and end screens recur across batches. The rocket poster visibly adds condensed display lettering; the pending broadcast notes explicitly name fonts and white type, but those pictures are unavailable.",
+      "decision": "Keep Titles & lettering and its theatrical and medieval routes. Link the rocket poster from Retro futures rather than moving it away from the imagined-future imagery.",
+      "uniqueReferenceCount": 9,
+      "batchesRepresented": [
+        1,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Childhood ritual and holiday color",
+      "strength": "strong personal meaning; growing visual family",
+      "evidence": [
+        "disney-christmas",
+        "white-christmas-tree",
+        "merry-bright-tree",
+        "christmas-cats",
+        "peanuts-christmas",
+        "flower-power-christmas",
+        "lilly-bicycle",
+        "pooh-bridge",
+        "narnia-lamppost",
+        "candyland-cards",
+        "halloween-new-yorker",
+        "muppet-monster-lab",
+        "lagoon-valentine"
+      ],
+      "observation": "Childhood holiday rituals and bright Christmas graphics are now joined by a direct preference for New Yorker holiday covers and a Muppet Halloween scene. The older lagoon note already explicitly praised classic Halloween monsters.",
+      "decision": "Expand the Christmas entrance to Holidays, with Christmas and Halloween below. Retain Holiday rituals for family traditions spanning holidays; move Vintage monsters below Halloween while keeping the lagoon image linked to Valentines.",
+      "uniqueReferenceCount": 13,
+      "batchesRepresented": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Romance with odd characters",
+      "strength": "established direction; retained",
+      "evidence": [
+        "romantic-clown",
+        "love-potion",
+        "love-meter",
+        "lagoon-valentine",
+        "nervous-knight",
+        "muppet-monster-lab"
+      ],
+      "observation": "Hearts, Valentine colors and tenderness recur with clowns, scientists, monsters and a nervous knight. The Muppet laboratory adds a specific monster/science overlap, without a romantic theme in its note.",
+      "decision": "Keep Odd romance and love experiments distinct. Move the lagoon picture’s primary route to Halloween, preserve its Valentine crossover, and connect the Muppet lab to Mad science through the visible set.",
+      "uniqueReferenceCount": 6,
+      "batchesRepresented": [
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Space, stars and imagined technology",
+      "strength": "established direction with new celestial crossover",
+      "evidence": [
+        "made-of-stardust",
+        "star-tours-droids",
+        "leia-r2-mist",
+        "star-trek-blue",
+        "star-trek-planets",
+        "final-frontier",
+        "meet-the-robinsons",
+        "celestial-cloak-wizard",
+        "telescope-wizard",
+        "tomorrowland-rocket",
+        "dancing-robots"
+      ],
+      "observation": "Tomorrowland is emphatically loved. The rocket poster, dancing robots and the existing Meet the Robinsons future interior share playful imagined technology; the older celestial and space references remain broader routes.",
+      "decision": "Add Retro futures under Space age. Keep Meet the Robinsons directly under Space age and cross-link it to Retro futures, so its familiar entrance remains easy to find. Retain Retro tech as a separate physical-media/interface seed.",
+      "uniqueReferenceCount": 11,
+      "batchesRepresented": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Retro cats",
+      "strength": "growing independent path",
+      "evidence": [
+        "christmas-cats",
+        "mermaid-cocktail-cat"
+      ],
+      "observation": "Two notes explicitly compare stylized angular cats with French Kitty. The new Halloween cover also contains cats, but the user emphasizes holiday covers rather than the same cocktail-cat style.",
+      "decision": "Keep Retro cats independent with the Christmas crossover; do not attach every new cat depiction solely by subject.",
+      "uniqueReferenceCount": 2,
+      "batchesRepresented": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Frogs and peaceful ponds",
+      "strength": "new seed with strong explicit affection",
+      "evidence": [
+        "frog-knight",
+        "lily-pads",
+        "kermit-banjo"
+      ],
+      "observation": "The emphatic love of frogs, lily pads and peaceful pond green now has a visible crossover: Kermit sits over still swamp water with a banjo.",
+      "decision": "Keep Frogs & ponds visible as its own path; link Kermit and frog knight while leaving their primary Muppet and knight routes intact.",
+      "uniqueReferenceCount": 3,
+      "batchesRepresented": [
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Loose everyday illustration",
+      "strength": "new seed with a personal drawing history",
+      "evidence": [
+        "disco-laundry"
+      ],
+      "observation": "The single loose drawing has a strong personal art-class memory. Neither the robot poster nor the new magazine illustration is evidence of the same loose everyday drawing approach.",
+      "decision": "Retain the independent seed; do not force it into a general illustration bucket.",
+      "uniqueReferenceCount": 1,
+      "batchesRepresented": [
+        5
+      ]
+    },
+    {
+      "name": "Familiar characters in new roles",
+      "strength": "growing recurring direction",
+      "evidence": [
+        "janice",
+        "blue-muppets",
+        "gonzo-tin-man",
+        "muppet-monster-lab",
+        "kermit-banjo"
+      ],
+      "observation": "Muppets recur over three batches and now include musical identity, the Tin Man role, a monster laboratory and the banjo swamp scene.",
+      "interpretation": "Affection for a recognizable cast coexists with interest in the worlds and roles they inhabit.",
+      "decision": "Retain The Muppets entrance and add Muppet costumes. Keep Gonzo primarily in Oz; connect the laboratory to Halloween and Kermit to ponds. Do not merge all music references.",
+      "uniqueReferenceCount": 5,
+      "batchesRepresented": [
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Late-night broadcast atmosphere",
+      "strength": "strong new cluster in notes; media pending",
+      "evidence": [
+        "starry-end-card",
+        "final-frontier",
+        "blue-muppets",
+        "night-time-show"
+      ],
+      "pendingEvidence": [
+        "117938083989257011",
+        "117938083989257012",
+        "117938083989257019",
+        "117938083989257021",
+        "117938083989257022",
+        "117938083989257023",
+        "117938083989257024"
+      ],
+      "observation": "The new notes name nighttime television, dark blue, light lettering, moonlit city skylines, signal interruption, wires and digital icons. The standalone blue/pink pin is a palette reference; its TV connection is not visually verified.",
+      "interpretation": "Late-night TV could become its own entrance with midnight graphics and broadcast technology branches; it is more specific than generic retro tech.",
+      "decision": "Open Late-night TV as its own theme using the newly available Night Time Show pin. Keep the older pending pins separate.",
+      "uniqueReferenceCount": 4,
+      "batchesRepresented": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "pendingNoteCount": 7
+    },
+    {
+      "name": "Retained independent seeds",
+      "strength": "insufficient new evidence for a merge",
+      "evidence": [
+        "sound-recorder",
+        "iridescent-cds",
+        "jem",
+        "lucky-clovers",
+        "pressed-clovers",
+        "daft-punk-graffiti"
+      ],
+      "observation": "The notes describe a precise interface, CD iridescence, a loved animated music world, luck symbols and bathroom handwriting. Dancing robots include records but do not establish a common visual style for all these pictures.",
+      "decision": "Retain Retro tech, Jem, Luck & clovers and Bathroom graffiti as separate entrances. Only link the robot record player specifically to physical media.",
+      "uniqueReferenceCount": 6,
+      "batchesRepresented": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Wonderland details and visual wordplay",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "alice-smoke-vowels",
+        "smoke-dragon",
+        "smoke-crocodile",
+        "wonderland-oyster-calendar",
+        "alice-doorknob",
+        "wonderland-musical-frogs",
+        "bread-and-butterflies",
+        "wonderland-flower-garden"
+      ],
+      "observation": "The new notes explicitly favor small scenes and minor figures. Smoke becomes letters, and frogs become instruments.",
+      "interpretation": "Inventive details inside a familiar world recur across references.",
+      "decision": "Expand Wonderland details and nest Caterpillar smoke.",
+      "uniqueReferenceCount": 8,
+      "batchesRepresented": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Disneyland as a place you could enter",
+      "strength": "recurring direction",
+      "evidence": [
+        "frontierland-lettering",
+        "pink-disneyland-booklet",
+        "tomorrowland-rocket",
+        "narnia-lamppost"
+      ],
+      "observation": "Two new park graphics join the Tomorrowland poster. Brooklyn connects the look to childhood Disney.",
+      "interpretation": "Printed keepsakes make the imagined place tangible.",
+      "decision": "Open Disneyland ephemera through Worlds made real, with a Tomorrowland crossover.",
+      "uniqueReferenceCount": 4,
+      "batchesRepresented": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Women at impossible scale",
+      "strength": "recurring motif",
+      "evidence": [
+        "giant-woman-miniature-city",
+        "giant-woman-skyline",
+        "alice-outgrows-house"
+      ],
+      "observation": "Two city images repeat the giant-woman trope. Brooklyn explicitly prefers the vintage look and links oversized Alice.",
+      "interpretation": "The scale reversal connects the images across fashion and animation.",
+      "decision": "Make Giant women independent with the vintage-looking city cover and link Alice.",
+      "uniqueReferenceCount": 3,
+      "batchesRepresented": [
+        7
+      ]
+    },
+    {
+      "name": "Siren self-image and shell lettering",
+      "strength": "personally significant seed",
+      "evidence": [
+        "daughter-of-the-sea",
+        "wonderland-oyster-calendar",
+        "mermaid-cocktail-cat"
+      ],
+      "observation": "Brooklyn explicitly identifies with sirens. Shells and a mermaid-cat recur nearby.",
+      "interpretation": "Shell imagery is a specific overlap. The references carry different meanings.",
+      "decision": "Give Sirens an independent cover.",
+      "uniqueReferenceCount": 3,
+      "batchesRepresented": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Gentle and dangerous plants",
+      "strength": "recurring motif",
+      "evidence": [
+        "venus-flytrap-photo",
+        "venus-flytrap-graphic",
+        "acid-green-star",
+        "hot-pink-desire"
+      ],
+      "observation": "The flytrap repeats in a photo and graphic, with an explicit note about predation and gentleness.",
+      "interpretation": "The contrast is part of the appeal alongside acid green and pink.",
+      "decision": "Give Venus flytraps an independent cover and keep its palette links.",
+      "uniqueReferenceCount": 4,
+      "batchesRepresented": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "Atomic graphics and colorful technology",
+      "strength": "strong recurring direction",
+      "evidence": [
+        "future-frontier-logo",
+        "atomic-lab-bottles",
+        "atomic-retro-wallpaper",
+        "imac-color-table",
+        "jetsons-skyline",
+        "tomorrowland-rocket",
+        "dancing-robots",
+        "universal-starburst"
+      ],
+      "observation": "Starbursts, toy-like forms and imagined technology recur across both older designs and newer references.",
+      "interpretation": "The Space Age visual language travels across media and eras.",
+      "decision": "Group the atomic graphics while keeping the hardware and studio logo in their primary branches.",
+      "uniqueReferenceCount": 8,
+      "batchesRepresented": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Fantasia and celestial costume",
+      "strength": "working pattern",
+      "evidence": [
+        "sorcerer-mickey",
+        "fantasia-starry-poster",
+        "mickey-glowing-hat",
+        "celestial-cloak-wizard",
+        "star-wizard",
+        "starry-end-card"
+      ],
+      "observation": "Explicit major inspiration. The blue hat, moon, stars and glow repeat earlier stated preferences.",
+      "interpretation": "Celestial graphics act as costume and setting across references.",
+      "decision": "Make Fantasia prominent and preserve both overlaps.",
+      "uniqueReferenceCount": 6,
+      "batchesRepresented": [
+        1,
+        3,
+        5,
+        8
+      ]
+    },
+    {
+      "name": "Star fields with personality",
+      "strength": "working pattern",
+      "evidence": [
+        "fantasia-starry-poster",
+        "tigger-starry-sky",
+        "nervous-breakdown-stars",
+        "moon-face",
+        "wonderland-sun-moon",
+        "starry-end-card",
+        "night-time-show"
+      ],
+      "observation": "Small bright marks on darkness recur. Brooklyn also responds to familiar characters among stars and moons with faces.",
+      "interpretation": "The sky reads as a populated setting as well as a color palette.",
+      "decision": "Connect through Night skies without moving entire character families into it.",
+      "uniqueReferenceCount": 7,
+      "batchesRepresented": [
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "Familiar characters beyond their usual setting",
+      "strength": "working pattern",
+      "evidence": [
+        "r2d2-electric-guitar",
+        "kermit-banjo",
+        "muppets-manhattan-comic",
+        "muppets-stage-arches",
+        "muppet-monster-lab",
+        "tigger-starry-sky"
+      ],
+      "observation": "Droids, puppets and childhood characters recur in unfamiliar roles, formats or environments.",
+      "interpretation": "What changes around a known character is often part of the appeal.",
+      "decision": "Keep subject paths and add specific crossovers for instruments, costumes or night skies.",
+      "uniqueReferenceCount": 6,
+      "batchesRepresented": [
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Romance meets strange machinery and monsters",
+      "strength": "working pattern",
+      "evidence": [
+        "robot-swoon",
+        "haunted-tunnel-of-love",
+        "romantic-clown",
+        "love-potion",
+        "lagoon-valentine",
+        "muppet-monster-lab",
+        "blair-pink-curtains"
+      ],
+      "observation": "Brooklyn explicitly names the robot romance and Tunnel of Love appeal, alongside earlier odd romance and red-pink notes.",
+      "interpretation": "Romance can be staged through an uncanny creature, machine, color or attraction.",
+      "decision": "Use Odd romance overlaps while preserving Halloween and retro futures paths.",
+      "uniqueReferenceCount": 7,
+      "batchesRepresented": [
+        1,
+        3,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "Childhood character memories",
+      "strength": "working pattern",
+      "evidence": [
+        "pooh-bridge",
+        "pooh-rain",
+        "tigger-starry-sky",
+        "peanuts-christmas",
+        "peanuts-car",
+        "marina-feelings"
+      ],
+      "observation": "The notes refer to specific childhood and teen experiences.",
+      "interpretation": "Distinct memories can share a nostalgic feeling without needing one umbrella category.",
+      "decision": "Separate Pooh and Peanuts paths. Keep Tumblr electropop on its own.",
+      "uniqueReferenceCount": 6,
+      "batchesRepresented": [
+        5,
+        8
+      ]
+    },
+    {
+      "name": "Windows into other lives",
+      "strength": "working pattern",
+      "evidence": [
+        "lit-window-silhouettes",
+        "muppets-stage-arches"
+      ],
+      "observation": "The windows matter because of the lives implied behind them. The arches echo the picture’s repeated lit frames.",
+      "interpretation": "The framing echoes visually. The motivation is explicit for the windows only.",
+      "decision": "Keep Lit windows independent and record the visual overlap.",
+      "uniqueReferenceCount": 2,
+      "batchesRepresented": [
+        8
+      ]
+    }
+  ],
+  "decisions": [
+    "Give Fantasia a prominent Make-believe branch. Link Sorcerer Mickey to the existing Wizards, and the poster to the tiny stars in Night skies.",
+    "Within Alice, keep the Mome Raths and bread-and-butterflies with Wonderland details. Put both house images in Giant Alice and link the pair to Giant women.",
+    "Separate the Winnie the Pooh character path from the broader Picture books path. Give Peanuts an independent cover and move the existing holiday reference into it, preserving its Holiday rituals overlap.",
+    "Preserve Make-believe as a way into imagined worlds. Add Mixed media within Worlds made real for the explicit Mary Poppins preference, and place the Tinker Bell sign with Disneyland ephemera.",
+    "Expand Odd romance with the robot scene and the haunted Tunnel of Love overlap. Keep the robot palette and design linked to Retro futures and the haunted ride in the Halloween lineage.",
+    "Keep Pink Panther connected to Titles & lettering, but use the character portrait as its representative now that the subject spans title cards and character images.",
+    "Keep Tumblr electropop, Lit windows, The E.N.D. and Comfort food as independent starting points. The Muppet stage arches and windows share a composition without implying identical personal meaning.",
+    "Retain the other independent entrances and their most specific existing connections. Favorites and repeated details carry more weight than generic shared media, music or nostalgia."
+  ],
+  "openQuestions": [
+    {
+      "refs": [
+        "starry-dancers"
+      ],
+      "hypothesis": "Likely Cinderella concept art associated with Mary Blair, as the user tentatively identifies.",
+      "decision": "Use the neutral title Dancing among the stars. The museum describes a matching concept but this exact image is not authenticated; avoid treating attribution as certain.",
+      "source": "https://www.waltdisney.org/blog/look-closer-art-cinderella"
+    },
+    {
+      "refs": [
+        "narnia-lamppost",
+        "star-tours-droids",
+        "gonzo-tin-man"
+      ],
+      "hypothesis": "The craft of making a fantasy world tangible may become a larger pattern.",
+      "decision": "A provisional Worlds made real path; distinguish user recollections and lore from independently verified production history."
+    },
+    {
+      "refs": [
+        "lily-pads",
+        "lucky-clovers",
+        "pressed-clovers"
+      ],
+      "hypothesis": "Nature or meaningful natural symbols may eventually connect.",
+      "decision": "No merge yet: pond calm and luck are different explicit reasons."
+    },
+    {
+      "refs": [
+        "disco-laundry",
+        "mermaid-cocktail-cat"
+      ],
+      "hypothesis": "A playful cocktail or nightlife motif could grow.",
+      "decision": "Keep a single shared prop from defining the whole drawing’s primary route."
+    },
+    {
+      "refs": [
+        "daft-punk-graffiti",
+        "jem"
+      ],
+      "hypothesis": "Future references might establish a more specific musical visual connection.",
+      "decision": "Keep independent; a music mention is insufficient."
+    },
+    {
+      "refs": [
+        "cinderella-carriage"
+      ],
+      "hypothesis": "Mary Blair Cinderella concept art, as identified by the user and pin.",
+      "decision": "Keep the stated thematic connection; exact-image archival attribution is unverified. Use a visual caption and preserve the quote verbatim."
+    },
+    {
+      "refs": [
+        "halloween-new-yorker"
+      ],
+      "hypothesis": "Illustrated holiday covers may grow into their own design branch.",
+      "decision": "For now place in Halloween; one cover is insufficient for a broad magazine/design umbrella."
+    },
+    {
+      "refs": [
+        "tomorrowland-rocket",
+        "narnia-lamppost",
+        "make-believe-castles"
+      ],
+      "hypothesis": "Themed environments and physically entering imagined worlds may connect Tomorrowland, Narnia and Make-believe.",
+      "decision": "Keep Tomorrowland primarily with retro futures; the new note praises its aesthetic without explicitly discussing immersive sets."
+    },
+    {
+      "pendingPinIds": [
+        "117938083989257011",
+        "117938083989257012",
+        "117938083989257019",
+        "117938083989257021",
+        "117938083989257022",
+        "117938083989257023",
+        "117938083989257024"
+      ],
+      "hypothesis": "Late-night TV may become a distinct major path.",
+      "decision": "Need working share links before inspecting media, confirming palettes, preserving the two reported GIFs and deciding the final TV hierarchy."
+    },
+    {
+      "refs": [
+        "daughter-of-the-sea",
+        "wonderland-oyster-calendar",
+        "mermaid-cocktail-cat"
+      ],
+      "hypothesis": "A wider sea-world motif may emerge.",
+      "decision": "Keep the siren, the Wonderland scene, and the retro cat in distinct primary paths."
+    },
+    {
+      "refs": [
+        "giant-woman-miniature-city",
+        "alice-outgrows-house",
+        "lagoon-valentine"
+      ],
+      "hypothesis": "Impossible scale may connect vintage creature imagery and feminine fantasy.",
+      "decision": "Use the explicit Alice link and keep the cinema association as an exploratory overlap."
+    },
+    {
+      "refs": [
+        "marina-feelings",
+        "black-eyed-peas-end",
+        "jem"
+      ],
+      "hypothesis": "Music memories might form a wider branch as more specific shared evidence arrives.",
+      "decision": "Keep independent for now. Generic pop or nostalgia is insufficient."
+    },
+    {
+      "refs": [
+        "lit-window-silhouettes",
+        "muppets-stage-arches"
+      ],
+      "hypothesis": "Framed glimpses into other lives may recur independently of stage imagery.",
+      "decision": "Preserve the visual rhyme while keeping the stated motivations separate."
+    }
+  ],
+  "sourceChecks": {
+    "flowerPowerChristmas": {
+      "pin": "117938083987209881",
+      "style": "Psychedelic / flower-power holiday illustration",
+      "basis": "Visible floral border, curving lettering, bell-bottoms, paisley, checks, hot pink and orange; Pinterest title Retro 70s christmas. Artist and date unverified.",
+      "source": "https://www.pinterest.com/pin/117938083987209881/"
+    },
+    "bigScreenTitle": {
+      "pin": "117938083987099973",
+      "source": "https://dribbble.com/shots/3001922-The-Big-Screen",
+      "finding": "Artist Ben Harman’s portfolio identifies a retro-styled graphic; do not claim original historical film provenance."
+    },
+    "dancingAmongStars": {
+      "pin": "117938083987209889",
+      "source": "https://www.waltdisney.org/blog/look-closer-art-cinderella",
+      "finding": "Museum documents Mary Blair’s Cinderella starry-dance concept and later Sleeping Beauty connection; no exact image attribution established."
+    },
+    "mermaidCat": {
+      "pin": "117938083987012954",
+      "source": "https://www.etsy.com/listing/1762011724/mermaid-kitty-happy-hour-original-cat",
+      "finding": "Linked product calls it atomic/mid-century bar cat art. French Kitty remains the user’s comparison."
+    },
+    "117938083988962912": {
+      "pin": "117938083988962912",
+      "source": "https://www.pinterest.com/pin/117938083988962912/",
+      "finding": "User identifies Alice in Wonderland; title metadata agrees. Avoid claiming a specific song title without verification."
+    },
+    "117938083986975727": {
+      "pin": "117938083986975727",
+      "source": "https://www.etsy.com/listing/1063885705/rocket-to-the-moon-1955-disneyland",
+      "finding": "Pin title identifies a reproduction of a 1955 attraction poster; the date and original artist were not independently authenticated."
+    },
+    "117938083986986419": {
+      "pin": "117938083986986419",
+      "source": "https://condenaststore.com/featured/new-yorker-october-31st-1959-william-steig.html",
+      "finding": "Verified in the publisher’s Condé Nast Store listing: New Yorker October 31st, 1959 by William Steig. Cover date is also visible in the image."
+    },
+    "117938083986988257": {
+      "pin": "117938083986988257",
+      "source": "https://www.etsy.com/listing/1075350755/50s-retro-dancing-robots-record-player",
+      "finding": "Pinterest linked-product title credits Chris Sick Moore and calls this a limited-edition print. It is 1950s-inspired artwork, not established as an original illustration from the 1950s."
+    },
+    "117938083987002961": {
+      "pin": "117938083987002961",
+      "source": "https://www.pinterest.com/pin/117938083987002961/",
+      "finding": "The user is uncertain about the roles. Visually Kermit resembles a Frankenstein-style monster rather than clearly a mad scientist. Preserve the user note without correcting it inside the quote."
+    },
+    "117938083987004741": {
+      "pin": "117938083987004741",
+      "source": "https://www.pinterest.com/pin/117938083987004741/",
+      "finding": "User identifies the classic banjo scene. No specific production history asserted."
+    },
+    "117938083987010969": {
+      "pin": "117938083987010969",
+      "source": "https://www.etsy.com/listing/1169069502/cinderella-mary-blair-concept-art-print",
+      "finding": "User and Pinterest title identify Mary Blair Cinderella concept art; the pin links to a reproduction seller, not an original archive. Keep exact-image attribution qualified."
+    },
+    "pendingTV": {
+      "pins": [
+        "117938083989257011",
+        "117938083989257012",
+        "117938083989257019",
+        "117938083989257021",
+        "117938083989257022",
+        "117938083989257023",
+        "117938083989257024"
+      ],
+      "finding": "Pinterest public pages return PinNotFound; a normal browser visit to pin 117938083989257012 redirects to the Pinterest error page. Requested replacement links; no bypass or substitutes."
+    },
+    "982558843713064591": {
+      "source": "https://www.pinterest.com/pin/982558843713064591/",
+      "finding": "Future Frontier appears on the image. The orbital line, starbursts and offset letter blocks support an Atomic Age-inspired style reading. Creator and date unverified."
+    },
+    "405112928978600006": {
+      "source": "https://eisenhowerfoundation.net/primary-source-library/book-our-friend-atom/",
+      "finding": "Pin attributes the illustration to Disney’s Our Friend the Atom. The archive confirms the book and its Disney origin. The Pink Panther relationship is a stylistic comparison."
+    },
+    "919789923953939803": {
+      "source": "https://www.apple.com/newsroom/2001/04/19Apple-Ships-5-Millionth-iMac/",
+      "finding": "The pin identifies iMac G3s. The picture shows colorful desktop shells as a table. Apple documents the translucent iMac desktop colors."
+    },
+    "803681496017090687": {
+      "source": "https://www.pinterest.com/pin/803681496017090687/",
+      "finding": "The printed image says This is Disneyland, 26 colorful scenes, and price 35¢. Use neutral print ephemera rather than authenticating it as an admission ticket."
+    },
+    "309411436870163879": {
+      "source": "https://www.pinterest.com/pin/309411436870163879/",
+      "finding": "Pin metadata describes a logo from the 1982 Disneyland guidebook. The image shows the Frontier Land lettering. The childhood association is the user’s note."
+    },
+    "1005569423027783864": {
+      "source": "https://www.pinterest.com/pin/1005569423027783864/",
+      "finding": "The image has a vintage feel, but pin metadata describes a fashion photoshoot. Its era and creator are unverified. Do not label it a King Kong still."
+    },
+    "728035096089161870": {
+      "source": "https://www.redbubble.com/i/sticker/Sassy-Vintage-Moon-Face-by-RoseoftheWild/168930767.EJUG5",
+      "finding": "The pinned image is a round moon face without a visible rocket. The pin links to a moon-face sticker. The rocket-in-the-eye memory resembles a distinct image from Méliès’s A Trip to the Moon, documented at https://www.moma.org/collection/works/302639."
+    },
+    "117938083989369589": {
+      "source": "https://www.pinterest.com/pin/117938083989369589/",
+      "finding": "Pin describes a window set design. Keep the caption about the visible window silhouettes and retain the user’s association with inhabited buildings."
+    },
+    "117938083989369588": {
+      "source": "https://www.pinterest.com/pin/117938083989369588/",
+      "finding": "Pin attributes the art to Mary Blair for Cinderella. The source note remains verbatim. Exact archival attribution was not independently established."
+    },
+    "117938083989369605": {
+      "source": "https://www.pinterest.com/pin/117938083989369605/",
+      "finding": "Pin is titled Hypnotized. Exact date and origin are unverified, so use a descriptive title and keep the retro reading as a style association."
+    },
+    "372602569191816563": {
+      "source": "https://www.pinterest.com/pin/372602569191816563/",
+      "finding": "Pin presents this as a Pink Panther image. The character’s relationship is unverified."
+    }
+  },
+  "reviewedPendingPinIds": [
+    "117938083989257011",
+    "117938083989257012",
+    "117938083989257019",
+    "117938083989257021",
+    "117938083989257022",
+    "117938083989257023",
+    "117938083989257024"
+  ],
+  "reviewedNoteCount": 134,
+  "inspectedNewImageCount": 27,
+  "requestedNewImageCount": 27,
+  "presentationUpdates": [
+    {
+      "date": "2026-11-08",
+      "instruction": "Keep pictures of the same subject very close, with no internal lines. Star Trek and Luck & clovers are explicit examples. Crossover references may sit at the edge.",
+      "decision": "Keep the existing category memberships and exact notes. Pack same-subject covers and references together, cap local distances with photo growth, and suppress same-primary-category lines before and after endpoint projection. Preserve lines to different branches and secondary themes.",
+      "checkedSubjects": [
+        "star-trek",
+        "luck-clovers"
+      ],
+      "taxonomyChanged": false
+    },
+    {
+      "date": "2026-11-08",
+      "instruction": "Treat the existing references as the current total. Show many together, then let zoom enlarge them enough to inspect. Reanalyze space, organization, categories and meaning across the whole board after every new batch.",
+      "decision": "Fit all 81 current pictures in the overview, increase browsing dimensions, and scale photos and spacing together without the former 46px ceiling. Keep progressive category titles and same-subject grouping. Use original images when enlarged. The website import-and-analysis flow remains a future product direction; the local Reorganize button still reloads curated data.",
+      "taxonomyChanged": false,
+      "supersedes": "The earlier tiny-photo caps and capped local distances are replaced by proportional image and spacing growth."
+    },
+    {
+      "reviewedOn": "2026-11-08",
+      "revision": "2026-11-08-weighted-exploration",
+      "instruction": "Open with large representative pictures. Reveal groups, then finer groups as zoom deepens. Give recurring and personally meaningful themes earlier and larger layers as evidence for the brand develops.",
+      "reviewedCount": 81,
+      "decision": "Eight signature entrances, including Alice while retaining Make-believe ancestry. Keep independent seeds small. Detail photos and titles reveal progressively, and large covers ease toward a size limit.",
+      "emphasisEvidence": {
+        "storybook-worlds": {
+          "emphasis": "signature",
+          "reason": "Repeated childhood worlds and the explicit statement that the whole board is the land of make-believe."
+        },
+        "medieval-fantasy": {
+          "emphasis": "signature",
+          "reason": "Repeated knights, girl knights, nervous knights, wizards and medieval pixels; explicitly a big inspiration and important combination."
+        },
+        "title-cards": {
+          "emphasis": "signature",
+          "reason": "Repeated Pink Panther, romantic endings, theater curtains, old cinema lettering and decorated fairytale text."
+        },
+        "color-texture": {
+          "emphasis": "signature",
+          "reason": "Repeated specific blue, hot pink, green, stars and shimmer preferences across otherwise different subjects."
+        },
+        "holidays": {
+          "emphasis": "signature",
+          "reason": "Repeated Christmas and Halloween references, personal family traditions and distinctive illustrated palettes."
+        },
+        "space-age": {
+          "emphasis": "signature",
+          "reason": "Repeated romantic space, Star Wars, Star Trek, Tomorrowland and imagined-future references."
+        },
+        "muppets": {
+          "emphasis": "signature",
+          "reason": "Repeated Muppet characters, worlds and costumes across batches, plus explicit strong affection."
+        },
+        "frogs-ponds": {
+          "emphasis": "recurring",
+          "reason": "Explicit strong personal significance of frogs, lily pads and ponds, reinforced by frog knights and Kermit."
+        },
+        "hand-painted-disney": {
+          "emphasis": "recurring",
+          "reason": "Explicitly a huge inspiration, reinforced by Mary Blair, remembered Disney books and painted fairytale imagery."
+        },
+        "alice": {
+          "emphasis": "signature",
+          "reason": "Ten direct references across batches; explicitly a huge inspiration, with repeated affection for side characters, flowers, colors and world-building."
+        },
+        "medieval-pixels": {
+          "emphasis": "recurring",
+          "reason": "One reference, but the combination is explicitly described as so important."
+        },
+        "land-of-make-believe": {
+          "emphasis": "recurring",
+          "reason": "Four direct images and an explicit description of this world as central to the whole board."
+        },
+        "nervous-knights": {
+          "emphasis": "recurring",
+          "reason": "A single image but an explicitly recurring personal archetype: always in everything I think of."
+        },
+        "picture-books": {
+          "emphasis": "recurring",
+          "reason": "Two references carry specific childhood memories: an important book and a baby-bedroom theme."
+        },
+        "holiday-rituals": {
+          "emphasis": "recurring",
+          "reason": "Explicit annual family traditions and great-grandmother memories give these references significance beyond raw frequency."
+        }
+      },
+      "taxonomyChanged": false,
+      "supersedes": "The full-collection opening and unrestricted cover growth from the readable zoom revision."
+    }
+  ],
+  "routeAudit": {
+    "categoriesReviewed": [
+      "storybook-worlds",
+      "medieval-fantasy",
+      "title-cards",
+      "color-texture",
+      "holidays",
+      "pink-romance",
+      "space-age",
+      "muppets",
+      "digital-nostalgia",
+      "jem",
+      "retro-cats",
+      "frogs-ponds",
+      "luck-clovers",
+      "loose-illustration",
+      "bathroom-graffiti",
+      "knights",
+      "pink-panther",
+      "hand-painted-disney",
+      "alice",
+      "labyrinths",
+      "background-characters",
+      "medieval-pixels",
+      "star-wars",
+      "vivid-blue",
+      "acid-green",
+      "stars",
+      "mad-science",
+      "girl-knights",
+      "storybook-fairytales",
+      "old-interfaces",
+      "meet-the-robinsons",
+      "celestial-patterns",
+      "star-trek",
+      "vintage-monsters",
+      "night-skies",
+      "hot-pink",
+      "romantic-theater",
+      "land-of-make-believe",
+      "nervous-knights",
+      "valentines",
+      "dragon-tales",
+      "glitter",
+      "childhood-games",
+      "mary-blair",
+      "red-green",
+      "wizards",
+      "picture-books",
+      "wizard-of-oz",
+      "worlds-made-real",
+      "wonderland-flowers",
+      "cinema-lettering",
+      "illuminated-lettering",
+      "holiday-rituals",
+      "flower-power",
+      "christmas",
+      "halloween",
+      "retro-futures",
+      "muppet-costumes",
+      "blue-pink",
+      "giant-women",
+      "sirens",
+      "venus-flytraps",
+      "late-night-tv",
+      "disneyland-ephemera",
+      "caterpillar-smoke",
+      "atomic-graphics",
+      "tumblr-electropop",
+      "lit-windows",
+      "the-end-album",
+      "comfort-food",
+      "peanuts",
+      "fantasia",
+      "pooh",
+      "giant-alice",
+      "mixed-media-worlds",
+      "bread-and-butterflies"
+    ],
+    "imagesReviewed": [
+      "pink-elephant",
+      "pinto-pink",
+      "knight-helmets",
+      "alice-labyrinth",
+      "feminine-armor",
+      "painted-disney",
+      "iridescent-cds",
+      "romantic-end-card",
+      "made-of-stardust",
+      "medieval-pixels",
+      "acid-green-star",
+      "romantic-clown",
+      "love-potion",
+      "smoke-dragon",
+      "janice",
+      "star-tours-droids",
+      "leia-r2-mist",
+      "alice-cheshire",
+      "alice-end-card",
+      "blue-muppets",
+      "star-wizard",
+      "jem",
+      "frog-knight",
+      "sound-recorder",
+      "meet-the-robinsons",
+      "pink-star-pattern",
+      "lucky-clovers",
+      "pressed-clovers",
+      "storybook-ending",
+      "tattoo-knight",
+      "smoke-crocodile",
+      "wonderland-cards",
+      "pink-panther-reading",
+      "ispy-celestial-pattern",
+      "star-trek-blue",
+      "star-trek-planets",
+      "love-meter",
+      "lagoon-valentine",
+      "starry-end-card",
+      "hot-pink-desire",
+      "daft-punk-graffiti",
+      "romantic-theater-card",
+      "final-frontier",
+      "modern-knight",
+      "make-believe-moon",
+      "bread-and-butterflies",
+      "make-believe-humpty",
+      "make-believe-oz",
+      "make-believe-castles",
+      "nervous-knight",
+      "white-christmas-tree",
+      "christmas-cats",
+      "disney-christmas",
+      "dragon-tales-pattern",
+      "glitter-makeup",
+      "candyland-cards",
+      "queen-of-hearts-study",
+      "merry-bright-tree",
+      "lilly-bicycle",
+      "mermaid-cocktail-cat",
+      "gonzo-tin-man",
+      "ruby-slippers",
+      "big-screen-title",
+      "lily-pads",
+      "pooh-bridge",
+      "narnia-lamppost",
+      "disco-laundry",
+      "peanuts-christmas",
+      "flower-power-christmas",
+      "starry-dancers",
+      "wonderland-flower-garden",
+      "celestial-cloak-wizard",
+      "telescope-wizard",
+      "medieval-spell-lettering",
+      "wonderland-sun-moon",
+      "tomorrowland-rocket",
+      "halloween-new-yorker",
+      "dancing-robots",
+      "muppet-monster-lab",
+      "kermit-banjo",
+      "cinderella-carriage",
+      "frontierland-lettering",
+      "alice-smoke-vowels",
+      "giant-woman-miniature-city",
+      "future-frontier-logo",
+      "night-time-show",
+      "atomic-lab-bottles",
+      "daughter-of-the-sea",
+      "venus-flytrap-photo",
+      "imac-color-table",
+      "atomic-retro-wallpaper",
+      "venus-flytrap-graphic",
+      "universal-starburst",
+      "pink-disneyland-booklet",
+      "alice-outgrows-house",
+      "giant-woman-skyline",
+      "wonderland-oyster-calendar",
+      "alice-doorknob",
+      "wonderland-musical-frogs",
+      "jetsons-skyline",
+      "sorcerer-mickey",
+      "fantasia-starry-poster",
+      "marina-feelings",
+      "poppins-butterflies",
+      "giant-alice-book",
+      "robot-swoon",
+      "blair-pink-curtains",
+      "lit-window-silhouettes",
+      "mome-raths",
+      "sword-in-stone",
+      "black-eyed-peas-end",
+      "muppets-manhattan-comic",
+      "nervous-breakdown-stars",
+      "pooh-rain",
+      "tinkerbell-sign",
+      "moon-face",
+      "tomato-soup-grilled-cheese",
+      "muppets-stage-arches",
+      "pink-panther-portrait",
+      "peanuts-car",
+      "tigger-starry-sky",
+      "r2d2-electric-guitar",
+      "pink-blue-end",
+      "haunted-tunnel-of-love",
+      "bread-butterfly-tulips",
+      "wonderland-dog-caterpillar",
+      "mickey-glowing-hat"
+    ],
+    "changedParents": {
+      "pinto-pink": {
+        "before": "pink-elephant",
+        "after": "pink-panther-portrait"
+      },
+      "love-potion": {
+        "before": "romantic-clown",
+        "after": "love-meter"
+      },
+      "star-tours-droids": {
+        "before": "made-of-stardust",
+        "after": "leia-r2-mist"
+      },
+      "leia-r2-mist": {
+        "before": "star-tours-droids",
+        "after": "made-of-stardust"
+      },
+      "frog-knight": {
+        "before": "knight-helmets",
+        "after": "feminine-armor"
+      },
+      "wonderland-cards": {
+        "before": "alice-end-card",
+        "after": "wonderland-musical-frogs"
+      },
+      "pink-panther-reading": {
+        "before": "pinto-pink",
+        "after": "pink-panther-portrait"
+      },
+      "star-trek-blue": {
+        "before": "made-of-stardust",
+        "after": "star-trek-planets"
+      },
+      "star-trek-planets": {
+        "before": "star-trek-blue",
+        "after": "made-of-stardust"
+      },
+      "love-meter": {
+        "before": "love-potion",
+        "after": "romantic-clown"
+      },
+      "romantic-theater-card": {
+        "before": "romantic-end-card",
+        "after": "pink-elephant"
+      },
+      "final-frontier": {
+        "before": "star-trek-blue",
+        "after": "star-trek-planets"
+      },
+      "modern-knight": {
+        "before": "feminine-armor",
+        "after": "tattoo-knight"
+      },
+      "bread-and-butterflies": {
+        "before": "smoke-dragon",
+        "after": "alice-cheshire"
+      },
+      "nervous-knight": {
+        "before": "frog-knight",
+        "after": "feminine-armor"
+      },
+      "glitter-makeup": {
+        "before": "starry-end-card",
+        "after": "hot-pink-desire"
+      },
+      "queen-of-hearts-study": {
+        "before": "wonderland-cards",
+        "after": "storybook-ending"
+      },
+      "lilly-bicycle": {
+        "before": "storybook-ending",
+        "after": "make-believe-castles"
+      },
+      "gonzo-tin-man": {
+        "before": "make-believe-oz",
+        "after": "make-believe-castles"
+      },
+      "big-screen-title": {
+        "before": "romantic-theater-card",
+        "after": "pink-elephant"
+      },
+      "pooh-bridge": {
+        "before": "make-believe-castles",
+        "after": "pooh-rain"
+      },
+      "flower-power-christmas": {
+        "before": "white-christmas-tree",
+        "after": "merry-bright-tree"
+      },
+      "wonderland-flower-garden": {
+        "before": "bread-and-butterflies",
+        "after": "alice-cheshire"
+      },
+      "telescope-wizard": {
+        "before": "celestial-cloak-wizard",
+        "after": "star-wizard"
+      },
+      "medieval-spell-lettering": {
+        "before": "storybook-ending",
+        "after": "pink-elephant"
+      },
+      "wonderland-sun-moon": {
+        "before": "smoke-dragon",
+        "after": "wonderland-musical-frogs"
+      },
+      "wonderland-oyster-calendar": {
+        "before": "bread-and-butterflies",
+        "after": "wonderland-musical-frogs"
+      },
+      "alice-doorknob": {
+        "before": "alice-cheshire",
+        "after": "wonderland-musical-frogs"
+      },
+      "wonderland-musical-frogs": {
+        "before": "bread-and-butterflies",
+        "after": "alice-cheshire"
+      },
+      "blair-pink-curtains": {
+        "before": "cinderella-carriage",
+        "after": "queen-of-hearts-study"
+      },
+      "mome-raths": {
+        "before": "alice-doorknob",
+        "after": "wonderland-musical-frogs"
+      },
+      "sword-in-stone": {
+        "before": "knight-helmets",
+        "after": "feminine-armor"
+      },
+      "nervous-breakdown-stars": {
+        "before": "starry-end-card",
+        "after": "pink-star-pattern"
+      },
+      "pooh-rain": {
+        "before": "pooh-bridge",
+        "after": "make-believe-castles"
+      },
+      "moon-face": {
+        "before": "wonderland-sun-moon",
+        "after": "nervous-breakdown-stars"
+      },
+      "pink-panther-portrait": {
+        "before": "pink-panther-reading",
+        "after": "pink-elephant"
+      },
+      "tigger-starry-sky": {
+        "before": "pooh-bridge",
+        "after": "pooh-rain"
+      },
+      "r2d2-electric-guitar": {
+        "before": "star-tours-droids",
+        "after": "leia-r2-mist"
+      },
+      "pink-blue-end": {
+        "before": "romantic-end-card",
+        "after": "hot-pink-desire"
+      }
+    },
+    "method": "Review all categories, picture notes and discovery paths. Compare each route to the primary category ancestry and representative images. Preserve visual overlaps as connections instead of mandatory steps.",
+    "decisions": [
+      "Give Wonderland flowers, Bread-and-butterflies and Caterpillar smoke independent entrances directly under Alice. Keep the remaining smaller characters and scenes in Wonderland details.",
+      "Use each subject’s own representative as its entrance. This also places Cinema lettering directly under Titles & lettering, Mad science under Valentines, and Pooh scenes behind the Pooh cover.",
+      "Use a starfield for Night skies, a pink-and-blue graphic for the palette pair and armor for Knights. Preserve meaningful side connections to color, typography, girl knights and other visual interests.",
+      "Fold duplicate Clowns and Christmas kitsch entrances into Odd romance and Christmas. Keep the related pictures and the specific crossover links."
+    ]
+  }
+}

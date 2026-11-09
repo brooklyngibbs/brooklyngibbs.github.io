@@ -25,3 +25,9 @@
 
 /* Preserve the complete Pond Booth artwork at every viewport size. */
 .post--pondbooth figure{aspect-ratio:3/2}.post--pondbooth img{object-fit:contain}
+
+/* The personal taste board replaces the archived Say Now experiment card. */
+.post .taste-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:16%;padding:12% 18%;background:#fff;background-image:radial-gradient(circle,#dcdde4 .65px,transparent .85px);background-size:12px 12px}
+.post .taste-preview img{width:100%;height:100%;min-height:0;object-fit:contain}
+.post .taste-preview img:nth-child(2){transform:rotate(3deg) translateY(10%)}
+.post .taste-preview img:nth-child(3){transform:rotate(-3deg)}

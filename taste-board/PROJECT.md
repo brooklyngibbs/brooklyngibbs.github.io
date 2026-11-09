@@ -1,0 +1,7 @@
+# Project brief
+
+> Also I just want to give notes for this entire project. I don't know if you can add it somewhere but the goal of this project is to be an advanced Pinterest board that works how my brain works and sees how my brain sees . Every time I give pins I might give notes, I might not give notes, but your goal is to put it on the board and then think about how all of these are connected in my brain. You are my second brain but specifically for taste and how that works, and so you can envision how it all goes into this cool web . And so with each group or each time I press Reorganize, you have to think about how all of these things are connected and they will change. They will All of them are going to be in different places eventually probably so I just want you to think about that
+
+Each batch starts a review of the entire web. Use Brooklyn's notes to understand what she sees in a pin. When a pin has no note, use its visual details and the existing board as context. Keep inferred connections provisional. Revisit earlier references as new ones clarify why a color, character, object, or scene matters. Any prior placement can change. See [AGENTS.md](AGENTS.md) for the curation workflow.
+
+The intended Reorganize experience is the same full review on demand. Today that review runs in chat and is saved with the collection. The local button checks for a saved revision and loads it while preserving local note edits and removals.
