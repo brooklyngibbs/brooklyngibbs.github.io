@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260901-tumblr" />
+    <link rel="stylesheet" href="styles.css?v=taste-intro-2" />
   </head>
   <body>
     <a class="skip-link" href="#projects">Skip to projects</a>
@@ -53,8 +53,9 @@
         <article class="post post--wide" data-category="editorial social">
           <a href="offline-crush/"><figure><img src="assets/images/offline-crush-presents.gif?v=slow-4200" alt="Animated Offline Crush Presents title card" /></figure><div class="caption"><h2>Offline Crush</h2><p>independent publication · pop culture, music &amp; the internet</p></div></a>
         </article>
-        <article class="post post--wide" data-category="brand">
-          <a href="whimbitz/"><figure><img src="assets/images/whimbitz-card.gif" alt="Animated Whimbitz title with colorful hand-drawn stars and squares" /></figure><div class="caption"><h2>Whimbitz</h2><p>mobile gaming app · AI-generated mini-games · iOS &amp; Android</p></div></a>
+        <article class="post post--wide post--taste-board" data-category="brand experiment">
+          <a href="taste-board/" id="taste-board-link"><figure class="taste-preview" aria-hidden="true"></figure>
+          <div class="caption"><h2>taste board</h2><p>personal branding · an evolving world of references</p></div></a>
         </article>
         <article class="post post--landscape" data-category="campaign brand">
           <a href="charli-xcx/"><figure><img src="assets/images/charli-card.gif" alt="Animated black-and-white crowd-surfing image cycling through Music, Fashion, and Film lettering" /></figure><div class="caption"><h2>Charli XCX</h2><p>speculative album-era campaign · visual identity &amp; rollout strategy</p></div></a>
@@ -62,16 +63,34 @@
         <article class="post post--pondbooth" data-category="experiment">
           <a href="https://pondbooth.vercel.app/" target="_blank" rel="noopener"><figure><img src="assets/images/pondbooth-card.gif" alt="Animated hand-drawn pond with lily pads, pink flowers, and rippling water in a yellow frame" /></figure><div class="caption"><h2>Pond Booth</h2><p>playable browser toy · creative coding experiment</p></div></a>
         </article>
-        <article class="post post--landscape post--taste-board" data-category="brand experiment">
-          <a href="taste-board/"><figure class="taste-preview" aria-hidden="true"></figure>
-          <div class="caption"><h2>taste board</h2><p>personal branding · an evolving world of references</p></div></a>
+        <article class="post post--landscape" data-category="brand">
+          <a href="whimbitz/"><figure><img src="assets/images/whimbitz-card.gif" alt="Animated Whimbitz title with colorful hand-drawn stars and squares" /></figure><div class="caption"><h2>Whimbitz</h2><p>mobile gaming app · AI-generated mini-games · iOS &amp; Android</p></div></a>
         </article>
       </section>
       <p class="filter-empty" hidden>No projects in that category yet.</p>
     </main>
 
+    <dialog class="taste-intro" id="taste-intro" aria-labelledby="taste-intro-title" aria-describedby="taste-intro-copy taste-intro-controls">
+      <form method="dialog"><button class="taste-intro-close" type="submit" aria-label="Close taste board intro">×</button></form>
+      <h2 id="taste-intro-title">taste board</h2>
+      <p id="taste-intro-copy">This is an ongoing experiment in mapping my taste. I built it in layers so you can see what I’m drawn to and how it all connects in my head.</p>
+      <p class="taste-intro-controls" id="taste-intro-controls">Drag to move around. Scroll or pinch to zoom. Click an image to read my notes.</p>
+      <a href="taste-board/" class="taste-intro-enter" autofocus>enter the board <span aria-hidden="true">→</span></a>
+    </dialog>
+
     <script>
       (() => {
+        const tasteLink = document.getElementById('taste-board-link');
+        const tasteIntro = document.getElementById('taste-intro');
+        if (typeof tasteIntro.showModal === 'function') {
+          tasteLink.setAttribute('aria-haspopup', 'dialog');
+          tasteLink.addEventListener('click', (event) => {
+            if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            tasteIntro.showModal();
+          });
+        }
+
         const toggle = document.querySelector('.filter-toggle');
         const filterPanel = document.querySelector('.filters');
         const buttons = [...document.querySelectorAll('.filters button')];
